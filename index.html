@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & Business Growth Tools - Compare Tools Like ActiveCampaign vs Mailmodo</title>
+  <meta name="description" content="Compare top AI and business tools like ActiveCampaign vs Mailmodo, Jasper AI, Semrush, and more to boost your startup and marketing efforts with detailed insights.">
+  <meta name="keywords" content="ActiveCampaign vs Mailmodo, compare tools, AI tools, business growth, marketing tools, SEO tools, email marketing comparison, influencer marketing">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
+</head>
+<body class="bg-gray-100 font-sans" id="body">
+  <header class="bg-blue-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">AI & Business Growth Tools</h1>
+      <p class="mt-2 text-lg">Compare tools like ActiveCampaign vs Mailmodo to boost your startup and marketing!</p>
+      <button id="toggleDarkMode" class="mt-4 bg-gray-300 text-black py-2 px-4 rounded hover:bg-gray-400">Toggle Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-8">
+    <div class="mb-6 flex flex-col md:flex-row md:space-x-4">
+      <div class="flex-1 mb-4 md:mb-0">
+        <label for="category-filter" class="block text-lg font-semibold mb-2">Filter by Category:</label>
+        <select id="category-filter" class="border rounded p-2 w-full">
+          <option value="all">All Categories</option>
+          <option value="content-creation">Content Creation</option>
+          <option value="video-audio">Video & Audio Generation</option>
+          <option value="image-editing">Image Editing & Generation</option>
+          <option value="seo-marketing">SEO & Marketing Optimization</option>
+          <option value="customer-service">Customer Service & Chatbots</option>
+          <option value="data-analysis">Data Analysis & Scraping</option>
+          <option value="productivity">Productivity & Project Management</option>
+          <option value="website-building">Website Building & Hosting</option>
+          <option value="business-listing">Business Listing Management</option>
+          <option value="email-marketing">Email Marketing</option>
+          <option value="referral-management">Referral & Affiliate Management</option>
+          <option value="finance-tools">Finance Tools</option>
+          <option value="hr-tools">HR Tools</option>
+          <option value="social-media-management">Social Media Account Management</option>
+          <option value="ppc-advertising-management">PPC Advertising Management</option>
+          <option value="e-commerce-management">E-commerce Management</option>
+          <option value="crm">Customer Relationship Management</option>
+          <option value="analytics-reporting">Analytics & Reporting</option>
+          <option value="inventory-supply-chain">Inventory & Supply Chain Management</option>
+          <option value="cybersecurity-data-protection">Cybersecurity & Data Protection</option>
+          <option value="other">Other</option>
+          <option value="influencer-marketing">Influencer Marketing</option>
+          <option value="ai-content-creation">AI Content Creation</option>
+          <option value="e-commerce-solutions">E-commerce Solutions</option>
+          <option value="affiliate-marketing">Affiliate Marketing</option>
+          <option value="music-distribution">Music Distribution</option>
+          <option value="music-creation">Music Creation</option>
+          <option value="video-creation">Video Creation</option>
+          <option value="video-editing">Video Editing</option>
+          <option value="presentation">Presentation</option>
+          <option value="resume-building">Resume Building</option>
+        </select>
+      </div>
+      <div class="flex-1 mb-4 md:mb-0">
+        <label for="search-input" class="block text-lg font-semibold mb-2">Search Tools:</label>
+        <input type="text" id="search-input" class="border rounded p-2 w-full" placeholder="Search by name or keyword...">
+      </div>
+      <div class="flex-1">
+        <label for="sort-option" class="block text-lg font-semibold mb-2">Sort By:</label>
+        <select id="sort-option" class="border rounded p-2 w-full">
+          <option value="name">Name (A-Z)</option>
+          <option value="category">Category</option>
+          <option value="popularity">Popularity</option>
+          <option value="benefit">Benefit</option>
+          <option value="heart-count">Heart Count</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-6" id="tag-cloud">
+      <h2 class="text-xl font-semibold mb-4">Tag Cloud</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Website">Website</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Data">Data</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Video">Video</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Image">Image</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Audio">Audio</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Contents">Contents</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Listing">Listing</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Marketing">Marketing</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="SEO">SEO</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Analytics">Analytics</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="CRM">CRM</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="E-commerce">E-commerce</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Social">Social</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="PPC">PPC</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Finance">Finance</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="HR">HR</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Security">Security</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Productivity">Productivity</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Inventory">Inventory</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Email">Email</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Referral">Referral</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Chatbot">Chatbot</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Organic Traffic">Organic Traffic</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Influencer">Influencer</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Affiliate">Affiliate</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Music">Music</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Presentation">Presentation</span>
+        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Job Search">Job Search</span>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Compare Selected Tools</h2>
+      <div id="comparison-table" class="overflow-x-auto hidden">
+        <div class="desktop-table overflow-x-auto">
+          <table class="w-full bg-white rounded-lg shadow-md">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="p-4 text-left">Tool</th>
+                <th class="p-4 text-left">Key Features</th>
+                <th class="p-4 text-left">Pros</th>
+                <th class="p-4 text-left">Cons</th>
+                <th class="p-4 text-left">Pricing (Starting)</th>
+                <th class="p-4 text-left">Free Trial</th>
+                <th class="p-4 text-left">Ease of Use</th>
+                <th class="p-4 text-left">Support Availability</th>
+                <th class="p-4 text-left">Integration Count</th>
+                <th class="p-4 text-left">User Rating</th>
+                <th class="p-4 text-left">Action</th>
+              </tr>
+            </thead>
+            <tbody id="comparison-body"></tbody>
+          </table>
+        </div>
+        <div class="mobile-slider swiper-container hidden">
+          <div class="swiper-wrapper" id="comparison-slider"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="mt-4 flex space-x-4">
+          <button id="save-comparison" class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Save as Image</button>
+          <button id="share-comparison" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Share Link</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading" class="text-center py-4 hidden">
+      <p class="text-gray-500">Loading...</p>
+    </div>
+
+    <div id="programs" class="space-y-6"></div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>© 2025 AI & Business Growth Tools Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const programs = [
+      { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "ActiveCampaign", category: "email-marketing", link: "https://www.activecampaign.com", benefit: "Automate email marketing and CRM with advanced features, enhancing customer engagement and sales.", popularity: 9, tags: ["Email", "CRM", "Marketing"], meta: { title: "ActiveCampaign - Email & CRM Automation", description: "Automate email and CRM with ActiveCampaign for better engagement and organic traffic." }, review: "/review/activecampaign", heartCount: 0, features: ["Email automation", "CRM", "Landing pages"], pros: ["Robust automation", "Good deliverability"], cons: ["High cost", "Slow loading"], pricing: "$29/month", rating: 4.6, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "20+" },
+      { name: "Mailmodo", category: "email-marketing", link: "https://www.mailmodo.com", benefit: "Enhance email campaigns with interactive AI tools, tailored for engagement and revenue.", popularity: 7, tags: ["Email", "Marketing"], meta: { title: "Mailmodo - Interactive Email Marketing", description: "Boost email engagement with Mailmodo's interactive tools for organic traffic." }, review: "/review/mailmodo", heartCount: 0, features: ["Interactive emails", "AMP support", "Analytics"], pros: ["Affordable", "High deliverability"], cons: ["Limited integrations"], pricing: "$99/month", rating: 4.5, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "10+" },
+      { name: "Semrush", category: "seo-marketing", link: "https://www.semrush.com", benefit: "Boost website traffic with AI-powered SEO and marketing tools, offering insights for keyword research and competitor analysis.", popularity: 9, tags: ["Website", "SEO", "Marketing"], meta: { title: "Semrush - SEO & Marketing Tool", description: "Increase organic traffic with Semrush's AI-powered SEO and marketing insights." }, review: "/review/semrush", heartCount: 0, features: ["Keyword research", "Competitor analysis", "Site audit"], pros: ["Comprehensive", "Educational resources"], cons: ["Expensive", "Learning curve"], pricing: "$139.95/month", rating: 4.8, freeTrial: "Yes, 7 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "25+" },
+      { name: "Writesonic", category: "content-creation", link: "https://writesonic.com", benefit: "Generate SEO-friendly content and AI-powered chatbots quickly, enhancing marketing campaigns with compelling copy.", popularity: 7, tags: ["Contents", "Chatbot", "Marketing"], meta: { title: "Writesonic - SEO Content & Chatbots", description: "Create SEO-friendly content and chatbots with Writesonic to boost organic traffic." }, review: "/review/writesonic", heartCount: 0, features: ["Content generation", "Chatbots", "SEO tools"], pros: ["Fast generation", "Affordable"], cons: ["Less customization"], pricing: "$12.67/month", rating: 4.4, freeTrial: "Yes, 10 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "12+" },
+      { name: "Synthesia", category: "video-audio", link: "https://www.synthesia.io", benefit: "Create professional AI-generated videos for training, marketing, or product demos, saving time and reducing costs.", popularity: 6, tags: ["Video", "Marketing"], meta: { title: "Synthesia - AI Video Creation", description: "Produce AI videos with Synthesia to enhance marketing and organic traffic." }, review: "/review/synthesia", heartCount: 0, features: ["AI avatars", "Video scripts"], pros: ["Easy to use", "Cost-effective"], cons: ["Limited languages"], pricing: "$22/month", rating: 4.6, freeTrial: "No", easeOfUse: 5, supportAvailability: "Business hours", integrationCount: "8+" },
+      { name: "Featuring", category: "influencer-marketing", link: "https://featuring.co", benefit: "Manage influencer searches, campaigns, and performance analysis in one platform, streamlining marketing efforts.", popularity: 7, tags: ["Influencer", "Marketing"], meta: { title: "Featuring - Influencer Marketing Platform", description: "Simplify influencer marketing with Featuring's all-in-one solution." }, review: "/review/featuring", heartCount: 0, features: ["Influencer search", "Campaign management", "Analytics"], pros: ["Automated reporting", "Data-driven decisions"], cons: ["Limited global reach"], pricing: "$199/month", rating: 4.5, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "Upfluence", category: "influencer-marketing", link: "https://upfluence.com", benefit: "Connect brands with influencers across multiple platforms, enhancing global marketing campaigns.", popularity: 8, tags: ["Influencer", "E-commerce"], meta: { title: "Upfluence - Global Influencer Platform", description: "Boost campaigns with Upfluence's extensive influencer network." }, review: "/review/upfluence", heartCount: 0, features: ["Influencer discovery", "Campaign automation", "E-commerce integration"], pros: ["Large influencer pool", "Agency support"], cons: ["Expensive", "Limited micro-influencer options"], pricing: "$478/month", rating: 4.6, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "20+" },
+      { name: "Tagger Media", category: "influencer-marketing", link: "https://www.taggermedia.com", benefit: "Provide data-driven insights for influencer marketing, targeting the right audience effectively.", popularity: 7, tags: ["Influencer", "Analytics"], meta: { title: "Tagger Media - Data-Driven Marketing", description: "Optimize campaigns with Tagger Media's analytics tools." }, review: "/review/tagger-media", heartCount: 0, features: ["Audience targeting", "Performance tracking", "Data visualization"], pros: ["Accurate targeting", "Real-time reports"], cons: ["Complex UI"], pricing: "$299/month", rating: 4.7, freeTrial: "No", easeOfUse: 2, supportAvailability: "Business hours", integrationCount: "10+" },
+      { name: "Midjourney", category: "ai-content-creation", link: "https://www.midjourney.com", benefit: "Generate high-quality AI images for marketing and creative projects with ease.", popularity: 6, tags: ["Image", "AI"], meta: { title: "Midjourney - AI Image Generation", description: "Create stunning visuals with Midjourney for marketing." }, review: "/review/midjourney", heartCount: 0, features: ["AI image generation", "Customization"], pros: ["High-quality output", "Creative flexibility"], cons: ["Subscription cost"], pricing: "$10/month", rating: 4.5, freeTrial: "No", easeOfUse: 4, supportAvailability: "No", integrationCount: "5+" },
+      { name: "Shopify", category: "e-commerce-solutions", link: "https://www.shopify.com", benefit: "Provide a comprehensive platform for managing online stores, payments, and inventory.", popularity: 9, tags: ["E-commerce", "Inventory"], meta: { title: "Shopify - E-commerce Platform", description: "Build and manage your online store with Shopify." }, review: "/review/shopify", heartCount: 0, features: ["Store management", "Payment processing", "Inventory tracking"], pros: ["User-friendly", "Scalable"], cons: ["Transaction fees"], pricing: "$39/month", rating: 4.8, freeTrial: "Yes, 3 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "30+" },
+      { name: "DeepBrain AI", category: "video-audio", link: "https://www.deepbrain.io", benefit: "Generate realistic AI avatars and videos for marketing and training, offering customizable solutions.", popularity: 6, tags: ["Video", "AI"], meta: { title: "DeepBrain AI - AI Video Avatars", description: "Create realistic videos with DeepBrain AI for marketing." }, review: "/review/deepbrain-ai", heartCount: 0, features: ["AI avatars", "Voice synthesis"], pros: ["Realistic output", "Customizable"], cons: ["High cost"], pricing: "$29/month", rating: 4.4, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "Business hours", integrationCount: "10+" },
+      { name: "CustomGPT.ai", category: "customer-service", link: "https://customgpt.ai", benefit: "Build custom AI chatbots tailored to your business needs, improving customer support efficiency.", popularity: 5, tags: ["Chatbot", "Customer Service"], meta: { title: "CustomGPT.ai - Custom Chatbots", description: "Enhance support with CustomGPT.ai's tailored chatbots." }, review: "/review/customgpt-ai", heartCount: 0, features: ["Custom chatbot", "Integration"], pros: ["Flexible", "Easy setup"], cons: ["Limited free tier"], pricing: "$19/month", rating: 4.3, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "8+" },
+      { name: "Browse AI", category: "data-analysis", link: "https://browse.ai", benefit: "Automate web scraping and data extraction for market research and competitor analysis.", popularity: 6, tags: ["Data", "Analytics"], meta: { title: "Browse AI - Web Scraping Tool", description: "Automate data collection with Browse AI." }, review: "/review/browse-ai", heartCount: 0, features: ["Web scraping", "Data export"], pros: ["User-friendly", "Accurate"], cons: ["Limited scale"], pricing: "$19/month", rating: 4.5, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "Canva", category: "image-editing", link: "https://www.canva.com", benefit: "Create stunning graphics and designs for marketing with an easy-to-use interface.", popularity: 10, tags: ["Image", "Marketing"], meta: { title: "Canva - Graphic Design Tool", description: "Design visuals easily with Canva for marketing." }, review: "/review/canva", heartCount: 0, features: ["Graphic design", "Templates"], pros: ["Free tier", "Intuitive"], cons: ["Limited advanced features"], pricing: "$12.99/month", rating: 4.7, freeTrial: "No", easeOfUse: 5, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "Grammarly", category: "productivity", link: "https://www.grammarly.com", benefit: "Enhance writing quality with AI-powered grammar and style suggestions for professional communication.", popularity: 9, tags: ["Contents", "Productivity"], meta: { title: "Grammarly - Writing Assistant", description: "Improve writing with Grammarly's AI tools." }, review: "/review/grammarly", heartCount: 0, features: ["Grammar check", "Style suggestions"], pros: ["Accurate", "Real-time"], cons: ["Subscription cost"], pricing: "$12/month", rating: 4.6, freeTrial: "Yes, 7 days", easeOfUse: 5, supportAvailability: "24/7", integrationCount: "10+" },
+      { name: "Murf AI", category: "video-audio", link: "https://murf.ai", benefit: "Generate realistic voiceovers for videos and podcasts with AI, saving production time.", popularity: 7, tags: ["Audio", "Video"], meta: { title: "Murf AI - AI Voiceovers", description: "Create voiceovers with Murf AI for videos." }, review: "/review/murf-ai", heartCount: 0, features: ["Voice synthesis", "Multiple languages"], pros: ["Natural voices", "Easy to use"], cons: ["Limited free options"], pricing: "$19/month", rating: 4.5, freeTrial: "Yes, 10 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "Wix", category: "website-building", link: "https://www.wix.com", benefit: "Build and host professional websites with drag-and-drop tools, suitable for beginners and businesses.", popularity: 8, tags: ["Website", "Hosting"], meta: { title: "Wix - Website Builder", description: "Create websites easily with Wix's drag-and-drop tools." }, review: "/review/wix", heartCount: 0, features: ["Drag-and-drop builder", "Hosting"], pros: ["Easy to use", "Customizable"], cons: ["Limited scalability"], pricing: "$14/month", rating: 4.6, freeTrial: "No", easeOfUse: 5, supportAvailability: "24/7", integrationCount: "20+" },
+      { name: "Squarespace", category: "website-building", link: "https://www.squarespace.com", benefit: "Design elegant websites with built-in hosting and SEO tools, perfect for creative professionals.", popularity: 7, tags: ["Website", "Hosting"], meta: { title: "Squarespace - Website Design", description: "Build stunning websites with Squarespace's tools." }, review: "/review/squarespace", heartCount: 0, features: ["Design templates", "SEO tools"], pros: ["Aesthetic designs", "Reliable hosting"], cons: ["Higher cost"], pricing: "$16/month", rating: 4.7, freeTrial: "No", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "WordPress.com", category: "website-building", link: "https://wordpress.com", benefit: "Offer flexible website building and hosting with extensive plugin support for customization.", popularity: 9, tags: ["Website", "Hosting"], meta: { title: "WordPress.com - Flexible Hosting", description: "Customize websites with WordPress.com's plugins." }, review: "/review/wordpress-com", heartCount: 0, features: ["Plugin support", "Hosting"], pros: ["Highly customizable", "Large community"], cons: ["Learning curve"], pricing: "$45/month", rating: 4.6, freeTrial: "No", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "50+" },
+      { name: "AffiliateWP", category: "affiliate-marketing", link: "https://affiliatewp.com", benefit: "Manage affiliate programs with tracking and reporting features.", popularity: 6, tags: ["Affiliate", "Marketing"], meta: { title: "AffiliateWP - Affiliate Management", description: "Track and manage affiliates with AffiliateWP." }, review: "/review/affiliatewp", heartCount: 0, features: ["Affiliate tracking", "Reporting"], pros: ["Easy integration", "Detailed reports"], cons: ["Requires WordPress"], pricing: "$149/year", rating: 4.4, freeTrial: "No", easeOfUse: 3, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "Rewardful", category: "affiliate-marketing", link: "https://www.rewardful.com", benefit: "Simplify affiliate tracking for SaaS businesses.", popularity: 5, tags: ["Affiliate", "SaaS"], meta: { title: "Rewardful - SaaS Affiliate Tracking", description: "Simplify affiliate tracking for SaaS with Rewardful." }, review: "/review/rewardful", heartCount: 0, features: ["Affiliate tracking", "SaaS integration"], pros: ["Simple setup", "Affordable"], cons: ["Limited features"], pricing: "$29/month", rating: 4.3, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "8+" },
+      { name: "Referral Factory", category: "affiliate-marketing", link: "https://www.referralfactory.com", benefit: "Create custom referral programs easily.", popularity: 6, tags: ["Referral", "Marketing"], meta: { title: "Referral Factory - Referral Programs", description: "Build custom referral programs with Referral Factory." }, review: "/review/referral-factory", heartCount: 0, features: ["Custom referrals", "Templates"], pros: ["User-friendly", "Flexible"], cons: ["Basic analytics"], pricing: "$39/month", rating: 4.5, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "10+" },
+      { name: "Viral Loops", category: "affiliate-marketing", link: "https://viral-loops.com", benefit: "Run viral referral campaigns with gamification.", popularity: 7, tags: ["Referral", "Marketing"], meta: { title: "Viral Loops - Viral Campaigns", description: "Run gamified referral campaigns with Viral Loops." }, review: "/review/viral-loops", heartCount: 0, features: ["Gamification", "Referral tracking"], pros: ["Engaging", "Scalable"], cons: ["Complex setup"], pricing: "$99/month", rating: 4.6, freeTrial: "Yes, 7 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "12+" },
+      { name: "DistroKid", category: "music-distribution", link: "https://distrokid.com", benefit: "Distribute music to platforms like Spotify and TikTok.", popularity: 8, tags: ["Music", "Distribution"], meta: { title: "DistroKid - Music Distribution", description: "Distribute music easily with DistroKid." }, review: "/review/distrokid", heartCount: 0, features: ["Music distribution", "Analytics"], pros: ["Affordable", "Wide reach"], cons: ["No free tier"], pricing: "$22.99/year", rating: 4.7, freeTrial: "No", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "Suno AI", category: "music-creation", link: "https://suno.ai", benefit: "Generate original music with AI.", popularity: 6, tags: ["Music", "AI"], meta: { title: "Suno AI - AI Music Creation", description: "Create original music with Suno AI." }, review: "/review/suno-ai", heartCount: 0, features: ["AI music generation", "Customization"], pros: ["Innovative", "Easy to use"], cons: ["Limited free options"], pricing: "$10/month", rating: 4.4, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "No", integrationCount: "5+" },
+      { name: "Veo", category: "video-creation", link: "https://www.veo.com", benefit: "Create AI-generated b-roll for social media.", popularity: 5, tags: ["Video", "Marketing"], meta: { title: "Veo - AI Video Creation", description: "Generate b-roll with Veo for social media." }, review: "/review/veo", heartCount: 0, features: ["AI b-roll", "Social media focus"], pros: ["Quick generation", "Affordable"], cons: ["Limited features"], pricing: "$19.99/month", rating: 4.3, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "OpusClip", category: "video-editing", link: "https://opusclip.com", benefit: "Break down videos into shareable clips.", popularity: 6, tags: ["Video", "Editing"], meta: { title: "OpusClip - Video Clipping", description: "Edit videos into clips with OpusClip." }, review: "/review/opusclip", heartCount: 0, features: ["Video clipping", "Social media optimization"], pros: ["Time-saving", "Effective"], cons: ["Basic editing"], pricing: "$19/month", rating: 4.5, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "8+" },
+      { name: "HubSpot AI", category: "email-marketing", link: "https://www.hubspot.com", benefit: "Automate email writing for marketing teams.", popularity: 8, tags: ["Email", "Marketing"], meta: { title: "HubSpot AI - Email Automation", description: "Automate emails with HubSpot AI." }, review: "/review/hubspot-ai", heartCount: 0, features: ["AI email writing", "CRM integration"], pros: ["Powerful", "Integrated"], cons: ["Higher cost"], pricing: "$15/month", rating: 4.6, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "30+" },
+      { name: "Fyxer", category: "productivity", link: "https://www.fyxer.com", benefit: "Automate email categorization and draft responses.", popularity: 5, tags: ["Productivity", "Email"], meta: { title: "Fyxer - Email Automation", description: "Automate email tasks with Fyxer." }, review: "/review/fyxer", heartCount: 0, features: ["Email categorization", "Response drafting"], pros: ["Efficient", "Simple"], cons: ["Limited scope"], pricing: "Contact for pricing", rating: 4.4, freeTrial: "No", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "Gamma", category: "presentation", link: "https://gamma.app", benefit: "Generate presentations from notes or prompts.", popularity: 7, tags: ["Presentation", "AI"], meta: { title: "Gamma - AI Presentations", description: "Create presentations with Gamma." }, review: "/review/gamma", heartCount: 0, features: ["AI presentation", "Templates"], pros: ["Fast", "Creative"], cons: ["Limited customization"], pricing: "$10/month", rating: 4.5, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "10+" },
+      { name: "Teal", category: "resume-building", link: "https://www.tealhq.com", benefit: "Create tailored resumes with AI suggestions.", popularity: 6, tags: ["Productivity", "Job Search"], meta: { title: "Teal - Resume Builder", description: "Build resumes with Teal's AI tools." }, review: "/review/teal", heartCount: 0, features: ["AI resume suggestions", "Tracking"], pros: ["Tailored", "User-friendly"], cons: ["Basic features"], pricing: "$29/month", rating: 4.4, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "Emplifi.io", category: "social-media-management", link: "https://emplifi.io", benefit: "Manage social media and influencer campaigns.", popularity: 7, tags: ["Social Media", "Marketing"], meta: { title: "Emplifi - Social Media Management", description: "Manage social media with Emplifi." }, review: "/review/emplifi", heartCount: 0, features: ["Social media tools", "Influencer tracking"], pros: ["Comprehensive", "Insightful"], cons: ["Complex"], pricing: "Contact for pricing", rating: 4.6, freeTrial: "No", easeOfUse: 2, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "Brandwatch", category: "influencer-marketing", link: "https://www.brandwatch.com", benefit: "Analyze influencer audience and campaign performance.", popularity: 8, tags: ["Influencer", "Analytics"], meta: { title: "Brandwatch - Influencer Analytics", description: "Analyze influencers with Brandwatch." }, review: "/review/brandwatch", heartCount: 0, features: ["Audience analysis", "Campaign tracking"], pros: ["Deep insights", "Robust"], cons: ["High cost"], pricing: "Contact for pricing", rating: 4.7, freeTrial: "No", easeOfUse: 2, supportAvailability: "Business hours", integrationCount: "10+" },
+      { name: "Heepsy", category: "influencer-marketing", link: "https://heepsy.com", benefit: "Find micro-influencers for small businesses.", popularity: 6, tags: ["Influencer", "Marketing"], meta: { title: "Heepsy - Micro-Influencer Search", description: "Find micro-influencers with Heepsy." }, review: "/review/heepsy", heartCount: 0, features: ["Influencer search", "Verification"], pros: ["Affordable", "Accurate"], cons: ["Limited reach"], pricing: "$39/month", rating: 4.5, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "5+" },
+      { name: "Traackr", category: "influencer-marketing", link: "https://www.traackr.com", benefit: "Optimize influencer spend for large-scale campaigns.", popularity: 7, tags: ["Influencer", "Analytics"], meta: { title: "Traackr - Influencer Optimization", description: "Optimize influencer campaigns with Traackr." }, review: "/review/traackr", heartCount: 0, features: ["Spend optimization", "Analytics"], pros: ["Scalable", "Detailed"], cons: ["Expensive"], pricing: "Contact for pricing", rating: 4.6, freeTrial: "No", easeOfUse: 2, supportAvailability: "Business hours", integrationCount: "10+" },
+      { name: "Influencity", category: "influencer-marketing", link: "https://influencity.com", benefit: "Manage campaigns and forecast results.", popularity: 8, tags: ["Influencer", "Marketing"], meta: { title: "Influencity - Campaign Management", description: "Manage and forecast with Influencity." }, review: "/review/influencity", heartCount: 0, features: ["Campaign management", "Forecasting"], pros: ["Insightful", "User-friendly"], cons: ["Costly"], pricing: "$198/month", rating: 4.7, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "Grin", category: "influencer-marketing", link: "https://grin.co", benefit: "Streamline influencer partnerships and payments.", popularity: 7, tags: ["Influencer", "E-commerce"], meta: { title: "Grin - Influencer Partnerships", description: "Streamline partnerships with Grin." }, review: "/review/grin", heartCount: 0, features: ["Partnership management", "Payments"], pros: ["Efficient", "Integrated"], cons: ["Complex setup"], pricing: "Contact for pricing", rating: 4.6, freeTrial: "No", easeOfUse: 3, supportAvailability: "Business hours", integrationCount: "10+" },
+      { name: "ClickUp", category: "project-management", link: "https://clickup.com", benefit: "Manage workflows with custom influencer tracking.", popularity: 9, tags: ["Productivity", "Management"], meta: { title: "ClickUp - Project Management", description: "Manage projects with ClickUp." }, review: "/review/clickup", heartCount: 0, features: ["Workflow management", "Tracking"], pros: ["Versatile", "Affordable"], cons: ["Learning curve"], pricing: "$7/month", rating: 4.8, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "20+" },
+      { name: "Tidio", category: "customer-service", link: "https://www.tidio.com", benefit: "Provide AI-assisted customer support.", popularity: 7, tags: ["Chatbot", "Customer Service"], meta: { title: "Tidio - AI Customer Support", description: "Enhance support with Tidio." }, review: "/review/tidio", heartCount: 0, features: ["AI chat", "Support tools"], pros: ["Easy to use", "Free tier"], cons: ["Limited advanced features"], pricing: "$19/month", rating: 4.5, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "10+" },
+      { name: "Brandwell", category: "content-creation", link: "https://www.brandwell.ai", benefit: "Generate high-quality SEO blog posts.", popularity: 6, tags: ["Contents", "SEO"], meta: { title: "Brandwell - SEO Blog Posts", description: "Create SEO posts with Brandwell." }, review: "/review/brandwell", heartCount: 0, features: ["SEO content", "Blog generation"], pros: ["Effective", "Targeted"], cons: ["Limited variety"], pricing: "Contact for pricing", rating: 4.4, freeTrial: "No", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
+      { name: "Clearscope", category: "seo-tools", link: "https://www.clearscope.io", benefit: "Optimize content for search engine rankings.", popularity: 7, tags: ["SEO", "Contents"], meta: { title: "Clearscope - SEO Optimization", description: "Optimize content with Clearscope." }, review: "/review/clearscope", heartCount: 0, features: ["Content optimization", "Keyword analysis"], pros: ["Detailed", "Accurate"], cons: ["Expensive"], pricing: "$189/month", rating: 4.6, freeTrial: "Yes, 7 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "10+" },
+      { name: "DALL·E", category: "image-creation", link: "https://openai.com/dall-e", benefit: "Generate unique AI images for branding.", popularity: 7, tags: ["Image", "AI"], meta: { title: "DALL·E - AI Image Creation", description: "Generate images with DALL·E." }, review: "/review/dalle", heartCount: 0, features: ["AI image generation", "Customization"], pros: ["Creative", "Unique"], cons: ["Subscription required"], pricing: "Via ChatGPT subscription", rating: 4.5, freeTrial: "No", easeOfUse: 4, supportAvailability: "No", integrationCount: "5+" },
+      { name: "Writer", category: "content-creation", link: "https://writer.com", benefit: "Enhance copywriting with brand voice control.", popularity: 6, tags: ["Contents", "Marketing"], meta: { title: "Writer - Copywriting Tool", description: "Improve copy with Writer." }, review: "/review/writer", heartCount: 0, features: ["Brand voice", "Content generation"], pros: ["Customizable", "Efficient"], cons: ["Limited free tier"], pricing: "$18/month", rating: 4.4, freeTrial: "Yes, 14 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "10+" },
+      { name: "Surfer SEO", category: "seo-tools", link: "https://www.surferseo.com", benefit: "Improve content quality for SERP rankings.", popularity: 8, tags: ["SEO", "Contents"], meta: { title: "Surfer SEO - Content Optimization", description: "Boost SEO with Surfer SEO." }, review: "/review/surfer-seo", heartCount: 0, features: ["Content analysis", "SEO tools"], pros: ["Powerful", "Data-driven"], cons: ["Costly"], pricing: "$89/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "Predis.ai", category: "social-media-management", link: "https://predis.ai", benefit: "Generate AI posts for social media.", popularity: 6, tags: ["Social Media", "AI"], meta: { title: "Predis.ai - AI Social Posts", description: "Create social posts with Predis.ai." }, review: "/review/predis-ai", heartCount: 0, features: ["AI post generation", "Scheduling"], pros: ["Easy to use", "Affordable"], cons: ["Limited customization"], pricing: "$27/month", rating: 4.5, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "8+" },
+      { name: "Publer", category: "social-media-management", link: "https://publer.com", benefit: "Manage and schedule social media content.", popularity: 7, tags: ["Social Media", "Marketing"], meta: { title: "Publer - Social Media Scheduling", description: "Schedule content with Publer." }, review: "/review/publer", heartCount: 0, features: ["Scheduling", "Analytics"], pros: ["Free tier", "Simple"], cons: ["Basic features"], pricing: "Free tier available", rating: 4.6, freeTrial: "No", easeOfUse: 5, supportAvailability: "24/7", integrationCount: "10+" },
+      { name: "ContentStudio", category: "social-media-management", link: "https://contentstudio.io", benefit: "Track influencers and automate content scheduling.", popularity: 7, tags: ["Social Media", "Analytics"], meta: { title: "ContentStudio - Social Media Tools", description: "Manage content with ContentStudio." }, review: "/review/contentstudio", heartCount: 0, features: ["Influencer tracking", "Scheduling"], pros: ["Comprehensive", "Effective"], cons: ["Higher cost"], pricing: "$49/month", rating: 4.6, freeTrial: "Yes, 14 days", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "15+" },
+      { name: "Buffer", category: "social-media-management", link: "https://buffer.com", benefit: "Schedule posts and analyze social performance.", popularity: 8, tags: ["Social Media", "Marketing"], meta: { title: "Buffer - Social Media Management", description: "Analyze performance with Buffer." }, review: "/review/buffer", heartCount: 0, features: ["Scheduling", "Analytics"], pros: ["User-friendly", "Free tier"], cons: ["Limited advanced features"], pricing: "Free tier available", rating: 4.7, freeTrial: "No", easeOfUse: 5, supportAvailability: "24/7", integrationCount: "12+" },
+      { name: "Fathom", category: "productivity", link: "https://www.fathom.video", benefit: "Automate meeting notes and transcriptions.", popularity: 6, tags: ["Productivity", "AI"], meta: { title: "Fathom - Meeting Automation", description: "Automate meetings with Fathom." }, review: "/review/fathom", heartCount: 0, features: ["Meeting notes", "Transcriptions"], pros: ["Accurate", "Time-saving"], cons: ["Subscription cost"], pricing: "$24/month", rating: 4.5, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "5+" }
+    ];
+
+    const programsContainer = document.getElementById('programs');
+    const categoryFilter = document.getElementById('category-filter');
+    const searchInput = document.getElementById('search-input');
+    const sortOption = document.getElementById('sort-option');
+    const comparisonTable = document.getElementById('comparison-table');
+    const comparisonBody = document.getElementById('comparison-body');
+    const comparisonSlider = document.getElementById('comparison-slider');
+    const saveComparisonBtn = document.getElementById('save-comparison');
+    const shareComparisonBtn = document.getElementById('share-comparison');
+    const loading = document.getElementById('loading');
+    let selectedPrograms = [];
+    let lastClickTime = {};
+    const DAILY_LIMIT = 10;
+    const COOLDOWN = 1000;
+
+    let swiperInitialized = false;
+    window.addEventListener('load', () => {
+      try {
+        const swiper = new Swiper('.mobile-slider', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: { el: '.swiper-pagination', clickable: true },
+          navigation: { nextEl: '.swiper-button-prev', prevEl: '.swiper-button-next' },
+        });
+        swiperInitialized = true;
+      } catch (e) {
+        console.error('Swiper initialization failed:', e);
+      }
+    });
+
+    function loadSavedFilters() {
+      const savedCategory = localStorage.getItem('categoryFilter') || 'all';
+      const savedSearch = localStorage.getItem('searchTerm') || '';
+      const savedSort = localStorage.getItem('sortOption') || 'name';
+      categoryFilter.value = savedCategory;
+      searchInput.value = savedSearch;
+      sortOption.value = savedSort;
+      displayPrograms(savedCategory, savedSearch, savedSort);
+    }
+
+    function saveFilters(category, searchTerm, sortBy) {
+      localStorage.setItem('categoryFilter', category);
+      localStorage.setItem('searchTerm', searchTerm);
+      localStorage.setItem('sortOption', sortBy);
+    }
+
+    function loadHeartCounts() {
+      programs.forEach(program => {
+        const savedCount = localStorage.getItem(`heartCount_${program.name}`);
+        if (savedCount !== null) {
+          program.heartCount = parseInt(savedCount, 10);
+        }
+      });
+    }
+
+    function saveHeartCount(programName, count) {
+      localStorage.setItem(`heartCount_${programName}`, count);
+    }
+
+    function getDailyClicks() {
+      const today = new Date().toDateString();
+      let dailyClicks = JSON.parse(localStorage.getItem('dailyClicks') || '{}');
+      if (!dailyClicks[today]) {
+        dailyClicks[today] = 0;
+      }
+      return dailyClicks;
+    }
+
+    function saveDailyClicks(dailyClicks) {
+      localStorage.setItem('dailyClicks', JSON.stringify(dailyClicks));
+    }
+
+    function renderStars(rating) {
+      const totalStars = 5;
+      const fullStars = Math.floor(rating);
+      const partialStar = rating % 1;
+      let starsHtml = '';
+      for (let i = 1; i <= totalStars; i++) {
+        if (i <= fullStars) {
+          starsHtml += `<span class="text-yellow-400">★</span>`;
+        } else if (i === fullStars + 1 && partialStar > 0) {
+          starsHtml += `<span class="text-yellow-400 inline-block" style="clip-path: inset(0 ${100 - (partialStar * 100)}% 0 0);">★</span>`;
+        } else {
+          starsHtml += `<span class="text-gray-300">★</span>`;
+        }
+      }
+      return starsHtml;
+    }
+
+    function showLearnMorePopup(program, card) {
+      try {
+        let learnMoreSection = card.querySelector('.learn-more-section');
+        if (!learnMoreSection) {
+          learnMoreSection = document.createElement('div');
+          learnMoreSection.className = 'learn-more-section mt-4 p-4 rounded-lg hidden';
+          learnMoreSection.innerHTML = `
+            <h3 class="text-lg font-semibold mb-2">${program.name} Overview 🎯</h3>
+            <p class="mb-2">${program.meta.description}. Ideal for ${program.benefit.split('.')[0].toLowerCase()}.</p>
+            <div class="bg-blue-100 p-3 mb-2 rounded flex items-center">
+              <span class="mr-2 text-blue-600">💰</span>
+              <div>
+                <h4 class="font-bold text-blue-800 mb-1">Pricing</h4>
+                <p class="ml-4">${program.pricing}</p>
+              </div>
+            </div>
+            <div class="bg-orange-100 p-3 mb-2 rounded flex items-center">
+              <span class="mr-2 text-orange-600">🎁</span>
+              <div>
+                <h4 class="font-bold text-orange-800 mb-1">Free Trial</h4>
+                <p class="ml-4">${program.freeTrial || 'No'}</p>
+              </div>
+            </div>
+            <div class="bg-purple-100 p-3 mb-2 rounded flex items-center">
+              <span class="mr-2 text-purple-600">👍</span>
+              <div>
+                <h4 class="font-bold text-purple-800 mb-1">Ease of Use</h4>
+                <p class="ml-4">${program.easeOfUse}/5</p>
+              </div>
+            </div>
+            <div class="bg-teal-100 p-3 mb-2 rounded flex items-center">
+              <span class="mr-2 text-teal-600">🛡️</span>
+              <div>
+                <h4 class="font-bold text-teal-800 mb-1">Support Availability</h4>
+                <p class="ml-4">${program.supportAvailability}</p>
+              </div>
+            </div>
+            <div class="bg-indigo-100 p-3 mb-2 rounded flex items-center">
+              <span class="mr-2 text-indigo-600">🔗</span>
+              <div>
+                <h4 class="font-bold text-indigo-800 mb-1">Integration Count</h4>
+                <p class="ml-4">${program.integrationCount}</p>
+              </div>
+            </div>
+            <div class="bg-green-100 p-3 mb-2 rounded flex items-center">
+              <span class="mr-2 text-green-600">⭐</span>
+              <div>
+                <h4 class="font-bold text-green-800 mb-1">User Feedback</h4>
+                <p class="ml-4">${program.pros.join(', ')} 😊</p>
+              </div>
+            </div>
+            <div class="bg-yellow-100 p-3 mb-2 rounded flex items-center">
+              <span class="mr-2 text-yellow-600">💡</span>
+              <div>
+                <h4 class="font-bold text-yellow-800 mb-1">Insights</h4>
+                <p class="ml-4">${program.cons.join(', ')} 📝</p>
+              </div>
+            </div>
+            <a href="${program.link}" target="_blank" class="text-blue-600 underline block mt-1">Explore Now</a>
+            <a href="${program.review}" target="_blank" class="text-green-600 underline block mt-1">Read Review 📖</a>
+            <button class="mt-2 text-red-600 underline" onclick="this.parentElement.classList.add('hidden')">Close ❌</button>
+          `;
+          card.appendChild(learnMoreSection);
+        }
+        learnMoreSection.classList.toggle('hidden');
+      } catch (e) {
+        console.error('Error in showLearnMorePopup:', e);
+      }
+    }
+
+    function displayPrograms(category, searchTerm = '', sortBy = 'name') {
+      try {
+        loading.classList.remove('hidden');
+        programsContainer.innerHTML = '';
+
+        let filteredPrograms = [...programs];
+        
+        if (category !== 'all') {
+          filteredPrograms = filteredPrograms.filter(p => p.category === category);
+        }
+        
+        if (searchTerm) {
+          filteredPrograms = filteredPrograms.filter(p => 
+            p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            p.benefit.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            (p.tags && p.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase())))
+          );
+        }
+
+        filteredPrograms.sort((a, b) => {
+          if (sortBy === 'name') {
+            return a.name.localeCompare(b.name);
+          } else if (sortBy === 'category') {
+            return a.category.localeCompare(b.category);
+          } else if (sortBy === 'popularity') {
+            return b.popularity - a.popularity;
+          } else if (sortBy === 'benefit') {
+            const keywords = ['conversions', 'efficiency', 'traffic', 'sales', 'engagement'];
+            const aScore = keywords.reduce((sum, keyword) => sum + (a.benefit.toLowerCase().includes(keyword) ? 1 : 0), 0);
+            const bScore = keywords.reduce((sum, keyword) => sum + (b.benefit.toLowerCase().includes(keyword) ? 1 : 0), 0);
+            return bScore - aScore;
+          } else if (sortBy === 'heart-count') {
+            return b.heartCount - a.heartCount;
+          }
+        });
+
+        if (filteredPrograms.length === 0) {
+          programsContainer.innerHTML = '<p class="text-center text-gray-500">No tools found.</p>';
+          loading.classList.add('hidden');
+          return;
+        }
+
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6';
+        filteredPrograms.forEach(program => {
+          const card = document.createElement('div');
+          card.className = 'bg-white p-6 rounded-lg shadow-md relative';
+          if (program.style) {
+            card.style = program.style;
+          }
+          card.innerHTML = `
+            <h2 class="text-xl font-semibold mb-2">${program.name}</h2>
+            <p class="mb-4">${program.benefit}</p>
+            <a href="${program.link}" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Explore Now</a>
+            <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 mt-2 learn-more-btn" data-learn-more='${JSON.stringify(program)}'>Learn More</button>
+            <button class="mt-2 text-blue-600 underline compare-btn" data-name="${program.name}">Add to Comparison</button>
+            <button class="absolute top-2 right-2 text-red-500 hover:text-red-700 heart-btn" data-name="${program.name}">❤️</button>
+            <span class="absolute top-8 right-2 text-sm">${program.heartCount}</span>
+          `;
+          grid.appendChild(card);
+        });
+        programsContainer.appendChild(grid);
+
+        const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+        learnMoreButtons.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const program = JSON.parse(e.target.getAttribute('data-learn-more'));
+            const card = e.target.closest('.bg-white');
+            showLearnMorePopup(program, card);
+          });
+        });
+
+        document.querySelectorAll('.compare-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const programName = btn.getAttribute('data-name');
+            toggleComparison(programName);
+          });
+        });
+
+        document.querySelectorAll('.heart-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const programName = btn.getAttribute('data-name');
+            const program = programs.find(p => p.name === programName);
+            const now = Date.now();
+            const dailyClicks = getDailyClicks();
+            const today = new Date().toDateString();
+
+            if (lastClickTime[programName] && (now - lastClickTime[programName] < COOLDOWN)) {
+              alert('Please wait 1 second before clicking again.');
+              return;
+            }
+
+            if (dailyClicks[today] >= DAILY_LIMIT) {
+              alert(`Daily limit of ${DAILY_LIMIT} hearts reached. Try again tomorrow.`);
+              return;
+            }
+
+            if (program) {
+              program.heartCount += 1;
+              saveHeartCount(programName, program.heartCount);
+              dailyClicks[today] += 1;
+              saveDailyClicks(dailyClicks);
+              lastClickTime[programName] = now;
+              displayPrograms(category, searchTerm, sortBy);
+            }
+          });
+        });
+
+        saveFilters(category, searchTerm, sortBy);
+        loading.classList.add('hidden');
+      } catch (e) {
+        console.error('Error in displayPrograms:', e);
+        programsContainer.innerHTML = '<p class="text-center text-red-500">An error occurred while loading tools. Check console for details.</p>';
+        loading.classList.add('hidden');
+      }
+    }
+
+    function toggleComparison(programName) {
+      try {
+        const program = programs.find(p => p.name === programName);
+        if (!selectedPrograms.some(p => p.name === programName)) {
+          if (selectedPrograms.length < 3) {
+            selectedPrograms.push(program);
+          } else {
+            alert('You can compare up to 3 tools at a time.');
+            return;
+          }
+        } else {
+          selectedPrograms = selectedPrograms.filter(p => p.name !== programName);
+        }
+        updateComparisonTable();
+      } catch (e) {
+        console.error('Error in toggleComparison:', e);
+      }
+    }
+
+    function updateComparisonTable() {
+      try {
+        comparisonBody.innerHTML = '';
+        comparisonSlider.innerHTML = '';
+        if (selectedPrograms.length === 0) {
+          comparisonTable.classList.add('hidden');
+          return;
+        }
+        comparisonTable.classList.remove('hidden');
+
+        selectedPrograms.forEach(program => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td class="p-4">${program.name}</td>
+            <td class="p-4">${program.features.join(', ')}</td>
+            <td class="p-4">${program.pros.join(', ')}</td>
+            <td class="p-4">${program.cons.join(', ')}</td>
+            <td class="p-4">${program.pricing}</td>
+            <td class="p-4">${program.freeTrial || 'No'}</td>
+            <td class="p-4">${program.easeOfUse}/5</td>
+            <td class="p-4">${program.supportAvailability}</td>
+            <td class="p-4">${program.integrationCount}</td>
+            <td class="p-4">${program.rating}/5</td>
+            <td class="p-4"><button class="bg-red-500 text-white px-2 py-1 rounded remove-btn" data-name="${program.name}">Remove</button></td>
+          `;
+          comparisonBody.appendChild(row);
+
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide bg-white p-6 rounded-lg shadow-md';
+          slide.innerHTML = `
+            <h3 class="text-lg font-semibold mb-2">${program.name}</h3>
+            <p><strong>Features:</strong> ${program.features.join(', ')}</p>
+            <p><strong>Pros:</strong> ${program.pros.join(', ')}</p>
+            <p><strong>Cons:</strong> ${program.cons.join(', ')}</p>
+            <p><strong>Pricing:</strong> ${program.pricing}</p>
+            <p><strong>Free Trial:</strong> ${program.freeTrial || 'No'}</p>
+            <p><strong>Ease of Use:</strong> ${program.easeOfUse}/5</p>
+            <p><strong>Support:</strong> ${program.supportAvailability}</p>
+            <p><strong>Integrations:</strong> ${program.integrationCount}</p>
+            <p><strong>Rating:</strong> ${program.rating}/5</p>
+            <button class="bg-red-500 text-white px-2 py-1 rounded mt-2 remove-btn" data-name="${program.name}">Remove</button>
+          `;
+          comparisonSlider.appendChild(slide);
+        });
+
+        document.querySelectorAll('.remove-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            selectedPrograms = selectedPrograms.filter(p => p.name !== btn.getAttribute('data-name'));
+            updateComparisonTable();
+          });
+        });
+
+        if (window.innerWidth < 640 && swiperInitialized) {
+          document.querySelector('.desktop-table').classList.add('hidden');
+          document.querySelector('.mobile-slider').classList.remove('hidden');
+          if (typeof Swiper !== 'undefined') {
+            swiper.update();
+          }
+        } else {
+          document.querySelector('.desktop-table').classList.remove('hidden');
+          document.querySelector('.mobile-slider').classList.add('hidden');
+        }
+      } catch (e) {
+        console.error('Error in updateComparisonTable:', e);
+      }
+    }
+
+    saveComparisonBtn.addEventListener('click', () => {
+      try {
+        const table = document.querySelector('.desktop-table');
+        if (table.classList.contains('hidden')) {
+          alert('Please switch to desktop view to save the comparison table as an image.');
+          return;
+        }
+        html2canvas(table, { scale: 2 }).then(canvas => {
+          const link = document.createElement('a');
+          link.download = 'comparison-table.png';
+          link.href = canvas.toDataURL('image/png');
+          link.click();
+        }).catch(e => {
+          console.error('html2canvas error:', e);
+          alert('Failed to generate image. Check console for details or ensure html2canvas is loaded.');
+        });
+      } catch (e) {
+        console.error('Error in saveComparison:', e);
+        alert('An error occurred while saving the image. Check console for details.');
+      }
+    });
+
+    shareComparisonBtn.addEventListener('click', () => {
+      try {
+        const baseUrl = window.location.href.split('?')[0];
+        const shareUrl = `${baseUrl}?compare=${encodeURIComponent(selectedPrograms.map(p => p.name).join(','))}`;
+        navigator.clipboard.writeText(shareUrl).then(() => {
+          alert('Shareable link copied to clipboard!');
+        }).catch(e => console.error('Clipboard error:', e));
+      } catch (e) {
+        console.error('Error in shareComparison:', e);
+      }
+    });
+
+    function loadSharedComparison() {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const compareParam = urlParams.get('compare');
+        if (compareParam) {
+          const programNames = compareParam.split(',');
+          selectedPrograms = programs.filter(p => programNames.includes(p.name));
+          updateComparisonTable();
+        }
+      } catch (e) {
+        console.error('Error in loadSharedComparison:', e);
+      }
+    }
+
+    categoryFilter.addEventListener('change', (e) => {
+      displayPrograms(e.target.value, searchInput.value, sortOption.value);
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      displayPrograms(categoryFilter.value, e.target.value, sortOption.value);
+    });
+
+    sortOption.addEventListener('change', (e) => {
+      displayPrograms(categoryFilter.value, searchInput.value, e.target.value);
+    });
+
+    document.querySelectorAll('.tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        const tagValue = tag.getAttribute('data-tag');
+        searchInput.value = tagValue;
+        displayPrograms(categoryFilter.value, tagValue, sortOption.value);
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      updateComparisonTable();
+    });
+
+    document.getElementById('toggleDarkMode').addEventListener('click', () => {
+      const body = document.getElementById('body');
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('bg-gray-100');
+        document.querySelector('header').classList.remove('bg-gray-900');
+        document.querySelector('header').classList.add('bg-blue-600');
+        document.querySelector('footer').classList.remove('bg-gray-700');
+        document.querySelector('footer').classList.add('bg-gray-800');
+      } else {
+        body.classList.add('dark-mode');
+        body.classList.remove('bg-gray-100');
+        body.classList.add('bg-gray-900');
+        document.querySelector('header').classList.remove('bg-blue-600');
+        document.querySelector('header').classList.add('bg-gray-900');
+        document.querySelector('footer').classList.remove('bg-gray-800');
+        document.querySelector('footer').classList.add('bg-gray-700');
+      }
+    });
+
+    loadHeartCounts();
+    loadSharedComparison();
+    loadSavedFilters();
+  </script>
+  <style>
+    .filled { color: #FFD700; }
+    .stars span { margin-right: 2px; position: relative; display: inline-block; }
+    .stars span:nth-child(n+6) { display: none; }
+    .dark-mode {
+      background-color: #1a202c;
+      color: #e2e8f0;
+    }
+    .dark-mode a { color: #81e6d9; }
+    .dark-mode .bg-white { background-color: #2d3748; }
+    .dark-mode .bg-gray-200 { background-color: #4a5568; }
+    .dark-mode .text-gray-500 { color: #a0aec0; }
+    .dark-mode .text-red-500 { color: #feb2b2; }
+    .dark-mode .text-blue-600 { color: #63b3ed; }
+    .dark-mode .bg-green-600 { background-color: #48bb78; }
+    .dark-mode .bg-blue-600 { background-color: #4299e1; }
+    .dark-mode .learn-more-section {
+      background-color: #2d3748;
+      color: #e2e8f0;
+    }
+    .dark-mode .learn-more-section .bg-blue-100 { background-color: #2a4365; color: #a3bffa; }
+    .dark-mode .learn-more-section .bg-orange-100 { background-color: #744210; color: #f6ad55; }
+    .dark-mode .learn-more-section .bg-purple-100 { background-color: #5b21b6; color: #c4b5fd; }
+    .dark-mode .learn-more-section .bg-teal-100 { background-color: #0f766e; color: #6ee7b7; }
+    .dark-mode .learn-more-section .bg-indigo-100 { background-color: #4338ca; color: #a5b4fc; }
+    .dark-mode .learn-more-section .bg-green-100 { background-color: #2f855a; color: #9ae6b4; }
+    .dark-mode .learn-more-section .bg-yellow-100 { background-color: #744210; color: #f6e05e; }
+    .dark-mode .learn-more-section .text-blue-800 { color: #a3bffa; }
+    .dark-mode .learn-more-section .text-orange-800 { color: #f6ad55; }
+    .dark-mode .learn-more-section .text-purple-800 { color: #c4b5fd; }
+    .dark-mode .learn-more-section .text-teal-800 { color: #6ee7b7; }
+    .dark-mode .learn-more-section .text-indigo-800 { color: #a5b4fc; }
+    .dark-mode .learn-more-section .text-green-800 { color: #9ae6b4; }
+    .dark-mode .learn-more-section .text-yellow-800 { color: #f6e05e; }
+    .dark-mode .learn-more-section .text-blue-600 { color: #63b3ed; }
+    .dark-mode .learn-more-section .text-green-600 { color: #48bb78; }
+  </style>
+</body>
+</html>
