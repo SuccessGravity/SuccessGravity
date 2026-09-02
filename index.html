@@ -33,7 +33,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=21">
+  <link rel="stylesheet" href="/assets/site.css?v=22">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -112,6 +112,9 @@
           <option value="email-marketing">Email Marketing</option>
           <option value="referral-management">Referral & Affiliate Management</option>
           <option value="finance-tools">Finance Tools</option>
+          <option value="project-management">Project Management</option>
+          <option value="seo-tools">SEO Tools</option>
+          <option value="image-creation">Image Creation</option>
           <option value="business-loans">Business Loans &amp; Funding</option>
           <option value="ai-platforms">AI Platforms &amp; Assistants</option>
           <option value="hr-tools">HR Tools</option>
@@ -152,7 +155,10 @@
     </div>
 
     <div class="mb-6" id="tag-cloud">
-      <h2 class="text-xl font-semibold mb-4">Tag Cloud</h2>
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-semibold">Tag Cloud</h2>
+        <button id="sg-clear-filters" class="hidden text-sm font-semibold bg-indigo-600 text-white px-4 py-1.5 rounded-full hover:bg-indigo-700">&#10005; Show all tools</button>
+      </div>
       <div class="flex flex-wrap gap-2">
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Website">Website</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Data">Data</span>
@@ -160,17 +166,14 @@
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Image">Image</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Audio">Audio</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Contents">Contents</span>
-        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Listing">Listing</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Marketing">Marketing</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="SEO">SEO</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Analytics">Analytics</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="CRM">CRM</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="E-commerce">E-commerce</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Social">Social</span>
-        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="PPC">PPC</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Finance">Finance</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="HR">HR</span>
-        <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Security">Security</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Productivity">Productivity</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Inventory">Inventory</span>
         <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded cursor-pointer tag" data-tag="Email">Email</span>
@@ -277,7 +280,7 @@
     &#9878; <span id="sg-tray-count">0</span> selected &middot; View comparison &uarr;
   </button>
 
-  <script src="/assets/site.js?v=21"></script>
+  <script src="/assets/site.js?v=22"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -555,10 +558,13 @@
         }
         
         if (searchTerm) {
-          filteredPrograms = filteredPrograms.filter(p => 
-            p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            p.benefit.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            (p.tags && p.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase())))
+          const q = searchTerm.toLowerCase();
+          filteredPrograms = filteredPrograms.filter(p =>
+            p.name.toLowerCase().includes(q) ||
+            p.benefit.toLowerCase().includes(q) ||
+            (p.tags && p.tags.some(tag => tag.toLowerCase().includes(q))) ||
+            (p.meta && ((p.meta.title || '').toLowerCase().includes(q) ||
+                        (p.meta.description || '').toLowerCase().includes(q)))
           );
         }
 
@@ -586,7 +592,7 @@
         }
 
         const grid = document.createElement('div');
-        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6';
+        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 items-start';
         filteredPrograms.forEach(program => {
           const card = document.createElement('div');
           card.className = 'sg-card2 sg-reveal';
@@ -679,6 +685,7 @@
         });
 
         updateCompareButtons();
+        updateFilterUI();
         saveFilters(category, searchTerm, sortBy);
         loading.classList.add('hidden');
       } catch (e) {
@@ -838,10 +845,36 @@
     document.querySelectorAll('.tag').forEach(tag => {
       tag.addEventListener('click', () => {
         const tagValue = tag.getAttribute('data-tag');
-        searchInput.value = tagValue;
-        displayPrograms(categoryFilter.value, tagValue, sortOption.value);
+        if (searchInput.value === tagValue) {
+          searchInput.value = '';           // clicking the active tag clears it
+          displayPrograms(categoryFilter.value, '', sortOption.value);
+        } else {
+          searchInput.value = tagValue;
+          displayPrograms(categoryFilter.value, tagValue, sortOption.value);
+        }
       });
     });
+
+    // Clear-filters button: visible whenever any filter is active
+    function updateFilterUI() {
+      const active = categoryFilter.value !== 'all' || searchInput.value.trim() !== '';
+      const btn = document.getElementById('sg-clear-filters');
+      if (btn) btn.classList.toggle('hidden', !active);
+      document.querySelectorAll('.tag').forEach(t => {
+        const on = t.getAttribute('data-tag') === searchInput.value;
+        t.classList.toggle('sg-tag-active', on);
+      });
+    }
+    const clearBtn = document.getElementById('sg-clear-filters');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        categoryFilter.value = 'all';
+        searchInput.value = '';
+        sortOption.value = 'name';
+        displayPrograms('all', '', 'name');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
 
     window.addEventListener('resize', () => {
       updateComparisonTable();
@@ -926,9 +959,9 @@
           if (!p) return;
           let d = '';
           try { d = new URL(p.link).hostname; } catch (e) { return; }
-          html += `<img src="https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=64" alt="${n}" title="${n}" loading="lazy">`;
+          html += `<img src="https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=64" alt="${n}" title="${n}" loading="lazy" onerror="this.remove()">`;
         });
-        track.innerHTML = html + html; // duplicated for a seamless loop
+        track.innerHTML = (html + html) + (html + html); // 4 copies → -50% loops seamlessly
       }
     })();
   </script>
