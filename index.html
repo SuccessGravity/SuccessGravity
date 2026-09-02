@@ -33,7 +33,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/site.css?v=21">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -189,7 +189,7 @@
     </div>
 
     <div class="mb-6">
-      <h2 class="text-xl font-semibold mb-4">Compare Selected Tools</h2>
+      <h2 class="text-xl font-semibold mb-4">Compare Selected Tools <span class="text-sm font-normal text-gray-500">&mdash; pick up to 3 tools with the &#9878; Compare button</span></h2>
       <div id="comparison-table" class="overflow-x-auto hidden">
         <div class="desktop-table overflow-x-auto">
           <table class="w-full bg-white rounded-lg shadow-md">
@@ -273,7 +273,11 @@
     </div>
   </footer>
 
-  <script src="/assets/site.js"></script>
+  <button id="sg-compare-tray" class="hidden" aria-label="View comparison">
+    &#9878; <span id="sg-tray-count">0</span> selected &middot; View comparison &uarr;
+  </button>
+
+  <script src="/assets/site.js?v=21"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -607,14 +611,12 @@
             <div class="mb-2 text-sm">${renderStars(program.rating)} <span class="text-gray-500 ml-1">${program.rating}</span></div>
             <p class="mb-4 text-sm text-gray-600 leading-relaxed" style="flex:1">${program.benefit}</p>
             <div class="flex gap-2">
-              <a href="${program.link}" target="_blank" rel="sponsored noopener" class="sg-btn-primary" style="flex:1">Explore Now</a>
-              ${REVIEWS[program.name]
-                ? `<a href="${REVIEWS[program.name]}" class="sg-btn-ghost" style="flex:1;text-decoration:none">Read Review</a>`
-                : `<button class="sg-btn-ghost learn-more-btn" style="flex:1" data-learn-more='${programJSON}'>Learn More</button>`}
+              <a href="${program.link}" target="_blank" rel="sponsored noopener" class="sg-btn-primary sg-btn-sm" style="flex:1">Explore Now</a>
+              ${REVIEWS[program.name] ? `<a href="${REVIEWS[program.name]}" class="sg-btn-amber sg-btn-sm" style="flex:1">Read Review</a>` : ''}
             </div>
-            <div class="mt-3 flex justify-between text-xs">
-              <button class="text-indigo-600 underline compare-btn" data-name="${program.name}">+ Add to comparison</button>
-              ${REVIEWS[program.name] ? `<button class="text-gray-500 underline learn-more-btn" data-learn-more='${programJSON}'>Quick facts</button>` : ''}
+            <div class="flex gap-2 mt-2">
+              <button class="sg-btn-ghost sg-btn-sm learn-more-btn" style="flex:1" data-learn-more='${programJSON}'>Quick Facts</button>
+              <button class="sg-btn-ghost sg-btn-sm compare-btn" style="flex:1" data-name="${program.name}">&#9878; Compare</button>
             </div>
           `;
           grid.appendChild(card);
@@ -656,16 +658,27 @@
             }
 
             if (program) {
-              program.heartCount += 1;
+              program.heartCount += 1; // optimistic
               saveHeartCount(programName, program.heartCount);
               dailyClicks[today] += 1;
               saveDailyClicks(dailyClicks);
               lastClickTime[programName] = now;
               displayPrograms(category, searchTerm, sortBy);
+              // Sync with the global counter so every visitor sees accumulated hearts
+              fetch(`${HEART_API}/hit/${HEART_NS}/${heartKey(programName)}`)
+                .then(r => r.ok ? r.json() : null)
+                .then(j => {
+                  if (j && typeof j.value === 'number' && j.value > program.heartCount) {
+                    program.heartCount = j.value;
+                    saveHeartCount(programName, j.value);
+                    displayPrograms(categoryFilter.value, searchInput.value, sortOption.value);
+                  }
+                }).catch(() => {});
             }
           });
         });
 
+        updateCompareButtons();
         saveFilters(category, searchTerm, sortBy);
         loading.classList.add('hidden');
       } catch (e) {
@@ -756,6 +769,7 @@
           document.querySelector('.desktop-table').classList.remove('hidden');
           document.querySelector('.mobile-slider').classList.add('hidden');
         }
+        updateCompareButtons();
       } catch (e) {
         console.error('Error in updateComparisonTable:', e);
       }
@@ -848,7 +862,53 @@
 
     loadHeartCounts();
     loadSharedComparison();
+    // ── Global hearts (shared across all visitors, via free counter API) ──
+    const HEART_API = 'https://abacus.jasoncameron.dev';
+    const HEART_NS = 'successgravity-hearts';
+    function heartKey(name) {
+      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    }
+    function loadGlobalHearts() {
+      Promise.allSettled(programs.map(p =>
+        fetch(`${HEART_API}/get/${HEART_NS}/${heartKey(p.name)}`)
+          .then(r => r.ok ? r.json() : null)
+          .then(j => {
+            if (j && typeof j.value === 'number' && j.value > p.heartCount) {
+              p.heartCount = j.value;
+              saveHeartCount(p.name, j.value);
+            }
+          })
+      )).then(() => {
+        displayPrograms(categoryFilter.value, searchInput.value, sortOption.value);
+      }).catch(() => {});
+    }
+
+    // ── Compare buttons: reflect selection state + floating tray ──
+    function updateCompareButtons() {
+      document.querySelectorAll('.compare-btn').forEach(btn => {
+        const selected = selectedPrograms.some(p => p.name === btn.getAttribute('data-name'));
+        btn.innerHTML = selected ? '&#10003; Added' : '&#9878; Compare';
+        btn.classList.toggle('sg-added', selected);
+      });
+      const tray = document.getElementById('sg-compare-tray');
+      if (tray) {
+        if (selectedPrograms.length > 0) {
+          document.getElementById('sg-tray-count').textContent = selectedPrograms.length;
+          tray.classList.remove('hidden');
+        } else {
+          tray.classList.add('hidden');
+        }
+      }
+    }
+    const trayEl = document.getElementById('sg-compare-tray');
+    if (trayEl) {
+      trayEl.addEventListener('click', () => {
+        document.getElementById('comparison-table').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
     loadSavedFilters();
+    loadGlobalHearts();
 
     // Design v2: hero stat counters (live values) + tool logo marquee
     (function () {
