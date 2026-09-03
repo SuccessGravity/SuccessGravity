@@ -251,6 +251,60 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI'
 .dark-mode select, .dark-mode input { background: #2d3748; color: #e2e8f0; border-color: #4a5568; }
 .dark-mode .sg-btn-ghost { background: #1f2733; }
 
+
+/* ══════════ v3: dynamic upgrade ══════════ */
+
+/* Typewriter caret */
+.sg-caret { display: inline-block; width: 3px; height: .95em; margin-left: 4px;
+  background: #fbbf24; vertical-align: -0.12em; animation: sg-blink 1s step-end infinite; }
+@keyframes sg-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .sg-caret { display: none; } }
+
+/* Live demo panel (Notion-style product-in-action loop) */
+.sg-demo {
+  background: rgba(255,255,255,.08); border: 1px solid rgba(165,180,252,.35);
+  border-radius: 1.1rem; overflow: hidden; backdrop-filter: blur(10px);
+  box-shadow: 0 24px 60px -20px rgba(0,0,0,.5); max-width: 420px; margin: 0 auto;
+}
+.sg-demo-bar { display: flex; align-items: center; gap: 6px; padding: .65rem .9rem;
+  background: rgba(255,255,255,.07); border-bottom: 1px solid rgba(165,180,252,.2); }
+.sg-demo-bar span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.28); }
+.sg-demo-bar span:nth-child(1) { background: #f87171; } .sg-demo-bar span:nth-child(2) { background: #fbbf24; }
+.sg-demo-bar span:nth-child(3) { background: #34d399; }
+.sg-demo-bar em { font-style: normal; font-size: .7rem; color: #c7d2fe; margin-left: .5rem; }
+.sg-demo-body { padding: 1rem; position: relative; min-height: 220px; }
+.sg-demo-row { display: flex; align-items: center; gap: .6rem; background: rgba(255,255,255,.92);
+  border-radius: .7rem; padding: .6rem .8rem; margin-bottom: .6rem; position: relative; opacity: 0; }
+.sg-demo-row img { width: 22px; height: 22px; border-radius: 6px; }
+.sg-demo-row b { color: #1e293b; font-size: .86rem; flex: 1; }
+.sg-demo-row i { color: #f59e0b; font-style: normal; font-size: .7rem; letter-spacing: 1px; }
+.sg-demo-row u { text-decoration: none; color: #4f46e5; font-weight: 800; font-size: .82rem; }
+.sg-demo-badge { position: absolute; top: -10px; right: -6px; background: #fbbf24; color: #312e81;
+  font-size: .64rem; font-weight: 800; padding: .2rem .55rem; border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25); opacity: 0; animation: sgDemoBadge 9s ease infinite; }
+.sg-demo-heart { position: absolute; right: 1.2rem; top: 4.1rem; font-size: .8rem; font-weight: 700;
+  color: #fff; opacity: 0; animation: sgDemoHeart 9s ease infinite; }
+.sg-demo-cta { margin-top: .2rem; text-align: center; background: linear-gradient(90deg,#4f46e5,#7c3aed);
+  color: #fff; font-weight: 700; font-size: .82rem; padding: .55rem; border-radius: .7rem;
+  opacity: 0; animation: sgDemoCta 9s ease infinite; }
+.sg-demo-r1 { animation: sgDemoRow1 9s ease infinite; }
+.sg-demo-r2 { animation: sgDemoRow2 9s ease infinite; }
+.sg-demo-r3 { animation: sgDemoRow3 9s ease infinite; }
+@keyframes sgDemoRow1 { 0%,4% { opacity:0; transform: translateX(36px);} 10%,88% { opacity:1; transform:none;} 96%,100% { opacity:0; transform: translateX(-24px);} }
+@keyframes sgDemoRow2 { 0%,12% { opacity:0; transform: translateX(36px);} 18%,88% { opacity:1; transform:none;} 96%,100% { opacity:0; transform: translateX(-24px);} }
+@keyframes sgDemoRow3 { 0%,20% { opacity:0; transform: translateX(36px);} 26%,88% { opacity:1; transform:none;} 96%,100% { opacity:0; transform: translateX(-24px);} }
+@keyframes sgDemoBadge { 0%,38% { opacity:0; transform: scale(.4);} 44%,88% { opacity:1; transform: scale(1);} 96%,100% { opacity:0;} }
+@keyframes sgDemoHeart { 0%,52% { opacity:0; transform: translateY(8px);} 58%,72% { opacity:1; transform: translateY(-6px);} 80%,100% { opacity:0; transform: translateY(-14px);} }
+@keyframes sgDemoCta { 0%,30% { opacity:0; transform: translateY(10px);} 36%,88% { opacity:1; transform:none;} 96%,100% { opacity:0;} }
+@media (prefers-reduced-motion: reduce) {
+  .sg-demo-row, .sg-demo-badge, .sg-demo-cta { animation: none; opacity: 1; transform: none; }
+  .sg-demo-heart { animation: none; opacity: 0; }
+}
+
+/* Tilt glare rounding */
+.sg-card2 .js-tilt-glare, .sg-card .js-tilt-glare { border-radius: 1.1rem; }
+.sg-card2, .sg-card { transform-style: preserve-3d; }
+
 @media print {
   .sg-hero, nav, footer { background: #fff !important; }
 }
