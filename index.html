@@ -33,7 +33,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=22">
+  <link rel="stylesheet" href="/assets/site.css?v=23">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -69,21 +69,48 @@
   </nav>
 
   <header class="sg-hero text-white py-14 md:py-20">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-3xl md:text-5xl font-extrabold">Find the Right <span class="sg-hero-accent">AI &amp; Growth Tools</span></h1>
-      <p class="mt-4 text-lg text-indigo-100 max-w-2xl mx-auto">Honest reviews and side-by-side comparisons across email marketing, SEO, AI, design, and ecommerce &mdash; minus the hype.</p>
-      <div class="mt-7 flex flex-wrap justify-center items-center gap-3">
-        <a href="/review/" class="bg-amber-400 text-indigo-900 font-bold px-6 py-3 rounded-xl hover:bg-amber-300">Read Our Reviews</a>
-        <a href="#tag-cloud" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">Browse the Directory &darr;</a>
-        <button id="toggleDarkMode" class="bg-white bg-opacity-10 border border-indigo-300 text-white px-4 py-3 rounded-xl hover:bg-opacity-20" title="Toggle dark mode">&#127769;</button>
-      </div>
-      <div class="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto">
-        <div class="sg-stat"><b id="sg-stat-tools" data-count-to="66" data-count-suffix="+">0</b><span>Tools compared</span></div>
-        <div class="sg-stat"><b id="sg-stat-reviews" data-count-to="12" data-count-suffix="">0</b><span>In-depth reviews</span></div>
-        <div class="sg-stat"><b data-count-to="4" data-count-suffix="">0</b><span>Buyer's guides</span></div>
+    <div class="container mx-auto px-4">
+      <div class="md:flex md:items-center md:justify-between">
+        <div class="md:w-7/12 text-center md:text-left">
+          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Find the Right<br>
+            <span class="sg-hero-accent" id="sg-rotator">AI &amp; Growth Tools</span><span class="sg-caret" aria-hidden="true"></span></h1>
+          <p class="mt-4 text-lg text-indigo-100 max-w-xl mx-auto md:mx-0">Honest reviews and side-by-side comparisons across email marketing, SEO, AI, design, and ecommerce &mdash; minus the hype.</p>
+          <div class="mt-7 flex flex-wrap justify-center md:justify-start items-center gap-3">
+            <a href="/review/" class="bg-amber-400 text-indigo-900 font-bold px-6 py-3 rounded-xl hover:bg-amber-300">Read Our Reviews</a>
+            <a href="#tag-cloud" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">Browse the Directory &darr;</a>
+            <button id="toggleDarkMode" class="bg-white bg-opacity-10 border border-indigo-300 text-white px-4 py-3 rounded-xl hover:bg-opacity-20" title="Toggle dark mode">&#127769;</button>
+          </div>
+          <div class="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto md:mx-0">
+            <div class="sg-stat"><b id="sg-stat-tools" data-count-to="66" data-count-suffix="+">0</b><span>Tools compared</span></div>
+            <div class="sg-stat"><b id="sg-stat-reviews" data-count-to="12" data-count-suffix="">0</b><span>In-depth reviews</span></div>
+            <div class="sg-stat"><b data-count-to="4" data-count-suffix="">0</b><span>Buyer's guides</span></div>
+          </div>
+        </div>
+        <div class="md:w-5/12 mt-12 md:mt-0 md:pl-10" aria-hidden="true">
+          <div class="sg-demo">
+            <div class="sg-demo-bar"><span></span><span></span><span></span><em>successgravity.com &middot; live compare</em></div>
+            <div class="sg-demo-body">
+              <div class="sg-demo-row sg-demo-r1">
+                <img src="https://www.google.com/s2/favicons?domain=activecampaign.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                <b>ActiveCampaign</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
+                <span class="sg-demo-badge">&#127942; Best Pick</span>
+              </div>
+              <div class="sg-demo-row sg-demo-r2">
+                <img src="https://www.google.com/s2/favicons?domain=semrush.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                <b>Semrush</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+              </div>
+              <div class="sg-demo-row sg-demo-r3">
+                <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                <b>Canva</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+              </div>
+              <div class="sg-demo-heart">&#10084;&#65039; +1</div>
+              <div class="sg-demo-cta">Compare 3 tools &rarr;</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="sg-marquee mt-10">
+    <div class="sg-marquee mt-12">
       <div class="sg-marquee-track" id="sg-marquee-track"></div>
     </div>
   </header>
@@ -280,7 +307,10 @@
     &#9878; <span id="sg-tray-count">0</span> selected &middot; View comparison &uarr;
   </button>
 
-  <script src="/assets/site.js?v=22"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer onerror="this.remove()"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer onerror="this.remove()"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer onerror="this.remove()"></script>
+  <script src="/assets/site.js?v=23"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -963,6 +993,28 @@
         });
         track.innerHTML = (html + html) + (html + html); // 4 copies → -50% loops seamlessly
       }
+    })();
+
+    // Design v3: rotating typewriter headline
+    (function () {
+      const el = document.getElementById('sg-rotator');
+      if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const words = ['AI & Growth Tools', 'Email Platform', 'AI Assistant', 'SEO Suite', 'Website Builder', 'AI Video Tool'];
+      let wi = 0, ci = words[0].length, deleting = true;
+      function tick() {
+        if (deleting) {
+          ci--;
+          el.textContent = words[wi].substring(0, ci);
+          if (ci <= 0) { deleting = false; wi = (wi + 1) % words.length; }
+          setTimeout(tick, 42);
+        } else {
+          ci++;
+          el.textContent = words[wi].substring(0, ci);
+          if (ci >= words[wi].length) { deleting = true; setTimeout(tick, 2300); return; }
+          setTimeout(tick, 82);
+        }
+      }
+      setTimeout(tick, 2600);
     })();
   </script>
   <style>
