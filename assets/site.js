@@ -42,9 +42,52 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   observeReveals(document);
   if ('MutationObserver' in window) {
-    new MutationObserver(function () { observeReveals(document); })
+    new MutationObserver(function () { observeReveals(document); sgInitTilt(); })
       .observe(document.body, { childList: true, subtree: true });
   }
+
+  // ── v3: 3D tilt cards (desktop pointers only) ──
+  function sgInitTilt() {
+    if (!window.VanillaTilt) return;
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.querySelectorAll('.sg-card2:not([data-tilt-init]), .sg-card:not([data-tilt-init])').forEach(function (el) {
+      el.setAttribute('data-tilt-init', '1');
+      VanillaTilt.init(el, { max: 6, speed: 400, scale: 1.015, glare: true, 'max-glare': 0.12 });
+    });
+  }
+  // libs load with defer — try now and shortly after
+  sgInitTilt();
+  setTimeout(sgInitTilt, 600);
+
+  // ── v3: GSAP scroll choreography (progressive enhancement, runs once) ──
+  var sgGsapDone = false;
+  function sgInitGsap() {
+    if (sgGsapDone) return;
+    if (!window.gsap || !window.ScrollTrigger) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    sgGsapDone = true;
+    gsap.registerPlugin(ScrollTrigger);
+    var hero = document.querySelector('.sg-hero');
+    if (hero) {
+      var inner = hero.querySelector('.container');
+      if (inner) {
+        gsap.to(inner, { yPercent: 10, opacity: 0.65, ease: 'none',
+          scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
+      }
+    }
+    gsap.utils.toArray('main h2').forEach(function (el) {
+      gsap.from(el, { x: -26, opacity: 0, duration: 0.55, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 88%' } });
+    });
+    var tags = gsap.utils.toArray('#tag-cloud .tag');
+    if (tags.length) {
+      gsap.from(tags, { scale: 0.6, opacity: 0, duration: 0.35, stagger: 0.018, ease: 'back.out(2)',
+        scrollTrigger: { trigger: '#tag-cloud', start: 'top 85%' } });
+    }
+  }
+  sgInitGsap();
+  setTimeout(sgInitGsap, 700);
 
   // ── Design v2: animated stat counters ──
   function animateCount(el) {
