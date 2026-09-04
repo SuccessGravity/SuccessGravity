@@ -33,7 +33,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=23">
+  <link rel="stylesheet" href="/assets/site.css?v=24">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -54,6 +54,9 @@
         <a href="/" class="text-indigo-600 font-semibold">Home</a>
         <a href="/review/" class="hover:text-indigo-600">Reviews</a>
         <a href="/compare/" class="hover:text-indigo-600">VS Comparisons</a>
+        <a href="/best/" class="hover:text-indigo-600">Best</a>
+        <a href="/category/" class="hover:text-indigo-600">Categories</a>
+        <a href="/new/" class="hover:text-indigo-600">New</a>
         <a href="/about/" class="hover:text-indigo-600">About</a>
         <a href="/contact/" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Contact</a>
       </div>
@@ -63,6 +66,9 @@
       <a href="/" class="block py-1 text-indigo-600 font-semibold">Home</a>
       <a href="/review/" class="block py-1">Reviews</a>
       <a href="/compare/" class="block py-1">VS Comparisons</a>
+      <a href="/best/" class="block py-1">Best</a>
+      <a href="/category/" class="block py-1">Categories</a>
+      <a href="/new/" class="block py-1">New</a>
       <a href="/about/" class="block py-1">About</a>
       <a href="/contact/" class="block py-1">Contact</a>
     </div>
@@ -261,6 +267,27 @@
     <div id="programs" class="space-y-6"></div>
   </main>
 
+  <section class="bg-white border-t border-gray-100">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 text-center mb-2 sg-reveal">Browse by Category</h2>
+      <p class="text-gray-500 text-center mb-8 sg-reveal">Side-by-side comparisons, buying guides, and top picks for every category.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <a href="/category/email-marketing/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">✉️</span><span class="font-semibold text-gray-900 text-sm">Email Marketing</span></a>
+        <a href="/category/ai-writing/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">✍️</span><span class="font-semibold text-gray-900 text-sm">AI Writing &amp; Content</span></a>
+        <a href="/category/seo/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">📈</span><span class="font-semibold text-gray-900 text-sm">SEO Tools</span></a>
+        <a href="/category/video-audio/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">🎬</span><span class="font-semibold text-gray-900 text-sm">AI Video &amp; Audio</span></a>
+        <a href="/category/influencer-marketing/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">📣</span><span class="font-semibold text-gray-900 text-sm">Influencer Marketing</span></a>
+        <a href="/category/social-media/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">📱</span><span class="font-semibold text-gray-900 text-sm">Social Media</span></a>
+        <a href="/category/ai-platforms/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">🤖</span><span class="font-semibold text-gray-900 text-sm">AI Platforms</span></a>
+        <a href="/category/business-loans/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">💰</span><span class="font-semibold text-gray-900 text-sm">Business Funding</span></a>
+        <a href="/category/productivity/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">✅</span><span class="font-semibold text-gray-900 text-sm">Productivity &amp; PM</span></a>
+        <a href="/category/website-ecommerce/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">🛒</span><span class="font-semibold text-gray-900 text-sm">Website &amp; E-commerce</span></a>
+        <a href="/category/affiliate-marketing/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">🔗</span><span class="font-semibold text-gray-900 text-sm">Affiliate Marketing</span></a>
+        <a href="/category/design-image/" class="sg-card2 sg-reveal block hover:no-underline text-center py-5"><span class="text-2xl block mb-1">🎨</span><span class="font-semibold text-gray-900 text-sm">AI Image &amp; Design</span></a>
+      </div>
+      <p class="text-center mt-6"><a href="/category/" class="text-indigo-600 font-semibold hover:underline">See all categories →</a></p>
+    </div>
+  </section>
   <footer class="bg-gray-900 text-gray-300">
     <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
       <div>
@@ -276,12 +303,16 @@
           <li><a href="/" class="hover:text-white">Tool Directory</a></li>
           <li><a href="/review/" class="hover:text-white">All Reviews</a></li>
           <li><a href="/compare/" class="hover:text-white">VS Comparisons</a></li>
+          <li><a href="/best/" class="hover:text-white">Best Of Guides</a></li>
+          <li><a href="/category/" class="hover:text-white">Tool Categories</a></li>
+          <li><a href="/new/" class="hover:text-white">What&#39;s New</a></li>
           <li><a href="/about/" class="hover:text-white">About Us</a></li>
         </ul>
       </div>
       <div>
         <p class="font-semibold text-white mb-3">Legal</p>
         <ul class="space-y-2">
+          <li><a href="/how-we-review/" class="hover:text-white">How We Review</a></li>
           <li><a href="/affiliate-disclosure/" class="hover:text-white">Affiliate Disclosure</a></li>
           <li><a href="/privacy-policy/" class="hover:text-white">Privacy Policy</a></li>
           <li><a href="/terms/" class="hover:text-white">Terms of Use</a></li>
@@ -310,7 +341,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer onerror="this.remove()"></script>
-  <script src="/assets/site.js?v=23"></script>
+  <script src="/assets/site.js?v=24"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },

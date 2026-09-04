@@ -308,3 +308,12 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI'
 @media print {
   .sg-hero, nav, footer { background: #fff !important; }
 }
+
+/* ══════════════ v4 additions (2026-09-04): timeline + hub tweaks ══════════════ */
+.sg-timeline { position: relative; padding-left: 1.6rem; }
+.sg-timeline::before { content: ""; position: absolute; left: .45rem; top: .4rem; bottom: .4rem; width: 2px;
+  background: linear-gradient(180deg, #6366f1, #a855f7, #f59e0b); border-radius: 2px; }
+.sg-timeline-item { position: relative; padding-bottom: 2.2rem; }
+.sg-timeline-item::before { content: ""; position: absolute; left: -1.6rem; top: .3rem; width: 12px; height: 12px;
+  border-radius: 9999px; background: #fff; border: 3px solid #6366f1; margin-left: .05rem; }
+.dark-mode .sg-timeline-item::before { background: #1a202c; }
