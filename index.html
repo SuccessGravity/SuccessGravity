@@ -33,7 +33,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=24">
+  <link rel="stylesheet" href="/assets/site.css?v=25">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -82,7 +82,8 @@
             <span class="sg-hero-accent" id="sg-rotator">AI &amp; Growth Tools</span><span class="sg-caret" aria-hidden="true"></span></h1>
           <p class="mt-4 text-lg text-indigo-100 max-w-xl mx-auto md:mx-0">Honest reviews and side-by-side comparisons across email marketing, SEO, AI, design, and ecommerce &mdash; minus the hype.</p>
           <div class="mt-7 flex flex-wrap justify-center md:justify-start items-center gap-3">
-            <a href="/review/" class="bg-amber-400 text-indigo-900 font-bold px-6 py-3 rounded-xl hover:bg-amber-300">Read Our Reviews</a>
+            <a href="/finder/" class="bg-amber-400 text-indigo-900 font-bold px-6 py-3 rounded-xl hover:bg-amber-300">&#127919; Find My Perfect Tool</a>
+            <a href="/review/" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">Read Our Reviews</a>
             <a href="#tag-cloud" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">Browse the Directory &darr;</a>
             <button id="toggleDarkMode" class="bg-white bg-opacity-10 border border-indigo-300 text-white px-4 py-3 rounded-xl hover:bg-opacity-20" title="Toggle dark mode">&#127769;</button>
           </div>
@@ -95,22 +96,61 @@
         <div class="md:w-5/12 mt-12 md:mt-0 md:pl-10" aria-hidden="true">
           <div class="sg-demo">
             <div class="sg-demo-bar"><span></span><span></span><span></span><em>successgravity.com &middot; live compare</em></div>
-            <div class="sg-demo-body">
-              <div class="sg-demo-row sg-demo-r1">
-                <img src="https://www.google.com/s2/favicons?domain=activecampaign.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                <b>ActiveCampaign</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
-                <span class="sg-demo-badge">&#127942; Best Pick</span>
+            <div class="sg-demo-body sg-demo-scenes">
+              <div class="sg-demo-scene active" data-scene="0">
+                <div class="sg-demo-cat">&#9993;&#65039; Email Marketing</div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=klaviyo.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>Klaviyo</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+                  <span class="sg-demo-badge">&#127942; Best Pick</span>
+                </div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=activecampaign.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>ActiveCampaign</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
+                </div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=mailchimp.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>Mailchimp</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.4</u>
+                </div>
+                <div class="sg-demo-heart">&#10084;&#65039; +1</div>
+                <div class="sg-demo-cta">Compare email platforms &rarr;</div>
               </div>
-              <div class="sg-demo-row sg-demo-r2">
-                <img src="https://www.google.com/s2/favicons?domain=semrush.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                <b>Semrush</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+              <div class="sg-demo-scene" data-scene="1">
+                <div class="sg-demo-cat">&#127916; AI Video Generators</div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=heygen.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>HeyGen</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+                  <span class="sg-demo-badge">&#127942; Best Pick</span>
+                </div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=synthesia.io&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>Synthesia</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
+                </div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>Runway</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
+                </div>
+                <div class="sg-demo-heart">&#10084;&#65039; +1</div>
+                <div class="sg-demo-cta">Compare AI video tools &rarr;</div>
               </div>
-              <div class="sg-demo-row sg-demo-r3">
-                <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                <b>Canva</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+              <div class="sg-demo-scene" data-scene="2">
+                <div class="sg-demo-cat">&#127760; Website Builders</div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=webflow.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>Webflow</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+                  <span class="sg-demo-badge">&#127942; Best Pick</span>
+                </div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=squarespace.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>Squarespace</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
+                </div>
+                <div class="sg-demo-row">
+                  <img src="https://www.google.com/s2/favicons?domain=wix.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
+                  <b>Wix</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
+                </div>
+                <div class="sg-demo-heart">&#10084;&#65039; +1</div>
+                <div class="sg-demo-cta">Compare website builders &rarr;</div>
               </div>
-              <div class="sg-demo-heart">&#10084;&#65039; +1</div>
-              <div class="sg-demo-cta">Compare 3 tools &rarr;</div>
             </div>
           </div>
         </div>
@@ -310,6 +350,7 @@
         <p class="font-semibold text-white mb-3">Explore</p>
         <ul class="space-y-2">
           <li><a href="/" class="hover:text-white">Tool Directory</a></li>
+          <li><a href="/finder/" class="hover:text-white">&#127919; Tool Finder</a></li>
           <li><a href="/review/" class="hover:text-white">All Reviews</a></li>
           <li><a href="/compare/" class="hover:text-white">VS Comparisons</a></li>
           <li><a href="/best/" class="hover:text-white">Best Of Guides</a></li>
@@ -350,7 +391,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer onerror="this.remove()"></script>
-  <script src="/assets/site.js?v=24"></script>
+  <script src="/assets/site.js?v=25"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -1082,18 +1123,29 @@
       if (statReviews) statReviews.setAttribute('data-count-to', Object.keys(REVIEWS).length);
       const track = document.getElementById('sg-marquee-track');
       if (track) {
-        const featured = ['ActiveCampaign', 'Semrush', 'Shopify', 'Canva', 'ChatGPT', 'Claude', 'HubSpot',
-          'Grammarly', 'Wix', 'ClickUp', 'Perplexity', 'Squarespace', 'Buffer', 'Jasper AI', 'Google Gemini', 'Surfer SEO'];
         let html = '';
-        featured.forEach(n => {
-          const p = programs.find(x => x.name === n);
-          if (!p) return;
+        programs.forEach(p => {
           let d = '';
           try { d = new URL(p.link).hostname; } catch (e) { return; }
-          html += `<img src="https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=64" alt="${n}" title="${n}" loading="lazy" onerror="this.remove()">`;
+          html += `<img src="https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=64" alt="${p.name}" title="${p.name}" loading="lazy" onerror="this.remove()">`;
         });
-        track.innerHTML = (html + html) + (html + html); // 4 copies → -50% loops seamlessly
+        track.style.animationDuration = Math.max(60, Math.round(programs.length * 1.5)) + 's';
+        track.innerHTML = html + html; // 2 copies → -50% loops seamlessly
       }
+    })();
+
+
+    // Design v4: rotating same-category demo scenes
+    (function () {
+      const scenes = document.querySelectorAll('.sg-demo-scene');
+      if (scenes.length < 2) return;
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      let cur = 0;
+      setInterval(function () {
+        scenes[cur].classList.remove('active');
+        cur = (cur + 1) % scenes.length;
+        scenes[cur].classList.add('active');
+      }, 7000);
     })();
 
     // Design v3: rotating typewriter headline

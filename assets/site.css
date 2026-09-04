@@ -280,25 +280,37 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI'
 .sg-demo-row i { color: #f59e0b; font-style: normal; font-size: .7rem; letter-spacing: 1px; }
 .sg-demo-row u { text-decoration: none; color: #4f46e5; font-weight: 800; font-size: .82rem; }
 .sg-demo-badge { position: absolute; top: -10px; right: -6px; background: #fbbf24; color: #312e81;
-  font-size: .64rem; font-weight: 800; padding: .2rem .55rem; border-radius: 9999px;
-  box-shadow: 0 4px 12px rgba(0,0,0,.25); opacity: 0; animation: sgDemoBadge 9s ease infinite; }
-.sg-demo-heart { position: absolute; right: 1.2rem; top: 4.1rem; font-size: .8rem; font-weight: 700;
-  color: #fff; opacity: 0; animation: sgDemoHeart 9s ease infinite; }
+  font-size: .62rem; font-weight: 800; padding: .18rem .5rem; border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25); opacity: 0; }
+.sg-demo-heart { position: absolute; right: 1.2rem; top: 4.6rem; font-size: .8rem; font-weight: 700;
+  color: #fff; opacity: 0; }
 .sg-demo-cta { margin-top: .2rem; text-align: center; background: linear-gradient(90deg,#4f46e5,#7c3aed);
-  color: #fff; font-weight: 700; font-size: .82rem; padding: .55rem; border-radius: .7rem;
-  opacity: 0; animation: sgDemoCta 9s ease infinite; }
-.sg-demo-r1 { animation: sgDemoRow1 9s ease infinite; }
-.sg-demo-r2 { animation: sgDemoRow2 9s ease infinite; }
-.sg-demo-r3 { animation: sgDemoRow3 9s ease infinite; }
-@keyframes sgDemoRow1 { 0%,4% { opacity:0; transform: translateX(36px);} 10%,88% { opacity:1; transform:none;} 96%,100% { opacity:0; transform: translateX(-24px);} }
-@keyframes sgDemoRow2 { 0%,12% { opacity:0; transform: translateX(36px);} 18%,88% { opacity:1; transform:none;} 96%,100% { opacity:0; transform: translateX(-24px);} }
-@keyframes sgDemoRow3 { 0%,20% { opacity:0; transform: translateX(36px);} 26%,88% { opacity:1; transform:none;} 96%,100% { opacity:0; transform: translateX(-24px);} }
-@keyframes sgDemoBadge { 0%,38% { opacity:0; transform: scale(.4);} 44%,88% { opacity:1; transform: scale(1);} 96%,100% { opacity:0;} }
-@keyframes sgDemoHeart { 0%,52% { opacity:0; transform: translateY(8px);} 58%,72% { opacity:1; transform: translateY(-6px);} 80%,100% { opacity:0; transform: translateY(-14px);} }
-@keyframes sgDemoCta { 0%,30% { opacity:0; transform: translateY(10px);} 36%,88% { opacity:1; transform:none;} 96%,100% { opacity:0;} }
+  color: #fff; font-weight: 700; font-size: .8rem; padding: .5rem; border-radius: .6rem;
+  opacity: 0; }
+
+/* v5: rotating same-category scenes */
+.sg-demo-scenes { min-height: 248px; }
+.sg-demo-scene { position: absolute; inset: 1rem; opacity: 0; pointer-events: none; transition: opacity .45s ease; }
+.sg-demo-scene.active { opacity: 1; }
+.sg-demo-cat { font-size: .72rem; font-weight: 800; color: #c7d2fe; letter-spacing: .06em;
+  text-transform: uppercase; margin-bottom: .55rem; opacity: 0; }
+.sg-demo-scene .sg-demo-row { opacity: 0; }
+.sg-demo-scene.active .sg-demo-cat   { animation: sgSceneIn .45s ease .15s forwards; }
+.sg-demo-scene.active .sg-demo-row:nth-of-type(2) { animation: sgSceneRow .5s ease .45s forwards; }
+.sg-demo-scene.active .sg-demo-row:nth-of-type(3) { animation: sgSceneRow .5s ease 1.05s forwards; }
+.sg-demo-scene.active .sg-demo-row:nth-of-type(4) { animation: sgSceneRow .5s ease 1.65s forwards; }
+.sg-demo-scene.active .sg-demo-badge { animation: sgSceneBadge .45s cubic-bezier(.34,1.56,.64,1) 2.5s forwards; }
+.sg-demo-scene.active .sg-demo-heart { animation: sgSceneHeart 1.6s ease 3.4s forwards; }
+.sg-demo-scene.active .sg-demo-cta   { animation: sgSceneIn .5s ease 2.9s forwards; }
+@keyframes sgSceneIn   { from { opacity:0; transform: translateY(8px);} to { opacity:1; transform:none;} }
+@keyframes sgSceneRow  { from { opacity:0; transform: translateX(36px);} to { opacity:1; transform:none;} }
+@keyframes sgSceneBadge{ from { opacity:0; transform: scale(.4);} to { opacity:1; transform: scale(1);} }
+@keyframes sgSceneHeart{ 0% { opacity:0; transform: translateY(8px);} 30%,70% { opacity:1; transform: translateY(-6px);} 100% { opacity:0; transform: translateY(-14px);} }
 @media (prefers-reduced-motion: reduce) {
-  .sg-demo-row, .sg-demo-badge, .sg-demo-cta { animation: none; opacity: 1; transform: none; }
-  .sg-demo-heart { animation: none; opacity: 0; }
+  .sg-demo-scene { position: static; display: none; }
+  .sg-demo-scene:first-of-type { display: block; opacity: 1; }
+  .sg-demo-scene .sg-demo-row, .sg-demo-scene .sg-demo-cat, .sg-demo-scene .sg-demo-badge, .sg-demo-scene .sg-demo-cta { animation: none !important; opacity: 1; transform: none; }
+  .sg-demo-heart { animation: none !important; opacity: 0; }
 }
 
 /* Tilt glare rounding */
@@ -317,3 +329,17 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI'
 .sg-timeline-item::before { content: ""; position: absolute; left: -1.6rem; top: .3rem; width: 12px; height: 12px;
   border-radius: 9999px; background: #fff; border: 3px solid #6366f1; margin-left: .05rem; }
 .dark-mode .sg-timeline-item::before { background: #1a202c; }
+
+/* ══════════════ v5: Tool Finder wizard ══════════════ */
+.sgf-dot { width: 10px; height: 10px; border-radius: 9999px; background: #e2e8f0; transition: background .3s ease, transform .3s ease; }
+.sgf-dot-on { background: linear-gradient(90deg, #4f46e5, #7c3aed); transform: scale(1.15); }
+.sgf-opt { background: #fff; border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.1rem .8rem; text-align: center;
+  cursor: pointer; transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease; }
+.sgf-opt:hover { transform: translateY(-3px); border-color: #a5b4fc; box-shadow: 0 10px 22px -10px rgba(79,70,229,.35); }
+.sgf-opt b { display: block; color: #1e293b; font-size: .92rem; }
+.sgf-opt small { display: block; color: #64748b; font-size: .72rem; margin-top: .15rem; }
+.sgf-badge { position: absolute; top: -12px; left: 1.1rem; background: #fbbf24; color: #312e81;
+  font-size: .7rem; font-weight: 800; padding: .22rem .7rem; border-radius: 9999px; box-shadow: 0 4px 12px rgba(0,0,0,.18); }
+.sgf-winner-card { border-color: #fbbf24; border-width: 2px; box-shadow: 0 18px 36px -14px rgba(245,158,11,.25); }
+.dark-mode .sgf-opt { background: #2d3748; border-color: #4a5568; }
+.dark-mode .sgf-opt b { color: #e2e8f0; }
