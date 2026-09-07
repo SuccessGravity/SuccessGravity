@@ -402,3 +402,6 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI'
 .sgd-modal { background: #fff; border-radius: 1.2rem; max-width: 900px; width: 100%; max-height: 86vh;
   overflow: auto; padding: 1.5rem; }
 .dark-mode .sgd-modal { background: #2d3748; }
+
+/* v9: hidden attribute must always win over display rules */
+[hidden] { display: none !important; }

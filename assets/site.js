@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.sg-card2:not([data-tilt-init]), .sg-card:not([data-tilt-init])').forEach(function (el) {
       el.setAttribute('data-tilt-init', '1');
       // Skip cards with interactive controls — tilt transforms interfere with clicking
-      if (el.closest('#programs') || el.querySelector('button')) return;
+      if (el.closest('#programs') || el.querySelector('button') || el.querySelector('a')) return;
       VanillaTilt.init(el, { max: 4, speed: 400, scale: 1.01, glare: true, 'max-glare': 0.1 });
     });
   }
