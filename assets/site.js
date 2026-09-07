@@ -127,6 +127,6 @@ function sgLogoHTML(link, name) {
   if (!domain) return '<div class="sg-logo-ring"><span>' + mono + '</span></div>';
   var src = 'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(domain) + '&sz=64';
   return '<div class="sg-logo-ring"><span><img src="' + src + '" alt="' + (name || '') +
-    ' logo" loading="lazy" onerror="this.outerHTML=\'<span class=&quot;sg-logo-mono&quot;>' +
+    ' logo" width="32" height="32" loading="lazy" onerror="this.outerHTML=\'<span class=&quot;sg-logo-mono&quot;>' +
     initial + '</span>\'"></span></div>';
 }
