@@ -38,7 +38,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=27">
+  <link rel="stylesheet" href="/assets/site.css?v=28">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -376,24 +376,23 @@
   <section class="bg-white border-t border-gray-100">
     <div class="container mx-auto px-4 py-14">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-        <a href="/free-tools/" class="sg-card2 sg-reveal block hover:no-underline">
+        <div class="sg-card2 sg-reveal flex flex-col h-full">
           <div class="text-3xl mb-2">&#128154;</div>
           <h2 class="text-xl font-extrabold text-gray-900 mb-2">Free Tools Every Owner Should Bookmark</h2>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3">30+ genuinely free tools — analytics, SEO, ads, accounting, design. No expiring trials.</p>
-          <p class="text-sm text-indigo-600 font-semibold">See the free stack &rarr;</p>
-        </a>
-        <a href="/best/best-ai-video-generators/" class="sg-card2 sg-reveal block hover:no-underline">
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">30+ genuinely free tools — analytics, SEO, ads, accounting, design. No expiring trials, no catch.</p>
+          <div class="mt-auto"><a href="/free-tools/" class="sg-btn-primary sg-btn-sm inline-block">See the free stack &rarr;</a></div>
+        </div>
+        <div class="sg-card2 sg-reveal flex flex-col h-full">
           <div class="text-3xl mb-2">&#127942;</div>
           <h2 class="text-xl font-extrabold text-gray-900 mb-2">Best AI Video Generators in 2026</h2>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3">We ranked the top AI video platforms — avatar quality, languages, pricing, and a clear winner for each use case.</p>
-          <p class="text-sm text-indigo-600 font-semibold">Read the ranked guide &rarr;</p>
-          <p class="text-xs text-gray-400 mt-3">More best-of guides on the <a href="/best/" class="text-indigo-500 underline">Best page</a> &mdash; new ones every week.</p>
-        </a>
-        <div class="sg-hero rounded-2xl text-white p-8 sg-reveal flex flex-col justify-center text-center">
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">We ranked the top AI video platforms — avatar quality, languages, pricing, and a clear winner for each use case. New guides land on the Best page every week.</p>
+          <div class="mt-auto flex flex-wrap gap-2"><a href="/best/best-ai-video-generators/" class="sg-btn-primary sg-btn-sm inline-block">Read the guide &rarr;</a><a href="/best/" class="sg-btn-ghost sg-btn-sm inline-block">All best-of guides</a></div>
+        </div>
+        <div class="sg-hero rounded-2xl text-white p-7 sg-reveal flex flex-col h-full text-center">
           <div class="text-3xl mb-2">&#127919;</div>
           <h2 class="text-xl font-extrabold mb-2">Not sure which tool you need?</h2>
-          <p class="text-indigo-100 text-sm mb-5 max-w-sm mx-auto">Answer 3 quick questions and get a personal recommendation from all 124 tools — free, 30 seconds.</p>
-          <div><a href="/finder/" class="bg-amber-400 text-indigo-900 font-bold px-6 py-3 rounded-xl hover:bg-amber-300 inline-block">Try the Tool Finder &rarr;</a></div>
+          <p class="text-indigo-100 text-sm mb-4 max-w-sm mx-auto">Answer 3 quick questions and get a personal recommendation from the full directory — free, 30 seconds.</p>
+          <div class="mt-auto"><a href="/finder/" class="bg-amber-400 text-indigo-900 font-bold px-6 py-3 rounded-xl hover:bg-amber-300 inline-block">Try the Tool Finder &rarr;</a></div>
         </div>
       </div>
     </div>
@@ -480,7 +479,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer onerror="this.remove()"></script>
-  <script src="/assets/site.js?v=27"></script>
+  <script src="/assets/site.js?v=28"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -540,7 +539,7 @@
       { name: "OnDeck", category: "business-loans", link: "https://www.ondeck.com", benefit: "Get short-term business loans and lines of credit with same-day funding decisions for established small businesses.", popularity: 7, tags: ["Finance", "Business Loan", "Funding"], meta: { title: "OnDeck - Fast Business Loans", description: "Same-day funding decisions with OnDeck." }, heartCount: 0, features: ["Term loans", "Lines of credit", "Same-day decisions"], pros: ["Very fast funding", "Builds business credit"], cons: ["Higher rates than banks"], pricing: "Free to apply", rating: 4.4, freeTrial: "Free service", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "N/A" },
       { name: "ChatGPT", category: "ai-platforms", link: "https://chatgpt.com", benefit: "The most widely used AI assistant — writing, coding, analysis, image generation, and custom GPTs for business workflows.", popularity: 10, tags: ["AI Platform", "Chatbot", "Contents"], meta: { title: "ChatGPT - AI Assistant by OpenAI", description: "Write, code, and analyze with ChatGPT." }, heartCount: 0, features: ["Chat & reasoning", "Image generation", "Custom GPTs"], pros: ["Best-known ecosystem", "Strong all-rounder"], cons: ["Free tier limits at peak times"], pricing: "Free / Plus $20/month", rating: 4.8, freeTrial: "Free tier", easeOfUse: 5, supportAvailability: "Help center", integrationCount: "1000+" },
       { name: "Claude", category: "ai-platforms", link: "https://claude.ai", benefit: "Anthropic's AI assistant known for nuanced writing, long-document analysis, and best-in-class coding help.", popularity: 9, tags: ["AI Platform", "Chatbot", "Contents"], meta: { title: "Claude - AI Assistant by Anthropic", description: "Long-context writing and coding with Claude." }, heartCount: 0, features: ["Long context", "Artifacts & projects", "Advanced coding"], pros: ["Excellent writing quality", "Handles huge documents"], cons: ["Usage caps on lower tiers"], pricing: "Free / Pro $20/month", rating: 4.8, freeTrial: "Free tier", easeOfUse: 5, supportAvailability: "Help center", integrationCount: "100+" },
-      { name: "Google Gemini", category: "ai-platforms", link: "https://gemini.google.com", benefit: "Google's AI assistant, deeply integrated with Gmail, Docs, and Search — strong at research and multimodal tasks.", popularity: 9, tags: ["AI Platform", "Chatbot", "Contents"], meta: { title: "Google Gemini - AI Assistant", description: "AI built into the Google ecosystem." }, heartCount: 0, features: ["Google Workspace integration", "Multimodal", "Deep Research"], pros: ["Seamless with Google apps", "Generous free tier"], cons: ["Answers can be conservative"], pricing: "Free / AI Pro ~$20/month", rating: 4.6, freeTrial: "Free tier", easeOfUse: 5, supportAvailability: "Help center", integrationCount: "50+" },
+      { name: "Google Gemini", icon: "https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg", category: "ai-platforms", link: "https://gemini.google.com", benefit: "Google's AI assistant, deeply integrated with Gmail, Docs, and Search — strong at research and multimodal tasks.", popularity: 9, tags: ["AI Platform", "Chatbot", "Contents"], meta: { title: "Google Gemini - AI Assistant", description: "AI built into the Google ecosystem." }, heartCount: 0, features: ["Google Workspace integration", "Multimodal", "Deep Research"], pros: ["Seamless with Google apps", "Generous free tier"], cons: ["Answers can be conservative"], pricing: "Free / AI Pro ~$20/month", rating: 4.6, freeTrial: "Free tier", easeOfUse: 5, supportAvailability: "Help center", integrationCount: "50+" },
       { name: "Grok", category: "ai-platforms", link: "https://grok.com", benefit: "xAI's assistant with real-time X (Twitter) data access and a less filtered, personality-forward style.", popularity: 7, tags: ["AI Platform", "Chatbot"], meta: { title: "Grok - AI Assistant by xAI", description: "Real-time AI answers with Grok." }, heartCount: 0, features: ["Real-time X data", "Image generation", "Voice mode"], pros: ["Real-time information", "Distinctive voice"], cons: ["Smaller app ecosystem"], pricing: "Free tier / SuperGrok ~$30/month", rating: 4.4, freeTrial: "Free tier", easeOfUse: 4, supportAvailability: "Help center", integrationCount: "10+" },
       { name: "Microsoft Copilot", category: "ai-platforms", link: "https://copilot.microsoft.com", benefit: "Microsoft's AI assistant woven into Windows, Edge, and Microsoft 365 — ideal for Office-centric teams.", popularity: 8, tags: ["AI Platform", "Chatbot", "Productivity"], meta: { title: "Microsoft Copilot - AI for Microsoft 365", description: "AI inside Word, Excel, and Windows." }, heartCount: 0, features: ["Office integration", "Windows built-in", "Web grounding"], pros: ["Native in Microsoft 365", "Free tier included"], cons: ["Best features need M365 subscription"], pricing: "Free / Pro $20/month", rating: 4.4, freeTrial: "Free tier", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "365 apps" },
       { name: "Perplexity", category: "ai-platforms", link: "https://www.perplexity.ai", benefit: "An AI answer engine that cites its sources — the fastest way to research with live web results.", popularity: 8, tags: ["AI Platform", "Chatbot", "SEO"], meta: { title: "Perplexity - AI Answer Engine", description: "Cited, real-time AI research with Perplexity." }, heartCount: 0, features: ["Cited answers", "Live web search", "Deep research mode"], pros: ["Sources for every claim", "Great for research"], cons: ["Less suited to creative writing"], pricing: "Free / Pro $20/month", rating: 4.6, freeTrial: "Free tier", easeOfUse: 5, supportAvailability: "Help center", integrationCount: "10+" },
@@ -575,7 +574,7 @@
       { name: "Base44", category: "website-building", link: "https://base44.com", benefit: "Build working apps from prompts with auth, database, and hosting handled automatically — zero setup required.", popularity: 7, tags: ["Website", "AI", "No-code"], meta: { title: "Base44 - Prompt-to-App Builder", description: "Build apps with built-in auth and database from a single prompt on Base44." }, heartCount: 0, features: ["Prompt-to-app", "Built-in auth & database", "Instant hosting"], pros: ["Zero setup at all", "Fast iteration loop"], cons: ["Less control over the stack"], pricing: "$20/month", rating: 4.4, freeTrial: "Free credits", easeOfUse: 5, supportAvailability: "Business hours", integrationCount: "5+" },
       { name: "Replit", category: "website-building", link: "https://replit.com", benefit: "Go from idea to deployed app in one browser tab — an AI agent writes, runs, and ships your code on Replit's cloud.", popularity: 8, tags: ["Website", "AI", "Coding"], meta: { title: "Replit - AI App Building & Hosting", description: "Build and deploy apps in minutes with Replit's AI agent and cloud IDE." }, heartCount: 0, features: ["Replit Agent", "Cloud IDE", "One-click deploy"], pros: ["Idea to deployed app in minutes", "Great for collaboration"], cons: ["Credit usage adds up"], pricing: "$25/month", rating: 4.5, freeTrial: "Free plan", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "15+" },
       { name: "AWS", category: "cloud-infrastructure", link: "https://aws.amazon.com", benefit: "Run anything at any scale on the world's largest cloud — 200+ services from compute and storage to AI, used by most of the internet.", popularity: 10, tags: ["Cloud", "Infrastructure"], meta: { title: "AWS - Amazon Web Services", description: "Build on AWS, the world's largest cloud platform with 200+ services." }, heartCount: 0, features: ["200+ cloud services", "Global regions", "Enterprise security"], pros: ["Unmatched breadth", "Industry standard"], cons: ["Pricing is complex"], pricing: "Pay-as-you-go", rating: 4.6, freeTrial: "Free tier (12 months)", easeOfUse: 2, supportAvailability: "24/7", integrationCount: "30+" },
-      { name: "Google Cloud", category: "cloud-infrastructure", link: "https://cloud.google.com", benefit: "Build on Google's infrastructure with best-in-class data analytics (BigQuery) and AI tooling (Vertex AI, Gemini).", popularity: 9, tags: ["Cloud", "AI", "Data"], meta: { title: "Google Cloud Platform", description: "Build with Google Cloud's leading data analytics and AI services." }, heartCount: 0, features: ["BigQuery analytics", "Vertex AI", "Kubernetes Engine"], pros: ["Best-in-class data & AI", "Clean developer console"], cons: ["Smaller ecosystem than AWS"], pricing: "Pay-as-you-go", rating: 4.5, freeTrial: "Free tier + $300 credits", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "30+" },
+      { name: "Google Cloud", icon: "https://www.gstatic.com/images/branding/product/2x/google_cloud_48dp.png", category: "cloud-infrastructure", link: "https://cloud.google.com", benefit: "Build on Google's infrastructure with best-in-class data analytics (BigQuery) and AI tooling (Vertex AI, Gemini).", popularity: 9, tags: ["Cloud", "AI", "Data"], meta: { title: "Google Cloud Platform", description: "Build with Google Cloud's leading data analytics and AI services." }, heartCount: 0, features: ["BigQuery analytics", "Vertex AI", "Kubernetes Engine"], pros: ["Best-in-class data & AI", "Clean developer console"], cons: ["Smaller ecosystem than AWS"], pricing: "Pay-as-you-go", rating: 4.5, freeTrial: "Free tier + $300 credits", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "30+" },
       { name: "Microsoft Azure", category: "cloud-infrastructure", link: "https://azure.microsoft.com", benefit: "Run enterprise workloads on Microsoft's cloud with deep Office/Teams integration, hybrid support, and Azure OpenAI.", popularity: 9, tags: ["Cloud", "Enterprise"], meta: { title: "Microsoft Azure Cloud", description: "Run enterprise cloud workloads with Azure's Microsoft-integrated platform." }, heartCount: 0, features: ["Hybrid cloud", "Azure OpenAI Service", "Entra ID (Active Directory)"], pros: ["Deep Microsoft integration", "Strong enterprise support"], cons: ["Portal can be confusing"], pricing: "Pay-as-you-go", rating: 4.4, freeTrial: "Free tier + $200 credits", easeOfUse: 2, supportAvailability: "24/7", integrationCount: "30+" },
       { name: "Cloudflare", category: "cloud-infrastructure", link: "https://www.cloudflare.com", benefit: "Make any website faster and safer with a global CDN, free SSL, DDoS protection, and an edge developer platform.", popularity: 9, tags: ["Cloud", "Security", "Website"], meta: { title: "Cloudflare - CDN & Security", description: "Speed up and protect any site with Cloudflare's global network." }, heartCount: 0, features: ["CDN & DNS", "DDoS protection", "Workers edge compute"], pros: ["Generous free tier", "Speeds up any site instantly"], cons: ["Advanced config is technical"], pricing: "Free / Pro $20/month", rating: 4.7, freeTrial: "Free plan", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "20+" },
       { name: "Vercel", category: "cloud-infrastructure", link: "https://vercel.com", benefit: "Deploy frontend apps instantly with preview URLs for every change — the home of Next.js and the best developer experience in hosting.", popularity: 8, tags: ["Cloud", "Website", "Developers"], meta: { title: "Vercel - Frontend Cloud", description: "Deploy modern web apps instantly with Vercel's frontend cloud." }, heartCount: 0, features: ["Instant deployments", "Preview URLs", "Global edge network"], pros: ["Best DX for frontend teams", "Preview every change"], cons: ["Costs scale with traffic"], pricing: "$20/month", rating: 4.6, freeTrial: "Free (Hobby plan)", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "15+" },
@@ -614,20 +613,20 @@
       { name: "Pictory", category: "video-audio", link: "https://pictory.ai", benefit: "Turn blog posts, scripts, and long recordings into short branded videos with stock footage matching and AI captions — no editing experience needed.", popularity: 7, tags: ["Video", "AI", "Content"], meta: { title: "Pictory - AI Video from Text", description: "Turn scripts and blog posts into short videos automatically with Pictory AI." }, heartCount: 0, features: ["Script-to-video", "Blog-to-video", "AI captions", "Stock footage library", "ElevenLabs voice add-on"], pros: ["Fast content repurposing", "No video editing skills needed", "Affordable entry price"], cons: ["Monthly video minutes can run low", "Less control than manual editing"], pricing: "~$25/month (Starter, annual)", rating: 4.3, freeTrial: "Yes, 15-min free trial", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
       { name: "Moosend", category: "email-marketing", link: "https://moosend.com", benefit: "Send targeted email campaigns and automations at an affordable price — with a drag-and-drop editor, landing pages, and advanced segmentation.", popularity: 7, tags: ["Email", "Marketing", "Automation"], meta: { title: "Moosend - Affordable Email Marketing", description: "Run targeted email campaigns and automations with Moosend's affordable platform." }, heartCount: 0, features: ["Drag-and-drop email editor", "Marketing automation", "Advanced segmentation", "Landing page builder", "A/B testing"], pros: ["Competitive pricing (from ~$9/month)", "No daily sending limits", "Clean UI and easy onboarding"], cons: ["Smaller template library than competitors", "Fewer native CRM integrations"], pricing: "~$9/month (500 subs)", rating: 4.3, freeTrial: "Yes, 30 days", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "10+" }
     ,
-      { name: "Google Analytics 4", category: "analytics-reporting", link: "https://analytics.google.com", benefit: "See exactly who visits your site, where they come from, and what they do — the free measurement standard every business should install on day one.", popularity: 10, tags: ["Analytics", "Free", "Marketing"], meta: { title: "Google Analytics 4 - Free Web Analytics", description: "Measure your website traffic and conversions free with Google Analytics 4." }, heartCount: 0, features: ["Traffic & source reports", "Conversion tracking", "Audience insights"], pros: ["Completely free", "Integrates with Ads & Search Console"], cons: ["Interface has a learning curve"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "30+", free: true },
-      { name: "Google Search Console", category: "seo-tools", link: "https://search.google.com/search-console", benefit: "Watch your Google rankings, see which queries bring clicks, submit sitemaps, and get alerts when something breaks — free from Google itself.", popularity: 10, tags: ["SEO", "Free", "Website"], meta: { title: "Google Search Console - Free SEO Data", description: "Track your Google rankings and indexing free with Search Console." }, heartCount: 0, features: ["Query & click reports", "Sitemap submission", "Index coverage alerts"], pros: ["Data straight from Google", "Essential and free"], cons: ["Data delayed ~2 days"], pricing: "Free", rating: 4.6, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "10+", free: true },
+      { name: "Google Analytics 4", icon: "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg", category: "analytics-reporting", link: "https://analytics.google.com", benefit: "See exactly who visits your site, where they come from, and what they do — the free measurement standard every business should install on day one.", popularity: 10, tags: ["Analytics", "Free", "Marketing"], meta: { title: "Google Analytics 4 - Free Web Analytics", description: "Measure your website traffic and conversions free with Google Analytics 4." }, heartCount: 0, features: ["Traffic & source reports", "Conversion tracking", "Audience insights"], pros: ["Completely free", "Integrates with Ads & Search Console"], cons: ["Interface has a learning curve"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "30+", free: true },
+      { name: "Google Search Console", icon: "https://ssl.gstatic.com/search-console/scfe/search_console-64.png", category: "seo-tools", link: "https://search.google.com/search-console", benefit: "Watch your Google rankings, see which queries bring clicks, submit sitemaps, and get alerts when something breaks — free from Google itself.", popularity: 10, tags: ["SEO", "Free", "Website"], meta: { title: "Google Search Console - Free SEO Data", description: "Track your Google rankings and indexing free with Search Console." }, heartCount: 0, features: ["Query & click reports", "Sitemap submission", "Index coverage alerts"], pros: ["Data straight from Google", "Essential and free"], cons: ["Data delayed ~2 days"], pricing: "Free", rating: 4.6, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "10+", free: true },
       { name: "Bing Webmaster Tools", category: "seo-tools", link: "https://www.bing.com/webmasters", benefit: "Get indexed on Bing, ChatGPT, and Copilot search — imports your Search Console setup in one click and includes free SEO reports.", popularity: 7, tags: ["SEO", "Free", "Website"], meta: { title: "Bing Webmaster Tools - Free SEO", description: "Index your site on Bing and get free SEO reports with Bing Webmaster Tools." }, heartCount: 0, features: ["GSC one-click import", "Keyword research", "Site scan audits"], pros: ["Covers Bing + AI search engines", "One-click GSC import"], cons: ["Smaller traffic share than Google"], pricing: "Free", rating: 4.3, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "5+", free: true },
       { name: "Microsoft Clarity", category: "analytics-reporting", link: "https://clarity.microsoft.com", benefit: "Watch real session recordings and heatmaps of how visitors actually use your site — completely free, unlimited traffic, no sampling.", popularity: 8, tags: ["Analytics", "Free", "UX"], meta: { title: "Microsoft Clarity - Free Heatmaps", description: "See session recordings and heatmaps free with Microsoft Clarity." }, heartCount: 0, features: ["Session recordings", "Heatmaps", "Rage-click detection"], pros: ["Truly free at any scale", "Reveals UX problems instantly"], cons: ["No conversion funnels like GA4"], pricing: "Free", rating: 4.6, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "10+", free: true },
-      { name: "Google Tag Manager", category: "analytics-reporting", link: "https://tagmanager.google.com", benefit: "Add and update analytics, ads, and tracking pixels without touching your site's code — one container tag manages them all.", popularity: 8, tags: ["Analytics", "Free", "Marketing"], meta: { title: "Google Tag Manager - Free Tag Control", description: "Manage all your tracking pixels without code using Google Tag Manager." }, heartCount: 0, features: ["Tag container", "Trigger rules", "Version history"], pros: ["No developer needed for pixels", "Free and unlimited"], cons: ["Concepts take time to learn"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "30+", free: true },
-      { name: "Looker Studio", category: "analytics-reporting", link: "https://lookerstudio.google.com", benefit: "Turn GA4, Search Console, and Ads data into beautiful shareable dashboards — Google's free BI tool for business reporting.", popularity: 8, tags: ["Analytics", "Free", "Reporting"], meta: { title: "Looker Studio - Free Dashboards", description: "Build free marketing dashboards from your Google data with Looker Studio." }, heartCount: 0, features: ["Drag-and-drop dashboards", "Google data connectors", "Scheduled email reports"], pros: ["Free client-ready reports", "Connects all Google sources"], cons: ["Non-Google connectors often paid"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "20+", free: true },
-      { name: "Google Ads", category: "ppc-advertising-management", link: "https://ads.google.com", benefit: "Reach customers the moment they search for what you sell — the platform is free to use (you pay only your ad budget) and includes Keyword Planner for free keyword research.", popularity: 10, tags: ["Advertising", "Marketing", "Free"], meta: { title: "Google Ads - Search Advertising", description: "Advertise on Google search — free platform, includes Keyword Planner." }, heartCount: 0, features: ["Search & display ads", "Keyword Planner", "Conversion tracking"], pros: ["Highest-intent traffic", "Free keyword research inside"], cons: ["Ad costs climb in competitive niches"], pricing: "Free tool (pay ad spend)", rating: 4.4, freeTrial: "Free to use", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "25+", free: true },
+      { name: "Google Tag Manager", icon: "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_tag_manager.svg", category: "analytics-reporting", link: "https://tagmanager.google.com", benefit: "Add and update analytics, ads, and tracking pixels without touching your site's code — one container tag manages them all.", popularity: 8, tags: ["Analytics", "Free", "Marketing"], meta: { title: "Google Tag Manager - Free Tag Control", description: "Manage all your tracking pixels without code using Google Tag Manager." }, heartCount: 0, features: ["Tag container", "Trigger rules", "Version history"], pros: ["No developer needed for pixels", "Free and unlimited"], cons: ["Concepts take time to learn"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "30+", free: true },
+      { name: "Looker Studio", icon: "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg", category: "analytics-reporting", link: "https://lookerstudio.google.com", benefit: "Turn GA4, Search Console, and Ads data into beautiful shareable dashboards — Google's free BI tool for business reporting.", popularity: 8, tags: ["Analytics", "Free", "Reporting"], meta: { title: "Looker Studio - Free Dashboards", description: "Build free marketing dashboards from your Google data with Looker Studio." }, heartCount: 0, features: ["Drag-and-drop dashboards", "Google data connectors", "Scheduled email reports"], pros: ["Free client-ready reports", "Connects all Google sources"], cons: ["Non-Google connectors often paid"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "20+", free: true },
+      { name: "Google Ads", icon: "https://www.gstatic.com/images/branding/product/2x/ads_48dp.png", category: "ppc-advertising-management", link: "https://ads.google.com", benefit: "Reach customers the moment they search for what you sell — the platform is free to use (you pay only your ad budget) and includes Keyword Planner for free keyword research.", popularity: 10, tags: ["Advertising", "Marketing", "Free"], meta: { title: "Google Ads - Search Advertising", description: "Advertise on Google search — free platform, includes Keyword Planner." }, heartCount: 0, features: ["Search & display ads", "Keyword Planner", "Conversion tracking"], pros: ["Highest-intent traffic", "Free keyword research inside"], cons: ["Ad costs climb in competitive niches"], pricing: "Free tool (pay ad spend)", rating: 4.4, freeTrial: "Free to use", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "25+", free: true },
       { name: "Meta Business Suite", category: "ppc-advertising-management", link: "https://business.facebook.com", benefit: "Manage Facebook and Instagram pages, posts, messages, and ads from one free dashboard — including the full Meta Ads Manager.", popularity: 9, tags: ["Advertising", "Social Media", "Free"], meta: { title: "Meta Business Suite - FB & IG Management", description: "Manage Facebook and Instagram business presence free with Meta Business Suite." }, heartCount: 0, features: ["Page & post management", "Unified inbox", "Ads Manager"], pros: ["One hub for FB + IG", "Free scheduling and inbox"], cons: ["Interface changes frequently"], pricing: "Free tool (pay ad spend)", rating: 4.2, freeTrial: "Free to use", easeOfUse: 3, supportAvailability: "Community", integrationCount: "15+", free: true },
-      { name: "Google Trends", category: "data-analysis", link: "https://trends.google.com", benefit: "See what the world is searching for — compare topics, spot seasonal demand, and validate business ideas with free search data.", popularity: 8, tags: ["Data", "SEO", "Free"], meta: { title: "Google Trends - Free Search Data", description: "Spot rising topics and seasonal demand free with Google Trends." }, heartCount: 0, features: ["Topic comparison", "Regional interest", "Rising queries"], pros: ["Great for idea validation", "Real Google search data"], cons: ["Relative numbers, not volumes"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "5+", free: true },
+      { name: "Google Trends", icon: "https://www.gstatic.com/images/branding/product/2x/trends_48dp.png", category: "data-analysis", link: "https://trends.google.com", benefit: "See what the world is searching for — compare topics, spot seasonal demand, and validate business ideas with free search data.", popularity: 8, tags: ["Data", "SEO", "Free"], meta: { title: "Google Trends - Free Search Data", description: "Spot rising topics and seasonal demand free with Google Trends." }, heartCount: 0, features: ["Topic comparison", "Regional interest", "Rising queries"], pros: ["Great for idea validation", "Real Google search data"], cons: ["Relative numbers, not volumes"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "5+", free: true },
       { name: "PageSpeed Insights", category: "seo-tools", link: "https://pagespeed.web.dev", benefit: "Test any page's speed and Core Web Vitals in seconds and get Google's own prioritized fix list — slow sites lose rankings and sales.", popularity: 8, tags: ["Website", "SEO", "Free"], meta: { title: "PageSpeed Insights - Free Speed Test", description: "Test your site speed and Core Web Vitals free with PageSpeed Insights." }, heartCount: 0, features: ["Core Web Vitals", "Lab + field data", "Fix recommendations"], pros: ["Google's own speed data", "Actionable fix list"], cons: ["Fixes may need a developer"], pricing: "Free", rating: 4.6, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "5+", free: true },
       { name: "GTmetrix", category: "seo-tools", link: "https://gtmetrix.com", benefit: "Get detailed waterfall analysis of exactly what slows your site down, with history tracking to prove your fixes worked.", popularity: 7, tags: ["Website", "SEO", "Free"], meta: { title: "GTmetrix - Site Speed Analysis", description: "Analyze what slows your site with GTmetrix's free speed reports." }, heartCount: 0, features: ["Waterfall charts", "Performance history", "Scheduled tests"], pros: ["Deeper detail than PSI", "Tracks speed over time"], cons: ["Advanced locations need paid plan"], pricing: "Free plan", rating: 4.4, freeTrial: "Free plan", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
-      { name: "Google Business Profile", category: "business-listing", link: "https://business.google.com", benefit: "Show up on Google Maps and local search with photos, hours, reviews, and posts — the single highest-impact free listing for any local business.", popularity: 10, tags: ["Local", "Free", "Marketing"], meta: { title: "Google Business Profile - Free Local Listing", description: "Get found on Google Maps free with a Google Business Profile." }, heartCount: 0, features: ["Maps & Search listing", "Customer reviews", "Posts & messaging"], pros: ["Massive local visibility", "Completely free"], cons: ["Requires verification process"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "10+", free: true },
+      { name: "Google Business Profile", icon: "https://www.gstatic.com/images/branding/product/2x/google_my_business_48dp.png", category: "business-listing", link: "https://business.google.com", benefit: "Show up on Google Maps and local search with photos, hours, reviews, and posts — the single highest-impact free listing for any local business.", popularity: 10, tags: ["Local", "Free", "Marketing"], meta: { title: "Google Business Profile - Free Local Listing", description: "Get found on Google Maps free with a Google Business Profile." }, heartCount: 0, features: ["Maps & Search listing", "Customer reviews", "Posts & messaging"], pros: ["Massive local visibility", "Completely free"], cons: ["Requires verification process"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "10+", free: true },
       { name: "Wave", category: "finance-tools", link: "https://www.waveapps.com", benefit: "Run invoicing, accounting, and receipts free forever — the go-to bookkeeping suite for freelancers and small businesses (you pay only when accepting card payments).", popularity: 7, tags: ["Finance", "Accounting", "Free"], meta: { title: "Wave - Free Accounting Software", description: "Do invoicing and accounting free forever with Wave." }, heartCount: 0, features: ["Unlimited invoicing", "Double-entry accounting", "Receipt scanning"], pros: ["Genuinely free accounting", "Easy for non-accountants"], cons: ["Payroll and payments cost extra"], pricing: "Free (payments cost extra)", rating: 4.4, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "10+" },
-      { name: "Google Forms", category: "productivity", link: "https://forms.google.com", benefit: "Collect orders, feedback, signups, and surveys with free unlimited forms that feed straight into Google Sheets.", popularity: 9, tags: ["Productivity", "Free", "Survey"], meta: { title: "Google Forms - Free Surveys & Forms", description: "Collect survey responses and signups free with Google Forms." }, heartCount: 0, features: ["Unlimited forms", "Sheets integration", "Logic branching"], pros: ["Free and unlimited", "Everyone can use it"], cons: ["Basic design options"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "10+", free: true },
+      { name: "Google Forms", icon: "https://www.gstatic.com/images/branding/product/2x/forms_48dp.png", category: "productivity", link: "https://forms.google.com", benefit: "Collect orders, feedback, signups, and surveys with free unlimited forms that feed straight into Google Sheets.", popularity: 9, tags: ["Productivity", "Free", "Survey"], meta: { title: "Google Forms - Free Surveys & Forms", description: "Collect survey responses and signups free with Google Forms." }, heartCount: 0, features: ["Unlimited forms", "Sheets integration", "Logic branching"], pros: ["Free and unlimited", "Everyone can use it"], cons: ["Basic design options"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "10+", free: true },
       { name: "Bitly", category: "productivity", link: "https://bitly.com", benefit: "Shorten, brand, and track every link you share — see exactly how many clicks each campaign link gets.", popularity: 8, tags: ["Marketing", "Link", "Free"], meta: { title: "Bitly - Link Shortening & Tracking", description: "Shorten and track your marketing links with Bitly." }, heartCount: 0, features: ["Short links", "Click analytics", "QR codes"], pros: ["Click data on every link", "Free tier covers basics"], cons: ["Custom domains are paid"], pricing: "Free plan", rating: 4.3, freeTrial: "Free plan", easeOfUse: 5, supportAvailability: "Business hours", integrationCount: "10+" },
       { name: "Linktree", category: "social-media-management", link: "https://linktr.ee", benefit: "Turn your social bio's single link into a mini landing page with all your important links — the standard link-in-bio tool.", popularity: 8, tags: ["Social Media", "Free", "Creators"], meta: { title: "Linktree - Free Link in Bio", description: "Put all your links in one bio page free with Linktree." }, heartCount: 0, features: ["Link-in-bio page", "Click analytics", "Theme customization"], pros: ["Set up in minutes", "Free tier is plenty to start"], cons: ["Branding removal is paid"], pricing: "Free plan", rating: 4.3, freeTrial: "Free plan", easeOfUse: 5, supportAvailability: "Business hours", integrationCount: "10+" },
       { name: "Unsplash", category: "image-creation", link: "https://unsplash.com", benefit: "Download beautiful high-resolution photos free for commercial use — no attribution required, powering millions of websites and ads.", popularity: 9, tags: ["Image", "Free", "Design"], meta: { title: "Unsplash - Free Stock Photos", description: "Get free commercial-use stock photos on Unsplash." }, heartCount: 0, features: ["3M+ free photos", "Commercial license", "API access"], pros: ["Truly free commercial use", "High quality"], cons: ["Popular photos get overused"], pricing: "Free", rating: 4.7, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "5+", free: true },
@@ -770,60 +769,29 @@
           learnMoreSection = document.createElement('div');
           learnMoreSection.className = 'learn-more-section mt-4 p-4 rounded-lg hidden';
           learnMoreSection.innerHTML = `
-            <h3 class="text-lg font-semibold mb-2">${program.name} Overview 🎯</h3>
-            <p class="mb-2">${program.meta.description}. Ideal for ${program.benefit.split('.')[0].toLowerCase()}.</p>
-            <div class="bg-blue-100 p-3 mb-2 rounded flex items-center">
-              <span class="mr-2 text-blue-600">💰</span>
+            <div class="lm-head">
               <div>
-                <h4 class="font-bold text-blue-800 mb-1">Pricing</h4>
-                <p class="ml-4">${program.pricing}</p>
+                <p class="lm-title">${program.name} <span class="lm-score">★ ${program.rating}</span></p>
+                <p class="lm-sub">${program.meta.description}</p>
               </div>
+              <button class="lm-close" aria-label="Close" onclick="this.closest('.learn-more-section').classList.add('hidden')">&#10005;</button>
             </div>
-            <div class="bg-orange-100 p-3 mb-2 rounded flex items-center">
-              <span class="mr-2 text-orange-600">🎁</span>
-              <div>
-                <h4 class="font-bold text-orange-800 mb-1">Free Trial</h4>
-                <p class="ml-4">${program.freeTrial || 'No'}</p>
-              </div>
+            <div class="lm-grid">
+              <div class="lm-stat"><span>&#128176;</span><div><b>Pricing</b><p>${program.pricing}</p></div></div>
+              <div class="lm-stat"><span>&#127873;</span><div><b>Free Trial</b><p>${program.freeTrial || 'No'}</p></div></div>
+              <div class="lm-stat"><span>&#9889;</span><div><b>Ease of Use</b><p>${program.easeOfUse}/5</p></div></div>
+              <div class="lm-stat"><span>&#128172;</span><div><b>Support</b><p>${program.supportAvailability}</p></div></div>
+              <div class="lm-stat"><span>&#128279;</span><div><b>Integrations</b><p>${program.integrationCount}</p></div></div>
+              <div class="lm-stat"><span>&#128295;</span><div><b>Key Features</b><p>${(program.features || []).slice(0,3).join(' · ')}</p></div></div>
             </div>
-            <div class="bg-purple-100 p-3 mb-2 rounded flex items-center">
-              <span class="mr-2 text-purple-600">👍</span>
-              <div>
-                <h4 class="font-bold text-purple-800 mb-1">Ease of Use</h4>
-                <p class="ml-4">${program.easeOfUse}/5</p>
-              </div>
+            <div class="lm-cols">
+              <div class="lm-pros"><b>&#10003; Strengths</b><ul>${(program.pros || []).map(x => `<li>${x}</li>`).join('')}</ul></div>
+              <div class="lm-cons"><b>&#10007; Watch out</b><ul>${(program.cons || []).map(x => `<li>${x}</li>`).join('')}</ul></div>
             </div>
-            <div class="bg-teal-100 p-3 mb-2 rounded flex items-center">
-              <span class="mr-2 text-teal-600">🛡️</span>
-              <div>
-                <h4 class="font-bold text-teal-800 mb-1">Support Availability</h4>
-                <p class="ml-4">${program.supportAvailability}</p>
-              </div>
+            <div class="lm-actions">
+              <a href="${program.link}" target="_blank" rel="sponsored noopener" class="affiliate-link sg-cta sg-btn-primary sg-btn-sm" data-tool="${program.name.toLowerCase().replace(/[^a-z0-9]+/g,'-')}">Explore Now &rarr;</a>
+              ${REVIEWS[program.name] ? `<a href="${REVIEWS[program.name]}" class="sg-btn-amber sg-btn-sm">Read Full Review</a>` : ''}
             </div>
-            <div class="bg-indigo-100 p-3 mb-2 rounded flex items-center">
-              <span class="mr-2 text-indigo-600">🔗</span>
-              <div>
-                <h4 class="font-bold text-indigo-800 mb-1">Integration Count</h4>
-                <p class="ml-4">${program.integrationCount}</p>
-              </div>
-            </div>
-            <div class="bg-green-100 p-3 mb-2 rounded flex items-center">
-              <span class="mr-2 text-green-600">⭐</span>
-              <div>
-                <h4 class="font-bold text-green-800 mb-1">User Feedback</h4>
-                <p class="ml-4">${program.pros.join(', ')} 😊</p>
-              </div>
-            </div>
-            <div class="bg-yellow-100 p-3 mb-2 rounded flex items-center">
-              <span class="mr-2 text-yellow-600">💡</span>
-              <div>
-                <h4 class="font-bold text-yellow-800 mb-1">Insights</h4>
-                <p class="ml-4">${program.cons.join(', ')} 📝</p>
-              </div>
-            </div>
-            <a href="${program.link}" target="_blank" rel="sponsored noopener" class="text-blue-600 underline block mt-1">Explore Now</a>
-            ${REVIEWS[program.name] ? `<a href="${REVIEWS[program.name]}" class="text-green-600 underline block mt-1">Read Our Full Review 📖</a>` : ''}
-            <button class="mt-2 text-red-600 underline" onclick="this.parentElement.classList.add('hidden')">Close ❌</button>
           `;
           card.appendChild(learnMoreSection);
         }
@@ -848,6 +816,9 @@
         
         if (searchTerm) {
           const q = searchTerm.toLowerCase();
+          if (window.sgTagExact === searchTerm) {
+            filteredPrograms = filteredPrograms.filter(p => (p.tags || []).includes(searchTerm));
+          } else
           filteredPrograms = filteredPrograms.filter(p =>
             p.name.toLowerCase().includes(q) ||
             p.benefit.toLowerCase().includes(q) ||
@@ -904,7 +875,7 @@
           card.innerHTML = `
             <div class="flex items-start justify-between mb-3">
               <div class="flex items-center" style="gap:.8rem">
-                ${sgLogoHTML(program.link, program.name)}
+                ${sgLogoHTML(program.link, program.name, program.icon)}
                 <div>
                   <h2 class="text-lg font-bold text-gray-900 leading-snug">${program.name}</h2>
                   <span class="sg-chip ${accent}">${catLabel}</span>${program.free ? ' <span class="sg-chip sg-acc-green">&#128154; 100% Free</span>' : ''}
@@ -1026,6 +997,7 @@
         comparisonSlider.innerHTML = '';
         if (selectedPrograms.length === 0) {
           comparisonTable.classList.add('hidden');
+          updateCompareButtons();
           return;
         }
         comparisonTable.classList.remove('hidden');
@@ -1141,6 +1113,7 @@
     });
 
     searchInput.addEventListener('input', (e) => {
+      window.sgTagExact = null;
       displayPrograms(categoryFilter.value, e.target.value, sortOption.value);
     });
 
@@ -1155,13 +1128,14 @@
       const counts = {};
       programs.forEach(p => (p.tags || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
       const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).filter(([t, n]) => n >= 2).slice(0, 30);
-      const palette = ['bg-blue-200 text-blue-800', 'bg-purple-200 text-purple-800', 'bg-pink-200 text-pink-800',
-        'bg-yellow-200 text-yellow-800', 'bg-indigo-200 text-indigo-800', 'bg-red-200 text-red-800'];
       let html = '';
       top.forEach(([t, n], i) => {
-        const cls = t === 'Free' ? 'bg-green-200 text-green-800' : palette[i % palette.length];
+        const hue = Math.round((i * 137.508) % 360);
+        const style = t === 'Free'
+          ? 'background:#d1fae5;color:#065f46'
+          : `background:hsl(${hue},80%,91%);color:hsl(${hue},60%,28%)`;
         const label = t === 'Free' ? '&#128154; Free' : t;
-        html += `<span class="${cls} px-2 py-1 rounded cursor-pointer tag" data-tag="${t}">${label} <small class="opacity-60">${n}</small></span>`;
+        html += `<span class="px-2 py-1 rounded cursor-pointer tag" style="${style}" data-tag="${t}">${label} <small class="opacity-60">${n}</small></span>`;
       });
       cont.innerHTML = html;
     })();
@@ -1171,9 +1145,11 @@
         const tagValue = tag.getAttribute('data-tag');
         if (searchInput.value === tagValue) {
           searchInput.value = '';           // clicking the active tag clears it
+          window.sgTagExact = null;
           displayPrograms(categoryFilter.value, '', sortOption.value);
         } else {
           searchInput.value = tagValue;
+          window.sgTagExact = tagValue;
           displayPrograms(categoryFilter.value, tagValue, sortOption.value);
         }
       });
@@ -1194,6 +1170,7 @@
       clearBtn.addEventListener('click', () => {
         categoryFilter.value = 'all';
         searchInput.value = '';
+        window.sgTagExact = null;
         sortOption.value = 'name';
         displayPrograms('all', '', 'name');
         window.scrollTo({ top: 0, behavior: 'smooth' });

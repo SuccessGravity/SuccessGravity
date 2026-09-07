@@ -348,12 +348,57 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI'
 #tag-cloud .tag, .tag { padding: .42rem .8rem; display: inline-block; }
 
 /* ══════════════ v7: /directory/ sidebar ══════════════ */
-.sgd-cat { display: flex; justify-content: space-between; align-items: center; width: 100%;
-  text-align: left; font-size: .84rem; font-weight: 600; color: #475569;
+.sgd-cat { display: flex; justify-content: space-between; align-items: flex-start; gap: .5rem; width: 100%;
+  font-size: .84rem; font-weight: 600; color: #475569;
   padding: .45rem .7rem; border-radius: .6rem; cursor: pointer; background: transparent; border: none;
   transition: background .15s ease, color .15s ease; }
+.sgd-cat > span { flex: 1; text-align: left; }
+.sgd-cat small { flex: none; margin-top: .1rem; }
 .sgd-cat:hover { background: #eef2ff; color: #4f46e5; }
 .sgd-cat-on { background: linear-gradient(90deg, #4f46e5, #7c3aed); color: #fff !important; }
 .sgd-cat small { opacity: .65; font-weight: 700; }
 .dark-mode .sgd-cat { color: #cbd5e0; }
 .dark-mode .sgd-cat:hover { background: #2d3748; }
+
+/* ══════════════ v8: refined Quick Facts panel ══════════════ */
+.learn-more-section { border: 1px solid #e0e7ff; border-radius: 1rem; margin-top: 1rem; padding: 1.1rem !important;
+  background: linear-gradient(180deg, #f8faff 0%, #fff 100%); }
+.lm-head { display: flex; align-items: flex-start; justify-content: space-between; gap: .6rem; margin-bottom: .8rem; }
+.lm-title { font-weight: 800; color: #1e293b; font-size: 1rem; }
+.lm-score { background: #fef3c7; color: #92400e; font-size: .7rem; font-weight: 800; padding: .12rem .5rem; border-radius: 9999px; margin-left: .3rem; }
+.lm-sub { color: #64748b; font-size: .78rem; margin-top: .15rem; line-height: 1.5; }
+.lm-close { flex: none; width: 26px; height: 26px; border-radius: 9999px; background: #eef2ff; color: #64748b;
+  font-size: .7rem; font-weight: 700; cursor: pointer; border: none; }
+.lm-close:hover { background: #e0e7ff; color: #4f46e5; }
+.lm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-bottom: .8rem; }
+.lm-stat { display: flex; gap: .5rem; align-items: flex-start; background: #fff; border: 1px solid #eef0f4;
+  border-radius: .7rem; padding: .55rem .65rem; }
+.lm-stat span { font-size: .95rem; line-height: 1.3; }
+.lm-stat b { display: block; font-size: .62rem; text-transform: uppercase; letter-spacing: .04em; color: #94a3b8; }
+.lm-stat p { font-size: .78rem; color: #334155; font-weight: 600; line-height: 1.35; }
+.lm-cols { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-bottom: .9rem; }
+.lm-pros, .lm-cons { border-radius: .7rem; padding: .6rem .7rem; font-size: .76rem; }
+.lm-pros { background: #ecfdf5; border: 1px solid #d1fae5; }
+.lm-cons { background: #fff7ed; border: 1px solid #fed7aa; }
+.lm-pros b { color: #065f46; font-size: .68rem; } .lm-cons b { color: #9a3412; font-size: .68rem; }
+.lm-pros ul, .lm-cons ul { margin-top: .3rem; }
+.lm-pros li, .lm-cons li { color: #374151; line-height: 1.45; margin-bottom: .2rem; }
+.lm-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+@media (max-width: 480px) { .lm-grid, .lm-cols { grid-template-columns: 1fr; } }
+.dark-mode .learn-more-section { background: #1a202c; border-color: #4a5568; }
+.dark-mode .lm-title { color: #e2e8f0; } .dark-mode .lm-sub { color: #a0aec0; }
+.dark-mode .lm-stat { background: #2d3748; border-color: #4a5568; }
+.dark-mode .lm-stat p { color: #e2e8f0; }
+.dark-mode .lm-pros { background: #1c3a2f; border-color: #276749; }
+.dark-mode .lm-cons { background: #3d2b1f; border-color: #9c4221; }
+.dark-mode .lm-pros li, .dark-mode .lm-cons li { color: #cbd5e0; }
+
+/* v8: directory compare tray + modal */
+.sgd-tray { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); z-index: 60;
+  background: #1e1b4b; color: #fff; border-radius: 9999px; padding: .6rem 1.1rem;
+  display: flex; align-items: center; gap: .8rem; box-shadow: 0 12px 30px -8px rgba(30,27,75,.5); }
+.sgd-modal-bg { position: fixed; inset: 0; background: rgba(15,23,42,.55); z-index: 70;
+  display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.sgd-modal { background: #fff; border-radius: 1.2rem; max-width: 900px; width: 100%; max-height: 86vh;
+  overflow: auto; padding: 1.5rem; }
+.dark-mode .sgd-modal { background: #2d3748; }

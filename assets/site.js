@@ -53,7 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     document.querySelectorAll('.sg-card2:not([data-tilt-init]), .sg-card:not([data-tilt-init])').forEach(function (el) {
       el.setAttribute('data-tilt-init', '1');
-      VanillaTilt.init(el, { max: 6, speed: 400, scale: 1.015, glare: true, 'max-glare': 0.12 });
+      // Skip cards with interactive controls — tilt transforms interfere with clicking
+      if (el.closest('#programs') || el.querySelector('button')) return;
+      VanillaTilt.init(el, { max: 4, speed: 400, scale: 1.01, glare: true, 'max-glare': 0.1 });
     });
   }
   // libs load with defer — try now and shortly after
@@ -119,13 +121,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ── Design v2: tool logo helper (auto favicon with monogram fallback) ──
 // Usage: sgLogoHTML('https://tool.com', 'Tool Name') → returns logo markup string.
-function sgLogoHTML(link, name) {
+function sgLogoHTML(link, name, icon) {
   var domain = '';
   try { domain = new URL(link).hostname; } catch (e) { domain = ''; }
   var initial = (name || '?').replace(/[^A-Za-z0-9]/g, '').charAt(0).toUpperCase() || '?';
   var mono = '<span class="sg-logo-mono">' + initial + '</span>';
-  if (!domain) return '<div class="sg-logo-ring"><span>' + mono + '</span></div>';
-  var src = 'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(domain) + '&sz=64';
+  if (!icon && !domain) return '<div class="sg-logo-ring"><span>' + mono + '</span></div>';
+  var src = icon || ('https://www.google.com/s2/favicons?domain=' + encodeURIComponent(domain) + '&sz=64');
   return '<div class="sg-logo-ring"><span><img src="' + src + '" alt="' + (name || '') +
     ' logo" width="32" height="32" loading="lazy" onerror="this.outerHTML=\'<span class=&quot;sg-logo-mono&quot;>' +
     initial + '</span>\'"></span></div>';
