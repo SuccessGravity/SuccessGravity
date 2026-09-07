@@ -91,6 +91,57 @@ document.addEventListener('DOMContentLoaded', function () {
   sgInitGsap();
   setTimeout(sgInitGsap, 700);
 
+
+  // ── v10: universal share button (every page) ──
+  (function () {
+    if (document.getElementById('sg-share-fab')) return;
+    var fab = document.createElement('button');
+    fab.id = 'sg-share-fab';
+    fab.setAttribute('aria-label', 'Share this page');
+    fab.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/></svg>';
+    document.body.appendChild(fab);
+
+    var pop = document.createElement('div');
+    pop.id = 'sg-share-pop';
+    pop.style.display = 'none';
+    document.body.appendChild(pop);
+
+    function buildPop() {
+      var url = location.href;
+      var title = document.title.split('|')[0].trim();
+      var eu = encodeURIComponent(url), et = encodeURIComponent(title);
+      pop.innerHTML =
+        '<p class="sg-share-title">Share this page</p>' +
+        '<button class="sg-share-row" data-act="copy">&#128279; Copy link</button>' +
+        '<a class="sg-share-row" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=' + eu + '&text=' + et + '">&#120143; Share on X</a>' +
+        '<a class="sg-share-row" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + eu + '">&#128216; Facebook</a>' +
+        '<a class="sg-share-row" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=' + eu + '">&#128188; LinkedIn</a>' +
+        '<a class="sg-share-row" href="mailto:?subject=' + et + '&body=' + et + '%0A' + eu + '">&#9993;&#65039; Email</a>';
+      pop.querySelector('[data-act="copy"]').addEventListener('click', function () {
+        var b = this;
+        function done() { b.innerHTML = '&#10004; Copied!'; setTimeout(function () { b.innerHTML = '&#128279; Copy link'; }, 1600); }
+        if (navigator.clipboard) { navigator.clipboard.writeText(url).then(done, done); } else { done(); }
+      });
+    }
+
+    fab.addEventListener('click', function () {
+      var url = location.href;
+      var title = document.title.split('|')[0].trim();
+      if (typeof gtag === 'function') gtag('event', 'share_click', { page: location.pathname });
+      if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
+        navigator.share({ title: title, url: url }).catch(function () {});
+        return;
+      }
+      if (pop.style.display === 'none') { buildPop(); pop.style.display = 'block'; }
+      else { pop.style.display = 'none'; }
+    });
+    document.addEventListener('click', function (e) {
+      if (pop.style.display !== 'none' && !pop.contains(e.target) && e.target !== fab && !fab.contains(e.target)) {
+        pop.style.display = 'none';
+      }
+    });
+  })();
+
   // ── Design v2: animated stat counters ──
   function animateCount(el) {
     var to = parseInt(el.getAttribute('data-count-to'), 10) || 0;

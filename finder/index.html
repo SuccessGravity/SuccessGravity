@@ -36,6 +36,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "yeqvo4znwn");
   </script>
+
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
   <nav class="bg-white shadow-sm sticky top-0 z-50">
@@ -158,6 +159,7 @@
         <ul class="space-y-2">
           <li><a href="mailto:help@successgravity.com" class="hover:text-white">help@successgravity.com</a></li>
           <li><a href="/contact/" class="hover:text-white">Contact page</a></li>
+          <li><a href="https://buy.stripe.com/9B64gA7Ze3NK5LE5mK9IQ08" target="_blank" rel="noopener" class="hover:text-white" onclick="if(typeof gtag==='function')gtag('event','support_click',{from:'footer'})">&#9749; Support this site</a></li>
         </ul>
       </div>
     </div>
@@ -282,8 +284,20 @@
       const hubLink = document.getElementById('sgf-hub-link');
       if (hub) { hubLink.href = '/category/' + hub + '/'; hubLink.hidden = false; } else { hubLink.hidden = true; }
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.replaceState(null, '', location.pathname + '?g=' + state.goal + '&b=' + state.budget + '&e=' + state.exp);
       if (typeof gtag === 'function') gtag('event', 'finder_result', { goal: GOALS[state.goal][1], budget: state.budget, exp: state.exp });
     }
+
+    // deep link: /finder/?g=2&b=free&e=beginner shows the shared result directly
+    (function () {
+      const p = new URLSearchParams(location.search);
+      const g = parseInt(p.get('g'), 10);
+      if (!isNaN(g) && GOALS[g] && ['free','25','100','any'].indexOf(p.get('b')) !== -1 &&
+          ['beginner','balanced','pro'].indexOf(p.get('e')) !== -1) {
+        state.goal = g; state.budget = p.get('b'); state.exp = p.get('e');
+        finish();
+      }
+    })();
   })();
   </script>
 </body>

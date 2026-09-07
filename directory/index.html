@@ -114,12 +114,12 @@
   </main>
 
   <!-- compare tray + modal -->
-  <div id="sgd-tray" class="sgd-tray" hidden>
+  <div id="sgd-tray" class="sgd-tray" style="display:none">
     <span class="text-sm font-semibold">&#9878; <span id="sgd-tray-count">0</span> selected</span>
     <button id="sgd-compare-now" class="bg-amber-400 text-indigo-900 text-sm font-bold px-4 py-1.5 rounded-full hover:bg-amber-300">Compare now</button>
     <button id="sgd-tray-clear" class="text-indigo-200 text-sm hover:text-white">Clear</button>
   </div>
-  <div id="sgd-modal-bg" class="sgd-modal-bg" hidden>
+  <div id="sgd-modal-bg" class="sgd-modal-bg" style="display:none">
     <div class="sgd-modal">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xl font-extrabold text-gray-900">Side-by-Side Comparison</h2>
@@ -165,6 +165,7 @@
         <ul class="space-y-2">
           <li><a href="mailto:help@successgravity.com" class="hover:text-white">help@successgravity.com</a></li>
           <li><a href="/contact/" class="hover:text-white">Contact page</a></li>
+          <li><a href="https://buy.stripe.com/9B64gA7Ze3NK5LE5mK9IQ08" target="_blank" rel="noopener" class="hover:text-white" onclick="if(typeof gtag==='function')gtag('event','support_click',{from:'footer'})">&#9749; Support this site</a></li>
         </ul>
       </div>
     </div>
@@ -258,7 +259,7 @@
     function updateTray() {
       const tray = document.getElementById('sgd-tray');
       document.getElementById('sgd-tray-count').textContent = picked.length;
-      tray.hidden = picked.length === 0;
+      tray.style.display = picked.length === 0 ? 'none' : 'flex';
       document.querySelectorAll('.sgd-cmp-btn').forEach(b => {
         const on = picked.indexOf(b.dataset.name) !== -1;
         b.classList.toggle('sg-added', on);
@@ -304,11 +305,11 @@
         html += '<tr><td class="font-semibold text-gray-500">' + label + '</td>' + sel.map(t => '<td>' + fn(t) + '</td>').join('') + '</tr>';
       });
       document.getElementById('sgd-modal-table').innerHTML = html + '</tbody>';
-      document.getElementById('sgd-modal-bg').hidden = false;
+      document.getElementById('sgd-modal-bg').style.display = 'flex';
       if (typeof gtag === 'function') gtag('event', 'directory_compare', { tools: picked.join(' vs ') });
     });
-    document.getElementById('sgd-modal-close').addEventListener('click', () => { document.getElementById('sgd-modal-bg').hidden = true; });
-    document.getElementById('sgd-modal-bg').addEventListener('click', e => { if (e.target.id === 'sgd-modal-bg') e.target.hidden = true; });
+    document.getElementById('sgd-modal-close').addEventListener('click', () => { document.getElementById('sgd-modal-bg').style.display = 'none'; });
+    document.getElementById('sgd-modal-bg').addEventListener('click', e => { if (e.target.id === 'sgd-modal-bg') e.target.style.display = 'none'; });
 
     document.getElementById('sgd-search').addEventListener('input', e => { state.q = e.target.value.trim().toLowerCase(); render(); });
     document.getElementById('sgd-sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
@@ -327,9 +328,25 @@
       render();
     });
 
+    function syncURL() {
+      const p = new URLSearchParams();
+      if (state.q) p.set('q', state.q);
+      if (state.cat !== 'all') p.set('cat', state.cat);
+      if (state.free) p.set('free', '1');
+      if (state.reviewed) p.set('rev', '1');
+      if (state.sort !== 'rating') p.set('sort', state.sort);
+      const qs = p.toString();
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
+    }
+    const _render = render;
+    render = function () { _render(); syncURL(); };
+
     const params = new URLSearchParams(location.search);
     if (params.get('cat') && counts[params.get('cat')]) state.cat = params.get('cat');
     if (params.get('free')) { state.free = true; document.getElementById('sgd-free').checked = true; }
+    if (params.get('rev')) { state.reviewed = true; document.getElementById('sgd-reviewed').checked = true; }
+    if (params.get('q')) { state.q = params.get('q').toLowerCase(); document.getElementById('sgd-search').value = params.get('q'); }
+    if (['name','popularity'].indexOf(params.get('sort')) !== -1) { state.sort = params.get('sort'); document.getElementById('sgd-sort').value = state.sort; }
     render();
   })();
   </script>
