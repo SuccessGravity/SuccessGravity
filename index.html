@@ -38,7 +38,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=30">
+  <link rel="stylesheet" href="/assets/site.css?v=31">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -215,6 +215,7 @@
           <option value="automation">Automation &amp; Integration</option>
           <option value="payments-finance">Payments &amp; Finance</option>
           <option value="ai-coding">AI Coding &amp; Development</option>
+          <option value="government-resources">Government &amp; Public Resources</option>
           <option value="other">Other</option>
           <option value="influencer-marketing">Influencer Marketing</option>
           <option value="ai-content-creation">AI Content Creation</option>
@@ -305,35 +306,7 @@
         </div>
         <a href="/review/" class="text-indigo-600 font-semibold text-sm hover:underline whitespace-nowrap">All reviews &rarr;</a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-        <a href="/review/semrush/" class="sg-card2 sg-reveal block hover:no-underline">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="sg-logo-ring"><span><img src="https://www.google.com/s2/favicons?domain=semrush.com&amp;sz=64" alt="Semrush logo" loading="lazy" onerror="this.outerHTML='<span class=&quot;sg-logo-mono&quot;>S</span>'"></span></div>
-            <div><h3 class="font-bold text-gray-900">Semrush</h3>
-            <p class="text-sm"><span class="sg-star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b class="text-gray-700">4.8/5</b></p></div>
-          </div>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3">The all-in-one SEO suite we trust most — keyword research, competitor analysis, and site audits that actually move rankings.</p>
-          <p class="text-sm text-indigo-600 font-semibold">Read the full review &rarr;</p>
-        </a>
-        <a href="/review/shopify/" class="sg-card2 sg-reveal block hover:no-underline">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="sg-logo-ring"><span><img src="https://www.google.com/s2/favicons?domain=shopify.com&amp;sz=64" alt="Shopify logo" loading="lazy" onerror="this.outerHTML='<span class=&quot;sg-logo-mono&quot;>S</span>'"></span></div>
-            <div><h3 class="font-bold text-gray-900">Shopify</h3>
-            <p class="text-sm"><span class="sg-star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b class="text-gray-700">4.8/5</b></p></div>
-          </div>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3">Still the fastest way to launch a serious online store — payments, inventory, and a 30+ app ecosystem out of the box.</p>
-          <p class="text-sm text-indigo-600 font-semibold">Read the full review &rarr;</p>
-        </a>
-        <a href="/review/canva/" class="sg-card2 sg-reveal block hover:no-underline">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="sg-logo-ring"><span><img src="https://www.google.com/s2/favicons?domain=canva.com&amp;sz=64" alt="Canva logo" loading="lazy" onerror="this.outerHTML='<span class=&quot;sg-logo-mono&quot;>C</span>'"></span></div>
-            <div><h3 class="font-bold text-gray-900">Canva</h3>
-            <p class="text-sm"><span class="sg-star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b class="text-gray-700">4.7/5</b></p></div>
-          </div>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3">Design for everyone: templates, brand kits, and AI tools that make non-designers look professional.</p>
-          <p class="text-sm text-indigo-600 font-semibold">Read the full review &rarr;</p>
-        </a>
-      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start" id="sg-latest-reviews"></div>
     </div>
   </section>
 
@@ -480,7 +453,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer onerror="this.remove()"></script>
-  <script src="/assets/site.js?v=30"></script>
+  <script src="/assets/site.js?v=31"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$39/month", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -620,8 +593,8 @@
       { name: "Microsoft Clarity", category: "analytics-reporting", link: "https://clarity.microsoft.com", benefit: "Watch real session recordings and heatmaps of how visitors actually use your site — completely free, unlimited traffic, no sampling.", popularity: 8, tags: ["Analytics", "Free", "UX"], meta: { title: "Microsoft Clarity - Free Heatmaps", description: "See session recordings and heatmaps free with Microsoft Clarity." }, heartCount: 0, features: ["Session recordings", "Heatmaps", "Rage-click detection"], pros: ["Truly free at any scale", "Reveals UX problems instantly"], cons: ["No conversion funnels like GA4"], pricing: "Free", rating: 4.6, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "10+", free: true },
       { name: "Google Tag Manager", icon: "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_tag_manager.svg", category: "analytics-reporting", link: "https://tagmanager.google.com", benefit: "Add and update analytics, ads, and tracking pixels without touching your site's code — one container tag manages them all.", popularity: 8, tags: ["Analytics", "Free", "Marketing"], meta: { title: "Google Tag Manager - Free Tag Control", description: "Manage all your tracking pixels without code using Google Tag Manager." }, heartCount: 0, features: ["Tag container", "Trigger rules", "Version history"], pros: ["No developer needed for pixels", "Free and unlimited"], cons: ["Concepts take time to learn"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "30+", free: true },
       { name: "Looker Studio", icon: "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg", category: "analytics-reporting", link: "https://lookerstudio.google.com", benefit: "Turn GA4, Search Console, and Ads data into beautiful shareable dashboards — Google's free BI tool for business reporting.", popularity: 8, tags: ["Analytics", "Free", "Reporting"], meta: { title: "Looker Studio - Free Dashboards", description: "Build free marketing dashboards from your Google data with Looker Studio." }, heartCount: 0, features: ["Drag-and-drop dashboards", "Google data connectors", "Scheduled email reports"], pros: ["Free client-ready reports", "Connects all Google sources"], cons: ["Non-Google connectors often paid"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Community", integrationCount: "20+", free: true },
-      { name: "Google Ads", icon: "https://www.gstatic.com/images/branding/product/2x/ads_48dp.png", category: "ppc-advertising-management", link: "https://ads.google.com", benefit: "Reach customers the moment they search for what you sell — the platform is free to use (you pay only your ad budget) and includes Keyword Planner for free keyword research.", popularity: 10, tags: ["Advertising", "Marketing", "Free"], meta: { title: "Google Ads - Search Advertising", description: "Advertise on Google search — free platform, includes Keyword Planner." }, heartCount: 0, features: ["Search & display ads", "Keyword Planner", "Conversion tracking"], pros: ["Highest-intent traffic", "Free keyword research inside"], cons: ["Ad costs climb in competitive niches"], pricing: "Free tool (pay ad spend)", rating: 4.4, freeTrial: "Free to use", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "25+", free: true },
-      { name: "Meta Business Suite", category: "ppc-advertising-management", link: "https://business.facebook.com", benefit: "Manage Facebook and Instagram pages, posts, messages, and ads from one free dashboard — including the full Meta Ads Manager.", popularity: 9, tags: ["Advertising", "Social Media", "Free"], meta: { title: "Meta Business Suite - FB & IG Management", description: "Manage Facebook and Instagram business presence free with Meta Business Suite." }, heartCount: 0, features: ["Page & post management", "Unified inbox", "Ads Manager"], pros: ["One hub for FB + IG", "Free scheduling and inbox"], cons: ["Interface changes frequently"], pricing: "Free tool (pay ad spend)", rating: 4.2, freeTrial: "Free to use", easeOfUse: 3, supportAvailability: "Community", integrationCount: "15+", free: true },
+      { name: "Google Ads", icon: "https://www.gstatic.com/images/branding/product/2x/ads_48dp.png", category: "ppc-advertising-management", link: "https://ads.google.com", benefit: "Reach customers the moment they search for what you sell — the platform is free to use (you pay only your ad budget) and includes Keyword Planner for free keyword research.", popularity: 10, tags: ["Advertising", "Marketing", "Free"], meta: { title: "Google Ads - Search Advertising", description: "Advertise on Google search — free platform, includes Keyword Planner." }, heartCount: 0, features: ["Search & display ads", "Keyword Planner", "Conversion tracking"], pros: ["Highest-intent traffic", "Free keyword research inside"], cons: ["Ad costs climb in competitive niches"], pricing: "Free tool (pay ad spend)", rating: 4.4, freeTrial: "Free to use", easeOfUse: 3, supportAvailability: "24/7", integrationCount: "25+" },
+      { name: "Meta Business Suite", category: "ppc-advertising-management", link: "https://business.facebook.com", benefit: "Manage Facebook and Instagram pages, posts, messages, and ads from one free dashboard — including the full Meta Ads Manager.", popularity: 9, tags: ["Advertising", "Social Media", "Free"], meta: { title: "Meta Business Suite - FB & IG Management", description: "Manage Facebook and Instagram business presence free with Meta Business Suite." }, heartCount: 0, features: ["Page & post management", "Unified inbox", "Ads Manager"], pros: ["One hub for FB + IG", "Free scheduling and inbox"], cons: ["Interface changes frequently"], pricing: "Free tool (pay ad spend)", rating: 4.2, freeTrial: "Free to use", easeOfUse: 3, supportAvailability: "Community", integrationCount: "15+" },
       { name: "Google Trends", icon: "https://www.gstatic.com/images/branding/product/2x/trends_48dp.png", category: "data-analysis", link: "https://trends.google.com", benefit: "See what the world is searching for — compare topics, spot seasonal demand, and validate business ideas with free search data.", popularity: 8, tags: ["Data", "SEO", "Free"], meta: { title: "Google Trends - Free Search Data", description: "Spot rising topics and seasonal demand free with Google Trends." }, heartCount: 0, features: ["Topic comparison", "Regional interest", "Rising queries"], pros: ["Great for idea validation", "Real Google search data"], cons: ["Relative numbers, not volumes"], pricing: "Free", rating: 4.5, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "5+", free: true },
       { name: "PageSpeed Insights", category: "seo-tools", link: "https://pagespeed.web.dev", benefit: "Test any page's speed and Core Web Vitals in seconds and get Google's own prioritized fix list — slow sites lose rankings and sales.", popularity: 8, tags: ["Website", "SEO", "Free"], meta: { title: "PageSpeed Insights - Free Speed Test", description: "Test your site speed and Core Web Vitals free with PageSpeed Insights." }, heartCount: 0, features: ["Core Web Vitals", "Lab + field data", "Fix recommendations"], pros: ["Google's own speed data", "Actionable fix list"], cons: ["Fixes may need a developer"], pricing: "Free", rating: 4.6, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "5+", free: true },
       { name: "GTmetrix", category: "seo-tools", link: "https://gtmetrix.com", benefit: "Get detailed waterfall analysis of exactly what slows your site down, with history tracking to prove your fixes worked.", popularity: 7, tags: ["Website", "SEO", "Free"], meta: { title: "GTmetrix - Site Speed Analysis", description: "Analyze what slows your site with GTmetrix's free speed reports." }, heartCount: 0, features: ["Waterfall charts", "Performance history", "Scheduled tests"], pros: ["Deeper detail than PSI", "Tracks speed over time"], cons: ["Advanced locations need paid plan"], pricing: "Free plan", rating: 4.4, freeTrial: "Free plan", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "5+" },
@@ -632,6 +605,13 @@
       { name: "Linktree", category: "social-media-management", link: "https://linktr.ee", benefit: "Turn your social bio's single link into a mini landing page with all your important links — the standard link-in-bio tool.", popularity: 8, tags: ["Social Media", "Free", "Creators"], meta: { title: "Linktree - Free Link in Bio", description: "Put all your links in one bio page free with Linktree." }, heartCount: 0, features: ["Link-in-bio page", "Click analytics", "Theme customization"], pros: ["Set up in minutes", "Free tier is plenty to start"], cons: ["Branding removal is paid"], pricing: "Free plan", rating: 4.3, freeTrial: "Free plan", easeOfUse: 5, supportAvailability: "Business hours", integrationCount: "10+" },
       { name: "Unsplash", category: "image-creation", link: "https://unsplash.com", benefit: "Download beautiful high-resolution photos free for commercial use — no attribution required, powering millions of websites and ads.", popularity: 9, tags: ["Image", "Free", "Design"], meta: { title: "Unsplash - Free Stock Photos", description: "Get free commercial-use stock photos on Unsplash." }, heartCount: 0, features: ["3M+ free photos", "Commercial license", "API access"], pros: ["Truly free commercial use", "High quality"], cons: ["Popular photos get overused"], pricing: "Free", rating: 4.7, freeTrial: "Free forever", easeOfUse: 5, supportAvailability: "Community", integrationCount: "5+", free: true },
       { name: "TinyPNG", category: "image-editing", link: "https://tinypng.com", benefit: "Compress images up to 80% smaller without visible quality loss — the quickest single fix for a slow website.", popularity: 7, tags: ["Image", "Website", "Free"], meta: { title: "TinyPNG - Free Image Compression", description: "Compress images without quality loss free at TinyPNG." }, heartCount: 0, features: ["Smart lossy compression", "WebP conversion", "Bulk compress"], pros: ["Instant site-speed win", "Dead simple"], cons: ["20-image batch limit on free"], pricing: "Free plan", rating: 4.5, freeTrial: "Free plan", easeOfUse: 5, supportAvailability: "Community", integrationCount: "5+" }
+    ,
+      { name: "SBA.gov", category: "government-resources", link: "https://www.sba.gov", benefit: "The U.S. Small Business Administration — free business guides, loan programs (SBA 7a, 504, microloans), local assistance, and disaster relief for American small businesses.", popularity: 9, tags: ["Government", "Free", "Funding"], meta: { title: "SBA - U.S. Small Business Administration", description: "Free guides, loan programs, and local help for U.S. small businesses." }, heartCount: 0, features: ["Loan programs", "Business guides", "Local assistance centers"], pros: ["Authoritative and free", "Backs real loan programs"], cons: ["Government-site navigation"], pricing: "Free", rating: 4.7, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Business hours", integrationCount: "–", free: true },
+      { name: "SCORE", category: "government-resources", link: "https://www.score.org", benefit: "Free one-on-one mentoring from 10,000+ experienced business volunteers, plus free workshops and templates — an SBA resource partner.", popularity: 8, tags: ["Government", "Free", "Mentoring"], meta: { title: "SCORE - Free Business Mentoring", description: "Get a free experienced business mentor through SCORE." }, heartCount: 0, features: ["1:1 mentoring", "Free workshops", "Business templates"], pros: ["Real mentors, truly free", "Nationwide network"], cons: ["Mentor quality varies"], pricing: "Free", rating: 4.7, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Business hours", integrationCount: "–", free: true },
+      { name: "IRS Small Business", category: "government-resources", link: "https://www.irs.gov/businesses/small-businesses-self-employed", benefit: "Get your EIN in minutes, understand business taxes, and find every form and deadline — straight from the source.", popularity: 9, tags: ["Government", "Free", "Taxes"], meta: { title: "IRS Small Business Center", description: "Free EIN application and small-business tax guidance from the IRS." }, heartCount: 0, features: ["Free EIN application", "Tax calendars", "Forms & guidance"], pros: ["The authoritative source", "EIN is free (avoid paid scams)"], cons: ["Dense reading"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 2, supportAvailability: "Business hours", integrationCount: "–", free: true },
+      { name: "Grants.gov", category: "government-resources", link: "https://www.grants.gov", benefit: "Search and apply for 1,000+ federal grant programs in one place — the official gateway to U.S. government funding.", popularity: 7, tags: ["Government", "Free", "Funding"], meta: { title: "Grants.gov - Federal Grants", description: "Find and apply for U.S. federal grants free at Grants.gov." }, heartCount: 0, features: ["Grant search", "Online applications", "Saved searches & alerts"], pros: ["Every federal grant in one place", "Free alerts"], cons: ["Applications take real effort"], pricing: "Free", rating: 4.4, freeTrial: "Free forever", easeOfUse: 3, supportAvailability: "Business hours", integrationCount: "–", free: true },
+      { name: "USPTO", category: "government-resources", link: "https://www.uspto.gov", benefit: "Search existing trademarks free and file your own trademark or patent directly — protecting your brand without a middleman.", popularity: 7, tags: ["Government", "Legal", "Trademark"], meta: { title: "USPTO - Trademarks & Patents", description: "Search and file trademarks and patents at the USPTO." }, heartCount: 0, features: ["Trademark search (TESS)", "Direct filing", "Patent search"], pros: ["Direct filing saves fees", "Free search tools"], cons: ["Filing fees still apply"], pricing: "Free search (filing fees apply)", rating: 4.4, freeTrial: "Free search", easeOfUse: 2, supportAvailability: "Business hours", integrationCount: "–", free: true },
+      { name: "USA.gov Business", category: "government-resources", link: "https://www.usa.gov/business", benefit: "Plain-English guides to starting, licensing, and running a business in the U.S. — with links to every state agency you'll need.", popularity: 7, tags: ["Government", "Free", "Guides"], meta: { title: "USA.gov - Business Guides", description: "Official plain-English guides to starting and running a U.S. business." }, heartCount: 0, features: ["Start-a-business guides", "License lookups", "State agency links"], pros: ["Plain-English official info", "Great starting point"], cons: ["High-level only"], pricing: "Free", rating: 4.3, freeTrial: "Free forever", easeOfUse: 4, supportAvailability: "Community", integrationCount: "–", free: true }
     ];
 
     // Tools that have a published review page (used to render "Read Review" links)
@@ -650,7 +630,7 @@
       'data-analysis': 'sg-acc-sky', 'analytics-reporting': 'sg-acc-sky',
       'e-commerce-solutions': 'sg-acc-teal', 'e-commerce-management': 'sg-acc-teal',
       'cloud-infrastructure': 'sg-acc-sky', 'automation': 'sg-acc-teal', 'payments-finance': 'sg-acc-amber',
-      'ai-coding': 'sg-acc-violet', 'productivity': 'sg-acc-indigo', 'customer-service': 'sg-acc-teal',
+      'ai-coding': 'sg-acc-violet', 'government-resources': 'sg-acc-green', 'productivity': 'sg-acc-indigo', 'customer-service': 'sg-acc-teal',
       'customer-service': 'sg-acc-teal',
       'productivity': 'sg-acc-slate', 'project-management': 'sg-acc-slate',
       'hr-tools': 'sg-acc-slate', 'resume-building': 'sg-acc-slate'
@@ -665,13 +645,13 @@
       'Shopify': '/review/shopify/',
       'Grammarly': '/review/grammarly/',
       'Surfer SEO': '/review/surfer-seo/',
-      'Synthesia': '/review/synthesia/',
-      'Writesonic': '/review/writesonic/',
       'HubSpot AI': '/review/hubspot/',
       'HubSpot': '/review/hubspot/',
       'Wix': '/review/wix/',
       'Squarespace': '/review/squarespace/',
-      'ClickUp': '/review/clickup/'
+      'ClickUp': '/review/clickup/',
+      'Synthesia': '/review/synthesia/',
+      'Writesonic': '/review/writesonic/',
     };
 
     const programsContainer = document.getElementById('programs');
@@ -704,13 +684,30 @@
       }
     });
 
+    // v11: rebuild category dropdown from live data (only categories that exist, with counts)
+    (function () {
+      const labels = {};
+      categoryFilter.querySelectorAll('option').forEach(o => { labels[o.value] = o.textContent; });
+      const counts = {};
+      programs.forEach(p => { counts[p.category] = (counts[p.category] || 0) + 1; });
+      let html = '<option value="all">All Categories (' + programs.length + ')</option>';
+      Object.entries(counts).sort((a, b) => b[1] - a[1]).forEach(([c, n]) => {
+        const label = labels[c] || c.replace(/-/g, ' ').replace(/\b\w/g, ch => ch.toUpperCase());
+        html += '<option value="' + c + '">' + label + ' (' + n + ')</option>';
+      });
+      categoryFilter.innerHTML = html;
+    })();
+
     function loadSavedFilters() {
-      const savedCategory = localStorage.getItem('categoryFilter') || 'all';
+      let savedCategory = localStorage.getItem('categoryFilter') || 'all';
+      if (!categoryFilter.querySelector('option[value="' + savedCategory + '"]')) savedCategory = 'all';
       const savedSearch = localStorage.getItem('searchTerm') || '';
-      const savedSort = localStorage.getItem('sortOption') || 'name';
+      let savedSort = localStorage.getItem('sortOption') || 'name';
+      if (!sortOption.querySelector('option[value="' + savedSort + '"]')) savedSort = 'name';
       categoryFilter.value = savedCategory;
       searchInput.value = savedSearch;
       sortOption.value = savedSort;
+      if (savedSearch && (programs.some(p => (p.tags||[]).includes(savedSearch)))) window.sgTagExact = savedSearch;
       displayPrograms(savedCategory, savedSearch, savedSort);
     }
 
@@ -871,7 +868,7 @@
           }
           const accent = CAT_ACCENTS[program.category] || 'sg-acc-slate';
           const catOption = categoryFilter.querySelector(`option[value="${program.category}"]`);
-          const catLabel = catOption ? catOption.textContent : 'Tool';
+          const catLabel = catOption ? catOption.textContent.replace(/ \(\d+\)$/, '') : 'Tool';
           const programJSON = JSON.stringify(program).replace(/'/g, '&#39;');
           card.innerHTML = `
             <div class="flex items-start justify-between mb-3">
@@ -1243,6 +1240,23 @@
     }
 
     loadSavedFilters();
+    // v11: In-Depth Reviews section shows the 3 most recent reviews automatically
+    (function () {
+      const cont = document.getElementById('sg-latest-reviews');
+      if (!cont) return;
+      const names = Object.keys(REVIEWS).slice(-3).reverse();
+      cont.innerHTML = names.map(nm => {
+        const p = programs.find(x => x.name === nm) || { link: '', rating: '', benefit: '', name: nm };
+        const blurb = (p.benefit || '').split('. ')[0];
+        return '<a href="' + REVIEWS[nm] + '" class="sg-card2 sg-reveal block hover:no-underline">' +
+          '<div class="flex items-center gap-3 mb-3">' + sgLogoHTML(p.link, nm, p.icon) +
+          '<div><h3 class="font-bold text-gray-900">' + nm + '</h3>' +
+          '<p class="text-sm"><span class="sg-star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b class="text-gray-700">' + (p.rating || '') + '/5</b></p></div></div>' +
+          '<p class="text-sm text-gray-600 leading-relaxed mb-3">' + blurb + '.</p>' +
+          '<p class="text-sm text-indigo-600 font-semibold">Read the full review &rarr;</p></a>';
+      }).join('');
+    })();
+
     loadGlobalHearts();
 
     // Design v2: hero stat counters (live values) + tool logo marquee
