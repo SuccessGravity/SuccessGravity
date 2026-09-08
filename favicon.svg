@@ -1,11 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4f46e5"/>
-      <stop offset="1" stop-color="#7c3aed"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="ar" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="url(#g)"/>
-  <text x="32" y="43" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">SG</text>
-  <circle cx="49" cy="15" r="5" fill="#fbbf24"/>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- orbit ring with gap at top-right (arrow escapes through it) -->
+  <path d="M 34.1 20.5 A 16 16 0 1 0 43.9 28" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" opacity="0.95"/>
+  <!-- slingshot arrow from inside the orbit out through the gap -->
+  <path d="M 20 47 Q 31 40.5 39.5 27" fill="none" stroke="url(#ar)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 33.5 23 L 49 12.5 L 45 29.5 Z" fill="url(#ar)"/>
+  <!-- planet dot on the ring -->
+  <circle cx="18.5" cy="26" r="3.2" fill="#fbbf24"/>
 </svg>
