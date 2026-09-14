@@ -39,7 +39,7 @@
   </script>
 
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What's a 'good' PageSpeed score?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for green Core Web Vitals rather than a specific score. Mobile scores in the 70–90 range with passing vitals put you ahead of most competitors; a perfect 100 is rarely worth the engineering time."}}, {"@type": "Question", "name": "Will faster hosting fix everything?", "acceptedAnswer": {"@type": "Answer", "text": "Better hosting raises the floor but can't outrun 8 MB images. Do the free fixes first; upgrade hosting when your origin response time (TTFB) stays slow after them."}}, {"@type": "Question", "name": "Does speed really affect Google rankings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Core Web Vitals are a confirmed ranking signal. It's a tiebreaker rather than a dominant factor, but the visitor-behavior effects (bounce, conversion) are large and immediate."}}, {"@type": "Question", "name": "GTmetrix vs PageSpeed Insights?", "acceptedAnswer": {"@type": "Answer", "text": "Use both: PageSpeed for Google's official view and field data, GTmetrix for waterfall detail showing exactly which file slows you down, plus scheduled monitoring on the free plan."}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Make Your Website Faster This Afternoon (Free Tools Only)","author":{"@type":"Person","name":"David","jobTitle":"Founder & Editor","url":"https://successgravity.com/about/"},"publisher":{"@type":"Organization","name":"Success Gravity","url":"https://successgravity.com/"},"step":[{"@type":"HowToStep","name":"Measure first \u2014 and read the right number"},{"@type":"HowToStep","name":"Fix images \u2014 the usual villain"},{"@type":"HowToStep","name":"Put Cloudflare's free plan in front"},{"@type":"HowToStep","name":"Trim scripts you forgot you added"},{"@type":"HowToStep","name":"Re-measure, then stop"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Make Your Website Faster This Afternoon (Free Tools Only)","image":"https://successgravity.com/assets/guides/pagespeed-insights.jpg","author":{"@type":"Person","name":"David","jobTitle":"Founder & Editor","url":"https://successgravity.com/about/"},"publisher":{"@type":"Organization","name":"Success Gravity","url":"https://successgravity.com/"},"step":[{"@type":"HowToStep","name":"Measure first \u2014 and read the right number"},{"@type":"HowToStep","name":"Fix images \u2014 the usual villain"},{"@type":"HowToStep","name":"Put Cloudflare's free plan in front"},{"@type":"HowToStep","name":"Trim scripts you forgot you added"},{"@type":"HowToStep","name":"Re-measure, then stop"}]}</script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
   <nav class="bg-white shadow-sm sticky top-0 z-50">
@@ -83,41 +83,30 @@
   <main class="container mx-auto px-4 py-12 max-w-3xl sg-prose">
       <p>Slow sites lose twice: visitors abandon them, and Google quietly ranks them lower. The good news is that most small-business sites are slow for boring, fixable reasons — usually enormous images and no caching — and every tool you need to fix them today is free.</p>
       <p>This is the exact triage I run on any site that feels sluggish, in the order that delivers the most speed per minute of effort.</p>
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:1rem;padding:1rem;margin:1.4rem 0;overflow-x:auto">
-      <svg viewBox="0 0 640 268" width="100%" style="max-width:680px" role="img" aria-label="pagespeed.web.dev — Report">
-        <defs><linearGradient id="gdg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
-        <rect x="8" y="8" width="392" height="248" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-        <rect x="8" y="8" width="392" height="34" rx="14" fill="#eef2ff"/>
-        <circle cx="28" cy="25" r="5" fill="#f87171"/><circle cx="44" cy="25" r="5" fill="#fbbf24"/><circle cx="60" cy="25" r="5" fill="#34d399"/>
-        <text x="80" y="29" font-size="11.5" fill="#64748b">pagespeed.web.dev — Report</text>
-        <rect x="26" y="56" width="200" height="26" rx="8" fill="url(#gdg)"/>
-        <text x="126" y="73" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Start here</text>
-        <rect x="26" y="104" width="120" height="18" rx="6" fill="#e0e7ff"/><rect x="26" y="134" width="120" height="18" rx="6" fill="#eef2ff"/><rect x="26" y="164" width="120" height="18" rx="6" fill="#e0e7ff"/><rect x="26" y="194" width="120" height="18" rx="6" fill="#eef2ff"/><rect x="26" y="224" width="120" height="18" rx="6" fill="#e0e7ff"/>
-        <g transform="translate(60,60)"><rect x="170" y="124" width="26" height="26" rx="4" fill="url(#gdg)" transform="translate(0,0)" opacity="0.55"/><rect x="170" y="112" width="26" height="38" rx="4" fill="url(#gdg)" transform="translate(38,0)" opacity="0.65"/><rect x="170" y="118" width="26" height="32" rx="4" fill="url(#gdg)" transform="translate(76,0)" opacity="0.75"/><rect x="170" y="102" width="26" height="48" rx="4" fill="url(#gdg)" transform="translate(114,0)" opacity="0.8500000000000001"/><rect x="170" y="94" width="26" height="56" rx="4" fill="url(#gdg)" transform="translate(152,0)" opacity="0.9500000000000001"/></g>
-        <g>
-          <circle cx="418" cy="108" r="11" fill="#f59e0b"/>
-          <text x="418" y="112" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
-          <text x="436" y="112" font-size="12.5" font-weight="600" fill="#334155">Measure the real score</text>
-        </g><g>
-          <circle cx="418" cy="138" r="11" fill="#f59e0b"/>
-          <text x="418" y="142" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
-          <text x="436" y="142" font-size="12.5" font-weight="600" fill="#334155">Compress oversized images</text>
-        </g><g>
-          <circle cx="418" cy="168" r="11" fill="#f59e0b"/>
-          <text x="418" y="172" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
-          <text x="436" y="172" font-size="12.5" font-weight="600" fill="#334155">Put Cloudflare in front</text>
-        </g><g>
-          <circle cx="418" cy="198" r="11" fill="#f59e0b"/>
-          <text x="418" y="202" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">4</text>
-          <text x="436" y="202" font-size="12.5" font-weight="600" fill="#334155">Trim heavy scripts</text>
-        </g><g>
-          <circle cx="418" cy="228" r="11" fill="#f59e0b"/>
-          <text x="418" y="232" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">5</text>
-          <text x="436" y="232" font-size="12.5" font-weight="600" fill="#334155">Re-measure and stop</text>
-        </g>
-      </svg>
-      <p style="font-size:.72rem;color:#94a3b8;margin:.5rem 0 0">Illustration by Success Gravity — a simplified view of the setup flow, not a product screenshot.</p>
-    </div>
+<figure style="margin:1.4rem 0">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;box-shadow:0 12px 28px -14px rgba(15,23,42,.22)">
+        <div style="display:flex;align-items:center;gap:.4rem;background:#f1f5f9;border-bottom:1px solid #e2e8f0;padding:.5rem .9rem">
+          <span style="width:10px;height:10px;border-radius:50%;background:#f87171;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#fbbf24;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#34d399;display:inline-block"></span>
+          <span style="font-size:.72rem;color:#64748b;margin-left:.4rem;font-family:ui-monospace,SFMono-Regular,monospace">pagespeed.web.dev</span>
+        </div>
+        <img src="/assets/guides/pagespeed-insights.jpg" alt="PageSpeed Insights start screen for entering a URL to analyze" width="1400" height="528" style="width:100%;height:auto;display:block">
+      </div>
+      <figcaption style="font-size:.72rem;color:#94a3b8;margin:.5rem 0 0;line-height:1.5">PageSpeed Insights — paste your URL here to get the Core Web Vitals report this guide is built around. Interface belongs to Google.</figcaption>
+    </figure>
+<figure style="margin:1.4rem 0">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;box-shadow:0 12px 28px -14px rgba(15,23,42,.22)">
+        <div style="display:flex;align-items:center;gap:.4rem;background:#f1f5f9;border-bottom:1px solid #e2e8f0;padding:.5rem .9rem">
+          <span style="width:10px;height:10px;border-radius:50%;background:#f87171;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#fbbf24;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#34d399;display:inline-block"></span>
+          <span style="font-size:.72rem;color:#64748b;margin-left:.4rem;font-family:ui-monospace,SFMono-Regular,monospace">tinypng.com</span>
+        </div>
+        <img src="/assets/guides/tinypng.jpg" alt="TinyPNG image compression tool with drag-and-drop upload area" width="1400" height="843" loading="lazy" style="width:100%;height:auto;display:block">
+      </div>
+      <figcaption style="font-size:.72rem;color:#94a3b8;margin:.5rem 0 0;line-height:1.5">TinyPNG — drag oversized images in, download versions up to 80% smaller. The single fastest speed win for most sites. Interface belongs to Tinify.</figcaption>
+    </figure>
       <h2>Step 1: Measure first — and read the right number</h2>
       <p>Run your homepage through <a href='https://pagespeed.web.dev' target='_blank' rel='noopener'>PageSpeed Insights</a>. Ignore the score bubble for a moment and look at the <strong>opportunities</strong> list — it names your specific problems in order of impact. Also note the Core Web Vitals assessment; “LCP” (how fast the main content appears) is the one visitors feel most.</p>
       <h2>Step 2: Fix images — the usual villain</h2>

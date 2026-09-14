@@ -39,7 +39,7 @@
   </script>
 
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long until data appears?", "acceptedAnswer": {"@type": "Answer", "text": "Verification is instant, but query data typically starts flowing within 2–4 days and becomes useful after a few weeks of history."}}, {"@type": "Question", "name": "Search Console vs Google Analytics — do I need both?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, they answer different questions. GSC covers before the click (queries, rankings, indexing); GA4 covers after the click (behavior, conversions). Linked together, GSC queries appear inside GA4 reports."}}, {"@type": "Question", "name": "My site isn't indexed at all. Should I panic?", "acceptedAnswer": {"@type": "Answer", "text": "If it's days old, no — request indexing for your homepage via the URL inspection bar and keep publishing. If it's months old with zero indexed pages, check for a stray noindex tag or robots.txt block first."}}, {"@type": "Question", "name": "Does submitting a sitemap improve rankings?", "acceptedAnswer": {"@type": "Answer", "text": "No — it improves discovery. Rankings come from content quality and links. Think of the sitemap as making sure Google's librarian knows all your books exist."}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Set Up Google Search Console \u2014 and Actually Use It","author":{"@type":"Person","name":"David","jobTitle":"Founder & Editor","url":"https://successgravity.com/about/"},"publisher":{"@type":"Organization","name":"Success Gravity","url":"https://successgravity.com/"},"step":[{"@type":"HowToStep","name":"Add your property"},{"@type":"HowToStep","name":"Verify ownership"},{"@type":"HowToStep","name":"Submit your sitemap"},{"@type":"HowToStep","name":"Learn the Performance report \u2014 your monthly goldmine"},{"@type":"HowToStep","name":"Watch Pages (indexing) for problems"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Set Up Google Search Console \u2014 and Actually Use It","image":"https://successgravity.com/assets/guides/search-console.jpg","author":{"@type":"Person","name":"David","jobTitle":"Founder & Editor","url":"https://successgravity.com/about/"},"publisher":{"@type":"Organization","name":"Success Gravity","url":"https://successgravity.com/"},"step":[{"@type":"HowToStep","name":"Add your property"},{"@type":"HowToStep","name":"Verify ownership"},{"@type":"HowToStep","name":"Submit your sitemap"},{"@type":"HowToStep","name":"Learn the Performance report \u2014 your monthly goldmine"},{"@type":"HowToStep","name":"Watch Pages (indexing) for problems"}]}</script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
   <nav class="bg-white shadow-sm sticky top-0 z-50">
@@ -83,41 +83,18 @@
   <main class="container mx-auto px-4 py-12 max-w-3xl sg-prose">
       <p>If Google Analytics tells you what visitors do on your site, Search Console tells you something even more valuable: what Google thinks of your site — which queries you appear for, where you rank, and what's broken. It is free, it is data straight from the source, and most site owners have never opened it.</p>
       <p>Here's the 10-minute setup, plus the single monthly habit that has produced more easy SEO wins for my sites than any paid tool.</p>
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:1rem;padding:1rem;margin:1.4rem 0;overflow-x:auto">
-      <svg viewBox="0 0 640 268" width="100%" style="max-width:680px" role="img" aria-label="search.google.com/search-console">
-        <defs><linearGradient id="gdg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
-        <rect x="8" y="8" width="392" height="248" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-        <rect x="8" y="8" width="392" height="34" rx="14" fill="#eef2ff"/>
-        <circle cx="28" cy="25" r="5" fill="#f87171"/><circle cx="44" cy="25" r="5" fill="#fbbf24"/><circle cx="60" cy="25" r="5" fill="#34d399"/>
-        <text x="80" y="29" font-size="11.5" fill="#64748b">search.google.com/search-console</text>
-        <rect x="26" y="56" width="200" height="26" rx="8" fill="url(#gdg)"/>
-        <text x="126" y="73" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Start here</text>
-        <rect x="26" y="104" width="120" height="18" rx="6" fill="#e0e7ff"/><rect x="26" y="134" width="120" height="18" rx="6" fill="#eef2ff"/><rect x="26" y="164" width="120" height="18" rx="6" fill="#e0e7ff"/><rect x="26" y="194" width="120" height="18" rx="6" fill="#eef2ff"/><rect x="26" y="224" width="120" height="18" rx="6" fill="#e0e7ff"/>
-        <g transform="translate(60,60)"><rect x="170" y="124" width="26" height="26" rx="4" fill="url(#gdg)" transform="translate(0,0)" opacity="0.55"/><rect x="170" y="112" width="26" height="38" rx="4" fill="url(#gdg)" transform="translate(38,0)" opacity="0.65"/><rect x="170" y="118" width="26" height="32" rx="4" fill="url(#gdg)" transform="translate(76,0)" opacity="0.75"/><rect x="170" y="102" width="26" height="48" rx="4" fill="url(#gdg)" transform="translate(114,0)" opacity="0.8500000000000001"/><rect x="170" y="94" width="26" height="56" rx="4" fill="url(#gdg)" transform="translate(152,0)" opacity="0.9500000000000001"/></g>
-        <g>
-          <circle cx="418" cy="108" r="11" fill="#f59e0b"/>
-          <text x="418" y="112" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
-          <text x="436" y="112" font-size="12.5" font-weight="600" fill="#334155">Add property (domain or URL prefix)</text>
-        </g><g>
-          <circle cx="418" cy="138" r="11" fill="#f59e0b"/>
-          <text x="418" y="142" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
-          <text x="436" y="142" font-size="12.5" font-weight="600" fill="#334155">Verify ownership</text>
-        </g><g>
-          <circle cx="418" cy="168" r="11" fill="#f59e0b"/>
-          <text x="418" y="172" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
-          <text x="436" y="172" font-size="12.5" font-weight="600" fill="#334155">Submit sitemap.xml</text>
-        </g><g>
-          <circle cx="418" cy="198" r="11" fill="#f59e0b"/>
-          <text x="418" y="202" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">4</text>
-          <text x="436" y="202" font-size="12.5" font-weight="600" fill="#334155">Check Performance monthly</text>
-        </g><g>
-          <circle cx="418" cy="228" r="11" fill="#f59e0b"/>
-          <text x="418" y="232" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">5</text>
-          <text x="436" y="232" font-size="12.5" font-weight="600" fill="#334155">Fix coverage issues</text>
-        </g>
-      </svg>
-      <p style="font-size:.72rem;color:#94a3b8;margin:.5rem 0 0">Illustration by Success Gravity — a simplified view of the setup flow, not a product screenshot.</p>
-    </div>
+<figure style="margin:1.4rem 0">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;box-shadow:0 12px 28px -14px rgba(15,23,42,.22)">
+        <div style="display:flex;align-items:center;gap:.4rem;background:#f1f5f9;border-bottom:1px solid #e2e8f0;padding:.5rem .9rem">
+          <span style="width:10px;height:10px;border-radius:50%;background:#f87171;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#fbbf24;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#34d399;display:inline-block"></span>
+          <span style="font-size:.72rem;color:#64748b;margin-left:.4rem;font-family:ui-monospace,SFMono-Regular,monospace">search.google.com/search-console</span>
+        </div>
+        <img src="/assets/guides/search-console.jpg" alt="Google Search Console overview showing performance, indexing and experience reports" width="1400" height="781" style="width:100%;height:auto;display:block">
+      </div>
+      <figcaption style="font-size:.72rem;color:#94a3b8;margin:.5rem 0 0;line-height:1.5">Google Search Console after verification: Performance, Indexing and Experience reports on one screen. Interface belongs to Google; shown for instruction.</figcaption>
+    </figure>
       <h2>Step 1: Add your property</h2>
       <p>Open <a href='https://search.google.com/search-console' target='_blank' rel='noopener'>Search Console</a> and click <strong>Add property</strong>. You'll see two options: <strong>Domain</strong> (covers every subdomain and protocol — better, but needs DNS verification) and <strong>URL prefix</strong> (just one exact address — easier). If DNS records make you nervous, URL prefix is fine to start.</p>
       <h2>Step 2: Verify ownership</h2>

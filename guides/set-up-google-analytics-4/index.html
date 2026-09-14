@@ -39,7 +39,7 @@
   </script>
 
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Google Analytics 4 really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — GA4 is free at any traffic volume a small business will ever see. Google 360, the paid enterprise tier, only becomes relevant at millions of events per month."}}, {"@type": "Question", "name": "Do I need Google Tag Manager too?", "acceptedAnswer": {"@type": "Answer", "text": "Not on day one. GTM is worth adding when you start managing multiple pixels (Meta, TikTok, conversion tags) — it lets you add and edit them without touching site code. For GA4 alone, the direct tag is simpler."}}, {"@type": "Question", "name": "Why does my visitor count differ from my hosting stats?", "acceptedAnswer": {"@type": "Answer", "text": "Hosting counts every request, including bots. GA4 filters most bots and measures people. When the two disagree, GA4 is closer to the truth for business decisions."}}, {"@type": "Question", "name": "Is GA4 GDPR/privacy compliant?", "acceptedAnswer": {"@type": "Answer", "text": "GA4 removed IP storage and offers consent mode, but compliance depends on your setup — if you serve EU visitors, add a consent banner and enable consent mode. For US-only small business sites, a clear privacy policy mentioning analytics is the baseline."}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Set Up Google Analytics 4 (Properly) in 15 Minutes","author":{"@type":"Person","name":"David","jobTitle":"Founder & Editor","url":"https://successgravity.com/about/"},"publisher":{"@type":"Organization","name":"Success Gravity","url":"https://successgravity.com/"},"step":[{"@type":"HowToStep","name":"Create your account and property"},{"@type":"HowToStep","name":"Add a web data stream"},{"@type":"HowToStep","name":"Install the Google tag"},{"@type":"HowToStep","name":"Mark your key events \u2014 the step everyone skips"},{"@type":"HowToStep","name":"Link Search Console and give it two weeks"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Set Up Google Analytics 4 (Properly) in 15 Minutes","image":"https://successgravity.com/assets/guides/google-analytics.jpg","author":{"@type":"Person","name":"David","jobTitle":"Founder & Editor","url":"https://successgravity.com/about/"},"publisher":{"@type":"Organization","name":"Success Gravity","url":"https://successgravity.com/"},"step":[{"@type":"HowToStep","name":"Create your account and property"},{"@type":"HowToStep","name":"Add a web data stream"},{"@type":"HowToStep","name":"Install the Google tag"},{"@type":"HowToStep","name":"Mark your key events \u2014 the step everyone skips"},{"@type":"HowToStep","name":"Link Search Console and give it two weeks"}]}</script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
   <nav class="bg-white shadow-sm sticky top-0 z-50">
@@ -83,41 +83,18 @@
   <main class="container mx-auto px-4 py-12 max-w-3xl sg-prose">
       <p>Every week I meet business owners who spend real money on ads and content but cannot answer one question: <em>did any of it work?</em> Google Analytics 4 answers that question for free — but only if you set it up properly. Most people install the tag, see a visitors number, and stop. The visitors number is the least useful thing GA4 gives you.</p>
       <p>This is the exact 15-minute setup I run on every new site I launch, including this one. The goal is not “having analytics” — it is knowing which pages and channels produce the actions you care about: purchases, signups, contact-form messages.</p>
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:1rem;padding:1rem;margin:1.4rem 0;overflow-x:auto">
-      <svg viewBox="0 0 640 268" width="100%" style="max-width:680px" role="img" aria-label="analytics.google.com — Admin">
-        <defs><linearGradient id="gdg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
-        <rect x="8" y="8" width="392" height="248" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-        <rect x="8" y="8" width="392" height="34" rx="14" fill="#eef2ff"/>
-        <circle cx="28" cy="25" r="5" fill="#f87171"/><circle cx="44" cy="25" r="5" fill="#fbbf24"/><circle cx="60" cy="25" r="5" fill="#34d399"/>
-        <text x="80" y="29" font-size="11.5" fill="#64748b">analytics.google.com — Admin</text>
-        <rect x="26" y="56" width="200" height="26" rx="8" fill="url(#gdg)"/>
-        <text x="126" y="73" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Start here</text>
-        <rect x="26" y="104" width="120" height="18" rx="6" fill="#e0e7ff"/><rect x="26" y="134" width="120" height="18" rx="6" fill="#eef2ff"/><rect x="26" y="164" width="120" height="18" rx="6" fill="#e0e7ff"/><rect x="26" y="194" width="120" height="18" rx="6" fill="#eef2ff"/><rect x="26" y="224" width="120" height="18" rx="6" fill="#e0e7ff"/>
-        <g transform="translate(60,60)"><rect x="170" y="124" width="26" height="26" rx="4" fill="url(#gdg)" transform="translate(0,0)" opacity="0.55"/><rect x="170" y="112" width="26" height="38" rx="4" fill="url(#gdg)" transform="translate(38,0)" opacity="0.65"/><rect x="170" y="118" width="26" height="32" rx="4" fill="url(#gdg)" transform="translate(76,0)" opacity="0.75"/><rect x="170" y="102" width="26" height="48" rx="4" fill="url(#gdg)" transform="translate(114,0)" opacity="0.8500000000000001"/><rect x="170" y="94" width="26" height="56" rx="4" fill="url(#gdg)" transform="translate(152,0)" opacity="0.9500000000000001"/></g>
-        <g>
-          <circle cx="418" cy="108" r="11" fill="#f59e0b"/>
-          <text x="418" y="112" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
-          <text x="436" y="112" font-size="12.5" font-weight="600" fill="#334155">Create account &amp; property</text>
-        </g><g>
-          <circle cx="418" cy="138" r="11" fill="#f59e0b"/>
-          <text x="418" y="142" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
-          <text x="436" y="142" font-size="12.5" font-weight="600" fill="#334155">Add a Web data stream</text>
-        </g><g>
-          <circle cx="418" cy="168" r="11" fill="#f59e0b"/>
-          <text x="418" y="172" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
-          <text x="436" y="172" font-size="12.5" font-weight="600" fill="#334155">Install the Google tag</text>
-        </g><g>
-          <circle cx="418" cy="198" r="11" fill="#f59e0b"/>
-          <text x="418" y="202" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">4</text>
-          <text x="436" y="202" font-size="12.5" font-weight="600" fill="#334155">Mark key events</text>
-        </g><g>
-          <circle cx="418" cy="228" r="11" fill="#f59e0b"/>
-          <text x="418" y="232" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">5</text>
-          <text x="436" y="232" font-size="12.5" font-weight="600" fill="#334155">Link Search Console</text>
-        </g>
-      </svg>
-      <p style="font-size:.72rem;color:#94a3b8;margin:.5rem 0 0">Illustration by Success Gravity — a simplified view of the setup flow, not a product screenshot.</p>
-    </div>
+<figure style="margin:1.4rem 0">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;box-shadow:0 12px 28px -14px rgba(15,23,42,.22)">
+        <div style="display:flex;align-items:center;gap:.4rem;background:#f1f5f9;border-bottom:1px solid #e2e8f0;padding:.5rem .9rem">
+          <span style="width:10px;height:10px;border-radius:50%;background:#f87171;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#fbbf24;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#34d399;display:inline-block"></span>
+          <span style="font-size:.72rem;color:#64748b;margin-left:.4rem;font-family:ui-monospace,SFMono-Regular,monospace">analytics.google.com</span>
+        </div>
+        <img src="/assets/guides/google-analytics.jpg" alt="Google Analytics 4 dashboard with traffic overview and realtime report" width="1400" height="560" style="width:100%;height:auto;display:block">
+      </div>
+      <figcaption style="font-size:.72rem;color:#94a3b8;margin:.5rem 0 0;line-height:1.5">The Google Analytics 4 home view once your property is collecting data. Interface belongs to Google; shown here for instruction — layouts change over time.</figcaption>
+    </figure>
       <h2>Step 1: Create your account and property</h2>
       <p>Go to <a href='https://analytics.google.com' target='_blank' rel='noopener'>analytics.google.com</a>, sign in with your business Google account, and click <strong>Start measuring</strong>. Name the account after your business and the property after your website. Pick your time zone and currency carefully — every report you ever read will use them, and changing them later muddies historical comparisons.</p>
       <h2>Step 2: Add a web data stream</h2>
