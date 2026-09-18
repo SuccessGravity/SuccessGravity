@@ -1,0 +1,81 @@
+# Success Gravity
+
+> Independent reviews and comparisons of AI and business-growth software, written for small teams and solo operators who need to pick one tool and move on. Every review follows a published testing method and states pricing, limits, and who the tool is wrong for — not just what it does well.
+
+Success Gravity is operated by David Choi. The site earns affiliate commissions on some outbound links; this never changes a verdict or a ranking, and the method page below explains how reviews are produced.
+
+## How reviews are made
+
+- [How We Review](https://successgravity.com/how-we-review/): the testing method and scoring. Read this first to judge how much weight the verdicts deserve.
+- [Affiliate Disclosure](https://successgravity.com/affiliate-disclosure/): which links earn commission and how that is kept separate from verdicts.
+- [About](https://successgravity.com/about/): who runs the site.
+- [Contact](https://successgravity.com/contact/)
+
+## Tool reviews
+
+Each review covers what the tool is, key features, current pricing, pros and cons, and a quick verdict.
+
+- [Semrush](https://successgravity.com/review/semrush/): SEO and competitive research suite
+- [Ahrefs alternatives and SEO tooling — Surfer SEO](https://successgravity.com/review/surfer-seo/): on-page SEO content optimization
+- [HubSpot](https://successgravity.com/review/hubspot/): CRM and marketing automation
+- [ActiveCampaign](https://successgravity.com/review/activecampaign/): email marketing and automation
+- [Mailmodo](https://successgravity.com/review/mailmodo/): interactive AMP email marketing
+- [Mailchimp](https://successgravity.com/review/mailchimp/): email marketing for small business
+- [Jasper AI](https://successgravity.com/review/jasper-ai/): AI writing for marketing teams
+- [Writesonic](https://successgravity.com/review/writesonic/): AI writing and SEO content
+- [Grammarly](https://successgravity.com/review/grammarly/): writing assistance and editing
+- [Canva](https://successgravity.com/review/canva/): design and brand templates
+- [Synthesia](https://successgravity.com/review/synthesia/): AI avatar video generation
+- [Murf AI](https://successgravity.com/review/murf-ai/): AI voiceover and text-to-speech
+- [OpusClip](https://successgravity.com/review/opusclip/): long-form video to short clips
+- [Shopify](https://successgravity.com/review/shopify/): hosted ecommerce platform
+- [Wix](https://successgravity.com/review/wix/): website builder
+- [Squarespace](https://successgravity.com/review/squarespace/): website builder
+- [WordPress.com](https://successgravity.com/review/wordpress-com/): hosted WordPress
+- [ClickUp](https://successgravity.com/review/clickup/): project and task management
+- [All reviews](https://successgravity.com/review/)
+
+## Head-to-head comparisons
+
+- [ActiveCampaign vs Mailmodo](https://successgravity.com/compare/activecampaign-vs-mailmodo/)
+- [ChatGPT vs Claude](https://successgravity.com/compare/chatgpt-vs-claude/)
+- [Gemini vs ChatGPT](https://successgravity.com/compare/gemini-vs-chatgpt/)
+- [All comparisons](https://successgravity.com/compare/)
+
+## Best-of shortlists
+
+- [Best email marketing tools](https://successgravity.com/best/best-email-marketing-tools/)
+- [Best email marketing tools for small business](https://successgravity.com/best/best-email-marketing-tools-small-business/)
+- [Best AI video generators](https://successgravity.com/best/best-ai-video-generators/)
+
+## Step-by-step guides
+
+Free, vendor-neutral setup walkthroughs.
+
+- [Set up Google Analytics 4](https://successgravity.com/guides/set-up-google-analytics-4/)
+- [Google Search Console setup](https://successgravity.com/guides/google-search-console-setup/)
+- [Microsoft Clarity heatmaps](https://successgravity.com/guides/microsoft-clarity-heatmaps/)
+- [Google Business Profile optimization](https://successgravity.com/guides/google-business-profile-optimization/)
+- [Start an email list for free](https://successgravity.com/guides/start-email-list-free/)
+- [Speed up your website](https://successgravity.com/guides/speed-up-your-website/)
+- [Cloudflare free plan setup](https://successgravity.com/guides/cloudflare-free-plan-setup/)
+- [All guides](https://successgravity.com/guides/)
+
+## Browse by category
+
+- [All categories](https://successgravity.com/category/): email marketing, AI writing, SEO, video and audio, social media, influencer marketing, AI platforms, CRM, analytics and data, design and image, productivity, website and ecommerce, payments, customer support, cloud, business loans, free resources
+
+## Also on the site
+
+- [Tool finder](https://successgravity.com/finder/): filter tools by need and budget
+- [Alternatives](https://successgravity.com/alternatives/): swap suggestions for specific tools
+- [Free tools](https://successgravity.com/free-tools/)
+- [Directory](https://successgravity.com/directory/)
+- [Newest reviews](https://successgravity.com/new/)
+- [Submit a tool](https://successgravity.com/submit-tool/)
+
+## Optional
+
+- [Privacy Policy](https://successgravity.com/privacy-policy/)
+- [Terms](https://successgravity.com/terms/)
+- [Sitemap](https://successgravity.com/sitemap.xml)
