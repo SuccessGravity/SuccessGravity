@@ -24,4 +24,17 @@ jobs:
           git config user.email "actions@github.com"
           git fetch origin "${GITHUB_REF_NAME}"
           git merge --no-ff "origin/${GITHUB_REF_NAME}" -m "Auto-merge ${GITHUB_REF_NAME} into main"
-          git push origin main
+
+      # Pushes made with GITHUB_TOKEN don't trigger other workflows, so the
+      # data rebuild that rebuild-data.yml does for direct pushes runs here too.
+      - name: Rebuild tools.json and Price Watch
+        run: |
+          if [ -f scripts/build-tools-json.js ]; then
+            node scripts/build-tools-json.js
+            node scripts/build-price-watch.js
+            git add data/tools.json price-watch/index.html
+            git diff --cached --quiet || git commit -m "Rebuild tools.json and Price Watch"
+          fi
+
+      - name: Push main
+        run: git push origin main

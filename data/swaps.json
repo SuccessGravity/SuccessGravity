@@ -1,0 +1,150 @@
+{
+  "about": "Hand-picked swaps: a cheaper tool that does the same core job. Shown in My Stack only when the swap's listed price is below what the user pays. Always caveated: check the features you rely on before switching.",
+  "swaps": {
+    "mailchimp": [
+      ["mailerlite", "Free up to 1,000 subscribers, with campaigns and automations included"],
+      ["brevo", "Priced by emails sent, not contacts, which suits big lists you email rarely"]
+    ],
+    "activecampaign": [
+      ["brevo", "Email, SMS and a basic CRM, priced by emails sent"],
+      ["mailerlite", "Automations and landing pages on a free or low-cost plan"]
+    ],
+    "klaviyo": [
+      ["mailerlite", "Covers the basics for small shops without per-profile pricing jumps"]
+    ],
+    "flodesk": [
+      ["mailerlite", "Good-looking templates plus a free plan"]
+    ],
+    "beehiiv": [
+      ["kit", "Creator newsletters with paid subscriptions built in"]
+    ],
+    "constant-contact": [
+      ["mailerlite", "Similar campaign tools at a lower entry price"]
+    ],
+    "semrush": [
+      ["se-ranking", "Rank tracking, site audits and keyword research for less"]
+    ],
+    "ahrefs": [
+      ["se-ranking", "Backlink monitoring and rank tracking at a lower price"]
+    ],
+    "clearscope": [
+      ["surfer-seo", "On-page content optimization at a lower price"]
+    ],
+    "jasper-ai": [
+      ["chatgpt", "General AI assistants now handle most marketing copy"],
+      ["claude", "Strong long-form writing and brand-voice editing"]
+    ],
+    "writesonic": [
+      ["chatgpt", "Covers most blog and ad-copy drafting"]
+    ],
+    "copy-ai": [
+      ["chatgpt", "Covers most short-form copy needs"]
+    ],
+    "writer": [
+      ["claude", "Long-form drafting and editing for a single seat"]
+    ],
+    "sprout-social": [
+      ["buffer", "Scheduling and basic analytics, free to start"],
+      ["publer", "Multi-network scheduling with a free tier"]
+    ],
+    "hootsuite": [
+      ["buffer", "Simple scheduling with a free tier"],
+      ["publer", "Bulk scheduling with a free tier"]
+    ],
+    "later": [
+      ["buffer", "Instagram and TikTok scheduling, free to start"]
+    ],
+    "contentstudio": [
+      ["publer", "Scheduling and recycling posts with a free tier"]
+    ],
+    "upfluence": [
+      ["heepsy", "Influencer search and outreach for a fraction of the price"]
+    ],
+    "influencity": [
+      ["heepsy", "Influencer discovery for small campaigns"]
+    ],
+    "featuring": [
+      ["heepsy", "Influencer discovery for small campaigns"]
+    ],
+    "tagger-media": [
+      ["heepsy", "Influencer discovery for small campaigns"]
+    ],
+    "zapier": [
+      ["make", "Visual multi-step automations with more operations per dollar"]
+    ],
+    "wordpress-com": [
+      ["hostinger", "Budget hosting with one-click WordPress"]
+    ],
+    "kajabi": [
+      ["thinkific", "Course builder with a free plan and no transaction fees"],
+      ["systeme-io", "Courses, funnels and email, free to start"]
+    ],
+    "teachable": [
+      ["thinkific", "Course builder with a free plan"],
+      ["systeme-io", "Courses plus funnels and email in one"]
+    ],
+    "bigcommerce": [
+      ["woocommerce", "A free plugin if you already run WordPress (hosting is extra)"]
+    ],
+    "shopify": [
+      ["woocommerce", "A free plugin if you already run WordPress (hosting is extra)"]
+    ],
+    "deepbrain-ai": [
+      ["synthesia", "AI avatar videos at a lower entry price"]
+    ],
+    "murf-ai": [
+      ["elevenlabs", "Natural voiceovers from $5/month"]
+    ],
+    "descript": [
+      ["capcut", "Free editor with auto-captions for social clips"]
+    ],
+    "opusclip": [
+      ["capcut", "Free editor for cutting and captioning clips"]
+    ],
+    "captions": [
+      ["capcut", "Free auto-captions and editing"]
+    ],
+    "runway": [
+      ["higgsfield", "Cinematic camera-motion presets at a lower entry price"],
+      ["kling-ai", "Text- and image-to-video for less"]
+    ],
+    "invideo-ai": [
+      ["pictory", "Script-to-video at a lower entry price"]
+    ],
+    "asana": [
+      ["trello", "Simple boards for small teams, free to start"],
+      ["clickup", "Docs, tasks and goals in one place, free to start"]
+    ],
+    "monday-com": [
+      ["clickup", "Similar views and automations, free to start"],
+      ["trello", "Simple kanban, free to start"]
+    ],
+    "airtable": [
+      ["notion", "Databases and docs together, free for individuals"]
+    ],
+    "typeform": [
+      ["google-forms", "Free unlimited forms that feed straight into Sheets"]
+    ],
+    "salesforce": [
+      ["pipedrive", "Pipeline-first CRM built for small sales teams"],
+      ["zoho-crm", "A full CRM at a small-business price"]
+    ],
+    "intercom": [
+      ["tidio", "Live chat plus an AI chatbot for small sites"],
+      ["freshdesk", "Ticketing and help desk, free to start"]
+    ],
+    "zendesk": [
+      ["freshdesk", "Help desk with a free tier"]
+    ],
+    "quickbooks": [
+      ["wave", "Free invoicing and accounting (payments cost extra)"]
+    ],
+    "grok": [
+      ["chatgpt", "Cheaper paid tier with a broader feature set"],
+      ["claude", "Strong writing and analysis on the $17-$20 tier"]
+    ],
+    "adobe-firefly": [
+      ["leonardo-ai", "AI image generation with a free tier"]
+    ]
+  }
+}
