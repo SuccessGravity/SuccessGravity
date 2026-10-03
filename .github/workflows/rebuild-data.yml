@@ -1,0 +1,43 @@
+name: Rebuild site data
+
+# Regenerates data/tools.json (from the programs array in index.html) and the
+# static Price Watch page (from data/price-changes.json) after direct pushes to main.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'data/price-changes.json'
+      - 'scripts/build-*.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-data
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Build
+        run: |
+          node scripts/build-tools-json.js
+          node scripts/build-price-watch.js
+      - name: Commit if changed
+        run: |
+          git config user.name "SG Data Bot"
+          git config user.email "actions@github.com"
+          git add data/tools.json price-watch/index.html
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Rebuild tools.json and Price Watch"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 5
+          done
+          exit 1

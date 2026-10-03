@@ -11,6 +11,12 @@ Success Gravity is operated by David Choi. The site earns affiliate commissions 
 - [About](https://successgravity.com/about/): who runs the site.
 - [Contact](https://successgravity.com/contact/)
 
+## Tools: spend calculator and price tracking
+
+- [Price Watch](https://successgravity.com/price-watch/): a weekly log of software price changes, each checked against the vendor's own pricing page and linked to the source. Includes the current entry price for 150+ tools and the date each one was verified.
+- [My Stack](https://successgravity.com/stack/): a free calculator. Add the tools you pay for and see your monthly and yearly software spend, hand-picked cheaper swaps, and price changes that affect your stack.
+- Machine-readable data: [tools.json](https://successgravity.com/data/tools.json) (listed prices) and [price-changes.json](https://successgravity.com/data/price-changes.json) (verified changes with sources).
+
 ## Tool reviews
 
 Each review covers what the tool is, key features, current pricing, pros and cons, and a quick verdict.
