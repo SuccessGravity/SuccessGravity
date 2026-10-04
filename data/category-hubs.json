@@ -1,56 +1,292 @@
 {
   "about": "Maps every data category key (data/tools.json → categories) to one /category/<hub>/ page. Hubs with \"new\": true are generated entirely by scripts/build-categories.js; the others are hand-written pages that get an auto-generated full tool list.",
   "hubs": {
-    "email-marketing": {"name": "Email Marketing", "emoji": "✉️", "keys": ["email-marketing"]},
-    "ai-writing": {"name": "AI Writing & Content", "emoji": "✍️", "keys": ["content-creation", "ai-content-creation"]},
-    "seo": {"name": "SEO & Search Ads", "emoji": "📈", "keys": ["seo-tools", "seo-marketing", "business-listing", "ppc-advertising-management"]},
-    "video-audio": {"name": "Video & Audio", "emoji": "🎬", "keys": ["video-audio", "video-creation", "video-editing", "music-creation", "music-distribution"]},
-    "influencer-marketing": {"name": "Influencer Marketing", "emoji": "📣", "keys": ["influencer-marketing"]},
-    "social-media": {"name": "Social Media Management", "emoji": "📱", "keys": ["social-media-management"]},
-    "ai-platforms": {"name": "AI Assistants & AI Coding", "emoji": "🤖", "keys": ["ai-platforms", "ai-coding"]},
-    "business-loans": {"name": "Business Loans & Funding", "emoji": "💰", "keys": ["business-loans"]},
-    "productivity": {"name": "Productivity & Project Management", "emoji": "✅", "keys": ["productivity", "project-management", "forms-surveys", "scheduling", "presentation"]},
-    "website-ecommerce": {"name": "Website Builders & Landing Pages", "emoji": "🌐", "keys": ["website-building", "landing-pages"]},
-    "ecommerce": {"name": "E-commerce", "emoji": "🛒", "keys": ["e-commerce-solutions", "e-commerce-management", "inventory-supply-chain"]},
-    "affiliate-marketing": {"name": "Affiliate & Referral Marketing", "emoji": "🔗", "keys": ["affiliate-marketing", "referral-management"]},
-    "design-image": {"name": "Design, Images & Stock Media", "emoji": "🎨", "keys": ["image-editing", "image-creation", "stock-media"]},
-    "crm": {"name": "CRM", "emoji": "🤝", "keys": ["crm"]},
-    "cloud": {"name": "Cloud & Hosting Infrastructure", "emoji": "☁️", "keys": ["cloud-infrastructure"]},
-    "automation": {"name": "Automation & Integration", "emoji": "⚡", "keys": ["automation"]},
-    "payments": {"name": "Payments, Accounting & Banking", "emoji": "💳", "keys": ["payments-finance", "finance-tools", "accounting", "business-banking"]},
-    "customer-support": {"name": "Customer Support", "emoji": "💬", "keys": ["customer-service"]},
-    "analytics-data": {"name": "Analytics & Data", "emoji": "📊", "keys": ["analytics-reporting", "data-analysis"]},
-    "free-resources": {"name": "Free Government & Business Resources", "emoji": "🏛️", "keys": ["government-resources"]},
-
+    "email-marketing": {
+      "name": "Email Marketing",
+      "short": "Email",
+      "emoji": "✉️",
+      "keys": [
+        "email-marketing"
+      ]
+    },
+    "ai-writing": {
+      "name": "AI Writing & Content",
+      "short": "AI Writing",
+      "emoji": "✍️",
+      "keys": [
+        "content-creation",
+        "ai-content-creation"
+      ]
+    },
+    "seo": {
+      "name": "SEO & Search Ads",
+      "short": "SEO & Ads",
+      "emoji": "📈",
+      "keys": [
+        "seo-tools",
+        "seo-marketing",
+        "business-listing",
+        "ppc-advertising-management"
+      ]
+    },
+    "video-audio": {
+      "name": "Video & Audio",
+      "short": "Video & Audio",
+      "emoji": "🎬",
+      "keys": [
+        "video-audio",
+        "video-creation",
+        "video-editing",
+        "music-creation",
+        "music-distribution"
+      ]
+    },
+    "influencer-marketing": {
+      "name": "Influencer Marketing",
+      "short": "Influencers",
+      "emoji": "📣",
+      "keys": [
+        "influencer-marketing"
+      ]
+    },
+    "social-media": {
+      "name": "Social Media Management",
+      "short": "Social Media",
+      "emoji": "📱",
+      "keys": [
+        "social-media-management"
+      ]
+    },
+    "ai-platforms": {
+      "name": "AI Assistants & AI Coding",
+      "short": "AI Assistants",
+      "emoji": "🤖",
+      "keys": [
+        "ai-platforms",
+        "ai-coding"
+      ]
+    },
+    "business-loans": {
+      "name": "Business Loans & Funding",
+      "short": "Loans",
+      "emoji": "💰",
+      "keys": [
+        "business-loans"
+      ]
+    },
+    "productivity": {
+      "name": "Productivity & Project Management",
+      "short": "Productivity",
+      "emoji": "✅",
+      "keys": [
+        "productivity",
+        "project-management",
+        "forms-surveys",
+        "scheduling",
+        "presentation"
+      ]
+    },
+    "website-ecommerce": {
+      "name": "Website Builders & Landing Pages",
+      "short": "Websites",
+      "emoji": "🌐",
+      "keys": [
+        "website-building",
+        "landing-pages"
+      ]
+    },
+    "ecommerce": {
+      "name": "E-commerce",
+      "short": "E-commerce",
+      "emoji": "🛒",
+      "keys": [
+        "e-commerce-solutions",
+        "e-commerce-management",
+        "inventory-supply-chain"
+      ]
+    },
+    "affiliate-marketing": {
+      "name": "Affiliate & Referral Marketing",
+      "short": "Affiliate",
+      "emoji": "🔗",
+      "keys": [
+        "affiliate-marketing",
+        "referral-management"
+      ]
+    },
+    "design-image": {
+      "name": "Design, Images & Stock Media",
+      "short": "Design",
+      "emoji": "🎨",
+      "keys": [
+        "image-editing",
+        "image-creation",
+        "stock-media"
+      ]
+    },
+    "crm": {
+      "name": "CRM",
+      "short": "CRM",
+      "emoji": "🤝",
+      "keys": [
+        "crm"
+      ]
+    },
+    "cloud": {
+      "name": "Cloud & Hosting Infrastructure",
+      "short": "Cloud & Hosting",
+      "emoji": "☁️",
+      "keys": [
+        "cloud-infrastructure"
+      ]
+    },
+    "automation": {
+      "name": "Automation & Integration",
+      "short": "Automation",
+      "emoji": "⚡",
+      "keys": [
+        "automation"
+      ]
+    },
+    "payments": {
+      "name": "Payments, Accounting & Banking",
+      "short": "Payments & Accounting",
+      "emoji": "💳",
+      "keys": [
+        "payments-finance",
+        "finance-tools",
+        "accounting",
+        "business-banking"
+      ]
+    },
+    "customer-support": {
+      "name": "Customer Support",
+      "short": "Support",
+      "emoji": "💬",
+      "keys": [
+        "customer-service"
+      ]
+    },
+    "analytics-data": {
+      "name": "Analytics & Data",
+      "short": "Analytics",
+      "emoji": "📊",
+      "keys": [
+        "analytics-reporting",
+        "data-analysis"
+      ]
+    },
+    "free-resources": {
+      "name": "Free Government & Business Resources",
+      "short": "Free Resources",
+      "emoji": "🏛️",
+      "keys": [
+        "government-resources"
+      ]
+    },
     "sales-outreach": {
-      "new": true, "name": "Sales Prospecting & Outreach", "emoji": "🎯", "keys": ["sales-outreach"],
+      "name": "Sales Prospecting & Outreach",
+      "short": "Sales Outreach",
+      "new": true,
+      "emoji": "🎯",
+      "keys": [
+        "sales-outreach"
+      ],
       "blurb": "Lead databases, cold email and sales engagement tools — entry prices checked on each vendor's own pricing page.",
-      "intro": ["Prospecting tools do two jobs: finding the right people to contact (lead databases and email finders) and reaching them at a sensible pace (cold email and sales engagement). Many small teams only need one of the two, so it pays to be clear about which problem you're solving before you subscribe.", "Pricing in this category usually scales with credits (contacts you can look up), mailboxes, or seats. A low entry price can rise quickly once you add more senders or need more lookups each month, so compare the plan limits, not just the headline number."],
-      "lookFor": ["Data source and accuracy: where contact data comes from and how bounces are handled", "Credit or send limits on the plan you can actually afford", "Deliverability help: warm-up, sending limits, and domain setup guidance", "CRM sync, so replies and meetings land in your pipeline"]
+      "intro": [
+        "Prospecting tools do two jobs: finding the right people to contact (lead databases and email finders) and reaching them at a sensible pace (cold email and sales engagement). Many small teams only need one of the two, so it pays to be clear about which problem you're solving before you subscribe.",
+        "Pricing in this category usually scales with credits (contacts you can look up), mailboxes, or seats. A low entry price can rise quickly once you add more senders or need more lookups each month, so compare the plan limits, not just the headline number."
+      ],
+      "lookFor": [
+        "Data source and accuracy: where contact data comes from and how bounces are handled",
+        "Credit or send limits on the plan you can actually afford",
+        "Deliverability help: warm-up, sending limits, and domain setup guidance",
+        "CRM sync, so replies and meetings land in your pipeline"
+      ]
     },
     "communication": {
-      "new": true, "name": "Phone, Video & Team Chat", "emoji": "📞", "keys": ["communication"],
+      "name": "Phone, Video & Team Chat",
+      "short": "Phone & Chat",
+      "new": true,
+      "emoji": "📞",
+      "keys": [
+        "communication"
+      ],
       "blurb": "Business phone numbers, video meetings, team chat and meeting assistants — with entry prices from each vendor.",
-      "intro": ["Communication tools are often the biggest per-seat line in a small business's software bill, because everyone on the team needs them. Business phone systems give you a shared number, call routing and texting; video and chat tools keep the team connected; meeting assistants record and summarize calls.", "Before adding a new tool, check what you already pay for: office suites such as Google Workspace and Microsoft 365 include video meetings and chat, and that can make a separate subscription unnecessary."],
-      "lookFor": ["Per-seat price at your team size, not the single-user price", "Phone: local and toll-free numbers, call routing, and texting rules in your country", "Meetings: participant limits, time limits on free plans, and recording", "Overlap with what your office suite already includes"]
+      "intro": [
+        "Communication tools are often the biggest per-seat line in a small business's software bill, because everyone on the team needs them. Business phone systems give you a shared number, call routing and texting; video and chat tools keep the team connected; meeting assistants record and summarize calls.",
+        "Before adding a new tool, check what you already pay for: office suites such as Google Workspace and Microsoft 365 include video meetings and chat, and that can make a separate subscription unnecessary."
+      ],
+      "lookFor": [
+        "Per-seat price at your team size, not the single-user price",
+        "Phone: local and toll-free numbers, call routing, and texting rules in your country",
+        "Meetings: participant limits, time limits on free plans, and recording",
+        "Overlap with what your office suite already includes"
+      ]
     },
     "hr-payroll": {
-      "new": true, "name": "HR, Payroll & Time Tracking", "emoji": "🧑‍💼", "keys": ["hr-tools", "time-tracking", "resume-building"],
+      "name": "HR, Payroll & Time Tracking",
+      "short": "HR & Payroll",
+      "new": true,
+      "emoji": "🧑‍💼",
+      "keys": [
+        "hr-tools",
+        "time-tracking",
+        "resume-building"
+      ],
       "blurb": "Payroll, HR, global hiring and time tracking tools for small teams — entry prices from each vendor's own site.",
-      "intro": ["Payroll and HR software usually charges a base fee plus a per-person fee, so the real cost depends on headcount. Time tracking tools are cheaper and often per-seat, and they're commonly used by agencies and freelancers to bill clients accurately.", "If you hire contractors or employees abroad, employer-of-record and contractor platforms handle contracts and payments across countries, at a higher per-person price than domestic payroll."],
-      "lookFor": ["Total monthly cost at your headcount (base fee + per person)", "Automatic payroll tax filing for your state or country", "Contractor vs employee support", "Integrations with your accounting software"]
+      "intro": [
+        "Payroll and HR software usually charges a base fee plus a per-person fee, so the real cost depends on headcount. Time tracking tools are cheaper and often per-seat, and they're commonly used by agencies and freelancers to bill clients accurately.",
+        "If you hire contractors or employees abroad, employer-of-record and contractor platforms handle contracts and payments across countries, at a higher per-person price than domestic payroll."
+      ],
+      "lookFor": [
+        "Total monthly cost at your headcount (base fee + per person)",
+        "Automatic payroll tax filing for your state or country",
+        "Contractor vs employee support",
+        "Integrations with your accounting software"
+      ]
     },
     "files-security": {
-      "new": true, "name": "Files, E-signature & Security", "emoji": "🔐", "keys": ["file-storage", "e-signature", "cybersecurity-data-protection"],
+      "name": "Files, E-signature & Security",
+      "short": "Files & Security",
+      "new": true,
+      "emoji": "🔐",
+      "keys": [
+        "file-storage",
+        "e-signature",
+        "cybersecurity-data-protection"
+      ],
       "blurb": "Office suites, cloud storage, e-signature and password managers — the back-office basics, with entry prices checked at the source.",
-      "intro": ["These are the tools nobody talks about but every business needs: somewhere to keep files, a way to get contracts signed, and a password manager so shared logins aren't living in a spreadsheet.", "Office suites often bundle several of these (storage, email, sometimes e-signature), so check what your suite already covers before paying for a standalone tool."],
-      "lookFor": ["Storage per user and file-sharing controls", "E-signature: number of envelopes or documents included per month", "Password managers: shared vaults and admin controls for teams", "Two-factor authentication and audit logs"]
+      "intro": [
+        "These are the tools nobody talks about but every business needs: somewhere to keep files, a way to get contracts signed, and a password manager so shared logins aren't living in a spreadsheet.",
+        "Office suites often bundle several of these (storage, email, sometimes e-signature), so check what your suite already covers before paying for a standalone tool."
+      ],
+      "lookFor": [
+        "Storage per user and file-sharing controls",
+        "E-signature: number of envelopes or documents included per month",
+        "Password managers: shared vaults and admin controls for teams",
+        "Two-factor authentication and audit logs"
+      ]
     },
     "courses-community": {
-      "new": true, "name": "Courses & Communities", "emoji": "🎓", "keys": ["courses-community"],
+      "name": "Courses & Communities",
+      "short": "Courses",
+      "new": true,
+      "emoji": "🎓",
+      "keys": [
+        "courses-community"
+      ],
       "blurb": "Platforms for selling courses, running paid communities and memberships — entry prices and free plans compared.",
-      "intro": ["Course and community platforms let creators and experts sell what they know: recorded courses, live cohorts, paid memberships, or a community space. Some focus on courses, some on community, and several now do both.", "Watch for transaction fees on lower plans: a platform with a cheap monthly price but a percentage cut of sales can cost more than a pricier plan once you're selling regularly."],
-      "lookFor": ["Transaction fees on each plan, not just the monthly price", "Course, community, or both", "Checkout, payment plans, and coupons built in", "Whether members need a separate app"]
+      "intro": [
+        "Course and community platforms let creators and experts sell what they know: recorded courses, live cohorts, paid memberships, or a community space. Some focus on courses, some on community, and several now do both.",
+        "Watch for transaction fees on lower plans: a platform with a cheap monthly price but a percentage cut of sales can cost more than a pricier plan once you're selling regularly."
+      ],
+      "lookFor": [
+        "Transaction fees on each plan, not just the monthly price",
+        "Course, community, or both",
+        "Checkout, payment plans, and coupons built in",
+        "Whether members need a separate app"
+      ]
     }
   }
 }

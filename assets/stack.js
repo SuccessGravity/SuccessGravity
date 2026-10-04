@@ -25,6 +25,10 @@
   var tools = [], byId = {}, cats = {}, swaps = {}, changes = { entries: [], verified: {} };
   var stack = S.load();
   var shared = null; // stack decoded from ?s= (read-only until saved)
+  var hubs = {};
+  var pickHub = 'popular', pickLimit = 12; // category picker state
+  var removed = null; // { item, index } — shows "similar tools" in place of a removed row
+  var undoStack = null; // snapshot for the Undo button in toasts
 
   function money(n, dec) {
     n = Math.round((n || 0) * 100) / 100;
@@ -109,7 +113,20 @@
     var list = $('sgs-list');
     var total = 0, savings = 0, byCat = {};
     list.innerHTML = '';
-    v.items.forEach(function (it) {
+    function removedRow() {
+      if (!removed || ro) return;
+      var t = byId[removed.item.id];
+      var sim = similarTo(removed.item.id, 4);
+      var li = document.createElement('li');
+      li.className = 'sgs-removed px-5 md:px-6 py-4';
+      li.innerHTML = '<div class="flex items-start justify-between gap-3"><p class="text-sm text-gray-700"><b>' + esc(t.n) + '</b> removed. ' +
+        '<button type="button" class="sgs-linkbtn" data-act="undo-remove">Undo</button></p>' +
+        '<button type="button" class="sgs-x" data-act="dismiss-removed" aria-label="Dismiss">&times;</button></div>' +
+        (sim.length ? '<p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-2">Use something similar instead?</p><div class="flex flex-wrap gap-2">' + similarChips(sim, removed.index) + '</div>' : '');
+      list.appendChild(li);
+    }
+    v.items.forEach(function (it, idx) {
+      if (removed && removed.index === idx) removedRow();
       var t = byId[it.id];
       if (!t) return;
       var tot = rowTotal(it);
@@ -147,14 +164,16 @@
             '</div>' +
             (sw ? '<div class="sgs-swap mt-3">&#128161; <b>Swap idea:</b> ' +
               '<a href="' + esc(sw.alt.rv || sw.alt.l) + '"' + (sw.alt.rv ? '' : ' target="_blank" rel="sponsored noopener" class="affiliate-link" data-tool="' + esc(sw.alt.id) + '"') + ' data-swap="' + esc(t.id) + '">' + esc(sw.alt.n) + '</a> &mdash; ' + esc(sw.why) +
-              (sw.free ? '. It has a free plan &mdash; worth a look if its limits fit you.' : '. Lists from ' + money(sw.altCost) + '/mo, so <b>~' + money(sw.save, false) + '/yr less</b>. Check the features you rely on first.') + '</div>' : '') +
+              (sw.free ? '. It has a free plan &mdash; worth a look if its limits fit you.' : '. Lists from ' + money(sw.altCost) + '/mo, so <b>~' + money(sw.save, false) + '/yr less</b>. Check the features you rely on first.') +
+              (ro ? '' : ' <button type="button" class="sgs-swapbtn" data-act="swap" data-to="' + esc(sw.alt.id) + '">Swap to ' + esc(sw.alt.n) + '</button>') + '</div>' : '') +
           '</div>' +
         '</div>';
       list.appendChild(li);
     });
 
+    if (removed && removed.index >= v.items.length) removedRow();
     var n = v.items.length;
-    $('sgs-empty').style.display = n ? 'none' : '';
+    $('sgs-empty').style.display = n || (removed && !ro) ? 'none' : '';
     $('sgs-count').textContent = n ? '(' + n + ')' : '';
     $('sgs-clear').classList.toggle('hidden', !n || ro);
     $('sgs-month').textContent = money(total);
@@ -187,16 +206,91 @@
     renderShare();
     renderQuick();
     renderWatch();
+    // Mobile: pinned mini total, so the bill is visible while adding tools
+    var bar = $('sgs-mbar');
+    if (!bar) {
+      bar = document.createElement('button');
+      bar.type = 'button'; bar.id = 'sgs-mbar'; bar.className = 'sgs-mbar';
+      bar.addEventListener('click', function () { $('sgs-summary').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+      document.body.appendChild(bar);
+    }
+    bar.hidden = !n;
+    bar.innerHTML = '<span>' + n + (n === 1 ? ' tool' : ' tools') + '</span><b>' + money(total) + '<small>/mo</small></b><em>Total &amp; share &uarr;</em>';
   }
 
+  function pickList() {
+    var list = tools.filter(function (t) { return t.c !== 'government-resources' && t.c !== 'business-loans'; });
+    if (pickHub === 'popular') {
+      list = list.filter(function (t) { return t.pop > 0 && (t.pm || t.usage); });
+    } else {
+      list = list.filter(function (t) { return t.h === pickHub; });
+    }
+    return list.sort(function (a, b) { return (b.pop - a.pop) || ((b.r || 0) - (a.r || 0)) || a.n.localeCompare(b.n); });
+  }
+  function renderTabs() {
+    var counts = {};
+    tools.forEach(function (t) { if (t.h) counts[t.h] = (counts[t.h] || 0) + 1; });
+    var order = Object.keys(hubs).filter(function (h) { return counts[h] && h !== 'free-resources' && h !== 'business-loans'; })
+      .sort(function (a, b) { return counts[b] - counts[a]; });
+    $('sgs-tabs').innerHTML = ['popular'].concat(order).map(function (h) {
+      var label = h === 'popular' ? '&#11088; Popular' : (hubs[h].emoji ? hubs[h].emoji + ' ' : '') + esc(hubs[h].short || hubs[h].name);
+      return '<button type="button" role="tab" class="sgs-tab' + (h === pickHub ? ' on' : '') + '" aria-selected="' + (h === pickHub) + '" data-hub="' + h + '">' + label + '</button>';
+    }).join('');
+  }
   function renderQuick() {
     var have = {};
     view().items.forEach(function (i) { have[i.id] = 1; });
-    var q = tools.filter(function (t) { return !have[t.id] && t.pm && !t.usage && t.c !== 'government-resources'; })
-      .sort(function (a, b) { return b.pop - a.pop || b.r - a.r; }).slice(0, 12);
-    $('sgs-quick').innerHTML = q.map(function (t) {
-      return '<button type="button" class="sgs-chip" data-add="' + esc(t.id) + '"' + (shared ? ' disabled' : '') + '>&#65291; ' + esc(t.n) + '</button>';
+    var list = pickList();
+    var shown = list.slice(0, pickLimit);
+    $('sgs-quick').innerHTML = shown.map(function (t) {
+      var on = !!have[t.id];
+      var price = t.pm ? '$' + (t.pm % 1 ? t.pm.toFixed(2) : t.pm) + (perSeat(t) ? '/seat' : '') : t.free ? 'free plan' : '';
+      return '<button type="button" class="sgs-chip' + (on ? ' on' : '') + '" data-toggle="' + esc(t.id) + '" aria-pressed="' + on + '"' + (shared ? ' disabled' : '') + '>' +
+        (on ? '&#10003; ' : '&#65291; ') + esc(t.n) + (price ? ' <small>' + price + '</small>' : '') + '</button>';
+    }).join('') || '<p class="text-sm text-gray-500">No tools in this category yet.</p>';
+    var left = list.length - shown.length;
+    var more = $('sgs-more');
+    more.classList.toggle('hidden', left <= 0);
+    more.textContent = 'Show ' + Math.min(5, left) + ' more' + (left > 5 ? ' (' + left + ' left)' : '');
+  }
+
+  // Tools that do a similar job, best first: hand-picked swaps, then a score from shared
+  // specific tags, the same data category and the same category page.
+  var GENERIC_TAGS = { productivity: 1, ai: 1, marketing: 1, free: 1, business: 1, tools: 1, contents: 1, website: 1 };
+  function tagSet(t) {
+    var o = {};
+    (t.tg || []).forEach(function (g) { g = String(g).toLowerCase(); if (!GENERIC_TAGS[g]) o[g] = 1; });
+    return o;
+  }
+  function similarTo(id, n) {
+    var t = byId[id];
+    if (!t) return [];
+    var have = {};
+    view().items.forEach(function (i) { have[i.id] = 1; });
+    var out = [], seen = {};
+    function push(x) { if (x && x.id !== id && !have[x.id] && !seen[x.id] && out.length < n) { seen[x.id] = 1; out.push(x); } }
+    (swaps[id] || []).forEach(function (pair) { push(byId[pair[0]]); });
+    var mine = tagSet(t);
+    tools.map(function (x) {
+      var tags = tagSet(x), shared = 0;
+      Object.keys(tags).forEach(function (g) { if (mine[g]) shared++; });
+      var score = shared * 3 + (x.c === t.c ? 2 : 0) + (t.h && x.h === t.h ? 1 : 0);
+      return { x: x, score: score };
+    }).filter(function (o) { return o.score >= 2 && o.x.c !== 'government-resources'; })
+      .sort(function (a, b) { return (b.score - a.score) || (b.x.pop - a.x.pop) || ((b.x.r || 0) - (a.x.r || 0)) || a.x.n.localeCompare(b.x.n); })
+      .forEach(function (o) { push(o.x); });
+    return out;
+  }
+  function similarChips(list, slot) {
+    return list.map(function (x) {
+      var price = x.pm ? '$' + (x.pm % 1 ? x.pm.toFixed(2) : x.pm) + (perSeat(x) ? '/seat' : '') + '/mo' : x.free ? 'free plan' : '';
+      return '<button type="button" class="sgs-chip" data-slot="' + slot + '" data-add="' + esc(x.id) + '">&#65291; ' + esc(x.n) + (price ? ' <small>' + price + '</small>' : '') + '</button>';
     }).join('');
+  }
+
+  function snapshot() { undoStack = JSON.stringify(stack); }
+  function undoToast(html) {
+    if (S.toast) S.toast(html + ' <button type="button" class="sgs-undo" data-act="undo">Undo</button>');
   }
 
   function renderWatch() {
@@ -364,26 +458,60 @@
   }
 
   // ---- Mutations ----
-  function addTool(id, price, seats) {
+  function addTool(id, price, seats, slot) {
     if (shared) return;
     if (stack.items.some(function (i) { return i.id === id; })) { flash(id); return; }
-    stack.items.unshift({ id: id, price: price == null ? null : price, seats: seats || 1 });
+    var item = { id: id, price: price == null ? null : price, seats: seats || 1 };
+    if (slot != null && slot >= 0) {
+      // Replacing a removed tool: keep its position and seat count
+      if (removed && removed.index === slot) item.seats = removed.item.seats || 1;
+      stack.items.splice(Math.min(slot, stack.items.length), 0, item);
+      removed = null;
+    } else {
+      stack.items.unshift(item);
+      if (removed) removed.index++;
+    }
     commit();
     track('stack_add', { tool: id, from: '/stack/' });
     flash(id);
   }
   function commit() { S.save(stack); stack = S.load(); render(); }
+  function removeTool(id) {
+    var idx = -1;
+    stack.items.forEach(function (i, k) { if (i.id === id) idx = k; });
+    if (idx < 0) return;
+    removed = { item: stack.items[idx], index: idx };
+    stack.items.splice(idx, 1);
+    commit();
+    track('stack_remove', { tool: id });
+  }
+  function swapTool(fromId, toId) {
+    var idx = -1;
+    stack.items.forEach(function (i, k) { if (i.id === fromId) idx = k; });
+    if (idx < 0 || !byId[toId] || stack.items.some(function (i) { return i.id === toId; })) return;
+    snapshot();
+    var seats = stack.items[idx].seats || 1;
+    stack.items[idx] = { id: toId, price: null, seats: perSeat(byId[toId]) ? seats : 1 };
+    removed = null;
+    commit();
+    flash(toId);
+    undoToast('Swapped ' + esc(byId[fromId].n) + ' &rarr; ' + esc(byId[toId].n) + '.');
+    track('stack_swap', { from: fromId, to: toId });
+  }
   function flash(id) {
     var el = document.querySelector('.sgs-row[data-id="' + id + '"]');
     if (el) { el.classList.remove('sgs-flash'); void el.offsetWidth; el.classList.add('sgs-flash'); }
   }
   function loadPreset(p) {
     if (shared) exitShared();
-    if (stack.items.length && !confirm('Replace your current stack with "' + p.name + '"?')) return;
+    var had = stack.items.length;
+    snapshot();
+    removed = null;
     stack = { name: p.name, items: p.items.filter(function (x) { return byId[x[0]]; }).map(function (x) {
       return { id: x[0], price: x[1] == null ? null : x[1], seats: x[2] || 1 };
     }) };
     commit();
+    if (had) undoToast('Loaded &ldquo;' + esc(p.name) + '&rdquo;.');
     track('stack_preset', { preset: p.key });
     $('sgs-list').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -412,8 +540,22 @@
       if (!t.closest) return;
       var add = t.closest('[data-add]');
       if (add && !add.disabled) {
-        addTool(add.getAttribute('data-add'));
+        var slot = add.getAttribute('data-slot');
+        addTool(add.getAttribute('data-add'), null, null, slot == null ? null : +slot);
         if (add.closest('#sgs-results')) { input.value = ''; search(''); input.focus(); }
+        return;
+      }
+      var tog = t.closest('[data-toggle]');
+      if (tog && !tog.disabled) {
+        var tid = tog.getAttribute('data-toggle');
+        if (stack.items.some(function (i) { return i.id === tid; })) removeTool(tid); else addTool(tid);
+        return;
+      }
+      var tab = t.closest('[data-hub]');
+      if (tab) {
+        pickHub = tab.getAttribute('data-hub'); pickLimit = 12;
+        renderTabs(); renderQuick();
+        track('stack_tab', { hub: pickHub });
         return;
       }
       var req = t.closest('[data-request]');
@@ -423,9 +565,15 @@
       if (act) {
         var a = act.getAttribute('data-act');
         if (a === 'remove') {
-          var id = act.closest('.sgs-row').getAttribute('data-id');
-          stack.items = stack.items.filter(function (i) { return i.id !== id; });
-          commit();
+          removeTool(act.closest('.sgs-row').getAttribute('data-id'));
+        } else if (a === 'undo-remove') {
+          if (removed) { stack.items.splice(Math.min(removed.index, stack.items.length), 0, removed.item); removed = null; commit(); }
+        } else if (a === 'dismiss-removed') {
+          removed = null; render();
+        } else if (a === 'swap') {
+          swapTool(act.closest('.sgs-row').getAttribute('data-id'), act.getAttribute('data-to'));
+        } else if (a === 'undo') {
+          if (undoStack) { stack = JSON.parse(undoStack); undoStack = null; removed = null; commit(); }
         } else if (a === 'adopt') {
           if (stack.items.length && !confirm('Replace your current stack with this one?')) return;
           stack = { name: shared.name, items: shared.items };
@@ -456,8 +604,11 @@
       renderShare();
     });
     $('sgs-clear').addEventListener('click', function () {
-      if (confirm('Remove every tool from your stack?')) { stack = { name: '', items: [] }; commit(); }
+      snapshot();
+      stack = { name: '', items: [] }; removed = null; commit();
+      undoToast('Cleared your stack.');
     });
+    $('sgs-more').addEventListener('click', function () { pickLimit += 5; renderQuick(); });
     $('sgs-copy').addEventListener('click', copyLink);
     $('sgs-img').addEventListener('click', saveImage);
     if (navigator.share) {
@@ -492,8 +643,10 @@
     fetch('/data/swaps.json').then(function (r) { return r.json(); }).catch(function () { return { swaps: {} }; }),
     S.changes().catch(function () { return { entries: [], verified: {} }; })
   ]).then(function (res) {
-    tools = res[0].tools.filter(function (t) { return t.c !== 'government-resources'; });
+    tools = res[0].tools;
     cats = res[0].categories || {};
+    hubs = res[0].hubs || {};
+    $('sgs-search').placeholder = 'Search ' + tools.length.toLocaleString('en-US') + ' tools, e.g. Canva, Slack, Shopify\u2026';
     tools.forEach(function (t) { byId[t.id] = t; });
     swaps = res[1].swaps || {};
     changes = res[2] || changes;
@@ -502,6 +655,7 @@
     shared = decodeStack(new URLSearchParams(location.search));
     if (shared) track('stack_shared_view', { tools: shared.items.length });
     renderPresets();
+    renderTabs();
     renderShared();
     renderAlerts();
     bind();

@@ -17,7 +17,7 @@ Never write first-person testing or experience claims ("when we tested", "in our
 - `data/tools.json` is generated from it: `node scripts/build-tools-json.js`. Never edit it by hand.
 - `data/price-changes.json` is the Price Watch log (hand-edited, sources required). `price-watch/index.html` is regenerated from it: `node scripts/build-price-watch.js`.
 - `data/swaps.json` lists hand-picked cheaper alternatives used by `/stack/`.
-- `data/category-hubs.json` maps every category key to one `/category/<hub>/` page. `node scripts/build-categories.js` writes the full tool list into each hub page (between `SG-HUBLIST` markers — don't hand-edit that block), generates pages for hubs marked `"new"`, and updates counts on `/category/`, the homepage grid and `sitemap.xml`. A new category key must be added to a hub here.
+- `data/category-hubs.json` maps every category key to one `/category/<hub>/` page. `node scripts/build-categories.js` writes the full tool list into each hub page (between `SG-HUBLIST` markers — don't hand-edit that block), generates pages for hubs marked `"new"`, and updates counts on `/category/`, the homepage grid and `sitemap.xml`. A new category key must be added to a hub here. `data/category-overrides.json` corrects the category of core tools whose homepage category is too broad (e.g. Zoom → communication); it only affects `data/tools.json`.
 - Build order: `node scripts/build-tools-json.js && node scripts/build-price-watch.js && node scripts/build-categories.js`. GitHub Actions rerun these after merges to main, but run them locally before pushing.
 
 ## Prices

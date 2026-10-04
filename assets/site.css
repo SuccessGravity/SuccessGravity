@@ -627,3 +627,29 @@ a.sgc-name:hover { color: #4f46e5; text-decoration: underline; }
 .sgc-visit:hover { filter: brightness(1.08); }
 .sgc-actions .sg-stack-btn { flex: 1; font-size: .78rem; }
 .dark-mode .sgc-tool { background: #1f2937; border-color: #374151; }
+
+/* ── /stack/ v2: category picker, toggles, removal suggestions, swaps ── */
+.sgs-step { display: inline-flex; align-items: center; justify-content: center; width: 1.45rem; height: 1.45rem; border-radius: 999px;
+  background: #4f46e5; color: #fff; font-size: .8rem; font-weight: 800; margin-right: .35rem; vertical-align: 2px; }
+.sgs-step-w { background: #fcd34d; color: #1e1b4b; width: 1.2rem; height: 1.2rem; font-size: .7rem; }
+.sgs-tabs { display: flex; gap: .4rem; overflow-x: auto; padding-bottom: .35rem; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+.sgs-tab { flex: 0 0 auto; border: 1px solid #e5e7eb; background: #fff; color: #374151; border-radius: 999px; padding: .38rem .8rem; font-size: .82rem; font-weight: 700; white-space: nowrap; }
+.sgs-tab:hover { border-color: #a5b4fc; color: #3730a3; }
+.sgs-tab.on { background: #1e1b4b; border-color: #1e1b4b; color: #fff; }
+.sgs-chip small { color: #6b7280; font-weight: 600; margin-left: .15rem; }
+.sgs-chip.on { background: #ecfdf5; border-color: #6ee7b7; color: #065f46; }
+.sgs-chip.on small { color: #047857; }
+.sgs-more { margin-top: .75rem; font-size: .85rem; font-weight: 700; color: #4f46e5; border: 1px dashed #a5b4fc; border-radius: 999px; padding: .35rem .9rem; background: #f8fafc; }
+.sgs-more:hover { background: #eef2ff; }
+.sgs-more.hidden { display: none; }
+.sgs-removed { background: #f8fafc; }
+.sgs-linkbtn { color: #4f46e5; font-weight: 700; text-decoration: underline; }
+.sgs-swapbtn { margin-left: .25rem; background: #4f46e5; color: #fff; font-weight: 700; font-size: .78rem; border-radius: 999px; padding: .2rem .7rem; white-space: nowrap; }
+.sgs-swapbtn:hover { background: #4338ca; }
+#sg-toast .sgs-undo { margin-left: .6rem; background: #fcd34d; color: #1e1b4b; font-weight: 800; border-radius: 999px; padding: .15rem .65rem; font-size: .82rem; }
+.sgs-mbar { position: fixed; left: 12px; right: 80px; bottom: 16px; z-index: 55; display: flex; align-items: center; gap: .6rem;
+  background: #1e1b4b; color: #fff; border-radius: 999px; padding: .55rem 1rem; box-shadow: 0 12px 28px -10px rgba(30, 27, 75, .6); font-size: .85rem; }
+.sgs-mbar b { font-size: 1.05rem; } .sgs-mbar b small { color: #c7d2fe; font-weight: 600; }
+.sgs-mbar span { color: #c7d2fe; } .sgs-mbar em { margin-left: auto; font-style: normal; color: #fcd34d; font-weight: 700; font-size: .78rem; }
+.sgs-mbar[hidden] { display: none; }
+@media (min-width: 1024px) { .sgs-mbar { display: none; } }

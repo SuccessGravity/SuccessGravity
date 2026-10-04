@@ -75,8 +75,15 @@ const tools = programs.map((p) => {
     pop: p.popularity || 0,
     b: p.benefit || '',
     rv: reviewPath(p),
+    tg: Array.isArray(p.tags) ? p.tags.slice(0, 5) : [],
   };
 });
+
+// Category corrections for core tools whose homepage category is too broad
+try {
+  const ov = JSON.parse(fs.readFileSync(path.join(root, 'data', 'category-overrides.json'), 'utf8')).overrides || {};
+  tools.forEach((t) => { if (ov[t.id]) t.c = ov[t.id]; });
+} catch (e) { /* optional */ }
 
 // Also pick up reviews registered in the REVIEWS map but missing on the program
 const rm = html.match(/const REVIEWS = \{([\s\S]*?)\};/);
@@ -137,7 +144,19 @@ if (fs.existsSync(dirFile)) {
 }
 if (skipped) console.log('directory.jsonl: ' + skipped + ' line(s) skipped (duplicates or invalid)');
 
-const out = { generated: new Date().toISOString().slice(0, 10), count: tools.length, categories: labels, tools };
+// ---- Category page (hub) for each tool, from data/category-hubs.json ----
+const hubs = {};
+try {
+  const hj = JSON.parse(fs.readFileSync(path.join(root, 'data', 'category-hubs.json'), 'utf8')).hubs || {};
+  const keyToHub = {};
+  Object.entries(hj).forEach(([slug, h]) => {
+    hubs[slug] = { name: h.name, short: h.short || h.name, emoji: h.emoji || '' };
+    (h.keys || []).forEach((k) => { keyToHub[k] = slug; });
+  });
+  tools.forEach((t) => { if (keyToHub[t.c]) t.h = keyToHub[t.c]; });
+} catch (e) { /* hubs are optional */ }
+
+const out = { generated: new Date().toISOString().slice(0, 10), count: tools.length, categories: labels, hubs, tools };
 const dest = path.join(root, 'data', 'tools.json');
 fs.mkdirSync(path.dirname(dest), { recursive: true });
 const json = JSON.stringify(out);

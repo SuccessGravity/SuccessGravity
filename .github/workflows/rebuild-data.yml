@@ -12,6 +12,7 @@ on:
       - 'data/categories.json'
       - 'data/swaps.json'
       - 'data/category-hubs.json'
+      - 'data/category-overrides.json'
       - 'scripts/build-*.js'
   workflow_dispatch:
 
