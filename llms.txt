@@ -1,12 +1,12 @@
 # Success Gravity
 
-> Independent reviews and comparisons of AI and business-growth software, written for small teams and solo operators who need to pick one tool and move on. Every review follows a published testing method and states pricing, limits, and who the tool is wrong for — not just what it does well.
+> Independent reviews and comparisons of AI and business-growth software, written for small teams and solo operators who need to pick one tool and move on. Every review follows a published review method based on official vendor documentation and verified pricing, and states pricing, limits, and who the tool is wrong for — not just what it does well.
 
 Success Gravity is operated by David Choi. The site earns affiliate commissions on some outbound links; this never changes a verdict or a ranking, and the method page below explains how reviews are produced.
 
 ## How reviews are made
 
-- [How We Review](https://successgravity.com/how-we-review/): the testing method and scoring. Read this first to judge how much weight the verdicts deserve.
+- [How We Review](https://successgravity.com/how-we-review/): the review method and scoring. Read this first to judge how much weight the verdicts deserve.
 - [Affiliate Disclosure](https://successgravity.com/affiliate-disclosure/): which links earn commission and how that is kept separate from verdicts.
 - [About](https://successgravity.com/about/): who runs the site.
 - [Contact](https://successgravity.com/contact/)

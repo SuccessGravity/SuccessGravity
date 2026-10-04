@@ -82,9 +82,9 @@
 
   <main class="container mx-auto px-4 py-12 max-w-3xl sg-prose">
 
-    <p>The single most underused tool in a small business stack is automation. Every founder I talk to can name three tasks they do manually every day — copy data from a form submission into a spreadsheet, send a Slack notification when a new lead comes in, add a subscriber tag when they buy a product. These tasks take ten minutes each. Over a month, that's hours. Zapier eliminates them without writing a single line of code.</p>
+    <p>The single most underused tool in a small business stack is automation. Most founders can name three tasks they do manually every day — copy data from a form submission into a spreadsheet, send a Slack notification when a new lead comes in, add a subscriber tag when they buy a product. These tasks take ten minutes each. Over a month, that's hours. Zapier eliminates them without writing a single line of code.</p>
 
-    <p>I set up our first Zap — automatically adding every new form submission from our site to a Google Sheet — in about eight minutes. By the end of that week, we had five Zaps running that had collectively eliminated roughly 90 minutes of weekly manual work. This guide shows you the exact process I used, starting from scratch, so you can replicate it in your own business.</p>
+    <p>This guide walks through the process from scratch, so you can replicate it in your own business.</p>
 
     <!-- Diagram -->
     <figure style="margin:1.4rem 0">
@@ -128,11 +128,11 @@
 
     <h2>Step 3: Set up your action app and map the data</h2>
     <p>Click the action block that appears below your trigger. Search for the destination app — Google Sheets, Slack, Notion, HubSpot, whatever you want Zapier to update. Choose the action event (for Google Sheets: "Create Spreadsheet Row") and connect your account.</p>
-    <p>Now comes the key step that most guides gloss over: <strong>field mapping</strong>. Zapier shows you the fields the action requires and lets you fill them with dynamic data from your trigger — drag-and-drop style. For a form-to-spreadsheet Zap, you'd map "Form Field: Email" to the "Email" column in your sheet, "Form Field: Name" to the "Name" column, and so on. The most agentic setup I've seen kept this mapping tight — only the fields that would actually be used downstream, nothing extra — which made later automation easier to maintain.</p>
+    <p>Now comes the key step that most guides gloss over: <strong>field mapping</strong>. Zapier shows you the fields the action requires and lets you fill them with dynamic data from your trigger — drag-and-drop style. For a form-to-spreadsheet Zap, you'd map "Form Field: Email" to the "Email" column in your sheet, "Form Field: Name" to the "Name" column, and so on. Keep this mapping tight — only the fields that will actually be used downstream, nothing extra — which makes later automation easier to maintain.</p>
 
     <h2>Step 4: Test the Zap end-to-end before turning it on</h2>
     <p>Zapier has a <strong>Test</strong> button that sends a real piece of data through your Zap using the most recent real trigger event from your connected account. This is not optional: skip the test and you will turn on a Zap that breaks or mis-maps data, consuming tasks and creating noise before you catch it. The test shows you exactly what data comes in and what goes out. Confirm the destination app received the data correctly — open Google Sheets, Slack, or wherever your action points, and verify the row or message actually appeared as expected.</p>
-    <p>The most agentic thing I'd tell you to do at this stage: before you publish the Zap, look at the mapped output fields and ask "if something unexpected comes in on the trigger, what breaks?" Zapier handles empty fields gracefully for most apps, but some actions will fail if a required field is blank. Add a Zapier Filter step to skip the Zap when required fields are empty — this is available on paid plans and takes two minutes to configure.</p>
+    <p>One more check at this stage: before you publish the Zap, look at the mapped output fields and ask "if something unexpected comes in on the trigger, what breaks?" Zapier handles empty fields gracefully for most apps, but some actions will fail if a required field is blank. Add a Zapier Filter step to skip the Zap when required fields are empty — this is available on paid plans and takes two minutes to configure.</p>
 
     <h2>Step 5: Build your first multi-step Zap and go further</h2>
     <p>Once your first two-step Zap is running cleanly for a week, add a second action. Multi-step Zaps are where the power compounds: trigger on a new form submission, action 1 adds it to Google Sheets, action 2 sends a Slack notification to your team, action 3 creates a task in ClickUp assigned to the right person. That single trigger automates a workflow that previously required three people to each do one manual step.</p>
