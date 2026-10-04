@@ -104,3 +104,23 @@ put('TABLE', rows + '\n');
 html = html.replace(/(<span id="pw-updated">)[^<]*(<\/span>)/, '$1' + esc(fmt(lastCheck)) + '$2');
 fs.writeFileSync(pagePath, html);
 console.log('price-watch: ' + entries.length + ' entries, ' + nVerified + ' verified, ' + tracked + ' tracked');
+
+// ---- Static counts on the homepage and /new/ (so no stale number flashes before JS runs) ----
+const total = tools.tools.length;
+const fmtN = total.toLocaleString('en-US');
+const pages = [
+  ['index.html', [
+    [/(id="sg-stat-tools" data-count-to=")\d+/, '$1' + total],
+    [/(id="sg-stat-verified" data-count-to=")\d+/, '$1' + nVerified],
+    [/(data-sg-tool-count-plain>)[\d,]+/g, '$1' + fmtN],
+  ]],
+  ['new/index.html', [[/(data-sg-tool-count>)[\d,]+ tools/, '$1' + fmtN + ' tools']]],
+];
+pages.forEach(([rel, subs]) => {
+  const fp = path.join(root, rel);
+  if (!fs.existsSync(fp)) return;
+  const before = fs.readFileSync(fp, 'utf8');
+  let after = before;
+  subs.forEach(([re, rep]) => { after = after.replace(re, rep); });
+  if (after !== before) { fs.writeFileSync(fp, after); console.log('counts updated in ' + rel); }
+});

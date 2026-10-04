@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (hero) {
       var inner = hero.querySelector('.container');
       if (inner) {
-        gsap.to(inner, { yPercent: 10, opacity: 0.65, ease: 'none',
+        gsap.to(inner, { opacity: 0.65, ease: 'none',
           scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
       }
     }
@@ -520,7 +520,7 @@ function sgLogoHTML(link, name, icon) {
     var stat = document.getElementById('sg-stat-tools');
     var see = document.getElementById('sg-see-all');
     var marks = document.querySelectorAll('[data-sg-tool-count]');
-    if (!stat && !see && !marks.length) return;
+    if (!stat && !see && !marks.length && !document.querySelector('[data-sg-tool-count-plain]')) return;
     window.SGStack.tools().then(function (d) {
       var n = d.count || (d.tools || []).length;
       if (!n) return;
@@ -535,7 +535,79 @@ function sgLogoHTML(link, name, icon) {
       var btn = document.getElementById('sg-see-all');
       if (btn) btn.innerHTML = 'See All ' + txt + ' Tools &rarr;';
       marks.forEach(function (el) { el.textContent = txt + ' tools'; });
+      document.querySelectorAll('[data-sg-tool-count-plain]').forEach(function (el) { el.textContent = txt; });
     }).catch(function () {});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
+})();
+
+// ── v12: homepage hero card — the visitor's own stack, or a live example ──
+(function () {
+  var S = window.SGStack;
+  if (!S) return;
+  var EXAMPLE = [['notion', 3], ['slack', 3], ['zoom', 2], ['semrush', 1], ['clickup', 3], ['gamma', 1]];
+  function money(n) {
+    n = Math.round(n * 100) / 100;
+    return '$' + (n >= 1000 || n === Math.round(n) ? Math.round(n).toLocaleString('en-US') : n.toFixed(2));
+  }
+  function perSeat(t) { return /\/\s*(user|seat|agent|member)|per (user|seat|agent|member)/i.test(t.p); }
+  function run() {
+    var rowsEl = document.getElementById('sg-hcard-rows');
+    if (!rowsEl) return;
+    var esc = S.esc;
+    Promise.all([
+      S.tools(),
+      fetch('/data/swaps.json').then(function (r) { return r.json(); }).catch(function () { return { swaps: {} }; }),
+      S.changes().catch(function () { return { entries: [] }; })
+    ]).then(function (res) {
+      var by = {};
+      res[0].tools.forEach(function (t) { by[t.id] = t; });
+      var mine = S.load().items.filter(function (i) { return by[i.id]; });
+      var items = mine.length
+        ? mine.map(function (i) { return { t: by[i.id], price: i.price != null ? i.price : (by[i.id].pm || 0), seats: i.seats || 1 }; })
+        : EXAMPLE.filter(function (x) { return by[x[0]]; }).map(function (x) { return { t: by[x[0]], price: by[x[0]].pm || 0, seats: x[1] }; });
+      if (mine.length) {
+        var name = S.load().name;
+        document.getElementById('sg-hcard-title').innerHTML = '&#129520; ' + esc(name || 'Your stack');
+        document.getElementById('sg-hcard-cta').innerHTML = 'Open my stack &rarr;';
+      }
+      var total = 0;
+      items.forEach(function (it) { it.cost = it.price * it.seats; total += it.cost; });
+      var shown = items.slice().sort(function (a, b) { return b.cost - a.cost; }).slice(0, 4);
+      rowsEl.innerHTML = shown.map(function (it) {
+        var t = it.t, host = '';
+        try { host = new URL(t.l).hostname; } catch (e) {}
+        return '<div class="sg-hcard-row"><img src="https://www.google.com/s2/favicons?domain=' + encodeURIComponent(host) + '&amp;sz=64" alt="" width="22" height="22" loading="lazy">' +
+          '<span class="n">' + esc(t.n) + (it.seats > 1 ? ' <small>&times;' + it.seats + '</small>' : '') + '</span>' +
+          '<span class="p">' + (it.cost ? money(it.cost) + '<small>/mo</small>' : 'free') + '</span></div>';
+      }).join('') + (items.length > 4 ? '<p class="sg-hcard-more">+ ' + (items.length - 4) + ' more</p>' : '');
+      document.getElementById('sg-hcard-total').innerHTML = money(total) + '<small>/mo</small> <em>' + money(total * 12) + '/yr</em>';
+      // First swap that is actually cheaper (editorial order), as in My Stack
+      var swaps = res[1].swaps || {}, tip = null;
+      items.some(function (it) {
+        return (swaps[it.t.id] || []).some(function (pair) {
+          var alt = by[pair[0]];
+          if (!alt || alt.pm == null || alt.usage || !alt.pm) return false;
+          var altCost = alt.pm * (perSeat(alt) ? it.seats : 1);
+          var save = (it.cost - altCost) * 12;
+          if (save < 12) return false;
+          tip = '&#128161; <b>Swap idea:</b> ' + esc(it.t.n) + ' &rarr; ' + esc(alt.n) + ', about <b>$' + Math.round(save).toLocaleString('en-US') + '/yr</b> less';
+          return true;
+        });
+      });
+      if (tip) { var tipEl = document.getElementById('sg-hcard-tip'); tipEl.innerHTML = tip; tipEl.hidden = false; }
+      var ids = {};
+      items.forEach(function (it) { ids[it.t.id] = 1; });
+      var ch = (res[2].entries || []).filter(function (e) { return ids[e.tool]; })
+        .sort(function (a, b) { return a.date < b.date ? 1 : -1; })[0];
+      if (ch) {
+        var al = document.getElementById('sg-hcard-alert');
+        al.innerHTML = '&#128276; <b>' + esc(ch.name) + '</b> ' + (ch.dir === 'up' ? '&#9650;' : ch.dir === 'down' ? '&#9660;' : '&bull;') + ' ' + esc(ch.to);
+        al.hidden = false;
+      }
+    }).catch(function () {
+      rowsEl.innerHTML = '<p class="text-sm text-gray-500 py-4 text-center">Add your tools and see your monthly bill.</p>';
+    });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
 })();
