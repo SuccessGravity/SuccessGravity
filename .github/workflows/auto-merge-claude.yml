@@ -33,7 +33,8 @@ jobs:
             node scripts/build-tools-json.js
             node scripts/build-price-watch.js
             node scripts/build-categories.js
-            git add data/tools.json price-watch/index.html index.html new/index.html category sitemap.xml
+            node scripts/build-pricing.js
+            git add data/tools.json price-watch/index.html index.html new/index.html category pricing sitemap.xml
             git diff --cached --quiet || git commit -m "Rebuild tools.json and Price Watch"
           fi
 

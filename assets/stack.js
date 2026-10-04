@@ -149,7 +149,7 @@
             '<div class="flex items-start justify-between gap-2">' +
               '<div class="min-w-0">' + nameHTML +
                 ' <span class="sg-chip sg-acc-slate ml-1">' + esc(catLabel(t.c)) + '</span>' +
-                '<p class="text-xs text-gray-500 mt-1">Listed: ' + esc(t.p || 'n/a') +
+                '<p class="text-xs text-gray-500 mt-1">Listed: <a href="/pricing/' + esc(t.id) + '/" class="sgs-plink">' + esc(t.p || 'n/a') + '</a>' +
                   (ver ? ' &middot; <a href="' + esc(ver.source) + '" target="_blank" rel="noopener" class="sgs-ver" title="Checked against the official pricing page">&#10003; verified ' + esc(fmtDate(ver.date)) + '</a>' : '') +
                   (t.usage ? ' &middot; <span class="text-amber-700">usage-based &mdash; enter your average</span>' :
                     t.pm == null ? ' &middot; <span class="text-amber-700">price not checked yet &mdash; enter what you pay</span>' : '') +

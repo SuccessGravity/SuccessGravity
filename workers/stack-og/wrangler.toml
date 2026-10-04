@@ -1,0 +1,8 @@
+name = "sg-stack-og"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+routes = [
+  { pattern = "successgravity.com/stack*", zone_name = "successgravity.com" },
+  { pattern = "successgravity.com/og/*", zone_name = "successgravity.com" }
+]

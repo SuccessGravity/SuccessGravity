@@ -376,6 +376,11 @@ function sgLogoHTML(link, name, icon) {
         b.setAttribute('data-stack-id', t.id);
         cta.parentNode.insertBefore(b, cta.nextSibling);
         paintBtn(b);
+        var pl = document.createElement('a');
+        pl.href = '/pricing/' + t.id + '/';
+        pl.className = 'sg-pricing-link';
+        pl.innerHTML = 'Full ' + esc(t.n) + ' pricing &amp; alternatives &rarr;';
+        b.parentNode.insertBefore(pl, b.nextSibling);
       });
     }
 
@@ -504,7 +509,7 @@ function sgLogoHTML(link, name, icon) {
       var dir = ul.querySelector('a[href="/directory/"]');
       if (!dir || ul.querySelector('a[href="/stack/"]')) return;
       var li = dir.parentNode;
-      [['/price-watch/', '&#128276; Price Watch'], ['/stack/', '&#129520; My Stack']].forEach(function (x) {
+      [['/pricing/', '&#128176; Software Pricing'], ['/price-watch/', '&#128276; Price Watch'], ['/stack/', '&#129520; My Stack']].forEach(function (x) {
         var n = document.createElement('li');
         n.innerHTML = '<a href="' + x[0] + '" class="hover:text-white">' + x[1] + '</a>';
         li.parentNode.insertBefore(n, li.nextSibling);

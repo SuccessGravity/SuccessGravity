@@ -35,11 +35,12 @@ jobs:
           node scripts/build-tools-json.js
           node scripts/build-price-watch.js
           node scripts/build-categories.js
+          node scripts/build-pricing.js
       - name: Commit if changed
         run: |
           git config user.name "SG Data Bot"
           git config user.email "actions@github.com"
-          git add data/tools.json price-watch/index.html index.html new/index.html category sitemap.xml
+          git add data/tools.json price-watch/index.html index.html new/index.html category pricing sitemap.xml
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Rebuild tools.json and Price Watch"
           for i in 1 2 3; do
