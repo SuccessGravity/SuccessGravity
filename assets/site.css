@@ -703,3 +703,35 @@ a.pr-chip:hover { background: #e0e7ff; color: #3730a3; }
 .sgs-plink { color: #4b5563; text-decoration: underline; text-decoration-color: #c7d2fe; }
 .sg-pricing-link { display: block; text-align: center; margin-top: .6rem; font-size: .85rem; font-weight: 700; color: #4f46e5; }
 .sg-pricing-link:hover { text-decoration: underline; }
+
+/* ── /stack/: overlap + renewals ── */
+.sgs-overlap { background: #fff7ed; border: 1px solid #fed7aa; color: #7c2d12; border-radius: .9rem; padding: .75rem 1rem; }
+.sgs-overlap[hidden] { display: none; }
+.sgs-ren { margin-top: .6rem; }
+.sgs-ren summary { display: inline-block; cursor: pointer; font-size: .8rem; font-weight: 700; color: #4f46e5; list-style: none; }
+.sgs-ren summary::-webkit-details-marker { display: none; }
+.sgs-ren-fields { display: flex; flex-wrap: wrap; gap: .8rem; align-items: flex-end; margin-top: .5rem; }
+.sgs-field select { margin-top: .2rem; border: 1px solid #d1d5db; border-radius: .6rem; padding: .45rem .6rem; font-size: .95rem; font-weight: 600; color: #111827; text-transform: none; background: #fff; }
+.sgs-field input[type="date"] { width: 10.5rem; }
+.sgs-renlist { list-style: none; padding: 0; margin: .5rem 0 0; display: grid; gap: .4rem; }
+.sgs-renlist li { display: flex; justify-content: space-between; align-items: center; gap: .5rem; font-size: .88rem; color: #111827; padding: .45rem .6rem; border-radius: .6rem; background: #f8fafc; }
+.sgs-renlist li small { color: #6b7280; }
+.sgs-renlist li.soon { background: #fef3c7; }
+
+/* ── v13: shared top menu ── */
+.sg-nav { gap: 1.1rem; }
+.sg-nav-a, .sg-dd-btn { color: #374151; white-space: nowrap; }
+.sg-nav-a:hover, .sg-dd-btn:hover, .sg-nav-a.on, .sg-dd-btn.on { color: #4f46e5; }
+.sg-nav-a.on, .sg-dd-btn.on { font-weight: 700; }
+.sg-dd { position: relative; }
+.sg-dd-btn { font: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
+.sg-dd-btn span { font-size: .7em; }
+.sg-dd-menu { display: none; position: absolute; top: calc(100% + 10px); left: -12px; min-width: 190px; background: #fff; border: 1px solid #e5e7eb; border-radius: .9rem;
+  box-shadow: 0 18px 40px -18px rgba(30, 27, 75, .35); padding: .4rem; z-index: 60; }
+.sg-dd-menu::before { content: ''; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
+.sg-dd:hover .sg-dd-menu, .sg-dd:focus-within .sg-dd-menu, .sg-dd.open .sg-dd-menu { display: block; }
+.sg-dd-menu a { display: block; padding: .5rem .7rem; border-radius: .6rem; color: #374151; white-space: nowrap; }
+.sg-dd-menu a:hover, .sg-dd-menu a.on { background: #eef2ff; color: #3730a3; }
+.sg-nav-cta { background: #4f46e5; color: #fff !important; padding: .5rem 1rem; border-radius: .6rem; white-space: nowrap; }
+.sg-nav-cta:hover { background: #4338ca; }
+@media (min-width: 768px) and (max-width: 1023px) { .sg-nav { gap: .7rem; font-size: .8rem; } .sg-nav-cta { display: none; } }

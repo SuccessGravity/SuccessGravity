@@ -29,6 +29,7 @@
   var pickHub = 'popular', pickLimit = 12; // category picker state
   var removed = null; // { item, index } — shows "similar tools" in place of a removed row
   var undoStack = null; // snapshot for the Undo button in toasts
+  var openRenew = null; // tool id whose renewal editor is open
 
   function money(n, dec) {
     n = Math.round((n || 0) * 100) / 100;
@@ -107,6 +108,104 @@
     return null;
   }
 
+  // ---- Renewal dates ----
+  function isoToday() { return S.today(); }
+  function nextRenewal(it) {
+    if (!it.renew || !/^\d{4}-\d{2}-\d{2}$/.test(it.renew)) return null;
+    var d = new Date(it.renew + 'T12:00:00'), today = new Date(isoToday() + 'T12:00:00');
+    var guard = 0;
+    while (d < today && guard++ < 600) {
+      if (it.cycle === 'y') d.setFullYear(d.getFullYear() + 1); else d.setMonth(d.getMonth() + 1);
+    }
+    return d;
+  }
+  function ymd(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function renewAmount(it) { return rowTotal(it) * (it.cycle === 'y' ? 12 : 1); }
+  function renewEditor(it) {
+    var nx = nextRenewal(it);
+    var label = nx ? '&#128197; Renews ' + esc(fmtDate(ymd(nx))) + ' &middot; ' + (it.cycle === 'y' ? 'yearly' : 'monthly') : '&#128197; Add renewal date';
+    return '<details class="sgs-ren"' + (openRenew === it.id ? ' open' : '') + ' data-ren="' + esc(it.id) + '"><summary>' + label + '</summary>' +
+      '<div class="sgs-ren-fields"><label class="sgs-field"><span>Next renewal</span><input type="date" data-k="renew" value="' + esc(it.renew || '') + '"></label>' +
+      '<label class="sgs-field"><span>Billed</span><select data-k="cycle"><option value="m"' + (it.cycle !== 'y' ? ' selected' : '') + '>Monthly</option><option value="y"' + (it.cycle === 'y' ? ' selected' : '') + '>Yearly</option></select></label>' +
+      (it.renew ? '<button type="button" class="sgs-linkbtn" data-act="clear-renew">Remove date</button>' : '') + '</div></details>';
+  }
+  function renderRenewals() {
+    var box = $('sgs-renewals');
+    if (!box) return;
+    if (shared) { box.hidden = true; return; }
+    box.hidden = false;
+    var dated = stack.items.filter(function (it) { return byId[it.id] && nextRenewal(it); })
+      .map(function (it) { return { it: it, d: nextRenewal(it) }; })
+      .sort(function (a, b) { return a.d - b.d; });
+    var html = '<h3 class="font-extrabold text-gray-900 mb-1">&#128197; Upcoming renewals</h3>';
+    if (!stack.items.length) {
+      html += '<p class="text-sm text-gray-500">Add tools, then set when each one renews. We&rsquo;ll list what&rsquo;s coming up.</p>';
+    } else if (!dated.length) {
+      html += '<p class="text-sm text-gray-500">Tap <b>&#128197; Add renewal date</b> on a tool to track when it bills you next &mdash; then add every renewal to your calendar with a reminder a week before.</p>';
+    } else {
+      var today = new Date(isoToday() + 'T12:00:00');
+      html += '<ul class="sgs-renlist">' + dated.slice(0, 8).map(function (o) {
+        var days = Math.round((o.d - today) / 86400000);
+        var when = days === 0 ? 'today' : days === 1 ? 'tomorrow' : 'in ' + days + ' days';
+        return '<li class="' + (days <= 7 ? 'soon' : '') + '"><span><b>' + esc(byId[o.it.id].n) + '</b><br><small>' + esc(fmtDate(ymd(o.d))) + ' &middot; ' + when + '</small></span>' +
+          '<b>' + money(renewAmount(o.it)) + '</b></li>';
+      }).join('') + '</ul>';
+      var yearly = dated.filter(function (o) { return o.it.cycle === 'y'; });
+      if (yearly.length) {
+        html += '<p class="text-xs text-gray-500 mt-2">Yearly bills: ' + yearly.length + ' (' + money(yearly.reduce(function (s, o) { return s + renewAmount(o.it); }, 0)) + ' total). Decide before they renew.</p>';
+      }
+      html += '<button type="button" class="sg-btn-primary sg-btn-sm w-full mt-3" data-act="ics">&#128197; Add all to my calendar (.ics)</button>' +
+        '<p class="text-xs text-gray-400 mt-2">Works with Google Calendar, Apple Calendar and Outlook. Each renewal repeats and reminds you 7 days before.</p>';
+    }
+    box.innerHTML = html;
+  }
+  function downloadIcs() {
+    var stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
+    var icsEsc = function (x) { return String(x).replace(/\\/g, '\\\\').replace(/[,;]/g, function (c) { return '\\' + c; }).replace(/\n/g, '\\n'); };
+    var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Success Gravity//My Stack//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH'];
+    stack.items.forEach(function (it) {
+      var d = nextRenewal(it), t = byId[it.id];
+      if (!d || !t) return;
+      var day = ymd(d).replace(/-/g, ''), amt = money(renewAmount(it));
+      lines.push('BEGIN:VEVENT', 'UID:sg-' + it.id + '-' + day + '@successgravity.com', 'DTSTAMP:' + stamp,
+        'DTSTART;VALUE=DATE:' + day, 'RRULE:FREQ=' + (it.cycle === 'y' ? 'YEARLY' : 'MONTHLY'),
+        'SUMMARY:' + icsEsc(t.n + ' renews (' + amt + ')'),
+        'DESCRIPTION:' + icsEsc('Keep, downgrade or cancel? Pricing and cheaper alternatives: https://successgravity.com/pricing/' + it.id + '/'),
+        'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:' + icsEsc(t.n + ' renews in 7 days (' + amt + ')'), 'TRIGGER:-P7D', 'END:VALARM', 'END:VEVENT');
+    });
+    lines.push('END:VCALENDAR');
+    var blob = new Blob([lines.join('\r\n') + '\r\n'], { type: 'text/calendar;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'software-renewals.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
+    track('stack_ics', { tools: stack.items.filter(nextRenewal).length });
+  }
+
+  // ---- Overlap: two or more paid tools doing the same kind of job ----
+  function renderOverlap() {
+    var box = $('sgs-overlap');
+    if (!box) return;
+    var groups = {};
+    view().items.forEach(function (it) {
+      var t = byId[it.id];
+      if (!t || !t.c || rowTotal(it) <= 0) return;
+      (groups[t.c] = groups[t.c] || []).push(it);
+    });
+    var hits = Object.keys(groups).filter(function (c) { return groups[c].length > 1; }).map(function (c) {
+      var its = groups[c].slice().sort(function (a, b) { return rowTotal(b) - rowTotal(a); });
+      var drop = its.slice(1).reduce(function (s, it) { return s + rowTotal(it); }, 0);
+      return { c: c, its: its, save: drop * 12 };
+    }).sort(function (a, b) { return b.save - a.save; });
+    if (!hits.length) { box.hidden = true; box.innerHTML = ''; return; }
+    box.hidden = false;
+    box.innerHTML = '<p class="font-bold">&#128257; Possible overlap</p>' + hits.map(function (h) {
+      var names = h.its.map(function (it) { return esc(byId[it.id].n); });
+      return '<p class="text-sm mt-1">You pay for <b>' + h.its.length + ' ' + esc(cats[h.c] || catLabel(h.c)) + '</b> tools (' + names.join(', ') + '). If <b>' + names[0] +
+        '</b> covers what you use the others for, dropping ' + (h.its.length > 2 ? 'them' : names[1]) + ' saves about <b>' + money(h.save, false) + '/yr</b>.</p>';
+    }).join('') + '<p class="text-xs mt-2 opacity-80">Same category doesn&rsquo;t always mean same job &mdash; check what each one does for you first.</p>';
+  }
+
   // ---- Rendering ----
   function render() {
     var v = view(), ro = !!shared;
@@ -162,6 +261,7 @@
               seatHTML +
               '<p class="sgs-rowtotal ml-auto text-right"><b>' + money(tot) + '</b><span>/mo</span><br><small>' + money(tot * 12, false) + '/yr</small></p>' +
             '</div>' +
+            (ro ? '' : renewEditor(it)) +
             (sw ? '<div class="sgs-swap mt-3">&#128161; <b>Swap idea:</b> ' +
               '<a href="' + esc(sw.alt.rv || sw.alt.l) + '"' + (sw.alt.rv ? '' : ' target="_blank" rel="sponsored noopener" class="affiliate-link" data-tool="' + esc(sw.alt.id) + '"') + ' data-swap="' + esc(t.id) + '">' + esc(sw.alt.n) + '</a> &mdash; ' + esc(sw.why) +
               (sw.free ? '. It has a free plan &mdash; worth a look if its limits fit you.' : '. Lists from ' + money(sw.altCost) + '/mo, so <b>~' + money(sw.save, false) + '/yr less</b>. Check the features you rely on first.') +
@@ -206,6 +306,8 @@
     renderShare();
     renderQuick();
     renderWatch();
+    renderOverlap();
+    renderRenewals();
     // Mobile: pinned mini total, so the bill is visible while adding tools
     var bar = $('sgs-mbar');
     if (!bar) {
@@ -572,6 +674,12 @@
           removed = null; render();
         } else if (a === 'swap') {
           swapTool(act.closest('.sgs-row').getAttribute('data-id'), act.getAttribute('data-to'));
+        } else if (a === 'clear-renew') {
+          var rid = act.closest('.sgs-row').getAttribute('data-id');
+          stack.items.forEach(function (i) { if (i.id === rid) { delete i.renew; delete i.cycle; } });
+          openRenew = null; commit();
+        } else if (a === 'ics') {
+          downloadIcs();
         } else if (a === 'undo') {
           if (undoStack) { stack = JSON.parse(undoStack); undoStack = null; removed = null; commit(); }
         } else if (a === 'adopt') {
@@ -595,8 +703,14 @@
       if (!it) return;
       if (k === 'price') it.price = Math.max(0, Math.min(100000, parseFloat(inp.value) || 0));
       if (k === 'seats') it.seats = Math.max(1, Math.min(999, parseInt(inp.value, 10) || 1));
+      if (k === 'renew') { it.renew = /^\d{4}-\d{2}-\d{2}$/.test(inp.value) ? inp.value : null; openRenew = id; if (it.renew) track('stack_renewal_set', { tool: id }); }
+      if (k === 'cycle') { it.cycle = inp.value === 'y' ? 'y' : 'm'; openRenew = id; }
       commit();
     });
+    $('sgs-list').addEventListener('toggle', function (e) {
+      var d = e.target;
+      if (d.matches && d.matches('details[data-ren]')) openRenew = d.open ? d.getAttribute('data-ren') : (openRenew === d.getAttribute('data-ren') ? null : openRenew);
+    }, true);
     $('sgs-name').addEventListener('input', function (e) {
       if (shared) return;
       stack.name = e.target.value.slice(0, 40);
