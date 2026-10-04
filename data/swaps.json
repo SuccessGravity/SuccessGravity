@@ -145,6 +145,15 @@
     ],
     "adobe-firefly": [
       ["leonardo-ai", "AI image generation with a free tier"]
+    ],
+    "zoom": [
+      ["webex", "Video meetings, calling and messaging in one app"],
+      ["microsoft-teams", "Video meetings and team chat; included with many Microsoft 365 business plans"],
+      ["google-workspace", "Google Meet video calls come with Workspace business plans"]
+    ],
+    "slack": [
+      ["microsoft-teams", "Team chat and meetings; included with many Microsoft 365 business plans"],
+      ["google-workspace", "Google Chat comes with Workspace business plans"]
     ]
   }
 }

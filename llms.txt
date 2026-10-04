@@ -1,6 +1,6 @@
 # Success Gravity
 
-> Independent reviews and comparisons of AI and business-growth software, written for small teams and solo operators who need to pick one tool and move on. Every review follows a published review method based on official vendor documentation and verified pricing, and states pricing, limits, and who the tool is wrong for — not just what it does well.
+> Business software prices checked at the source, honest reviews, and a free software cost calculator for small teams and solo operators. Every listed price shows the date it was checked on the vendor's own pricing page; changes are logged on Price Watch with a source link. Reviews follow a published method based on official documentation and state who each tool is wrong for, not just what it does well.
 
 Success Gravity is operated by David Choi. The site earns affiliate commissions on some outbound links; this never changes a verdict or a ranking, and the method page below explains how reviews are produced.
 

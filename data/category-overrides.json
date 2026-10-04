@@ -1,0 +1,17 @@
+{
+  "about": "Category corrections for core tools (index.html programs) whose original category is too broad. Applied in data/tools.json only — used by My Stack suggestions and category pages. Keys are tool ids from data/tools.json.",
+  "overrides": {
+    "zoom": "communication",
+    "slack": "communication",
+    "loom": "communication",
+    "calendly": "scheduling",
+    "google-forms": "forms-surveys",
+    "typeform": "forms-surveys",
+    "asana": "project-management",
+    "trello": "project-management",
+    "monday-com": "project-management",
+    "grammarly": "content-creation",
+    "quickbooks": "accounting",
+    "wave": "accounting"
+  }
+}

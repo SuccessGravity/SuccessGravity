@@ -98,6 +98,12 @@ Object.entries(hubs).forEach(([slug, h]) => {
   let out = putBlock(html, listBlock(slug), ctaRe);
   if (!out) out = putBlock(html, listBlock(slug), /\n  <\/main>/);
   if (!out) { console.warn('no insertion point in ' + rel); return; }
+  // Keep the hero line and the closing CTA in step with the data
+  const n = hubTools(slug).length;
+  out = out
+    .replace(/(<p class="text-indigo-300 text-xs mt-4">[^<]*?)\d+ tools (?:compared · Independently scored|tracked · Prices checked at the source)/,
+      '$1' + n + ' tools tracked · Prices checked at the source')
+    .replace(/Browse the full directory of [\d,]+\+? tools/g, 'Browse the full directory of ' + tools.tools.length + ' tools');
   if (out !== html) { write(rel, out); changed++; }
 });
 
