@@ -607,3 +607,23 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI'
   .sg-hcard-total b { margin-left: auto; }
   .sg-hcard-total em { display: block; width: 100%; text-align: right; margin: 0; }
 }
+
+/* ── category pages: full tool list ── */
+.sgc-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.sgc-tool { display: flex; flex-direction: column; background: #fff; border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1rem 1.1rem; }
+.sgc-top { display: flex; gap: .7rem; align-items: flex-start; }
+.sgc-logo { width: 28px; height: 28px; border-radius: 7px; flex: 0 0 auto; margin-top: .1rem; }
+.sgc-head { min-width: 0; display: flex; flex-wrap: wrap; gap: .3rem .5rem; align-items: center; }
+.sgc-name { font-weight: 800; color: #111827; }
+a.sgc-name:hover { color: #4f46e5; text-decoration: underline; }
+.sgc-badge { font-size: .68rem; font-weight: 700; border-radius: 999px; padding: .1rem .5rem; background: #f1f5f9; color: #475569; white-space: nowrap; }
+.sgc-badge.sgc-rev { background: #fef3c7; color: #92400e; }
+.sgc-badge.sgc-new { background: #eef2ff; color: #4338ca; }
+.sgc-price { font-size: .82rem; color: #374151; font-weight: 600; margin-top: .6rem; }
+.sgc-ver { color: #047857; font-weight: 700; white-space: nowrap; }
+.sgc-desc { font-size: .85rem; color: #4b5563; line-height: 1.5; margin-top: .35rem; flex: 1; }
+.sgc-actions { display: flex; gap: .5rem; margin-top: .8rem; }
+.sgc-visit { flex: 1; text-align: center; background: linear-gradient(135deg, #4f46e5, #7c3aed); color: #fff; font-weight: 700; font-size: .82rem; border-radius: .6rem; padding: .45rem .5rem; }
+.sgc-visit:hover { filter: brightness(1.08); }
+.sgc-actions .sg-stack-btn { flex: 1; font-size: .78rem; }
+.dark-mode .sgc-tool { background: #1f2937; border-color: #374151; }

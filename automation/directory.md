@@ -29,9 +29,10 @@ Goal: grow the directory fast **without** inventing anything. Each run adds 20 n
    ```
    node scripts/build-tools-json.js
    node scripts/build-price-watch.js
+   node scripts/build-categories.js
    ```
-   The first script prints any skipped or invalid lines; fix them.
-6. **Commit:** commit `data/` and `price-watch/index.html` with the message `Directory: +N tools (M verified) YYYY-MM-DD`. Push to a `claude/sg-directory-YYYYMMDD` branch; the auto-merge workflow puts it on main.
+   The first script prints any skipped or invalid lines; fix them. The last one warns about categories that have no hub; add them to a hub in `data/category-hubs.json` (or create a new hub with `"new": true`, a name, emoji, blurb, intro and lookFor when a group reaches about 5 tools).
+6. **Commit:** commit `data/`, `price-watch/index.html`, `category/`, `index.html`, `new/index.html` and `sitemap.xml` with the message `Directory: +N tools (M verified) YYYY-MM-DD`. Push to a `claude/sg-directory-YYYYMMDD` branch; the auto-merge workflow puts it on main.
 7. **Report in Korean**, in 3 lines: tools added (and how many verified), what the total is now, and which requested tools were handled.
 
 ## Never

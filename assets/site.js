@@ -355,6 +355,7 @@ function sgLogoHTML(link, name, icon) {
       if (SGStack.has(id)) toast('Added to <a href="/stack/">My Stack</a> &mdash; see your total cost &rarr;');
     });
     document.addEventListener('sg:stack', function () { document.querySelectorAll('.sg-stack-btn').forEach(paintBtn); });
+    document.querySelectorAll('.sg-stack-btn[data-stack-id]').forEach(paintBtn);
     decorateCards();
     var progs = document.getElementById('programs') || document.getElementById('sgd-grid') || document.querySelector('main');
     if (progs && 'MutationObserver' in window) {

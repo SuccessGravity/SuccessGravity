@@ -32,7 +32,8 @@ jobs:
           if [ -f scripts/build-tools-json.js ]; then
             node scripts/build-tools-json.js
             node scripts/build-price-watch.js
-            git add data/tools.json price-watch/index.html index.html new/index.html
+            node scripts/build-categories.js
+            git add data/tools.json price-watch/index.html index.html new/index.html category sitemap.xml
             git diff --cached --quiet || git commit -m "Rebuild tools.json and Price Watch"
           fi
 
