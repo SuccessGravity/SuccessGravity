@@ -1,0 +1,274 @@
+# Directory queue
+
+Tools waiting to be added to `data/directory.jsonl`, highest priority first.
+The daily directory routine takes the first unchecked lines, adds them, and ticks them off (`- [x]`).
+Put user requests (from the My Stack "Request" button — they arrive by email as "Tool request: …") at the top of **Requested**.
+Skip a line if the tool already exists (same name or website) — just tick it and note "dup".
+
+## Requested
+<!-- newest requests go here -->
+
+## Small-business essentials
+- [ ] Zoho One
+- [ ] Zoho Mail
+- [ ] Proton Mail (Business)
+- [ ] Fastmail
+- [ ] Google Voice
+- [ ] Nextiva
+- [ ] Vonage Business
+- [ ] Zoom Phone
+- [ ] Loom alternatives: Tella
+- [ ] Bonsai
+- [ ] HoneyBook
+- [ ] Dubsado
+- [ ] 17hats
+- [ ] Jobber
+- [ ] Housecall Pro
+- [ ] ServiceTitan
+- [ ] Square Appointments
+- [ ] Vagaro
+- [ ] Mindbody
+- [ ] Booksy
+- [ ] Fresha
+- [ ] Toast POS
+- [ ] Clover POS
+- [ ] Lightspeed
+- [ ] Shopify POS
+- [ ] QuickBooks Payroll
+- [ ] Paychex
+- [ ] ADP RUN
+- [ ] Homebase
+- [ ] When I Work
+- [ ] Deputy
+- [ ] 7shifts
+- [ ] BambooHR
+- [ ] Workable
+- [ ] Indeed Employer
+- [ ] LegalZoom
+- [ ] Rocket Lawyer
+- [ ] Northwest Registered Agent
+- [ ] Stripe Atlas
+- [ ] Bench (bookkeeping)
+- [ ] Pilot (bookkeeping)
+- [ ] TurboTax Business
+- [ ] Avalara
+- [ ] TaxJar
+- [ ] Brex alternatives: Divvy (BILL Spend & Expense)
+- [ ] American Express Business (skip if not software)
+- [ ] NordLayer
+- [ ] NordVPN Teams
+- [ ] Proton Pass
+- [ ] Keeper Security
+- [ ] Backblaze
+- [ ] pCloud
+- [ ] Sync.com
+- [ ] Egnyte
+
+## Marketing & sales
+- [ ] Constant Contact Lead Gen & CRM
+- [ ] Keap
+- [ ] Ontraport
+- [ ] Drip
+- [ ] Sendinblue alternatives: EmailOctopus
+- [ ] Mailjet
+- [ ] SendGrid
+- [ ] Postmark
+- [ ] ManyChat
+- [ ] Chatfuel
+- [ ] Sendible
+- [ ] SocialBee
+- [ ] Agorapulse
+- [ ] Metricool
+- [ ] Iconosquare
+- [ ] Planoly
+- [ ] Tailwind (Pinterest)
+- [ ] Canva alternatives: Kittl
+- [ ] Brandfetch
+- [ ] Looka
+- [ ] Wix Logo Maker (skip if dup of Wix)
+- [ ] Similarweb
+- [ ] SpyFu
+- [ ] Ubersuggest
+- [ ] Mangools
+- [ ] AnswerThePublic
+- [ ] AlsoAsked
+- [ ] Screaming Frog SEO Spider
+- [ ] Sitebulb
+- [ ] BrightLocal
+- [ ] Yext
+- [ ] Birdeye
+- [ ] Podium
+- [ ] NiceJob
+- [ ] Trustpilot Business
+- [ ] Google Merchant Center
+- [ ] Microsoft Advertising
+- [ ] AdEspresso
+- [ ] Optmyzr
+- [ ] CallRail
+- [ ] Vidyard
+- [ ] BombBomb
+- [ ] Seamless.AI
+- [ ] RocketReach
+- [ ] Clay
+- [ ] Reply.io
+- [ ] Woodpecker
+- [ ] Salesloft
+- [ ] Outreach
+- [ ] HubSpot Sales Hub (skip if dup)
+- [ ] Attio
+- [ ] folk
+- [ ] Less Annoying CRM
+- [ ] Nutshell
+- [ ] Capsule CRM
+- [ ] Insightly
+- [ ] Bigin by Zoho
+
+## Ecommerce
+- [ ] Squarespace Commerce (skip if dup)
+- [ ] Ecwid
+- [ ] Shift4Shop
+- [ ] Volusion
+- [ ] Sellfy
+- [ ] Payhip
+- [ ] ThriveCart
+- [ ] SamCart
+- [ ] Kartra
+- [ ] Systeme alternatives: GrooveFunnels
+- [ ] Amazon Seller Central
+- [ ] Etsy (seller fees)
+- [ ] eBay Seller
+- [ ] Faire
+- [ ] Spocket
+- [ ] AutoDS
+- [ ] Zendrop
+- [ ] Sellbrite
+- [ ] Linnworks
+- [ ] Cin7
+- [ ] inFlow Inventory
+- [ ] Sortly
+- [ ] Easyship
+- [ ] Pirate Ship
+- [ ] Route
+- [ ] Loox
+- [ ] Stamped
+- [ ] Okendo
+- [ ] Smile.io
+- [ ] LoyaltyLion
+- [ ] Postscript
+- [ ] Attentive
+- [ ] Rebuy
+- [ ] PageFly
+- [ ] GemPages
+
+## AI & productivity
+- [ ] Notion Calendar (skip if free add-on only)
+- [ ] Motion
+- [ ] Reclaim.ai
+- [ ] Sunsama
+- [ ] Akiflow
+- [ ] Superhuman
+- [ ] Spark Mail
+- [ ] Shortwave
+- [ ] Granola
+- [ ] Read AI
+- [ ] Avoma
+- [ ] tl;dv alternatives: MeetGeek
+- [ ] Mem
+- [ ] Obsidian (Sync/Publish)
+- [ ] Raycast
+- [ ] TextExpander
+- [ ] Zapier alternatives: Pabbly Connect
+- [ ] IFTTT
+- [ ] Bardeen
+- [ ] Relevance AI
+- [ ] Lindy
+- [ ] Gumloop
+- [ ] Poe
+- [ ] Mistral Le Chat
+- [ ] DeepSeek
+- [ ] Character.ai (skip — not business)
+- [ ] Runway alternatives: Luma Dream Machine
+- [ ] Hailuo AI
+- [ ] Sora (via ChatGPT — skip if no standalone plan)
+- [ ] Udio
+- [ ] Soundraw
+- [ ] Beatoven.ai
+- [ ] Photoroom
+- [ ] remove.bg
+- [ ] Clipdrop
+- [ ] Magnific AI
+- [ ] Topaz Labs
+- [ ] Freepik
+- [ ] Recraft
+- [ ] Looka alternatives: Brandmark
+- [ ] Tome
+- [ ] Decktopus
+- [ ] Napkin AI
+- [ ] Grammarly alternatives: LanguageTool
+- [ ] Wordtune
+- [ ] DeepL
+- [ ] Originality.ai
+- [ ] Copyleaks
+- [ ] Surfer alternatives: Scalenut
+- [ ] Koala AI
+- [ ] Byword
+- [ ] Synthesia alternatives: Colossyan
+- [ ] Hour One
+- [ ] D-ID
+- [ ] Captions alternatives: Submagic
+- [ ] Vizard
+- [ ] Munch
+- [ ] Descript alternatives: Podcastle
+- [ ] Castmagic
+- [ ] Buzzsprout
+- [ ] Transistor
+- [ ] Spotify for Creators (skip if free only)
+
+## Websites, dev & hosting
+- [ ] GitHub
+- [ ] GitLab
+- [ ] Bitbucket
+- [ ] Linear alternatives: Jira
+- [ ] Confluence
+- [ ] Trello alternatives: Height
+- [ ] Sentry
+- [ ] Datadog
+- [ ] UptimeRobot
+- [ ] Better Stack
+- [ ] Postman
+- [ ] Retool
+- [ ] Softr
+- [ ] Glide
+- [ ] Adalo
+- [ ] FlutterFlow
+- [ ] Bolt alternatives: Create.xyz
+- [ ] Hostinger alternatives: A2 Hosting
+- [ ] InMotion Hosting
+- [ ] HostGator
+- [ ] GreenGeeks
+- [ ] Hetzner
+- [ ] Linode (Akamai)
+- [ ] Vultr
+- [ ] Fly.io
+- [ ] Railway
+- [ ] Neon
+- [ ] PlanetScale
+- [ ] Porkbun
+- [ ] Cloudflare Registrar (skip if dup)
+- [ ] Squarespace Domains
+- [ ] Duda
+- [ ] Hostinger Website Builder (skip if dup)
+- [ ] Durable
+- [ ] 10Web
+- [ ] Divi (Elegant Themes)
+- [ ] Astra
+- [ ] Yoast SEO
+- [ ] Rank Math
+- [ ] WPForms
+- [ ] Gravity Forms
+- [ ] MonsterInsights
+- [ ] WP Rocket
+- [ ] Jetpack
+- [ ] UpdraftPlus
+- [ ] Wordfence
+- [ ] Sucuri

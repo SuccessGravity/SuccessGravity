@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-// Builds data/tools.json from the `const programs = [...]` array in index.html.
-// The homepage array stays the single source of truth; this file feeds
-// /stack/, /price-watch/ and the "since your last visit" badge.
+// Builds data/tools.json from two sources:
+//   1. the `const programs = [...]` array in index.html (core tools with ratings/reviews)
+//   2. data/directory.jsonl (bulk directory listings, one JSON object per line)
+// Core tools win on duplicates (same name or same website). The output feeds
+// /directory/, /stack/, /price-watch/ and the "since your last visit" badge.
 // Run: node scripts/build-tools-json.js   (also runs in GitHub Actions)
 'use strict';
 const fs = require('fs');
@@ -33,7 +35,7 @@ function slugify(s) {
 function parsePrice(p, freeFlag) {
   const s = String(p || '');
   const free = !!freeFlag || /\bfree\b/i.test(s);
-  if (/%|per transaction|pay[- ]as[- ]you[- ]go|ad spend/i.test(s)) return { pm: null, usage: true, free };
+  if (/%|per transaction|pay[- ]as[- ]you[- ]go|usage[- ]based|ad spend/i.test(s)) return { pm: null, usage: true, free };
   if (/^\s*free\b[^$]*$/i.test(s)) return { pm: 0, usage: false, free: true };
   const re = /\$\s?([0-9]+(?:[.,][0-9]+)?)\s*(?:\/\s*|per\s+)?((?:user|seat|agent|member)\s*\/\s*)?(year|yr|annually|month|mo)?/gi;
   let best = null, mt;
@@ -86,6 +88,55 @@ if (rm) {
   });
 }
 
+// ---- Verified prices recorded in Price Watch ----
+let verified = {};
+try { verified = JSON.parse(fs.readFileSync(path.join(root, 'data', 'price-changes.json'), 'utf8')).verified || {}; } catch (e) {}
+tools.forEach((t) => { if (verified[t.id]) { t.vd = verified[t.id].date; t.vs = verified[t.id].source; } });
+
+// ---- Bulk directory listings ----
+// Site key = hostname + path, so different products on one vendor domain
+// (zoho.com/crm vs zoho.com/books) don't count as duplicates.
+function host(u) {
+  try {
+    const x = new URL(u);
+    return x.hostname.replace(/^www\./, '') + x.pathname.replace(/\/+$/, '').toLowerCase();
+  } catch (e) { return ''; }
+}
+const extraLabels = (() => { try { return JSON.parse(fs.readFileSync(path.join(root, 'data', 'categories.json'), 'utf8')); } catch (e) { return {}; } })();
+Object.keys(extraLabels).forEach((k) => { if (!labels[k]) labels[k] = extraLabels[k]; });
+const takenNames = new Set(tools.map((t) => t.n.toLowerCase()));
+const takenHosts = new Set(tools.map((t) => host(t.l)).filter(Boolean));
+let ext = 0, skipped = 0;
+const dirFile = path.join(root, 'data', 'directory.jsonl');
+if (fs.existsSync(dirFile)) {
+  fs.readFileSync(dirFile, 'utf8').split('\n').forEach((line, i) => {
+    line = line.trim();
+    if (!line || line[0] === '#') return;
+    let d;
+    try { d = JSON.parse(line); } catch (e) { console.warn('directory.jsonl line ' + (i + 1) + ': invalid JSON — skipped'); skipped++; return; }
+    if (!d.name || !d.link || !d.category) { console.warn('directory.jsonl line ' + (i + 1) + ': needs name, link, category — skipped'); skipped++; return; }
+    const h = host(d.link);
+    if (takenNames.has(d.name.toLowerCase()) || (h && takenHosts.has(h))) { skipped++; return; }
+    if (!labels[d.category]) console.warn('directory.jsonl line ' + (i + 1) + ': unknown category "' + d.category + '" (add it to data/categories.json)');
+    takenNames.add(d.name.toLowerCase()); if (h) takenHosts.add(h);
+    let id = slugify(d.name);
+    while (seen.has(id)) id += '-2';
+    seen.add(id);
+    const pr = parsePrice(d.pricing, d.free);
+    const t = {
+      id, n: d.name, c: d.category, l: d.link, i: d.icon || null,
+      p: d.pricing || 'See official site', pm: pr.pm, usage: pr.usage, free: !!d.free || pr.free,
+      r: null, pop: 0, b: (d.benefit || '').slice(0, 200), rv: null,
+      tg: Array.isArray(d.tags) ? d.tags.slice(0, 4) : [], ext: 1, ad: d.added || null,
+    };
+    if (d.verified && d.source) { t.vd = d.verified; t.vs = d.source; }
+    if (verified[id]) { t.vd = verified[id].date; t.vs = verified[id].source; }
+    tools.push(t);
+    ext++;
+  });
+}
+if (skipped) console.log('directory.jsonl: ' + skipped + ' line(s) skipped (duplicates or invalid)');
+
 const out = { generated: new Date().toISOString().slice(0, 10), count: tools.length, categories: labels, tools };
 const dest = path.join(root, 'data', 'tools.json');
 fs.mkdirSync(path.dirname(dest), { recursive: true });
@@ -94,7 +145,7 @@ const json = JSON.stringify(out);
 try {
   const prev = JSON.parse(fs.readFileSync(dest, 'utf8'));
   prev.generated = out.generated;
-  if (JSON.stringify(prev) === json) { console.log('data/tools.json unchanged (' + tools.length + ' tools)'); process.exit(0); }
+  if (JSON.stringify(prev) === json) { console.log('data/tools.json unchanged (' + tools.length + ' tools, ' + ext + ' from directory.jsonl)'); process.exit(0); }
 } catch (e) { /* first run */ }
 fs.writeFileSync(dest, json + '\n');
-console.log('wrote data/tools.json — ' + tools.length + ' tools');
+console.log('wrote data/tools.json — ' + tools.length + ' tools (' + ext + ' from directory.jsonl)');

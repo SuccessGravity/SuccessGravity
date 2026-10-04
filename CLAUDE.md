@@ -9,6 +9,9 @@ These tools must always use the affiliate URL — in new pages, tables, CTAs and
 
 After editing, run `grep -rnE 'https://(www\.)?higgsfield\.ai"|https://www\.hostinger\.com"' --include=*.html .` — it must print nothing.
 
+## Honesty in reviews (always)
+Never write first-person testing or experience claims ("when we tested", "in our testing", "we found", "surprised us") — nobody runs hands-on tests. This overrides any instruction to add personal-observation phrasing. Attribute facts to their source instead ("According to Canva's help center…", "Jasper's pricing page lists…"). Editorial judgments ("We think X suits non-designers better") are fine. Never invent statistics, quotes, or user-review claims.
+
 ## Data sources
 - `index.html` → `const programs = [...]` is the single source of truth for tools.
 - `data/tools.json` is generated from it: `node scripts/build-tools-json.js`. Never edit it by hand.
