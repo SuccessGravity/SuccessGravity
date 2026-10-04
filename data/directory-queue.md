@@ -9,11 +9,11 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 <!-- newest requests go here -->
 
 ## Small-business essentials
-- [ ] Zoho One
-- [ ] Zoho Mail
-- [ ] Proton Mail (Business)
-- [ ] Fastmail
-- [ ] Google Voice
+- [x] Zoho One
+- [x] Zoho Mail
+- [x] Proton Mail (Business)
+- [x] Fastmail
+- [x] Google Voice
 - [ ] Nextiva
 - [ ] Vonage Business
 - [ ] Zoom Phone
