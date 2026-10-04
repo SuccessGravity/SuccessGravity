@@ -40,7 +40,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=33">
+  <link rel="stylesheet" href="/assets/site.css?v=34">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -127,7 +127,6 @@
                   <img src="https://www.google.com/s2/favicons?domain=mailchimp.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
                   <b>Mailchimp</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.4</u>
                 </div>
-                <div class="sg-demo-heart">&#10084;&#65039; +1</div>
                 <div class="sg-demo-cta">Compare email platforms &rarr;</div>
               </div>
               <div class="sg-demo-scene" data-scene="1">
@@ -145,7 +144,6 @@
                   <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
                   <b>Runway</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
                 </div>
-                <div class="sg-demo-heart">&#10084;&#65039; +1</div>
                 <div class="sg-demo-cta">Compare AI video tools &rarr;</div>
               </div>
               <div class="sg-demo-scene" data-scene="2">
@@ -163,7 +161,6 @@
                   <img src="https://www.google.com/s2/favicons?domain=wix.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
                   <b>Wix</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
                 </div>
-                <div class="sg-demo-heart">&#10084;&#65039; +1</div>
                 <div class="sg-demo-cta">Compare website builders &rarr;</div>
               </div>
             </div>
@@ -260,7 +257,6 @@
           <option value="category">Category</option>
           <option value="popularity">Popularity</option>
           <option value="benefit">Benefit</option>
-          <option value="heart-count">Heart Count</option>
         </select>
       </div>
     </div>
@@ -480,7 +476,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer onerror="this.remove()"></script>
-  <script src="/assets/site.js?v=33"></script>
+  <script src="/assets/site.js?v=34"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$59/seat/month (billed yearly)", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -717,9 +713,6 @@
     const shareComparisonBtn = document.getElementById('share-comparison');
     const loading = document.getElementById('loading');
     let selectedPrograms = [];
-    let lastClickTime = {};
-    const DAILY_LIMIT = 10;
-    const COOLDOWN = 1000;
 
     let swiperInitialized = false;
     window.addEventListener('load', () => {
@@ -769,31 +762,7 @@
       localStorage.setItem('sortOption', sortBy);
     }
 
-    function loadHeartCounts() {
-      programs.forEach(program => {
-        const savedCount = localStorage.getItem(`heartCount_${program.name}`);
-        if (savedCount !== null) {
-          program.heartCount = parseInt(savedCount, 10);
-        }
-      });
-    }
 
-    function saveHeartCount(programName, count) {
-      localStorage.setItem(`heartCount_${programName}`, count);
-    }
-
-    function getDailyClicks() {
-      const today = new Date().toDateString();
-      let dailyClicks = JSON.parse(localStorage.getItem('dailyClicks') || '{}');
-      if (!dailyClicks[today]) {
-        dailyClicks[today] = 0;
-      }
-      return dailyClicks;
-    }
-
-    function saveDailyClicks(dailyClicks) {
-      localStorage.setItem('dailyClicks', JSON.stringify(dailyClicks));
-    }
 
     function renderStars(rating) {
       const totalStars = 5;
@@ -931,7 +900,6 @@
                   <span class="sg-chip ${accent}">${catLabel}</span>${program.free ? ' <span class="sg-chip sg-acc-green">&#128154; 100% Free</span>' : ''}
                 </div>
               </div>
-              <button class="heart-btn text-red-500 hover:text-red-700 text-sm whitespace-nowrap" data-name="${program.name}">❤️ <span class="text-gray-500">${program.heartCount}</span></button>
             </div>
             <div class="mb-2 text-sm">${renderStars(program.rating)} <span class="text-gray-500 ml-1">${program.rating}</span></div>
             <p class="mb-4 text-sm text-gray-600 leading-relaxed" style="flex:1">${program.benefit}</p>
@@ -952,7 +920,7 @@
           const more = document.createElement('div');
           more.className = 'text-center mt-2 mb-4';
           more.innerHTML = '<p class="text-xs text-gray-400 mb-3">Showing ' + SG_HOME_LIMIT + ' featured tools</p>' +
-            '<a id="sg-see-all" href="/directory/" class="sg-btn-primary px-8 py-3 inline-block">See All ' + sgTotal + ' Tools &rarr;</a>';
+            '<a id="sg-see-all" href="/directory/" class="sg-btn-primary px-8 py-3 inline-block">See All ' + (window.SG_TOTAL_TOOLS || sgTotal) + ' Tools &rarr;</a>';
           programsContainer.appendChild(more);
         }
 
@@ -972,44 +940,6 @@
           });
         });
 
-        document.querySelectorAll('.heart-btn').forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            const programName = btn.getAttribute('data-name');
-            const program = programs.find(p => p.name === programName);
-            const now = Date.now();
-            const dailyClicks = getDailyClicks();
-            const today = new Date().toDateString();
-
-            if (lastClickTime[programName] && (now - lastClickTime[programName] < COOLDOWN)) {
-              alert('Please wait 1 second before clicking again.');
-              return;
-            }
-
-            if (dailyClicks[today] >= DAILY_LIMIT) {
-              alert(`Daily limit of ${DAILY_LIMIT} hearts reached. Try again tomorrow.`);
-              return;
-            }
-
-            if (program) {
-              program.heartCount += 1; // optimistic
-              saveHeartCount(programName, program.heartCount);
-              dailyClicks[today] += 1;
-              saveDailyClicks(dailyClicks);
-              lastClickTime[programName] = now;
-              displayPrograms(category, searchTerm, sortBy);
-              // Sync with the global counter so every visitor sees accumulated hearts
-              fetch(`${HEART_API}/hit/${HEART_NS}/${heartKey(programName)}`)
-                .then(r => r.ok ? r.json() : null)
-                .then(j => {
-                  if (j && typeof j.value === 'number' && j.value > program.heartCount) {
-                    program.heartCount = j.value;
-                    saveHeartCount(programName, j.value);
-                    displayPrograms(categoryFilter.value, searchInput.value, sortOption.value);
-                  }
-                }).catch(() => {});
-            }
-          });
-        });
 
         updateCompareButtons();
         updateFilterUI();
@@ -1244,28 +1174,7 @@
       }
     });
 
-    loadHeartCounts();
     loadSharedComparison();
-    // ── Global hearts (shared across all visitors, via free counter API) ──
-    const HEART_API = 'https://abacus.jasoncameron.dev';
-    const HEART_NS = 'successgravity-hearts';
-    function heartKey(name) {
-      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-    }
-    function loadGlobalHearts() {
-      Promise.allSettled(programs.map(p =>
-        fetch(`${HEART_API}/get/${HEART_NS}/${heartKey(p.name)}`)
-          .then(r => r.ok ? r.json() : null)
-          .then(j => {
-            if (j && typeof j.value === 'number' && j.value > p.heartCount) {
-              p.heartCount = j.value;
-              saveHeartCount(p.name, j.value);
-            }
-          })
-      )).then(() => {
-        displayPrograms(categoryFilter.value, searchInput.value, sortOption.value);
-      }).catch(() => {});
-    }
 
     // ── Compare buttons: reflect selection state + floating tray ──
     function updateCompareButtons() {
@@ -1309,7 +1218,6 @@
       }).join('');
     })();
 
-    loadGlobalHearts();
 
     // Design v2: hero stat counters (live values) + tool logo marquee
     (function () {
