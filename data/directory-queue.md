@@ -14,30 +14,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Proton Mail (Business)
 - [x] Fastmail
 - [x] Google Voice
-- [ ] Nextiva
-- [ ] Vonage Business
-- [ ] Zoom Phone
-- [ ] Loom alternatives: Tella
-- [ ] Bonsai
-- [ ] HoneyBook
-- [ ] Dubsado
-- [ ] 17hats
-- [ ] Jobber
-- [ ] Housecall Pro
-- [ ] ServiceTitan
-- [ ] Square Appointments
-- [ ] Vagaro
-- [ ] Mindbody
-- [ ] Booksy
-- [ ] Fresha
-- [ ] Toast POS
-- [ ] Clover POS
-- [ ] Lightspeed
-- [ ] Shopify POS
-- [ ] QuickBooks Payroll
-- [ ] Paychex
-- [ ] ADP RUN
-- [ ] Homebase
+- [x] Nextiva
+- [x] Vonage Business
+- [x] Zoom Phone — dup
+- [x] Loom alternatives: Tella
+- [x] Bonsai
+- [x] HoneyBook
+- [x] Dubsado
+- [x] 17hats
+- [x] Jobber
+- [x] Housecall Pro
+- [x] ServiceTitan
+- [x] Square Appointments — dup
+- [x] Vagaro
+- [x] Mindbody
+- [x] Booksy
+- [x] Fresha
+- [x] Toast POS
+- [x] Clover POS
+- [x] Lightspeed
+- [x] Shopify POS — dup
+- [x] QuickBooks Payroll — dup
+- [x] Paychex
+- [x] ADP RUN
+- [x] Homebase
 - [ ] When I Work
 - [ ] Deputy
 - [ ] 7shifts
