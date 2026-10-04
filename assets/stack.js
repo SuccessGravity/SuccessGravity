@@ -117,7 +117,7 @@
       byCat[t.c] = (byCat[t.c] || 0) + tot;
       var sw = bestSwap(it);
       if (sw) savings += sw.save;
-      var ver = changes.verified[t.id];
+      var ver = changes.verified[t.id] || (t.vd ? { date: t.vd, source: t.vs } : null);
       var li = document.createElement('li');
       li.className = 'sgs-row px-5 md:px-6 py-4';
       li.setAttribute('data-id', t.id);
@@ -134,7 +134,8 @@
                 ' <span class="sg-chip sg-acc-slate ml-1">' + esc(catLabel(t.c)) + '</span>' +
                 '<p class="text-xs text-gray-500 mt-1">Listed: ' + esc(t.p || 'n/a') +
                   (ver ? ' &middot; <a href="' + esc(ver.source) + '" target="_blank" rel="noopener" class="sgs-ver" title="Checked against the official pricing page">&#10003; verified ' + esc(fmtDate(ver.date)) + '</a>' : '') +
-                  (t.usage ? ' &middot; <span class="text-amber-700">usage-based &mdash; enter your average</span>' : '') +
+                  (t.usage ? ' &middot; <span class="text-amber-700">usage-based &mdash; enter your average</span>' :
+                    t.pm == null ? ' &middot; <span class="text-amber-700">price not checked yet &mdash; enter what you pay</span>' : '') +
                 '</p>' +
               '</div>' +
               (ro ? '' : '<button type="button" class="sgs-x" data-act="remove" aria-label="Remove ' + esc(t.n) + '">&times;</button>') +
@@ -342,8 +343,24 @@
       return '<li role="option" data-add="' + esc(t.id) + '" class="' + (i === active ? 'on' : '') + '">' +
         '<span class="font-semibold">' + esc(t.n) + '</span> <span class="text-xs text-gray-500">' + esc(catLabel(t.c)) + '</span>' +
         '<span class="ml-auto text-xs ' + (have[t.id] ? 'text-green-600 font-semibold' : 'text-gray-500') + '">' + (have[t.id] ? '&#10003; added' : esc(t.p)) + '</span></li>';
-    }).join('') : '<li class="text-sm text-gray-500">No match. <a href="/submit-tool/" class="text-indigo-600 font-semibold">Suggest a tool</a></li>';
+    }).join('') : '<li class="sgs-req text-sm text-gray-600">Not in our directory yet. <button type="button" class="text-indigo-600 font-semibold underline" data-request="' + esc(q) + '">Request &ldquo;' + esc(q) + '&rdquo;</button> &mdash; we add requested tools first.</li>';
     box.classList.remove('hidden');
+  }
+
+  // ---- Tool requests (feed the directory queue) ----
+  function requestTool(name, li) {
+    name = String(name || '').trim().slice(0, 80);
+    if (!name) return;
+    var fd = new FormData();
+    fd.append('form_type', 'tool_request');
+    fd.append('_subject', 'Tool request: ' + name);
+    fd.append('tool', name);
+    fd.append('page', location.pathname);
+    li.innerHTML = 'Sending&hellip;';
+    fetch('https://formspree.io/f/mzebnylr', { method: 'POST', body: fd, headers: { Accept: 'application/json' } })
+      .then(function (r) { if (!r.ok) throw new Error(); li.innerHTML = '&#9989; Thanks &mdash; &ldquo;' + esc(name) + '&rdquo; is on our list to add.'; })
+      .catch(function () { li.innerHTML = 'Couldn&rsquo;t send. Email <a class="text-indigo-600 font-semibold" href="mailto:help@successgravity.com?subject=' + encodeURIComponent('Tool request: ' + name) + '">help@successgravity.com</a>.'; });
+    track('tool_request', { tool: name });
   }
 
   // ---- Mutations ----
@@ -399,6 +416,8 @@
         if (add.closest('#sgs-results')) { input.value = ''; search(''); input.focus(); }
         return;
       }
+      var req = t.closest('[data-request]');
+      if (req) { requestTool(req.getAttribute('data-request'), req.closest('li')); return; }
       if (!t.closest('#sgs-adder')) $('sgs-results').classList.add('hidden');
       var act = t.closest('[data-act]');
       if (act) {

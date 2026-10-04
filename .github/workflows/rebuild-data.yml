@@ -8,6 +8,9 @@ on:
     paths:
       - 'index.html'
       - 'data/price-changes.json'
+      - 'data/directory.jsonl'
+      - 'data/categories.json'
+      - 'data/swaps.json'
       - 'scripts/build-*.js'
   workflow_dispatch:
 

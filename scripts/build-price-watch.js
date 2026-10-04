@@ -10,7 +10,9 @@ const root = path.join(__dirname, '..');
 const pagePath = path.join(root, 'price-watch', 'index.html');
 const tools = JSON.parse(fs.readFileSync(path.join(root, 'data', 'tools.json'), 'utf8'));
 const pw = JSON.parse(fs.readFileSync(path.join(root, 'data', 'price-changes.json'), 'utf8'));
-const verified = pw.verified || {};
+const verified = Object.assign({}, pw.verified || {});
+// Tools verified when added to data/directory.jsonl carry their own date/source
+tools.tools.forEach((t) => { if (!verified[t.id] && t.vd && t.vs) verified[t.id] = { date: t.vd, source: t.vs }; });
 const byId = {};
 tools.tools.forEach((t) => { byId[t.id] = t; });
 
@@ -62,7 +64,7 @@ if (lastDate) log += '        </div>\n';
 if (!entries.length) log = '        <p class="text-gray-500">No changes logged yet.</p>\n';
 
 // ---- Stats ----
-const tracked = tools.tools.filter((t) => t.c !== 'government-resources' && (t.pm != null || t.usage)).length;
+const tracked = tools.tools.filter((t) => t.c !== 'government-resources' && (t.pm != null || t.usage) && (!t.ext || verified[t.id])).length;
 const nVerified = Object.keys(verified).length;
 const lastCheck = Object.values(verified).map((v) => v.date).sort().pop() || pw.updated;
 const stats =
@@ -74,6 +76,8 @@ const stats =
 // ---- Price table ----
 const rows = tools.tools
   .filter((t) => t.c !== 'government-resources' && t.c !== 'business-loans')
+  // Bulk directory listings appear only once their price is verified at the source
+  .filter((t) => !t.ext || verified[t.id])
   .sort((a, b) => (verified[b.id] ? 1 : 0) - (verified[a.id] ? 1 : 0) || b.pop - a.pop || a.n.localeCompare(b.n))
   .map((t) => {
     const v = verified[t.id];
