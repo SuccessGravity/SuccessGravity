@@ -512,3 +512,30 @@ function sgLogoHTML(link, name, icon) {
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
 })();
+
+// ── v12: site-wide tool count = core tools + bulk directory listings ──
+(function () {
+  if (!window.SGStack) return;
+  function run() {
+    var stat = document.getElementById('sg-stat-tools');
+    var see = document.getElementById('sg-see-all');
+    var marks = document.querySelectorAll('[data-sg-tool-count]');
+    if (!stat && !see && !marks.length) return;
+    window.SGStack.tools().then(function (d) {
+      var n = d.count || (d.tools || []).length;
+      if (!n) return;
+      window.SG_TOTAL_TOOLS = n;
+      var txt = n.toLocaleString('en-US');
+      if (stat) {
+        stat.setAttribute('data-count-to', n);
+        // The count-up animation may already be running toward the old value; set the final number after it ends
+        var fin = function () { if (stat.textContent !== '0') stat.textContent = n + (stat.getAttribute('data-count-suffix') || ''); };
+        fin(); setTimeout(fin, 1400);
+      }
+      var btn = document.getElementById('sg-see-all');
+      if (btn) btn.innerHTML = 'See All ' + txt + ' Tools &rarr;';
+      marks.forEach(function (el) { el.textContent = txt + ' tools'; });
+    }).catch(function () {});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
+})();
