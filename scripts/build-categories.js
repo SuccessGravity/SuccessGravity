@@ -50,7 +50,7 @@ function toolCard(t) {
   const badge = t.rv ? '<span class="sgc-badge sgc-rev">&#11088; Reviewed ' + esc(t.r) + '/5</span>'
     : t.r != null ? '<span class="sgc-badge">&#9733; ' + esc(t.r) + '/5</span>'
     : '<span class="sgc-badge sgc-new">New listing</span>';
-  const price = '<p class="sgc-price">' + esc(t.p || 'See official site') +
+  const price = '<p class="sgc-price"><a href="/pricing/' + esc(t.id) + '/" class="sgc-plink" title="' + esc(t.n) + ' pricing details">' + esc(t.p || 'See official site') + '</a>' +
     (v ? ' <a href="' + esc(v.source) + '" target="_blank" rel="noopener" class="sgc-ver" title="Price checked on the vendor&#39;s own page">&#10003; checked ' + esc(shortDate(v.date)) + '</a>' : '') + '</p>';
   return '        <article class="sgc-tool">\n' +
     '          <div class="sgc-top">' + logo + '<div class="sgc-head">' + name + badge + '</div></div>\n' +
@@ -120,11 +120,11 @@ Object.entries(hubs).forEach(([slug, h]) => {
   const desc = esc(h.blurb);
   let head = shellSrc.slice(0, headEnd)
     .replace(/<title>[\s\S]*?<\/title>/, '<title>' + title + '</title>')
-    .replace(/(<meta name="description" content=")[^"]*/, '$1' + desc)
-    .replace(/(<link rel="canonical" href=")[^"]*/, '$1' + url)
-    .replace(/(<meta property="og:title" content=")[^"]*/, '$1' + title)
-    .replace(/(<meta property="og:description" content=")[^"]*/, '$1' + desc)
-    .replace(/(<meta property="og:url" content=")[^"]*/, '$1' + url)
+    .replace(/(<meta name="description" content=")[^"]*/, (m0, a) => a + desc)
+    .replace(/(<link rel="canonical" href=")[^"]*/, (m0, a) => a + url)
+    .replace(/(<meta property="og:title" content=")[^"]*/, (m0, a) => a + title)
+    .replace(/(<meta property="og:description" content=")[^"]*/, (m0, a) => a + desc)
+    .replace(/(<meta property="og:url" content=")[^"]*/, (m0, a) => a + url)
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>\s*/g, '')
     .replace(/\s*<meta name="robots"[^>]*>/g, '');
   const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: h.name + ' Tools', url, description: h.blurb,

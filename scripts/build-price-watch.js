@@ -54,6 +54,7 @@ entries.forEach((e) => {
     '              <p class="pw-price">' + (e.from ? '<s>' + esc(e.from) + '</s> &rarr; ' : '') + '<b>' + esc(e.to) + '</b></p>\n' +
     '              <p class="pw-note">' + esc(e.note) + '</p>\n' +
     '              <p class="pw-meta">' + kind + ' &middot; <a href="' + esc(e.source) + '" target="_blank" rel="noopener">Source</a>' +
+    (t ? ' &middot; <a href="/pricing/' + esc(t.id) + '/">' + esc(t.n) + ' pricing</a>' : '') +
     (t && t.rv ? ' &middot; <a href="' + esc(t.rv) + '">Our review</a>' : '') +
     (t ? ' &middot; <button type="button" class="pw-stack sg-stack-btn" data-stack-id="' + esc(t.id) + '">&#65291; Add to My Stack</button>' : '') +
     '</p>\n' +
@@ -84,7 +85,7 @@ const rows = tools.tools
     const ver = v
       ? '<a href="' + esc(v.source) + '" target="_blank" rel="noopener" class="pw-ver">&#10003; ' + esc(short(v.date)) + '</a>'
       : '<span class="pw-unver">Not yet</span>';
-    const name = t.rv ? '<a href="' + esc(t.rv) + '" class="font-semibold text-gray-900 hover:text-indigo-600">' + esc(t.n) + '</a>' : '<span class="font-semibold text-gray-900">' + esc(t.n) + '</span>';
+    const name = '<a href="/pricing/' + esc(t.id) + '/" class="font-semibold text-gray-900 hover:text-indigo-600">' + esc(t.n) + '</a>';
     return '            <tr data-name="' + esc(t.n.toLowerCase()) + '" data-cat="' + esc(t.c) + '" data-pm="' + (t.pm == null ? '' : t.pm) + '"' + (v ? ' data-ver="1"' : '') + '>' +
       '<td>' + name + '<span class="pw-cat">' + esc(catLabel(t.c)) + '</span></td>' +
       '<td>' + esc(t.p || 'n/a') + '</td>' +

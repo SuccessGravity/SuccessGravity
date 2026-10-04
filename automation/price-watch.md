@@ -25,7 +25,7 @@ For each tool, find the cheapest **paid** plan on the vendor's official pricing 
 
 ## Finish
 ```
-node scripts/build-tools-json.js && node scripts/build-price-watch.js
+node scripts/build-tools-json.js && node scripts/build-price-watch.js && node scripts/build-categories.js && node scripts/build-pricing.js
 python3 -c "import json;json.load(open('data/price-changes.json'))"
 ```
 Commit `data/`, `price-watch/index.html` and the edited pages together. In the `/new/` entry for the run, add one line: "Price Watch: N verified, M changed" linking to `/price-watch/`.

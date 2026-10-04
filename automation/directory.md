@@ -30,6 +30,7 @@ Goal: grow the directory fast **without** inventing anything. Each run adds 20 n
    node scripts/build-tools-json.js
    node scripts/build-price-watch.js
    node scripts/build-categories.js
+node scripts/build-pricing.js
    ```
    The first script prints any skipped or invalid lines; fix them. The last one warns about categories that have no hub; add them to a hub in `data/category-hubs.json` (or create a new hub with `"new": true`, a name, emoji, blurb, intro and lookFor when a group reaches about 5 tools).
 6. **Commit:** commit `data/`, `price-watch/index.html`, `category/`, `index.html`, `new/index.html` and `sitemap.xml` with the message `Directory: +N tools (M verified) YYYY-MM-DD`. Push to a `claude/sg-directory-YYYYMMDD` branch; the auto-merge workflow puts it on main.
