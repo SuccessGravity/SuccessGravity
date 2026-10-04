@@ -276,32 +276,51 @@ function sgLogoHTML(link, name, icon) {
   ready(function () {
     var path = location.pathname;
 
-    // ---- Nav: My Stack + Price Watch ----
+    // ---- Nav: one menu for every page (pages keep their static nav as a no-JS fallback) ----
+    var NAV = [
+      ['/directory/', 'Directory'],
+      ['/pricing/', 'Pricing'],
+      ['/price-watch/', 'Price Watch'],
+      ['/stack/', 'My Stack', 'stack'],
+      ['Reviews', [['/review/', 'All Reviews'], ['/compare/', 'VS Comparisons'], ['/best/', 'Best-Of Guides'], ['/alternatives/', 'Alternatives'], ['/guides/', 'How-To Guides']]],
+      ['/category/', 'Categories'],
+      ['More', [['/finder/', '&#127919; Tool Finder'], ['/free-tools/', '&#128154; Free Tools'], ['/new/', 'What&rsquo;s New'], ['/submit-tool/', 'Submit Your Tool'], ['/about/', 'About']]]
+    ];
+    function onPath(href) { return href !== '/' && path.indexOf(href) === 0; }
     var desk = document.querySelector('nav div.md\\:flex');
-    var about = desk && desk.querySelector('a[href="/about/"]');
-    if (desk && about && !desk.querySelector('.sg-nav-stack')) {
-      var pw = document.createElement('a');
-      pw.href = '/price-watch/';
-      pw.className = 'hidden xl:inline hover:text-indigo-600' + (path.indexOf('/price-watch/') === 0 ? ' text-indigo-600 font-semibold' : '');
-      pw.textContent = 'Price Watch';
-      var st = document.createElement('a');
-      st.href = '/stack/';
-      st.className = 'sg-nav-stack hidden lg:inline hover:text-indigo-600' + (path.indexOf('/stack/') === 0 ? ' text-indigo-600 font-semibold' : '');
-      st.innerHTML = 'My Stack<span class="sg-nav-count" hidden></span>';
-      desk.insertBefore(pw, about);
-      desk.insertBefore(st, about);
+    if (desk && !desk.getAttribute('data-sg-nav')) {
+      desk.setAttribute('data-sg-nav', '1');
+      desk.className = 'hidden md:flex items-center text-sm font-medium text-gray-700 sg-nav';
+      desk.innerHTML = NAV.map(function (n) {
+        if (Array.isArray(n[1])) {
+          var on = n[1].some(function (x) { return onPath(x[0]); });
+          return '<div class="sg-dd"><button type="button" class="sg-dd-btn' + (on ? ' on' : '') + '" aria-haspopup="true" aria-expanded="false">' + n[0] + ' <span aria-hidden="true">&#9662;</span></button>' +
+            '<div class="sg-dd-menu">' + n[1].map(function (x) { return '<a href="' + x[0] + '"' + (onPath(x[0]) ? ' class="on"' : '') + '>' + x[1] + '</a>'; }).join('') + '</div></div>';
+        }
+        return '<a href="' + n[0] + '" class="sg-nav-a' + (onPath(n[0]) ? ' on' : '') + (n[2] === 'stack' ? ' sg-nav-stack' : '') + '">' + n[1] + (n[2] === 'stack' ? '<span class="sg-nav-count" hidden></span>' : '') + '</a>';
+      }).join('') + '<a href="/contact/" class="sg-nav-cta">Contact</a>';
+      desk.addEventListener('click', function (e) {
+        var b = e.target.closest('.sg-dd-btn');
+        if (!b) return;
+        var dd = b.parentNode, open = !dd.classList.contains('open');
+        desk.querySelectorAll('.sg-dd.open').forEach(function (x) { x.classList.remove('open'); x.firstChild.setAttribute('aria-expanded', 'false'); });
+        if (open) { dd.classList.add('open'); b.setAttribute('aria-expanded', 'true'); }
+      });
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.sg-dd')) desk.querySelectorAll('.sg-dd.open').forEach(function (x) { x.classList.remove('open'); });
+      });
     }
     var mob = document.getElementById('sg-mobile-menu');
-    if (mob && !mob.querySelector('.sg-nav-stack')) {
-      var first = mob.querySelector('a');
-      var m1 = document.createElement('a');
-      m1.href = '/stack/'; m1.className = 'sg-nav-stack block py-1 font-semibold text-indigo-600';
-      m1.innerHTML = '&#129520; My Stack<span class="sg-nav-count" hidden></span>';
-      var m2 = document.createElement('a');
-      m2.href = '/price-watch/'; m2.className = 'block py-1 font-semibold text-indigo-600';
-      m2.innerHTML = '&#128276; Price Watch';
-      if (first && first.nextSibling) { mob.insertBefore(m2, first.nextSibling); mob.insertBefore(m1, m2); }
-      else { mob.appendChild(m1); mob.appendChild(m2); }
+    if (mob && !mob.getAttribute('data-sg-nav')) {
+      mob.setAttribute('data-sg-nav', '1');
+      var flat = [['/', 'Home']];
+      NAV.forEach(function (n) { if (Array.isArray(n[1])) flat = flat.concat(n[1]); else flat.push(n); });
+      flat.push(['/contact/', 'Contact']);
+      mob.innerHTML = flat.map(function (x) {
+        var hl = x[0] === '/stack/' || x[0] === '/pricing/' || x[0] === '/price-watch/';
+        return '<a href="' + x[0] + '" class="block py-1' + (x[0] === '/stack/' ? ' sg-nav-stack' : '') + (onPath(x[0]) || (x[0] === '/' && path === '/') ? ' text-indigo-600 font-semibold' : hl ? ' font-semibold text-indigo-600' : '') + '">' +
+          x[1] + (x[0] === '/stack/' ? '<span class="sg-nav-count" hidden></span>' : '') + '</a>';
+      }).join('');
     }
     function paintCount() {
       var n = SGStack.count();
