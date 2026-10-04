@@ -40,7 +40,7 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Tailwind CSS failed to load');">
-  <link rel="stylesheet" href="/assets/site.css?v=34">
+  <link rel="stylesheet" href="/assets/site.css?v=35">
   <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" onerror="this.onerror=null; this.remove(); console.log('Swiper CSS failed to load');">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer onerror="this.onerror=null; this.remove(); console.log('Swiper JS failed to load');"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer onerror="this.onerror=null; this.remove(); console.log('html2canvas JS failed to load');"></script>
@@ -88,87 +88,44 @@
     </div>
   </nav>
 
-  <header class="sg-hero text-white py-14 md:py-20">
+  <header class="sg-hero text-white pt-12 pb-8 md:pt-16 md:pb-10">
     <div class="container mx-auto px-4">
       <div class="md:flex md:items-center md:justify-between">
         <div class="md:w-7/12 text-center md:text-left">
-          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Find the Right<br>
-            <span class="sg-hero-accent" id="sg-rotator">AI &amp; Growth Tools</span><span class="sg-caret" aria-hidden="true"></span></h1>
-          <p class="mt-4 text-lg text-indigo-100 max-w-xl mx-auto md:mx-0">Honest reviews, prices we re-check every week, and a free calculator that shows what your software really costs &mdash; minus the hype.</p>
+          <p class="sg-hero-kicker">&#9989; Prices checked on vendors&rsquo; own pages &middot; updated every week</p>
+          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Stop overpaying for the <span class="sg-hero-accent">software</span> that runs your business.</h1>
+          <p class="mt-4 text-lg text-indigo-100 max-w-xl mx-auto md:mx-0">Add the tools you pay for to see your real monthly bill, find cheaper swaps that do the same job, and get a heads-up when a price changes &mdash; backed by honest reviews and a directory of <b class="text-white" data-sg-tool-count-plain>315</b> tools.</p>
           <div class="mt-7 flex flex-wrap justify-center md:justify-start items-center gap-3">
             <a href="/stack/" class="bg-amber-400 text-indigo-900 font-bold px-6 py-3 rounded-xl hover:bg-amber-300">&#129520; What Does My Stack Cost?</a>
-            <a href="/finder/" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">&#127919; Find My Perfect Tool</a>
-            <a href="/price-watch/" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">&#128276; Price Watch</a>
-            <a href="#tag-cloud" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">Browse the Directory &darr;</a>
-            <button id="toggleDarkMode" class="bg-white bg-opacity-10 border border-indigo-300 text-white px-4 py-3 rounded-xl hover:bg-opacity-20" title="Toggle dark mode">&#127769;</button>
+            <a href="/price-watch/" class="bg-white bg-opacity-10 border border-indigo-300 text-white font-semibold px-6 py-3 rounded-xl hover:bg-opacity-20">&#128276; This Week&rsquo;s Price Changes</a>
+            <button id="toggleDarkMode" class="bg-white bg-opacity-10 border border-indigo-300 text-white px-4 py-3 rounded-xl hover:bg-opacity-20" title="Toggle dark mode" aria-label="Toggle dark mode">&#127769;</button>
           </div>
-          <div class="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto md:mx-0">
-            <div class="sg-stat"><b id="sg-stat-tools" data-count-to="66" data-count-suffix="+">0</b><span>Tools compared</span></div>
-            <div class="sg-stat"><b id="sg-stat-reviews" data-count-to="12" data-count-suffix="">0</b><span>In-depth reviews</span></div>
-            <div class="sg-stat"><b data-count-to="18" data-count-suffix="">0</b><span>Buyer's guides</span></div>
+          <div class="mt-9 grid grid-cols-3 gap-4 max-w-md mx-auto md:mx-0">
+            <div class="sg-stat"><b id="sg-stat-tools" data-count-to="315" data-count-suffix="+">0</b><span>Tools tracked</span></div>
+            <div class="sg-stat"><b id="sg-stat-verified" data-count-to="136" data-count-suffix="">0</b><span>Prices verified at source</span></div>
+            <div class="sg-stat"><b id="sg-stat-reviews" data-count-to="25" data-count-suffix="">0</b><span>In-depth reviews</span></div>
           </div>
         </div>
-        <div class="md:w-5/12 mt-12 md:mt-0 md:pl-10" aria-hidden="true">
-          <div class="sg-demo">
-            <div class="sg-demo-bar"><span></span><span></span><span></span><em>successgravity.com &middot; live compare</em></div>
-            <div class="sg-demo-body sg-demo-scenes">
-              <div class="sg-demo-scene active" data-scene="0">
-                <div class="sg-demo-cat">&#9993;&#65039; Email Marketing</div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=klaviyo.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>Klaviyo</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
-                  <span class="sg-demo-badge">&#127942; Best Pick</span>
-                </div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=activecampaign.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>ActiveCampaign</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
-                </div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=mailchimp.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>Mailchimp</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.4</u>
-                </div>
-                <div class="sg-demo-cta">Compare email platforms &rarr;</div>
-              </div>
-              <div class="sg-demo-scene" data-scene="1">
-                <div class="sg-demo-cat">&#127916; AI Video Generators</div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=heygen.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>HeyGen</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
-                  <span class="sg-demo-badge">&#127942; Best Pick</span>
-                </div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=synthesia.io&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>Synthesia</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
-                </div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>Runway</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
-                </div>
-                <div class="sg-demo-cta">Compare AI video tools &rarr;</div>
-              </div>
-              <div class="sg-demo-scene" data-scene="2">
-                <div class="sg-demo-cat">&#127760; Website Builders</div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=webflow.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>Webflow</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
-                  <span class="sg-demo-badge">&#127942; Best Pick</span>
-                </div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=squarespace.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>Squarespace</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.7</u>
-                </div>
-                <div class="sg-demo-row">
-                  <img src="https://www.google.com/s2/favicons?domain=wix.com&sz=64" alt="" onerror="this.style.visibility='hidden'">
-                  <b>Wix</b><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i><u>4.6</u>
-                </div>
-                <div class="sg-demo-cta">Compare website builders &rarr;</div>
-              </div>
-            </div>
-          </div>
+        <div class="md:w-5/12 mt-10 md:mt-0 md:pl-10">
+          <a href="/stack/" class="sg-hcard" id="sg-hcard" aria-label="Open My Stack">
+            <div class="sg-hcard-head"><span id="sg-hcard-title">&#129520; Example: a 3-person agency</span><span class="sg-hcard-live">Live prices</span></div>
+            <div id="sg-hcard-rows" class="sg-hcard-rows"><p class="text-sm text-gray-500 py-6 text-center">Loading prices&hellip;</p></div>
+            <div class="sg-hcard-total"><span>Monthly bill</span><b id="sg-hcard-total">&mdash;</b></div>
+            <div id="sg-hcard-tip" class="sg-hcard-tip" hidden></div>
+            <div id="sg-hcard-alert" class="sg-hcard-alert" hidden></div>
+            <span class="sg-hcard-cta" id="sg-hcard-cta">Build your stack in 60 seconds &rarr;</span>
+          </a>
         </div>
       </div>
+
+      <div class="sg-hfeatures grid grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
+        <a href="/stack/" class="sg-hfeat"><b>&#129520; My Stack <i class="sg-new">NEW</i></b><span>Total your software bill, spot cheaper swaps, share it as an image.</span></a>
+        <a href="/price-watch/" class="sg-hfeat"><b>&#128276; Price Watch <i class="sg-new">NEW</i></b><span>Every price change we verify, with a link to the source.</span></a>
+        <a href="/directory/" class="sg-hfeat"><b>&#128218; Tool Directory</b><span><b class="sg-inline" data-sg-tool-count-plain>315</b> tools, new ones added daily.</span></a>
+        <a href="/finder/" class="sg-hfeat"><b>&#127919; Tool Finder</b><span>Answer 3 questions, get one personal pick.</span></a>
+      </div>
     </div>
-    <div class="sg-marquee mt-12">
+    <div class="sg-marquee mt-12 md:mt-14">
       <div class="sg-marquee-track" id="sg-marquee-track"></div>
     </div>
   </header>
@@ -476,7 +433,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer onerror="this.remove()"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer onerror="this.remove()"></script>
-  <script src="/assets/site.js?v=34"></script>
+  <script src="/assets/site.js?v=35"></script>
   <script>
     const programs = [
       { name: "Jasper AI", category: "content-creation", link: "https://www.jasper.ai", benefit: "Streamline content creation for blogs, social media, and ads with AI-powered writing tools, enabling businesses to produce engaging, high-quality content in less time.", popularity: 8, tags: ["Contents", "Marketing"], meta: { title: "Jasper AI - Boost Content Creation", description: "Enhance your blog and social media with Jasper AI's AI-powered writing tools for organic traffic growth." }, review: "/review/jasper-ai", heartCount: 0, features: ["AI writing", "Templates", "SEO optimization"], pros: ["User-friendly", "High-quality output"], cons: ["Expensive for small teams"], pricing: "$59/seat/month (billed yearly)", rating: 4.7, freeTrial: "Yes, 7 days", easeOfUse: 4, supportAvailability: "24/7", integrationCount: "15+" },
@@ -872,6 +829,7 @@
 
         const sgIsDefault = category === 'all' && !searchTerm && sortBy === 'name';
         const sgTotal = filteredPrograms.length;
+        const statTools0 = document.getElementById('sg-stat-tools');
         const sgLimited = sgIsDefault && !sgShowAll && sgTotal > SG_HOME_LIMIT;
         if (sgLimited) {
           filteredPrograms = [...filteredPrograms]
@@ -920,7 +878,7 @@
           const more = document.createElement('div');
           more.className = 'text-center mt-2 mb-4';
           more.innerHTML = '<p class="text-xs text-gray-400 mb-3">Showing ' + SG_HOME_LIMIT + ' featured tools</p>' +
-            '<a id="sg-see-all" href="/directory/" class="sg-btn-primary px-8 py-3 inline-block">See All ' + (window.SG_TOTAL_TOOLS || sgTotal) + ' Tools &rarr;</a>';
+            '<a id="sg-see-all" href="/directory/" class="sg-btn-primary px-8 py-3 inline-block">See All ' + (window.SG_TOTAL_TOOLS || Number(statTools0 && statTools0.getAttribute('data-count-to')) || sgTotal) + ' Tools &rarr;</a>';
           programsContainer.appendChild(more);
         }
 
@@ -1222,7 +1180,7 @@
     // Design v2: hero stat counters (live values) + tool logo marquee
     (function () {
       const statTools = document.getElementById('sg-stat-tools');
-      if (statTools) statTools.setAttribute('data-count-to', programs.length);
+      // Tool count is written into the HTML by scripts/build-price-watch.js (core + directory listings)
       const statReviews = document.getElementById('sg-stat-reviews');
       if (statReviews) statReviews.setAttribute('data-count-to', Object.keys(REVIEWS).length);
       const track = document.getElementById('sg-marquee-track');
