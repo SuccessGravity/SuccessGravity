@@ -181,7 +181,8 @@
       "short": "Free Resources",
       "emoji": "🏛️",
       "keys": [
-        "government-resources"
+        "government-resources",
+        "other"
       ]
     },
     "sales-outreach": {
