@@ -38,31 +38,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Paychex
 - [x] ADP RUN
 - [x] Homebase
-- [ ] When I Work
-- [ ] Deputy
-- [ ] 7shifts
-- [ ] BambooHR
-- [ ] Workable
-- [ ] Indeed Employer
-- [ ] LegalZoom
-- [ ] Rocket Lawyer
-- [ ] Northwest Registered Agent
-- [ ] Stripe Atlas
-- [ ] Bench (bookkeeping)
-- [ ] Pilot (bookkeeping)
-- [ ] TurboTax Business
-- [ ] Avalara
-- [ ] TaxJar
-- [ ] Brex alternatives: Divvy (BILL Spend & Expense)
-- [ ] American Express Business (skip if not software)
-- [ ] NordLayer
-- [ ] NordVPN Teams
-- [ ] Proton Pass
-- [ ] Keeper Security
-- [ ] Backblaze
-- [ ] pCloud
-- [ ] Sync.com
-- [ ] Egnyte
+- [x] When I Work
+- [x] Deputy
+- [x] 7shifts
+- [x] BambooHR
+- [x] Workable
+- [x] Indeed Employer
+- [x] LegalZoom
+- [x] Rocket Lawyer
+- [x] Northwest Registered Agent
+- [x] Stripe Atlas — dup
+- [x] Bench (bookkeeping)
+- [x] Pilot (bookkeeping)
+- [x] TurboTax Business
+- [x] Avalara
+- [x] TaxJar
+- [x] Brex alternatives: Divvy (BILL Spend & Expense) — dup
+- [x] American Express Business (skip if not software) — skipped, not software
+- [x] NordLayer
+- [x] NordVPN Teams — renamed to NordLayer (added)
+- [x] Proton Pass — dup
+- [x] Keeper Security
+- [x] Backblaze
+- [x] pCloud
+- [x] Sync.com
+- [x] Egnyte
 
 ## Marketing & sales
 - [ ] Constant Contact Lead Gen & CRM
