@@ -65,29 +65,29 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Egnyte
 
 ## Marketing & sales
-- [ ] Constant Contact Lead Gen & CRM
-- [ ] Keap
-- [ ] Ontraport
-- [ ] Drip
-- [ ] Sendinblue alternatives: EmailOctopus
-- [ ] Mailjet
-- [ ] SendGrid
-- [ ] Postmark
-- [ ] ManyChat
-- [ ] Chatfuel
-- [ ] Sendible
-- [ ] SocialBee
-- [ ] Agorapulse
-- [ ] Metricool
-- [ ] Iconosquare
-- [ ] Planoly
-- [ ] Tailwind (Pinterest)
-- [ ] Canva alternatives: Kittl
-- [ ] Brandfetch
-- [ ] Looka
+- [x] Constant Contact Lead Gen & CRM — dup (Constant Contact)
+- [x] Keap
+- [x] Ontraport
+- [x] Drip
+- [x] Sendinblue alternatives: EmailOctopus
+- [x] Mailjet
+- [x] SendGrid
+- [x] Postmark
+- [x] ManyChat — dup
+- [x] Chatfuel
+- [x] Sendible
+- [x] SocialBee
+- [x] Agorapulse
+- [x] Metricool
+- [x] Iconosquare
+- [x] Planoly
+- [x] Tailwind (Pinterest)
+- [x] Canva alternatives: Kittl
+- [x] Brandfetch
+- [x] Looka
 - [ ] Wix Logo Maker (skip if dup of Wix)
-- [ ] Similarweb
-- [ ] SpyFu
+- [x] Similarweb
+- [x] SpyFu
 - [ ] Ubersuggest
 - [ ] Mangools
 - [ ] AnswerThePublic
