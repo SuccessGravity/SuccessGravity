@@ -85,29 +85,29 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Canva alternatives: Kittl
 - [x] Brandfetch
 - [x] Looka
-- [ ] Wix Logo Maker (skip if dup of Wix)
+- [x] Wix Logo Maker — dup
 - [x] Similarweb
 - [x] SpyFu
-- [ ] Ubersuggest
-- [ ] Mangools
-- [ ] AnswerThePublic
-- [ ] AlsoAsked
-- [ ] Screaming Frog SEO Spider
-- [ ] Sitebulb
-- [ ] BrightLocal
-- [ ] Yext
-- [ ] Birdeye
-- [ ] Podium
-- [ ] NiceJob
-- [ ] Trustpilot Business
-- [ ] Google Merchant Center
-- [ ] Microsoft Advertising
-- [ ] AdEspresso
-- [ ] Optmyzr
-- [ ] CallRail
-- [ ] Vidyard
-- [ ] BombBomb
-- [ ] Seamless.AI
+- [x] Ubersuggest
+- [x] Mangools
+- [x] AnswerThePublic
+- [x] AlsoAsked
+- [x] Screaming Frog SEO Spider
+- [x] Sitebulb
+- [x] BrightLocal
+- [x] Yext
+- [x] Birdeye
+- [x] Podium
+- [x] NiceJob
+- [x] Trustpilot Business
+- [x] Google Merchant Center
+- [x] Microsoft Advertising
+- [x] AdEspresso
+- [x] Optmyzr
+- [x] CallRail
+- [x] Vidyard
+- [x] BombBomb
+- [x] Seamless.AI
 - [ ] RocketReach
 - [ ] Clay
 - [ ] Reply.io
