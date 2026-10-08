@@ -108,30 +108,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Vidyard
 - [x] BombBomb
 - [x] Seamless.AI
-- [ ] RocketReach
-- [ ] Clay
-- [ ] Reply.io
-- [ ] Woodpecker
-- [ ] Salesloft
-- [ ] Outreach
-- [ ] HubSpot Sales Hub (skip if dup)
-- [ ] Attio
-- [ ] folk
-- [ ] Less Annoying CRM
-- [ ] Nutshell
-- [ ] Capsule CRM
-- [ ] Insightly
-- [ ] Bigin by Zoho
+- [x] RocketReach
+- [x] Clay
+- [x] Reply.io
+- [x] Woodpecker
+- [x] Salesloft
+- [x] Outreach
+- [x] HubSpot Sales Hub — dup
+- [x] Attio
+- [x] folk
+- [x] Less Annoying CRM
+- [x] Nutshell
+- [x] Capsule CRM
+- [x] Insightly
+- [x] Bigin by Zoho
 
 ## Ecommerce
-- [ ] Squarespace Commerce (skip if dup)
-- [ ] Ecwid
-- [ ] Shift4Shop
-- [ ] Volusion
-- [ ] Sellfy
-- [ ] Payhip
-- [ ] ThriveCart
-- [ ] SamCart
+- [x] Squarespace Commerce — dup
+- [x] Ecwid
+- [x] Shift4Shop
+- [x] Volusion
+- [x] Sellfy
+- [x] Payhip
+- [x] ThriveCart
+- [x] SamCart
 - [ ] Kartra
 - [ ] Systeme alternatives: GrooveFunnels
 - [ ] Amazon Seller Central
