@@ -132,26 +132,26 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Payhip
 - [x] ThriveCart
 - [x] SamCart
-- [ ] Kartra
-- [ ] Systeme alternatives: GrooveFunnels
-- [ ] Amazon Seller Central
-- [ ] Etsy (seller fees)
-- [ ] eBay Seller
-- [ ] Faire
-- [ ] Spocket
-- [ ] AutoDS
-- [ ] Zendrop
-- [ ] Sellbrite
-- [ ] Linnworks
-- [ ] Cin7
-- [ ] inFlow Inventory
-- [ ] Sortly
-- [ ] Easyship
-- [ ] Pirate Ship
-- [ ] Route
-- [ ] Loox
-- [ ] Stamped
-- [ ] Okendo
+- [x] Kartra
+- [x] Systeme alternatives: GrooveFunnels
+- [x] Amazon Seller Central
+- [x] Etsy (seller fees)
+- [x] eBay Seller
+- [x] Faire
+- [x] Spocket
+- [x] AutoDS
+- [x] Zendrop
+- [x] Sellbrite
+- [x] Linnworks
+- [x] Cin7
+- [x] inFlow Inventory
+- [x] Sortly
+- [x] Easyship
+- [x] Pirate Ship
+- [x] Route
+- [x] Loox
+- [x] Stamped
+- [x] Okendo
 - [ ] Smile.io
 - [ ] LoyaltyLion
 - [ ] Postscript
