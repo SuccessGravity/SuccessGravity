@@ -152,28 +152,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Loox
 - [x] Stamped
 - [x] Okendo
-- [ ] Smile.io
-- [ ] LoyaltyLion
-- [ ] Postscript
-- [ ] Attentive
-- [ ] Rebuy
-- [ ] PageFly
-- [ ] GemPages
+- [x] Smile.io
+- [x] LoyaltyLion
+- [x] Postscript
+- [x] Attentive
+- [x] Rebuy
+- [x] PageFly
+- [x] GemPages
 
 ## AI & productivity
-- [ ] Notion Calendar (skip if free add-on only)
-- [ ] Motion
-- [ ] Reclaim.ai
-- [ ] Sunsama
-- [ ] Akiflow
-- [ ] Superhuman
-- [ ] Spark Mail
-- [ ] Shortwave
-- [ ] Granola
-- [ ] Read AI
-- [ ] Avoma
-- [ ] tl;dv alternatives: MeetGeek
-- [ ] Mem
+- [x] Notion Calendar (skip if free add-on only)
+- [x] Motion
+- [x] Reclaim.ai
+- [x] Sunsama
+- [x] Akiflow
+- [x] Superhuman
+- [x] Spark Mail
+- [x] Shortwave
+- [x] Granola
+- [x] Read AI
+- [x] Avoma
+- [x] tl;dv alternatives: MeetGeek
+- [x] Mem
 - [ ] Obsidian (Sync/Publish)
 - [ ] Raycast
 - [ ] TextExpander
