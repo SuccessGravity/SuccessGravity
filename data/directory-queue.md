@@ -174,28 +174,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Avoma
 - [x] tl;dv alternatives: MeetGeek
 - [x] Mem
-- [ ] Obsidian (Sync/Publish)
-- [ ] Raycast
-- [ ] TextExpander
-- [ ] Zapier alternatives: Pabbly Connect
-- [ ] IFTTT
-- [ ] Bardeen
-- [ ] Relevance AI
-- [ ] Lindy
-- [ ] Gumloop
-- [ ] Poe
-- [ ] Mistral Le Chat
-- [ ] DeepSeek
-- [ ] Character.ai (skip — not business)
-- [ ] Runway alternatives: Luma Dream Machine
-- [ ] Hailuo AI
-- [ ] Sora (via ChatGPT — skip if no standalone plan)
-- [ ] Udio
-- [ ] Soundraw
-- [ ] Beatoven.ai
-- [ ] Photoroom
-- [ ] remove.bg
-- [ ] Clipdrop
+- [x] Obsidian (Sync/Publish)
+- [x] Raycast
+- [x] TextExpander
+- [x] Zapier alternatives: Pabbly Connect
+- [x] IFTTT
+- [x] Bardeen
+- [x] Relevance AI
+- [x] Lindy
+- [x] Gumloop
+- [x] Poe
+- [x] Mistral Le Chat
+- [x] DeepSeek
+- [x] Character.ai — skipped, not business
+- [x] Runway alternatives: Luma Dream Machine
+- [x] Hailuo AI
+- [x] Sora — skipped, no standalone plan
+- [x] Udio
+- [x] Soundraw
+- [x] Beatoven.ai
+- [x] Photoroom
+- [x] remove.bg
+- [x] Clipdrop
 - [ ] Magnific AI
 - [ ] Topaz Labs
 - [ ] Freepik
