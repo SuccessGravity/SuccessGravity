@@ -196,26 +196,26 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Photoroom
 - [x] remove.bg
 - [x] Clipdrop
-- [ ] Magnific AI
-- [ ] Topaz Labs
-- [ ] Freepik
-- [ ] Recraft
-- [ ] Looka alternatives: Brandmark
-- [ ] Tome
-- [ ] Decktopus
-- [ ] Napkin AI
-- [ ] Grammarly alternatives: LanguageTool
-- [ ] Wordtune
-- [ ] DeepL
-- [ ] Originality.ai
-- [ ] Copyleaks
-- [ ] Surfer alternatives: Scalenut
-- [ ] Koala AI
-- [ ] Byword
-- [ ] Synthesia alternatives: Colossyan
-- [ ] Hour One
-- [ ] D-ID
-- [ ] Captions alternatives: Submagic
+- [x] Magnific AI
+- [x] Topaz Labs
+- [x] Freepik — dup (now Magnific)
+- [x] Recraft
+- [x] Looka alternatives: Brandmark
+- [x] Tome — skipped: tome.app/pricing returns 404, product appears discontinued
+- [x] Decktopus
+- [x] Napkin AI
+- [x] Grammarly alternatives: LanguageTool
+- [x] Wordtune
+- [x] DeepL
+- [x] Originality.ai
+- [x] Copyleaks
+- [x] Surfer alternatives: Scalenut
+- [x] Koala AI
+- [x] Byword
+- [x] Synthesia alternatives: Colossyan
+- [x] Hour One
+- [x] D-ID
+- [x] Captions alternatives: Submagic
 - [ ] Vizard
 - [ ] Munch
 - [ ] Descript alternatives: Podcastle
