@@ -216,30 +216,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Hour One
 - [x] D-ID
 - [x] Captions alternatives: Submagic
-- [ ] Vizard
-- [ ] Munch
-- [ ] Descript alternatives: Podcastle
-- [ ] Castmagic
-- [ ] Buzzsprout
-- [ ] Transistor
-- [ ] Spotify for Creators (skip if free only)
+- [x] Vizard
+- [x] Munch
+- [x] Descript alternatives: Podcastle
+- [x] Castmagic
+- [x] Buzzsprout
+- [x] Transistor
+- [x] Spotify for Creators (skipped: free only)
 
 ## Websites, dev & hosting
-- [ ] GitHub
-- [ ] GitLab
-- [ ] Bitbucket
-- [ ] Linear alternatives: Jira
-- [ ] Confluence
-- [ ] Trello alternatives: Height
-- [ ] Sentry
-- [ ] Datadog
-- [ ] UptimeRobot
-- [ ] Better Stack
-- [ ] Postman
-- [ ] Retool
-- [ ] Softr
-- [ ] Glide
-- [ ] Adalo
+- [x] GitHub
+- [x] GitLab
+- [x] Bitbucket
+- [x] Linear alternatives: Jira
+- [x] Confluence
+- [x] Trello alternatives: Height (skipped: site unreachable)
+- [x] Sentry
+- [x] Datadog
+- [x] UptimeRobot
+- [x] Better Stack
+- [x] Postman
+- [x] Retool
+- [x] Softr
+- [x] Glide
+- [x] Adalo
 - [ ] FlutterFlow
 - [ ] Bolt alternatives: Create.xyz
 - [ ] Hostinger alternatives: A2 Hosting
