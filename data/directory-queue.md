@@ -240,31 +240,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Softr
 - [x] Glide
 - [x] Adalo
-- [ ] FlutterFlow
-- [ ] Bolt alternatives: Create.xyz
-- [ ] Hostinger alternatives: A2 Hosting
-- [ ] InMotion Hosting
-- [ ] HostGator
-- [ ] GreenGeeks
-- [ ] Hetzner
-- [ ] Linode (Akamai)
-- [ ] Vultr
-- [ ] Fly.io
-- [ ] Railway
-- [ ] Neon
-- [ ] PlanetScale
-- [ ] Porkbun
-- [ ] Cloudflare Registrar (skip if dup)
-- [ ] Squarespace Domains
-- [ ] Duda
-- [ ] Hostinger Website Builder (skip if dup)
-- [ ] Durable
-- [ ] 10Web
-- [ ] Divi (Elegant Themes)
-- [ ] Astra
-- [ ] Yoast SEO
-- [ ] Rank Math
-- [ ] WPForms
+- [x] FlutterFlow
+- [x] Bolt alternatives: Create.xyz — renamed to Anything, not added
+- [x] Hostinger alternatives: A2 Hosting — site redirects to hosting.com, not added
+- [x] InMotion Hosting
+- [x] HostGator
+- [x] GreenGeeks
+- [x] Hetzner
+- [x] Linode (Akamai)
+- [x] Vultr
+- [x] Fly.io
+- [x] Railway
+- [x] Neon
+- [x] PlanetScale
+- [x] Porkbun
+- [x] Cloudflare Registrar (skip if dup) — dup
+- [x] Squarespace Domains — dup
+- [x] Duda
+- [x] Hostinger Website Builder (skip if dup) — dup
+- [x] Durable
+- [x] 10Web
+- [x] Divi (Elegant Themes)
+- [x] Astra
+- [x] Yoast SEO
+- [x] Rank Math
+- [x] WPForms
 - [ ] Gravity Forms
 - [ ] MonsterInsights
 - [ ] WP Rocket
@@ -272,3 +272,66 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] UpdraftPlus
 - [ ] Wordfence
 - [ ] Sucuri
+
+## Refill 2026-10-14 (security, devops, support, finance, HR)
+- [ ] 1Password Business
+- [ ] Bitwarden
+- [ ] Dashlane
+- [ ] Keeper Security
+- [ ] Vanta
+- [ ] Drata
+- [ ] Secureframe
+- [ ] Tailscale
+- [ ] Cloudflare Zero Trust
+- [ ] Datadog
+- [ ] Sentry
+- [ ] PagerDuty
+- [ ] Better Stack
+- [ ] UptimeRobot
+- [ ] Statuspage
+- [ ] Zendesk
+- [ ] Freshdesk
+- [ ] Help Scout
+- [ ] Intercom
+- [ ] Crisp
+- [ ] Tidio
+- [ ] Front
+- [ ] Gorgias
+- [ ] Gusto
+- [ ] Rippling
+- [ ] Deel
+- [ ] Remote
+- [ ] Justworks
+- [ ] TriNet
+- [ ] Expensify
+- [ ] Ramp
+- [ ] Mercury
+- [ ] Relay
+- [ ] Wise Business
+- [ ] Xero
+- [ ] FreshBooks
+- [ ] Wave
+- [ ] Zoho Books
+- [ ] Docusign
+- [ ] PandaDoc
+- [ ] Pipedrive
+- [ ] Close CRM
+- [ ] Copper
+- [ ] Insightly
+- [ ] Calendly
+- [ ] Cal.com
+- [ ] SavvyCal
+- [ ] Acuity Scheduling
+- [ ] Typeform
+- [ ] Jotform
+- [ ] Tally
+- [ ] Airtable
+- [ ] Notion Calendar
+- [ ] Coda
+- [ ] Asana
+- [ ] Monday.com
+- [ ] ClickUp
+- [ ] Smartsheet
+- [ ] Basecamp
+- [ ] Trello
+- [ ] Linear
