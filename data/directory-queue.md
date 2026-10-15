@@ -265,73 +265,126 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Yoast SEO
 - [x] Rank Math
 - [x] WPForms
-- [ ] Gravity Forms
-- [ ] MonsterInsights
-- [ ] WP Rocket
-- [ ] Jetpack
-- [ ] UpdraftPlus
-- [ ] Wordfence
-- [ ] Sucuri
+- [x] Gravity Forms
+- [x] MonsterInsights
+- [x] WP Rocket
+- [x] Jetpack
+- [x] UpdraftPlus
+- [x] Wordfence
+- [x] Sucuri
 
 ## Refill 2026-10-14 (security, devops, support, finance, HR)
-- [ ] 1Password Business
-- [ ] Bitwarden
-- [ ] Dashlane
-- [ ] Keeper Security
-- [ ] Vanta
-- [ ] Drata
-- [ ] Secureframe
-- [ ] Tailscale
-- [ ] Cloudflare Zero Trust
-- [ ] Datadog
-- [ ] Sentry
-- [ ] PagerDuty
-- [ ] Better Stack
-- [ ] UptimeRobot
-- [ ] Statuspage
-- [ ] Zendesk
-- [ ] Freshdesk
-- [ ] Help Scout
-- [ ] Intercom
-- [ ] Crisp
-- [ ] Tidio
-- [ ] Front
-- [ ] Gorgias
-- [ ] Gusto
-- [ ] Rippling
-- [ ] Deel
-- [ ] Remote
-- [ ] Justworks
-- [ ] TriNet
-- [ ] Expensify
-- [ ] Ramp
-- [ ] Mercury
-- [ ] Relay
-- [ ] Wise Business
-- [ ] Xero
-- [ ] FreshBooks
-- [ ] Wave
-- [ ] Zoho Books
-- [ ] Docusign
-- [ ] PandaDoc
-- [ ] Pipedrive
-- [ ] Close CRM
-- [ ] Copper
-- [ ] Insightly
-- [ ] Calendly
-- [ ] Cal.com
-- [ ] SavvyCal
-- [ ] Acuity Scheduling
-- [ ] Typeform
-- [ ] Jotform
-- [ ] Tally
-- [ ] Airtable
-- [ ] Notion Calendar
-- [ ] Coda
-- [ ] Asana
-- [ ] Monday.com
-- [ ] ClickUp
-- [ ] Smartsheet
-- [ ] Basecamp
-- [ ] Trello
-- [ ] Linear
+- [x] 1Password Business (dup)
+- [x] Bitwarden (dup)
+- [x] Dashlane
+- [x] Keeper Security (dup)
+- [x] Vanta
+- [x] Drata
+- [x] Secureframe
+- [x] Tailscale
+- [x] Cloudflare Zero Trust (dup)
+- [x] Datadog (dup)
+- [x] Sentry (dup)
+- [x] PagerDuty
+- [x] Better Stack (dup)
+- [x] UptimeRobot (dup)
+- [x] Statuspage
+- [x] Zendesk (dup)
+- [x] Freshdesk (dup)
+- [x] Help Scout (dup)
+- [x] Intercom (dup)
+- [x] Crisp
+- [x] Tidio (dup)
+- [x] Front
+- [x] Gorgias (dup)
+- [x] Gusto (dup)
+- [x] Rippling (dup)
+- [x] Deel (dup)
+- [x] Remote
+- [x] Justworks (dup)
+- [x] TriNet
+- [x] Expensify (dup)
+- [x] Ramp (dup)
+- [x] Mercury (dup)
+- [x] Relay (dup)
+- [x] Wise Business (dup)
+- [x] Xero (dup)
+- [x] FreshBooks (dup)
+- [x] Wave (dup)
+- [x] Zoho Books (dup)
+- [x] Docusign (dup)
+- [x] PandaDoc (dup)
+- [x] Pipedrive (dup)
+- [x] Close CRM (dup)
+- [x] Copper (dup)
+- [x] Insightly (dup)
+- [x] Calendly (dup)
+- [x] Cal.com
+- [x] SavvyCal (dup)
+- [x] Acuity Scheduling (dup)
+- [x] Typeform (dup)
+- [x] Jotform (dup)
+- [x] Tally (dup)
+- [x] Airtable (dup)
+- [x] Notion Calendar (dup)
+- [x] Coda (dup)
+- [x] Asana (dup)
+- [x] Monday.com (dup)
+- [x] ClickUp (dup)
+- [x] Smartsheet (dup)
+- [x] Basecamp (dup)
+- [x] Trello (dup)
+- [x] Linear (dup)
+
+## Refill 2026-10-15 (analytics, legal, billing, security, freelance)
+- [x] PostHog
+- [ ] ConvertKit
+- [ ] Amplitude
+- [ ] Segment
+- [ ] Metabase
+- [ ] Zoho Analytics
+- [ ] Rebrandly
+- [ ] Fiverr
+- [ ] Upwork
+- [ ] Toptal
+- [ ] TimeCamp
+- [ ] Bill.com
+- [ ] Chargebee
+- [ ] Recurly
+- [ ] DocSend
+- [ ] Dropbox Sign
+- [ ] SignNow
+- [ ] Clio
+- [ ] Termly
+- [ ] iubenda
+- [ ] CookieYes
+- [ ] NordVPN
+- [ ] ExpressVPN
+- [ ] Malwarebytes
+- [ ] Norton
+- [ ] McAfee
+- [ ] Proton
+- [ ] Mixpanel
+- [ ] Heap
+- [ ] Lemon
+- [ ] Squeezy
+- [ ] Zoho Desk
+- [ ] Zoho Campaigns
+- [ ] Zoho Projects
+- [ ] Lever
+- [ ] Greenhouse
+- [ ] Personio
+- [ ] Patriot Payroll
+- [ ] Paycor
+- [ ] Connecteam
+- [ ] Square Appointments
+- [ ] Setmore
+- [ ] SumUp
+- [ ] AWeber
+- [ ] Mailgun
+- [ ] Twilio
+- [ ] OpenPhone
+- [ ] Ooma
+- [ ] 8x8
+- [ ] Plutio
+- [ ] Rocketlane
