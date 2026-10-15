@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5HCD85W92"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P5HCD85W92');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use ElevenLabs for Business: Voice Cloning, Voiceovers & Dubbing | Success Gravity</title>
+  <meta name="description" content="Step-by-step guide to using ElevenLabs for business: clone your voice, create professional voiceovers, dub multilingual content, and integrate with the API.">
+  <link rel="canonical" href="https://successgravity.com/guides/elevenlabs-voice-setup/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="How to Use ElevenLabs for Business: Voice Cloning & Voiceovers | Success Gravity">
+  <meta property="og:description" content="Step-by-step guide to using ElevenLabs for business: clone your voice, create professional voiceovers, dub multilingual content, and integrate with the API.">
+  <meta property="og:url" content="https://successgravity.com/guides/elevenlabs-voice-setup/">
+  <meta property="og:site_name" content="Success Gravity">
+  <meta property="og:image" content="https://successgravity.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://successgravity.com/og-image.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css?v=38">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9488628316107536" crossorigin="anonymous"></script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yeqvo4znwn");
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does ElevenLabs voice cloning take?","acceptedAnswer":{"@type":"Answer","text":"Instant Voice Cloning in ElevenLabs processes a voice sample in seconds once the audio is uploaded. The resulting clone is ready to use immediately. Professional Voice Cloning, which requires 30+ minutes of source audio and produces higher-fidelity results, typically takes several minutes of processing time after you submit the recording. Either way, you are not waiting more than a few minutes to have a working AI voice."}},{"@type":"Question","name":"What audio format does ElevenLabs accept for voice cloning?","acceptedAnswer":{"@type":"Answer","text":"According to ElevenLabs' documentation, the platform accepts MP3, WAV, M4A, OGG, and FLAC files for voice cloning. For best results, use a clean WAV or high-bitrate MP3 recording made in a quiet environment with a condenser microphone. Audio compressed by phone calls, video conferencing, or heavy encoding tends to produce lower-quality clones."}},{"@type":"Question","name":"Can I use ElevenLabs commercially?","acceptedAnswer":{"@type":"Answer","text":"Yes, commercial use rights are included from the Starter plan ($5/month) and above. The free plan is limited to non-commercial personal use. According to ElevenLabs' terms, commercial usage covers content monetized through ads, branded videos, courses, podcasts, and similar. Check the current terms of service at ElevenLabs' site for specifics on your use case."}},{"@type":"Question","name":"What is the best microphone for ElevenLabs voice cloning?","acceptedAnswer":{"@type":"Answer","text":"ElevenLabs does not require a specific microphone, but a USB condenser microphone (such as the Blue Yeti, Audio-Technica AT2020USB+, or similar) consistently produces better clones than a laptop's built-in mic or a phone. Record in a quiet room, maintain a consistent distance of 6–8 inches from the mic, and avoid rooms with hard parallel walls that create echo. The recording environment matters as much as the hardware."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Use ElevenLabs for Business","author":{"@type":"Person","name":"David","jobTitle":"Founder & Editor","url":"https://successgravity.com/about/"},"publisher":{"@type":"Organization","name":"Success Gravity","url":"https://successgravity.com/"},"step":[{"@type":"HowToStep","name":"Create your account and choose the right plan"},{"@type":"HowToStep","name":"Clone your voice with Instant Voice Cloning"},{"@type":"HowToStep","name":"Generate your first voiceover with Speech Synthesis"},{"@type":"HowToStep","name":"Dub a video into another language with AI Dubbing"},{"@type":"HowToStep","name":"Connect ElevenLabs to your workflow via API or Zapier"}]}</script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <img src="/logo-nav.png" alt="Success Gravity" class="h-8 w-auto" height="32">
+      </a>
+      <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
+        <a href="/" class="hover:text-indigo-600">Home</a>
+        <a href="/directory/" class="hover:text-indigo-600">Directory</a>
+        <a href="/review/" class="hover:text-indigo-600">Reviews</a>
+        <a href="/guides/" class="text-indigo-600 font-semibold">Guides</a>
+        <a href="/best/" class="hover:text-indigo-600">Best</a>
+        <a href="/about/" class="hover:text-indigo-600">About</a>
+        <a href="/contact/" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Contact</a>
+      </div>
+      <button id="sg-menu-btn" aria-label="Open menu" aria-expanded="false" class="md:hidden text-2xl text-gray-700">&#9776;</button>
+    </div>
+    <div id="sg-mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-4 py-3 space-y-2 text-gray-700 font-medium">
+      <a href="/" class="block py-1">Home</a>
+      <a href="/directory/" class="block py-1">Directory</a>
+      <a href="/review/" class="block py-1">Reviews</a>
+      <a href="/guides/" class="block py-1 text-indigo-600 font-semibold">Guides</a>
+      <a href="/best/" class="block py-1">Best</a>
+      <a href="/about/" class="block py-1">About</a>
+      <a href="/contact/" class="block py-1">Contact</a>
+    </div>
+  </nav>
+
+  <header class="sg-hero text-white py-12">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <p class="text-indigo-200 text-sm mb-3">
+        <a href="/" class="hover:underline">Home</a> &rsaquo;
+        <a href="/guides/" class="hover:underline">How-To Guides</a> &rsaquo;
+        <span class="text-white">ElevenLabs for Business</span>
+      </p>
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">How to Use ElevenLabs for Business: Voice Cloning, Voiceovers &amp; Dubbing</h1>
+      <p class="text-indigo-200 text-sm mt-2">By <a href="/about/" class="font-bold text-white hover:underline">David</a> <span class="text-indigo-300">&middot; Founder &amp; Editor, Success Gravity</span></p>
+      <p class="text-indigo-200 mt-4 text-lg">A practical step-by-step guide to getting real business value from ElevenLabs — from cloning your voice to producing multilingual content and connecting it to your production workflow.</p>
+      <p class="text-indigo-300 text-xs mt-3">&#10003; Last updated: October 2026 &middot; 12 min read</p>
+    </div>
+  </header>
+
+  <div class="bg-amber-50 border-b border-amber-200">
+    <div class="container mx-auto px-4 py-2.5 text-sm text-amber-800 max-w-3xl">
+      <strong>Disclosure:</strong> This guide may contain affiliate links. We may earn a commission at no extra cost to you. <a href="/affiliate-disclosure/" class="underline">Learn more</a>.
+    </div>
+  </div>
+
+  <main class="container mx-auto px-4 py-10 max-w-3xl">
+    <article class="sg-prose">
+
+      <p>AI voice generation used to mean robotic narration that no reasonable person would want to listen to for more than a few minutes. ElevenLabs changed that. The platform produces voice output natural enough that most listeners can't distinguish it from a real recording — and it's priced low enough that a solo creator or small team can use it on a real budget. The free plan gives you 10,000 characters per month (roughly 10 minutes of audio), which is enough to test every feature before you decide whether to upgrade.</p>
+
+      <p>This guide walks through the five things that matter most when setting up ElevenLabs for actual business use: picking the right plan, cloning a voice, generating production-ready voiceovers, dubbing video content, and connecting ElevenLabs to the rest of your workflow. The hardest part of the whole process is recording a clean voice sample — if you do that well, everything else is straightforward.</p>
+
+      <!-- Diagram SVG -->
+      <div style="background:#fff;border:1px solid #e5e7eb;border-radius:1rem;padding:1.2rem;margin:1.5rem 0;overflow-x:auto">
+        <svg viewBox="0 0 560 120" width="100%" style="max-width:600px" role="img" aria-label="ElevenLabs workflow diagram">
+          <defs>
+            <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#6366f1"/></marker>
+          </defs>
+          <!-- Boxes -->
+          <rect x="10" y="40" width="90" height="40" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+          <text x="55" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#4f46e5">Record</text>
+          <text x="55" y="71" text-anchor="middle" font-size="10" fill="#6366f1">Audio sample</text>
+          <line x1="100" y1="60" x2="125" y2="60" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)"/>
+          <rect x="127" y="40" width="90" height="40" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+          <text x="172" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#4f46e5">Clone</text>
+          <text x="172" y="71" text-anchor="middle" font-size="10" fill="#6366f1">Voice model</text>
+          <line x1="217" y1="60" x2="242" y2="60" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)"/>
+          <rect x="244" y="40" width="90" height="40" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+          <text x="289" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#4f46e5">Generate</text>
+          <text x="289" y="71" text-anchor="middle" font-size="10" fill="#6366f1">Voiceover</text>
+          <line x1="334" y1="60" x2="359" y2="60" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)"/>
+          <rect x="361" y="40" width="90" height="40" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+          <text x="406" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#4f46e5">Export</text>
+          <text x="406" y="71" text-anchor="middle" font-size="10" fill="#6366f1">MP3 / API</text>
+          <line x1="451" y1="60" x2="476" y2="60" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)"/>
+          <rect x="478" y="40" width="72" height="40" rx="8" fill="#4f46e5"/>
+          <text x="514" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Publish</text>
+          <text x="514" y="71" text-anchor="middle" font-size="10" fill="#c7d2fe">Video / Pod</text>
+        </svg>
+      </div>
+
+      <h2>Step 1: Create Your Account and Choose the Right Plan</h2>
+      <p>Go to <a href="https://elevenlabs.io" target="_blank" rel="sponsored noopener" class="affiliate-link" data-tool="elevenlabs">elevenlabs.io</a> and create a free account — no credit card required. The free plan gives you 10,000 characters per month. To put that in perspective: a 1,500-word article read at a natural pace uses roughly 9,000–10,000 characters, so the free tier is enough to produce one solid piece of narration per month and still have characters left to experiment.</p>
+      <p>For most business use cases, the Starter plan at $5/month (30,000 characters) is the minimum to work productively. The Creator plan at $22/month unlocks 100,000 characters and Professional Voice Cloning — the tier that produces noticeably better voice quality for long-form content. What I find genuinely impressive is how far the Starter plan stretches for course creators or social media producers who write concise scripts: 30,000 characters covers roughly three 10-minute podcast-style narrations per month.</p>
+      <p>Navigate to the Billing section to select a plan. Annual billing gives roughly 20% off compared to monthly. Once you confirm, you can immediately access all the features for that tier.</p>
+
+      <div class="sg-tip not-prose bg-indigo-50 border border-indigo-100 rounded-xl p-5 my-6">
+        <p class="font-bold text-indigo-800 mb-1">&#128161; David's Tip</p>
+        <p class="text-indigo-900 text-sm">Start on the free plan and generate a few test voiceovers before upgrading. The 10,000 free characters are enough to hear whether ElevenLabs matches the voice style and tone your content needs — no need to commit before you have that answer.</p>
+      </div>
+
+      <h2>Step 2: Clone Your Voice with Instant Voice Cloning</h2>
+      <p>Click on <strong>Voices</strong> in the left sidebar, then select <strong>Add a Generative or Cloned Voice</strong>. Choose <strong>Instant Voice Cloning</strong>. You'll be prompted to upload an audio sample or record directly in the browser.</p>
+      <p>Recording quality here is the single biggest factor in clone quality. For best results, use a USB condenser microphone in a quiet room — a home office with soft furnishings works well; a bare kitchen with reflective walls does not. Record for at least two minutes of continuous speech. Reading a news article or a product description out loud works fine — you do not need to read anything specific. ElevenLabs' documentation confirms that a minimum of one minute is usable, but two to three minutes produces noticeably more stable output across varied sentence structures.</p>
+      <p>Once uploaded, give the voice a name, accept the consent terms (ElevenLabs requires explicit confirmation that you have the right to clone this voice), and click <strong>Add Voice</strong>. Processing takes a few seconds. The new voice appears in your Voices library and is ready to use immediately in any generation task.</p>
+
+      <h2>Step 3: Generate Your First Professional Voiceover</h2>
+      <p>Navigate to <strong>Speech Synthesis</strong> (the microphone icon in the sidebar). Select your cloned voice (or any voice from the library) from the Voice dropdown. Paste your script into the text area. Before generating, expand the <strong>Settings</strong> panel to adjust Stability and Similarity Boost.</p>
+      <p>Stability controls how consistent the output sounds across multiple generations — higher stability gives more predictable, uniform output; lower stability introduces more expressiveness and variation, which can either add energy to the narration or make it less controlled depending on the text. For instructional and narration use cases, keeping Stability at 60–70% and Similarity Boost at 75% is a solid default starting point according to ElevenLabs' own tips documentation.</p>
+      <p>Click <strong>Generate</strong>. The audio plays back in the browser so you can preview before downloading. The cleaner your script — short sentences, clear punctuation — the better the output tends to be. Avoid double dashes and semicolons in scripts; replace them with commas and periods to give the model natural pause cues. Once satisfied, click the download icon to export as MP3. The audio is yours to use commercially on paid plans.</p>
+
+      <h2>Step 4: Dub a Video into Another Language with AI Dubbing</h2>
+      <p>Click <strong>Dubbing Studio</strong> in the left sidebar. This feature uploads an existing video or audio file and outputs a translated, re-voiced version with the speaker's voice characteristics preserved across the language change. It is particularly valuable for course creators and marketers who want to reach Spanish, French, or Portuguese-speaking audiences without re-recording content.</p>
+      <p>Click <strong>Create a New Dub</strong>, upload your source file (MP4, MOV, MP3, or WAV), select the source language and one or more target languages, and confirm. ElevenLabs automatically transcribes the source audio, translates it, and re-voices it using the original speaker's cloned voice characteristics. Processing time depends on file length — a five-minute video typically takes two to three minutes.</p>
+      <p>Review the output in the Dubbing Studio editor, where you can see the translated transcript side-by-side and make manual corrections to any segment. This correction step matters: automatic translation can miss domain-specific terminology, branded terms, or proper nouns that need to stay in the original language. Once corrections are done, export the dubbed file with the original video track replaced by the translated audio. The result is not perfect for all language pairs, but for the major western European languages and Spanish-language markets, the quality crosses the threshold for professional distribution.</p>
+
+      <div class="sg-tip not-prose bg-indigo-50 border border-indigo-100 rounded-xl p-5 my-6">
+        <p class="font-bold text-indigo-800 mb-1">&#128161; David's Tip</p>
+        <p class="text-indigo-900 text-sm">Always review the translated transcript in the Dubbing Studio editor before exporting. Machine translation handles general language well but often struggles with product names, company names, and technical terms. A five-minute review of the transcript before export saves you from publishing a video where your brand name gets mispronounced in Spanish.</p>
+      </div>
+
+      <h2>Step 5: Connect ElevenLabs to Your Workflow via API or Zapier</h2>
+      <p>For teams generating high volumes of content, manual generation in the browser becomes a bottleneck. ElevenLabs' API allows you to automate voiceover creation directly from your CMS, course platform, or content management workflow. Go to your profile settings and navigate to <strong>API Keys</strong> to generate a key. The ElevenLabs developer documentation covers Python and JavaScript SDK setup in detail.</p>
+      <p>A practical starting point for non-developers is the ElevenLabs Zapier integration, which lets you trigger voiceover generation based on events in other tools — a new row in a Google Sheet, a published article in your CMS, or a completed form submission. According to ElevenLabs' integration documentation, the Zapier integration supports the core TTS endpoint, which is sufficient for most automation use cases without writing any code.</p>
+      <p>For teams using Notion or Airtable to manage script libraries, a simple Zapier workflow — new record in Airtable triggers ElevenLabs TTS, output saved to Google Drive — can turn your content database into an automated audio production pipeline in under an hour. This is the kind of workflow that makes ElevenLabs particularly powerful for educational content publishers who need to maintain large libraries of narrated modules without manual production overhead.</p>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+      <div class="sg-faq">
+        <details>
+          <summary>How long does ElevenLabs voice cloning take?</summary>
+          <p>Instant Voice Cloning processes a sample in seconds after upload — the resulting clone is ready to use immediately. Professional Voice Cloning, which requires 30+ minutes of source audio and produces higher-fidelity results, typically takes a few minutes of processing after you submit the recording.</p>
+        </details>
+        <details>
+          <summary>What audio format does ElevenLabs accept for voice cloning?</summary>
+          <p>According to ElevenLabs' documentation, the platform accepts MP3, WAV, M4A, OGG, and FLAC files. For best results, use a clean WAV or high-bitrate MP3 recorded in a quiet environment. Audio compressed by video conferencing or phone calls produces lower-quality clones.</p>
+        </details>
+        <details>
+          <summary>Can I use ElevenLabs commercially?</summary>
+          <p>Yes, commercial use rights are included from the Starter plan ($5/month) and above. The free plan is limited to non-commercial personal use. According to ElevenLabs' terms, commercial usage covers content monetized through ads, branded videos, courses, and podcasts. Check the current terms at ElevenLabs' site for your specific use case.</p>
+        </details>
+        <details>
+          <summary>What is the best microphone for ElevenLabs voice cloning?</summary>
+          <p>ElevenLabs doesn't require a specific microphone, but a USB condenser microphone consistently produces better clones than a laptop mic or phone. Maintain a consistent 6–8 inch distance from the mic and record in a room with soft furnishings to reduce echo. The recording environment matters as much as the hardware.</p>
+        </details>
+      </div>
+
+      <h2>Keep Going</h2>
+      <p>Once you have ElevenLabs set up for your core workflow, the next productive step is usually pairing the audio with video — either by adding the generated voiceover to a screen recording (Loom handles this well for simple walkthroughs) or feeding it into a full AI video pipeline using Synthesia for avatar-driven content. If your goal is to scale content to multiple languages, revisit the Dubbing Studio once per publish cycle rather than treating it as a one-off experiment — the iteration speed improves significantly once you've built the correction workflow once.</p>
+    </article>
+
+    <!-- Keep Exploring -->
+    <div class="mt-12">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Keep Going</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/review/elevenlabs/" class="sg-card2 block hover:no-underline">
+          <p class="font-bold text-gray-900 mb-1">ElevenLabs Full Review</p>
+          <p class="text-xs text-gray-500 mb-2">&#9733; 4.7/5 · Pricing &amp; features</p>
+          <p class="text-sm text-indigo-600 font-semibold">Read the review &rarr;</p>
+        </a>
+        <a href="/review/murf-ai/" class="sg-card2 block hover:no-underline">
+          <p class="font-bold text-gray-900 mb-1">Murf AI Review</p>
+          <p class="text-xs text-gray-500 mb-2">&#9733; 4.5/5 · Alternative TTS tool</p>
+          <p class="text-sm text-indigo-600 font-semibold">Read the review &rarr;</p>
+        </a>
+        <a href="/guides/zapier-automation-setup/" class="sg-card2 block hover:no-underline">
+          <p class="font-bold text-gray-900 mb-1">Zapier Automation Setup</p>
+          <p class="text-xs text-gray-500 mb-2">Connect ElevenLabs to your tools</p>
+          <p class="text-sm text-indigo-600 font-semibold">Read the guide &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 mt-16">
+    <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center space-x-2 mb-3">
+          <img src="/logo-light.png" alt="Success Gravity logo" class="w-7 h-7">
+          <span class="text-lg font-extrabold text-white">Success Gravity</span>
+        </div>
+        <p class="text-gray-400 leading-relaxed">Honest software reviews, prices checked at the source.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-white mb-3">Explore</p>
+        <ul class="space-y-2">
+          <li><a href="/directory/" class="hover:text-white">Tool Directory</a></li>
+          <li><a href="/review/" class="hover:text-white">All Reviews</a></li>
+          <li><a href="/guides/" class="hover:text-white">How-To Guides</a></li>
+          <li><a href="/best/" class="hover:text-white">Best Of Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white mb-3">Legal</p>
+        <ul class="space-y-2">
+          <li><a href="/how-we-review/" class="hover:text-white">How We Review</a></li>
+          <li><a href="/affiliate-disclosure/" class="hover:text-white">Affiliate Disclosure</a></li>
+          <li><a href="/privacy-policy/" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="/terms/" class="hover:text-white">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white mb-3">Contact</p>
+        <ul class="space-y-2">
+          <li><a href="mailto:help@successgravity.com" class="hover:text-white">help@successgravity.com</a></li>
+          <li><a href="/contact/" class="hover:text-white">Contact page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800">
+      <div class="container mx-auto px-4 py-5 text-xs text-gray-500">
+        <p class="mb-1">Some links on this site are affiliate links. <a href="/affiliate-disclosure/" class="underline hover:text-gray-300">See disclosure</a>.</p>
+        <p>&copy; <span class="sg-year">2026</span> Success Gravity. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/site.js?v=38"></script>
+</body>
+</html>
