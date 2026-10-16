@@ -338,29 +338,29 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 
 ## Refill 2026-10-15 (analytics, legal, billing, security, freelance)
 - [x] PostHog
-- [ ] ConvertKit
-- [ ] Amplitude
-- [ ] Segment
-- [ ] Metabase
-- [ ] Zoho Analytics
-- [ ] Rebrandly
-- [ ] Fiverr
-- [ ] Upwork
-- [ ] Toptal
-- [ ] TimeCamp
-- [ ] Bill.com
-- [ ] Chargebee
-- [ ] Recurly
-- [ ] DocSend
-- [ ] Dropbox Sign
-- [ ] SignNow
-- [ ] Clio
-- [ ] Termly
-- [ ] iubenda
-- [ ] CookieYes
-- [ ] NordVPN
-- [ ] ExpressVPN
-- [ ] Malwarebytes
+- [x] ConvertKit — dup (listed as Kit)
+- [x] Amplitude
+- [x] Segment
+- [x] Metabase
+- [x] Zoho Analytics
+- [x] Rebrandly
+- [x] Fiverr
+- [x] Upwork
+- [x] Toptal
+- [x] TimeCamp
+- [x] Bill.com — dup
+- [x] Chargebee
+- [x] Recurly
+- [x] DocSend
+- [x] Dropbox Sign — dup
+- [x] SignNow
+- [x] Clio
+- [x] Termly
+- [x] iubenda
+- [x] CookieYes
+- [x] NordVPN
+- [x] ExpressVPN
+- [x] Malwarebytes
 - [ ] Norton
 - [ ] McAfee
 - [ ] Proton
