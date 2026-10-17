@@ -361,30 +361,87 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] NordVPN
 - [x] ExpressVPN
 - [x] Malwarebytes
-- [ ] Norton
-- [ ] McAfee
-- [ ] Proton
-- [ ] Mixpanel
-- [ ] Heap
-- [ ] Lemon
-- [ ] Squeezy
-- [ ] Zoho Desk
-- [ ] Zoho Campaigns
-- [ ] Zoho Projects
-- [ ] Lever
-- [ ] Greenhouse
-- [ ] Personio
-- [ ] Patriot Payroll
-- [ ] Paycor
-- [ ] Connecteam
-- [ ] Square Appointments
-- [ ] Setmore
-- [ ] SumUp
-- [ ] AWeber
-- [ ] Mailgun
-- [ ] Twilio
-- [ ] OpenPhone
-- [ ] Ooma
-- [ ] 8x8
-- [ ] Plutio
+- [x] Norton
+- [x] McAfee
+- [x] Proton — dup
+- [x] Mixpanel — dup
+- [x] Heap
+- [x] Lemon — dup (Lemon Squeezy)
+- [x] Squeezy — dup (Lemon Squeezy)
+- [x] Zoho Desk
+- [x] Zoho Campaigns
+- [x] Zoho Projects
+- [x] Lever
+- [x] Greenhouse
+- [x] Personio
+- [x] Patriot Payroll
+- [x] Paycor
+- [x] Connecteam
+- [x] Square Appointments — dup
+- [x] Setmore
+- [x] SumUp
+- [x] AWeber
+- [x] Mailgun
+- [x] Twilio
+- [x] OpenPhone — dup (now Quo)
+- [x] Ooma
+- [x] 8x8
+- [x] Plutio
 - [ ] Rocketlane
+
+## Refill 2026-10-17 (communication, PM, support, HR, monitoring)
+- [ ] Mattermost
+- [ ] Zulip
+- [ ] Chanty
+- [ ] Pumble
+- [ ] Troop Messenger
+- [ ] Teamwork
+- [ ] Hive
+- [ ] Nifty
+- [ ] Paymo
+- [ ] Toggl Plan
+- [ ] Productive
+- [ ] Float
+- [ ] Resource Guru
+- [ ] Reclaim AI
+- [ ] Zoho Bookings
+- [ ] YouCanBookMe
+- [ ] Gladly
+- [ ] Kayako
+- [ ] Re:amaze
+- [ ] LiveChat
+- [ ] Olark
+- [ ] Chatwoot
+- [ ] Streak
+- [ ] SuiteCRM
+- [ ] Sage Intacct
+- [ ] Wave Payroll
+- [ ] Zenefits
+- [ ] Namely
+- [ ] Hibob
+- [ ] Factorial
+- [ ] Culture Amp
+- [ ] Lattice
+- [ ] 15Five
+- [ ] Workday
+- [ ] Humaans
+- [ ] Oyster HR
+- [ ] Papaya Global
+- [ ] Teamtailor
+- [ ] Recruitee
+- [ ] JazzHR
+- [ ] Breezy HR
+- [ ] Ashby
+- [ ] SmartRecruiters
+- [ ] Jobvite
+- [ ] Planable
+- [ ] Loomly
+- [ ] Sprinklr
+- [ ] Awario
+- [ ] Hootsuite Amplify
+- [ ] Zoho Social
+- [ ] Uptime Robot
+- [ ] Pingdom
+- [ ] Cronitor
+- [ ] LogRocket
+- [ ] FullStory
