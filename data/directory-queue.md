@@ -387,31 +387,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Ooma
 - [x] 8x8
 - [x] Plutio
-- [ ] Rocketlane
+- [x] Rocketlane
 
 ## Refill 2026-10-17 (communication, PM, support, HR, monitoring)
-- [ ] Mattermost
-- [ ] Zulip
-- [ ] Chanty
-- [ ] Pumble
-- [ ] Troop Messenger
-- [ ] Teamwork
-- [ ] Hive
-- [ ] Nifty
-- [ ] Paymo
-- [ ] Toggl Plan
-- [ ] Productive
-- [ ] Float
-- [ ] Resource Guru
-- [ ] Reclaim AI
-- [ ] Zoho Bookings
-- [ ] YouCanBookMe
-- [ ] Gladly
-- [ ] Kayako
-- [ ] Re:amaze
-- [ ] LiveChat
+- [x] Mattermost
+- [x] Zulip
+- [x] Chanty
+- [x] Pumble
+- [x] Troop Messenger
+- [x] Teamwork
+- [x] Hive
+- [x] Nifty
+- [x] Paymo
+- [x] Toggl Plan — skipped, status not confirmed
+- [x] Productive
+- [x] Float
+- [x] Resource Guru
+- [x] Reclaim AI — dup (Reclaim.ai)
+- [x] Zoho Bookings
+- [x] YouCanBookMe
+- [x] Gladly
+- [x] Kayako
+- [x] Re:amaze
+- [x] LiveChat
 - [ ] Olark
-- [ ] Chatwoot
+- [x] Chatwoot
 - [ ] Streak
 - [ ] SuiteCRM
 - [ ] Sage Intacct
@@ -445,3 +445,65 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Cronitor
 - [ ] LogRocket
 - [ ] FullStory
+
+## Refill 2026-10-18 (monitoring, security, billing, HR, marketing, support)
+- [ ] Better Stack
+- [ ] UptimeRobot
+- [ ] Pingdom
+- [ ] Datadog
+- [ ] PagerDuty
+- [ ] Statuspage
+- [ ] Sentry
+- [ ] Bitwarden
+- [ ] 1Password
+- [ ] Dashlane
+- [ ] Keeper Security
+- [ ] Vanta
+- [ ] Drata
+- [ ] Okta
+- [ ] JumpCloud
+- [ ] Chargebee
+- [ ] Recurly
+- [ ] Paddle
+- [ ] Lemon Squeezy
+- [ ] FastSpring
+- [ ] Gumroad
+- [ ] Zuora
+- [ ] Gorgias
+- [ ] Help Scout
+- [ ] Front
+- [ ] Intercom
+- [ ] Crisp
+- [ ] Tidio
+- [ ] Drift
+- [ ] Aircall
+- [ ] Justworks
+- [ ] Rippling
+- [ ] Zenefits
+- [ ] Deel
+- [ ] Remote
+- [ ] Oyster HR
+- [ ] Lattice
+- [ ] Culture Amp
+- [ ] Personio
+- [ ] Greenhouse
+- [ ] Lever
+- [ ] Ashby
+- [ ] Calendly
+- [ ] Cal.com
+- [ ] SavvyCal
+- [ ] Acuity Scheduling
+- [ ] Mailchimp
+- [ ] Brevo
+- [ ] MailerLite
+- [ ] Kit (ConvertKit)
+- [ ] Buttondown
+- [ ] Beehiiv
+- [ ] Substack
+- [ ] Ghost
+- [ ] Webflow
+- [ ] Framer
+- [ ] Carrd
+- [ ] Linktree
+- [ ] Hotjar
+- [ ] Microsoft Clarity
