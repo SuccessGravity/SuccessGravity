@@ -410,28 +410,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Kayako
 - [x] Re:amaze
 - [x] LiveChat
-- [ ] Olark
+- [x] Olark
 - [x] Chatwoot
-- [ ] Streak
-- [ ] SuiteCRM
-- [ ] Sage Intacct
-- [ ] Wave Payroll
-- [ ] Zenefits
-- [ ] Namely
-- [ ] Hibob
-- [ ] Factorial
-- [ ] Culture Amp
-- [ ] Lattice
-- [ ] 15Five
-- [ ] Workday
-- [ ] Humaans
-- [ ] Oyster HR
-- [ ] Papaya Global
-- [ ] Teamtailor
-- [ ] Recruitee
-- [ ] JazzHR
-- [ ] Breezy HR
-- [ ] Ashby
+- [x] Streak
+- [x] SuiteCRM
+- [x] Sage Intacct
+- [x] Wave Payroll
+- [x] Zenefits — skipped: zenefits.com now redirects to TriNet
+- [x] Namely
+- [x] Hibob
+- [x] Factorial
+- [x] Culture Amp
+- [x] Lattice
+- [x] 15Five
+- [x] Workday
+- [x] Humaans
+- [x] Oyster HR
+- [x] Papaya Global
+- [x] Teamtailor
+- [x] Recruitee
+- [x] JazzHR
+- [x] Breezy HR
+- [x] Ashby
 - [ ] SmartRecruiters
 - [ ] Jobvite
 - [ ] Planable
@@ -479,16 +479,16 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Aircall
 - [ ] Justworks
 - [ ] Rippling
-- [ ] Zenefits
+- [x] Zenefits — skipped: zenefits.com now redirects to TriNet
 - [ ] Deel
 - [ ] Remote
-- [ ] Oyster HR
-- [ ] Lattice
-- [ ] Culture Amp
+- [x] Oyster HR
+- [x] Lattice
+- [x] Culture Amp
 - [ ] Personio
 - [ ] Greenhouse
 - [ ] Lever
-- [ ] Ashby
+- [x] Ashby
 - [ ] Calendly
 - [ ] Cal.com
 - [ ] SavvyCal
