@@ -42,7 +42,7 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Deputy
 - [x] 7shifts
 - [x] BambooHR
-- [x] Workable
+- [x] Workable (dup)
 - [x] Indeed Employer
 - [x] LegalZoom
 - [x] Rocket Lawyer
@@ -337,7 +337,7 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Linear (dup)
 
 ## Refill 2026-10-15 (analytics, legal, billing, security, freelance)
-- [x] PostHog
+- [x] PostHog (dup)
 - [x] ConvertKit — dup (listed as Kit)
 - [x] Amplitude
 - [x] Segment
@@ -432,78 +432,128 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] JazzHR
 - [x] Breezy HR
 - [x] Ashby
-- [ ] SmartRecruiters
-- [ ] Jobvite
-- [ ] Planable
-- [ ] Loomly
-- [ ] Sprinklr
-- [ ] Awario
-- [ ] Hootsuite Amplify
-- [ ] Zoho Social
-- [ ] Uptime Robot
-- [ ] Pingdom
-- [ ] Cronitor
-- [ ] LogRocket
-- [ ] FullStory
+- [x] SmartRecruiters
+- [x] Jobvite
+- [x] Planable
+- [x] Loomly (dup)
+- [x] Sprinklr
+- [x] Awario
+- [x] Hootsuite Amplify (skipped: now called Parliament)
+- [x] Zoho Social
+- [x] Uptime Robot (dup)
+- [x] Pingdom
+- [x] Cronitor
+- [x] LogRocket
+- [x] FullStory
 
 ## Refill 2026-10-18 (monitoring, security, billing, HR, marketing, support)
-- [ ] Better Stack
-- [ ] UptimeRobot
-- [ ] Pingdom
-- [ ] Datadog
-- [ ] PagerDuty
-- [ ] Statuspage
-- [ ] Sentry
-- [ ] Bitwarden
-- [ ] 1Password
-- [ ] Dashlane
-- [ ] Keeper Security
-- [ ] Vanta
-- [ ] Drata
-- [ ] Okta
-- [ ] JumpCloud
-- [ ] Chargebee
-- [ ] Recurly
-- [ ] Paddle
-- [ ] Lemon Squeezy
-- [ ] FastSpring
-- [ ] Gumroad
-- [ ] Zuora
-- [ ] Gorgias
-- [ ] Help Scout
-- [ ] Front
-- [ ] Intercom
-- [ ] Crisp
-- [ ] Tidio
-- [ ] Drift
-- [ ] Aircall
-- [ ] Justworks
-- [ ] Rippling
+- [x] Better Stack (dup)
+- [x] UptimeRobot (dup)
+- [x] Pingdom
+- [x] Datadog (dup)
+- [x] PagerDuty (dup)
+- [x] Statuspage (dup)
+- [x] Sentry (dup)
+- [x] Bitwarden (dup)
+- [x] 1Password (dup)
+- [x] Dashlane
+- [x] Keeper Security (dup)
+- [x] Vanta (dup)
+- [x] Drata (dup)
+- [x] Okta
+- [x] JumpCloud
+- [x] Chargebee (dup)
+- [x] Recurly (dup)
+- [x] Paddle (dup)
+- [x] Lemon Squeezy (dup)
+- [x] FastSpring
+- [x] Gumroad (dup)
+- [x] Zuora
+- [x] Gorgias (dup)
+- [x] Help Scout (dup)
+- [x] Front (dup)
+- [x] Intercom (dup)
+- [x] Crisp (dup)
+- [x] Tidio (dup)
+- [x] Drift (skipped: redirects to Salesloft)
+- [x] Aircall (dup)
+- [x] Justworks (dup)
+- [x] Rippling (dup)
 - [x] Zenefits — skipped: zenefits.com now redirects to TriNet
-- [ ] Deel
-- [ ] Remote
+- [x] Deel (dup)
+- [x] Remote (dup)
 - [x] Oyster HR
 - [x] Lattice
 - [x] Culture Amp
-- [ ] Personio
-- [ ] Greenhouse
-- [ ] Lever
+- [x] Personio (dup)
+- [x] Greenhouse (dup)
+- [x] Lever (dup)
 - [x] Ashby
-- [ ] Calendly
-- [ ] Cal.com
-- [ ] SavvyCal
-- [ ] Acuity Scheduling
-- [ ] Mailchimp
-- [ ] Brevo
-- [ ] MailerLite
-- [ ] Kit (ConvertKit)
-- [ ] Buttondown
-- [ ] Beehiiv
-- [ ] Substack
-- [ ] Ghost
-- [ ] Webflow
-- [ ] Framer
-- [ ] Carrd
-- [ ] Linktree
-- [ ] Hotjar
-- [ ] Microsoft Clarity
+- [x] Calendly (dup)
+- [x] Cal.com (dup)
+- [x] SavvyCal (dup)
+- [x] Acuity Scheduling (dup)
+- [x] Mailchimp (dup)
+- [x] Brevo (dup)
+- [x] MailerLite (dup)
+- [x] Kit (ConvertKit) (dup)
+- [x] Buttondown
+- [x] Beehiiv (dup)
+- [x] Substack (dup)
+- [x] Ghost (dup)
+- [x] Webflow (dup)
+- [x] Framer (dup)
+- [x] Carrd (dup)
+- [x] Linktree (dup)
+- [x] Hotjar (dup)
+- [x] Microsoft Clarity (dup)
+
+## Refill 2026-10-20 (hiring, sales data, analytics, billing, spend, HR, field service, scheduling, accounting)
+- [ ] Rewind
+- [ ] Veeqo
+- [ ] Mouseflow
+- [ ] Lucky Orange
+- [ ] Skrapp
+- [ ] Pipedrive Campaigns
+- [ ] Sendlib
+- [x] Plausible (dup)
+- [x] Fathom Analytics
+- [x] Simple Analytics
+- [x] Matomo
+- [x] Crazy Egg
+- [ ] Smartlook
+- [ ] Stripe Billing
+- [ ] Maxio
+- [ ] Orb
+- [ ] Bill.com
+- [ ] Divvy
+- [ ] Airbase
+- [ ] Pleo
+- [ ] Fyle
+- [ ] Zoho Expense
+- [ ] Tipalti
+- [ ] Gusto Embedded
+- [ ] Oyster
+- [ ] Velocity Global
+- [ ] Paylocity
+- [ ] Zenefits
+- [ ] Insperity
+- [ ] Workiz
+- [ ] Square Appointments
+- [ ] SimplyBook.me
+- [ ] Zenbooker
+- [ ] Toast
+- [ ] Clover
+- [ ] Revel Systems
+- [ ] TouchBistro
+- [ ] Shopventory
+- [ ] Katana
+- [ ] Fishbowl
+- [ ] Zoho Inventory
+- [ ] Odoo
+- [ ] Sage
+- [ ] Proposify
+- [ ] Qwilr
+- [ ] Doodle
+- [ ] Zencastr
+- [ ] Captivate
