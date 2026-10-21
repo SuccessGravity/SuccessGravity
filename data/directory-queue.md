@@ -509,31 +509,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Microsoft Clarity (dup)
 
 ## Refill 2026-10-20 (hiring, sales data, analytics, billing, spend, HR, field service, scheduling, accounting)
-- [ ] Rewind
-- [ ] Veeqo
-- [ ] Mouseflow
-- [ ] Lucky Orange
-- [ ] Skrapp
-- [ ] Pipedrive Campaigns
-- [ ] Sendlib
+- [x] Rewind
+- [x] Veeqo
+- [x] Mouseflow
+- [x] Lucky Orange
+- [x] Skrapp
+- [x] Pipedrive Campaigns — dup
+- [x] Sendlib (added as SendLib)
 - [x] Plausible (dup)
 - [x] Fathom Analytics
 - [x] Simple Analytics
 - [x] Matomo
 - [x] Crazy Egg
-- [ ] Smartlook
-- [ ] Stripe Billing
-- [ ] Maxio
-- [ ] Orb
-- [ ] Bill.com
-- [ ] Divvy
-- [ ] Airbase
-- [ ] Pleo
-- [ ] Fyle
-- [ ] Zoho Expense
-- [ ] Tipalti
-- [ ] Gusto Embedded
-- [ ] Oyster
+- [x] Smartlook — skipped, being decommissioned 2027
+- [x] Stripe Billing
+- [x] Maxio
+- [x] Orb
+- [x] Bill.com — dup
+- [x] Divvy — skipped, domain for sale
+- [x] Airbase — skipped, redirects to Paylocity
+- [x] Pleo
+- [x] Fyle (renamed Sage Expense Management)
+- [x] Zoho Expense
+- [x] Tipalti
+- [x] Gusto Embedded — skipped, pricing page unreadable
+- [x] Oyster — dup
 - [ ] Velocity Global
 - [ ] Paylocity
 - [ ] Zenefits
@@ -557,3 +557,65 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Doodle
 - [ ] Zencastr
 - [ ] Captivate
+
+## Refill 2026-10-21 (music, resume, e-signature, landing pages, PPC, finance, listings, SEO)
+- [ ] DistroKid
+- [ ] TuneCore
+- [ ] CD Baby
+- [ ] Amuse
+- [ ] LANDR
+- [ ] Soundtrap
+- [ ] BandLab
+- [ ] Resume.io
+- [ ] Zety
+- [ ] Novoresume
+- [ ] Kickresume
+- [ ] Enhancv
+- [ ] Teal
+- [ ] SignNow
+- [ ] SignWell
+- [ ] Zoho Sign
+- [ ] Dropbox Sign
+- [ ] Jotform Sign
+- [ ] Instapage
+- [ ] Unbounce
+- [ ] Leadpages
+- [ ] Carrd
+- [ ] Landingi
+- [ ] Swipe Pages
+- [ ] Optmyzr
+- [ ] Adalysis
+- [ ] WordStream
+- [ ] Albert.ai
+- [ ] Madgicx
+- [ ] Revealbot
+- [ ] Float
+- [ ] Fathom (financial reporting)
+- [ ] Jirav
+- [ ] Planful
+- [ ] Brex
+- [ ] Ramp
+- [ ] Moxo
+- [ ] Yext
+- [ ] Moz Local
+- [ ] BrightLocal
+- [ ] Birdeye
+- [ ] Whitespark
+- [ ] Semrush Local
+- [ ] Ubersuggest
+- [ ] Mangools
+- [ ] SE Ranking
+- [ ] Serpstat
+- [ ] SpyFu
+- [ ] Rank Math
+- [ ] Yoast SEO
+- [ ] Clearscope
+- [ ] Surfer SEO
+- [ ] MarketMuse
+- [ ] Frase
+- [ ] Hex
+- [ ] Mode Analytics
+- [ ] Metabase
+- [ ] Observable
+- [ ] Deepnote
+- [ ] Julius AI
