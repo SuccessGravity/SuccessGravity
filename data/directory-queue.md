@@ -534,33 +534,33 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Tipalti
 - [x] Gusto Embedded — skipped, pricing page unreadable
 - [x] Oyster — dup
-- [ ] Velocity Global
-- [ ] Paylocity
-- [ ] Zenefits
-- [ ] Insperity
-- [ ] Workiz
-- [ ] Square Appointments
-- [ ] SimplyBook.me
-- [ ] Zenbooker
-- [ ] Toast
-- [ ] Clover
-- [ ] Revel Systems
-- [ ] TouchBistro
-- [ ] Shopventory
-- [ ] Katana
-- [ ] Fishbowl
-- [ ] Zoho Inventory
-- [ ] Odoo
-- [ ] Sage
-- [ ] Proposify
-- [ ] Qwilr
-- [ ] Doodle
-- [ ] Zencastr
-- [ ] Captivate
+- [x] Velocity Global
+- [x] Paylocity
+- [x] Zenefits — skipped, redirects to TriNet
+- [x] Insperity
+- [x] Workiz
+- [x] Square Appointments — dup
+- [x] SimplyBook.me
+- [x] Zenbooker
+- [x] Toast — dup (Toast POS)
+- [x] Clover — dup (Clover POS)
+- [x] Revel Systems — skipped, redirects to Shift4
+- [x] TouchBistro
+- [x] Shopventory
+- [x] Katana
+- [x] Fishbowl
+- [x] Zoho Inventory
+- [x] Odoo
+- [x] Sage
+- [x] Proposify
+- [x] Qwilr
+- [x] Doodle
+- [x] Zencastr
+- [x] Captivate
 
 ## Refill 2026-10-21 (music, resume, e-signature, landing pages, PPC, finance, listings, SEO)
-- [ ] DistroKid
-- [ ] TuneCore
+- [x] DistroKid
+- [x] TuneCore
 - [ ] CD Baby
 - [ ] Amuse
 - [ ] LANDR
