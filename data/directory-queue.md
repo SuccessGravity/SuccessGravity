@@ -561,35 +561,35 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 ## Refill 2026-10-21 (music, resume, e-signature, landing pages, PPC, finance, listings, SEO)
 - [x] DistroKid
 - [x] TuneCore
-- [ ] CD Baby
-- [ ] Amuse
-- [ ] LANDR
-- [ ] Soundtrap
-- [ ] BandLab
-- [ ] Resume.io
-- [ ] Zety
-- [ ] Novoresume
-- [ ] Kickresume
-- [ ] Enhancv
-- [ ] Teal
-- [ ] SignNow
-- [ ] SignWell
-- [ ] Zoho Sign
-- [ ] Dropbox Sign
-- [ ] Jotform Sign
-- [ ] Instapage
-- [ ] Unbounce
-- [ ] Leadpages
-- [ ] Carrd
-- [ ] Landingi
-- [ ] Swipe Pages
-- [ ] Optmyzr
-- [ ] Adalysis
-- [ ] WordStream
-- [ ] Albert.ai
-- [ ] Madgicx
-- [ ] Revealbot
-- [ ] Float
+- [x] CD Baby
+- [x] Amuse
+- [x] LANDR
+- [x] Soundtrap
+- [x] BandLab
+- [x] Resume.io
+- [x] Zety
+- [x] Novoresume
+- [x] Kickresume
+- [x] Enhancv
+- [x] Teal — dup
+- [x] SignNow — dup
+- [x] SignWell
+- [x] Zoho Sign
+- [x] Dropbox Sign — dup
+- [x] Jotform Sign
+- [x] Instapage — dup
+- [x] Unbounce — dup
+- [x] Leadpages — dup
+- [x] Carrd — dup
+- [x] Landingi
+- [x] Swipe Pages
+- [x] Optmyzr — dup
+- [x] Adalysis
+- [x] WordStream
+- [x] Albert.ai
+- [x] Madgicx
+- [x] Revealbot
+- [x] Float — dup
 - [ ] Fathom (financial reporting)
 - [ ] Jirav
 - [ ] Planful
@@ -619,3 +619,65 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Observable
 - [ ] Deepnote
 - [ ] Julius AI
+
+## Refill 2026-10-23
+- [ ] Gorgias
+- [ ] Zendesk
+- [ ] Help Scout
+- [ ] Freshdesk
+- [ ] Front
+- [ ] Intercom
+- [ ] Crisp
+- [ ] Tidio
+- [ ] Drift
+- [ ] LiveChat
+- [ ] Chatwoot
+- [ ] Kustomer
+- [ ] Gladly
+- [ ] Zoho
+- [ ] Desk
+- [ ] HubSpot Service Hub
+- [ ] Wave
+- [ ] FreshBooks
+- [ ] Xero
+- [ ] Zoho Books
+- [ ] Sage Accounting
+- [ ] Kashoo
+- [ ] Expensify
+- [ ] Ramp alternatives: Divvy
+- [ ] Mercury
+- [ ] Relay
+- [ ] Novo
+- [ ] Found
+- [ ] Lili
+- [ ] Tipalti
+- [ ] Gusto alternatives: Rippling
+- [ ] Justworks
+- [ ] Papaya Global
+- [ ] Deel
+- [ ] Remote
+- [ ] Oyster HR
+- [ ] Workday
+- [ ] Lattice
+- [ ] 15Five
+- [ ] Culture Amp
+- [ ] Namely
+- [ ] Trinet
+- [ ] Insperity
+- [ ] Trello
+- [ ] Asana
+- [ ] Wrike
+- [ ] Smartsheet
+- [ ] Teamwork
+- [ ] Basecamp
+- [ ] Notion
+- [ ] Coda
+- [ ] Airtable
+- [ ] Height
+- [ ] Linear
+- [ ] Productboard
+- [ ] Miro
+- [ ] Mural
+- [ ] Whimsical
+- [ ] Figma
+- [ ] Canva alternatives: Visme
