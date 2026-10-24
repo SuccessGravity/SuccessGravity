@@ -590,28 +590,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Madgicx
 - [x] Revealbot
 - [x] Float — dup
-- [ ] Fathom (financial reporting)
-- [ ] Jirav
-- [ ] Planful
-- [ ] Brex
-- [ ] Ramp
-- [ ] Moxo
-- [ ] Yext
-- [ ] Moz Local
-- [ ] BrightLocal
-- [ ] Birdeye
-- [ ] Whitespark
-- [ ] Semrush Local
-- [ ] Ubersuggest
-- [ ] Mangools
-- [ ] SE Ranking
-- [ ] Serpstat
-- [ ] SpyFu
-- [ ] Rank Math
-- [ ] Yoast SEO
-- [ ] Clearscope
-- [ ] Surfer SEO
-- [ ] MarketMuse
+- [x] Fathom (financial reporting)
+- [x] Jirav
+- [x] Planful
+- [x] Brex
+- [x] Ramp
+- [x] Moxo
+- [x] Yext
+- [x] Moz Local
+- [x] BrightLocal
+- [x] Birdeye
+- [x] Whitespark
+- [x] Semrush Local
+- [x] Ubersuggest
+- [x] Mangools
+- [x] SE Ranking — dup
+- [x] Serpstat
+- [x] SpyFu
+- [x] Rank Math
+- [x] Yoast SEO
+- [x] Clearscope — dup
+- [x] Surfer SEO
+- [x] MarketMuse
 - [ ] Frase
 - [ ] Hex
 - [ ] Mode Analytics
