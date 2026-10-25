@@ -612,72 +612,134 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Clearscope — dup
 - [x] Surfer SEO
 - [x] MarketMuse
-- [ ] Frase
-- [ ] Hex
-- [ ] Mode Analytics
-- [ ] Metabase
-- [ ] Observable
-- [ ] Deepnote
-- [ ] Julius AI
+- [x] Frase — dup
+- [x] Hex
+- [x] Mode Analytics
+- [x] Metabase — dup
+- [x] Observable
+- [x] Deepnote
+- [x] Julius AI
 
 ## Refill 2026-10-23
-- [ ] Gorgias
-- [ ] Zendesk
-- [ ] Help Scout
-- [ ] Freshdesk
-- [ ] Front
-- [ ] Intercom
-- [ ] Crisp
-- [ ] Tidio
-- [ ] Drift
-- [ ] LiveChat
-- [ ] Chatwoot
-- [ ] Kustomer
-- [ ] Gladly
-- [ ] Zoho
-- [ ] Desk
-- [ ] HubSpot Service Hub
-- [ ] Wave
-- [ ] FreshBooks
-- [ ] Xero
-- [ ] Zoho Books
-- [ ] Sage Accounting
-- [ ] Kashoo
-- [ ] Expensify
-- [ ] Ramp alternatives: Divvy
-- [ ] Mercury
-- [ ] Relay
-- [ ] Novo
-- [ ] Found
-- [ ] Lili
-- [ ] Tipalti
-- [ ] Gusto alternatives: Rippling
-- [ ] Justworks
-- [ ] Papaya Global
-- [ ] Deel
-- [ ] Remote
-- [ ] Oyster HR
-- [ ] Workday
-- [ ] Lattice
-- [ ] 15Five
-- [ ] Culture Amp
-- [ ] Namely
-- [ ] Trinet
-- [ ] Insperity
-- [ ] Trello
-- [ ] Asana
-- [ ] Wrike
-- [ ] Smartsheet
-- [ ] Teamwork
-- [ ] Basecamp
-- [ ] Notion
-- [ ] Coda
-- [ ] Airtable
-- [ ] Height
-- [ ] Linear
-- [ ] Productboard
-- [ ] Miro
-- [ ] Mural
-- [ ] Whimsical
-- [ ] Figma
-- [ ] Canva alternatives: Visme
+- [x] Gorgias — dup
+- [x] Zendesk — dup
+- [x] Help Scout — dup
+- [x] Freshdesk — dup
+- [x] Front — dup
+- [x] Intercom — dup
+- [x] Crisp — dup
+- [x] Tidio — dup
+- [x] Drift — redirects to Salesloft, not added
+- [x] LiveChat — dup
+- [x] Chatwoot — dup
+- [x] Kustomer
+- [x] Gladly — dup
+- [x] Zoho — too vague, covered by Zoho One/Mail/Books/CRM — dup
+- [x] Desk — Desk.com discontinued, not added
+- [x] HubSpot Service Hub
+- [x] Wave — dup
+- [x] FreshBooks — dup
+- [x] Xero — dup
+- [x] Zoho Books — dup
+- [x] Sage Accounting — dup (Sage)
+- [x] Kashoo
+- [x] Expensify — dup
+- [x] Ramp alternatives: Divvy — dup (BILL)
+- [x] Mercury — dup
+- [x] Relay — dup
+- [x] Novo — dup
+- [x] Found
+- [x] Lili
+- [x] Tipalti — dup
+- [x] Gusto alternatives: Rippling — dup
+- [x] Justworks — dup
+- [x] Papaya Global — dup
+- [x] Deel — dup
+- [x] Remote — dup
+- [x] Oyster HR — dup
+- [x] Workday — dup
+- [x] Lattice — dup
+- [x] 15Five — dup
+- [x] Culture Amp — dup
+- [x] Namely — dup
+- [x] Trinet — dup
+- [x] Insperity — dup
+- [x] Trello — dup
+- [x] Asana — dup
+- [x] Wrike — dup
+- [x] Smartsheet — dup
+- [x] Teamwork — dup
+- [x] Basecamp — dup
+- [x] Notion — dup
+- [x] Coda — dup (Coda/Superhuman Docs)
+- [x] Airtable — dup
+- [x] Height — site unreachable (503), not added
+- [x] Linear — dup
+- [x] Productboard
+- [x] Miro — dup
+- [x] Mural
+- [x] Whimsical — dup
+- [x] Figma — dup
+- [x] Canva alternatives: Visme — dup
+
+## Refill 2026-10-25 (BI, support, docs, product feedback, onboarding, data pipelines, reporting)
+- [ ] Fireflies.ai
+- [ ] Capsule CRM
+- [ ] Moxie
+- [ ] Timely
+- [ ] Shortcut
+- [ ] Plane
+- [ ] Tableau
+- [ ] Power BI
+- [ ] Sigma Computing
+- [ ] Lightdash
+- [ ] Preset
+- [ ] Beacons
+- [ ] Grain
+- [ ] Square Appointments
+- [ ] Jane App
+- [ ] Noticeable
+- [ ] Userback
+- [x] Canny
+- [ ] Frill
+- [ ] Featurebase
+- [ ] Document360
+- [x] GitBook
+- [ ] Missive
+- [ ] Hiver
+- [ ] Gmelius
+- [ ] Streak CRM
+- [ ] Pylon
+- [ ] Plain
+- [ ] Landbot
+- [ ] Botpress
+- [ ] Voiceflow
+- [ ] Memberful
+- [x] Guru
+- [ ] Tettra
+- [ ] Slab
+- [ ] Scribe
+- [ ] Tango
+- [ ] Supademo
+- [ ] Arcade
+- [ ] Snagit
+- [ ] Zight
+- [ ] Bonjoro
+- [ ] Sendspark
+- [ ] Hippo Video
+- [ ] Storylane
+- [ ] Navattic
+- [ ] Pendo
+- [ ] Appcues
+- [ ] Userflow
+- [ ] Userpilot
+- [ ] Hightouch
+- [ ] Census
+- [ ] Fivetran
+- [ ] Airbyte
+- [ ] Supermetrics
+- [ ] Databox
+- [ ] Geckoboard
+- [ ] Klipfolio
+- [ ] AgencyAnalytics
+- [ ] DashThis
