@@ -119,7 +119,7 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] folk
 - [x] Less Annoying CRM
 - [x] Nutshell
-- [x] Capsule CRM
+- [x] Capsule CRM (dup)
 - [x] Insightly
 - [x] Bigin by Zoho
 
@@ -683,27 +683,27 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Canva alternatives: Visme — dup
 
 ## Refill 2026-10-25 (BI, support, docs, product feedback, onboarding, data pipelines, reporting)
-- [ ] Fireflies.ai
-- [ ] Capsule CRM
-- [ ] Moxie
-- [ ] Timely
-- [ ] Shortcut
-- [ ] Plane
-- [ ] Tableau
-- [ ] Power BI
-- [ ] Sigma Computing
-- [ ] Lightdash
-- [ ] Preset
-- [ ] Beacons
-- [ ] Grain
-- [ ] Square Appointments
-- [ ] Jane App
-- [ ] Noticeable
-- [ ] Userback
+- [x] Fireflies.ai (dup)
+- [x] Capsule CRM
+- [x] Moxie
+- [x] Timely
+- [x] Shortcut
+- [x] Plane
+- [x] Tableau
+- [x] Power BI
+- [x] Sigma Computing
+- [x] Lightdash
+- [x] Preset
+- [x] Beacons (dup: Beacons AI)
+- [x] Grain
+- [x] Square Appointments
+- [x] Jane App
+- [x] Noticeable
+- [x] Userback
 - [x] Canny
-- [ ] Frill
-- [ ] Featurebase
-- [ ] Document360
+- [x] Frill
+- [x] Featurebase
+- [x] Document360
 - [x] GitBook
 - [ ] Missive
 - [ ] Hiver
@@ -743,3 +743,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Klipfolio
 - [ ] AgencyAnalytics
 - [ ] DashThis
+
+## Refill 2026-10-26 (time tracking, PM, product analytics, BI, data pipelines, messaging APIs)
+- [ ] Zapier Tables
+- [ ] Everhour
+- [ ] Height
+- [ ] Aha!
+- [ ] Dovetail
+- [ ] Maze
+- [ ] UserTesting
+- [ ] Plausible
+- [ ] Pirsch
+- [ ] Domo
+- [ ] Whatagraph
+- [ ] Funnel.io
+- [ ] Stitch
+- [ ] Hevo Data
+- [ ] Rudderstack
+- [ ] mParticle
+- [ ] Braze
+- [ ] OneSignal
+- [ ] Pushwoosh
+- [ ] Sendbird
+- [ ] Stream
+- [ ] Ably
+- [ ] Pusher
+- [ ] Twilio SendGrid
+- [ ] Resend
