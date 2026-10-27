@@ -705,27 +705,27 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Featurebase
 - [x] Document360
 - [x] GitBook
-- [ ] Missive
-- [ ] Hiver
-- [ ] Gmelius
-- [ ] Streak CRM
-- [ ] Pylon
-- [ ] Plain
-- [ ] Landbot
-- [ ] Botpress
-- [ ] Voiceflow
-- [ ] Memberful
+- [x] Missive
+- [x] Hiver
+- [x] Gmelius
+- [x] Streak CRM — dup (Streak)
+- [x] Pylon
+- [x] Plain
+- [x] Landbot
+- [x] Botpress
+- [x] Voiceflow
+- [x] Memberful
 - [x] Guru
-- [ ] Tettra
-- [ ] Slab
-- [ ] Scribe
-- [ ] Tango
-- [ ] Supademo
-- [ ] Arcade
-- [ ] Snagit
-- [ ] Zight
-- [ ] Bonjoro
-- [ ] Sendspark
+- [x] Tettra
+- [x] Slab
+- [x] Scribe
+- [x] Tango
+- [x] Supademo
+- [x] Arcade
+- [x] Snagit
+- [x] Zight
+- [x] Bonjoro
+- [x] Sendspark
 - [ ] Hippo Video
 - [ ] Storylane
 - [ ] Navattic
