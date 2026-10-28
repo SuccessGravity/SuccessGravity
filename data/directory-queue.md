@@ -726,31 +726,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Zight
 - [x] Bonjoro
 - [x] Sendspark
-- [ ] Hippo Video
-- [ ] Storylane
-- [ ] Navattic
-- [ ] Pendo
-- [ ] Appcues
-- [ ] Userflow
-- [ ] Userpilot
-- [ ] Hightouch
-- [ ] Census
-- [ ] Fivetran
-- [ ] Airbyte
-- [ ] Supermetrics
-- [ ] Databox
-- [ ] Geckoboard
-- [ ] Klipfolio
-- [ ] AgencyAnalytics
-- [ ] DashThis
+- [x] Hippo Video
+- [x] Storylane
+- [x] Navattic
+- [x] Pendo
+- [x] Appcues
+- [x] Userflow
+- [x] Userpilot
+- [x] Hightouch
+- [x] Census — redirects to Fivetran (acquired), not added
+- [x] Fivetran
+- [x] Airbyte
+- [x] Supermetrics
+- [x] Databox
+- [x] Geckoboard
+- [x] Klipfolio
+- [x] AgencyAnalytics
+- [x] DashThis
 
 ## Refill 2026-10-26 (time tracking, PM, product analytics, BI, data pipelines, messaging APIs)
-- [ ] Zapier Tables
-- [ ] Everhour
-- [ ] Height
-- [ ] Aha!
-- [ ] Dovetail
-- [ ] Maze
+- [x] Zapier Tables — dup (Zapier)
+- [x] Everhour
+- [x] Height — pricing/site unreadable (503), not added
+- [x] Aha!
+- [x] Dovetail
+- [x] Maze
 - [ ] UserTesting
 - [ ] Plausible
 - [ ] Pirsch
@@ -770,3 +770,65 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Pusher
 - [ ] Twilio SendGrid
 - [ ] Resend
+
+## Refill 2026-10-28 (accounting, e-signature, scheduling, forms, e-commerce, HR, customer support, security)
+- [ ] FreshBooks
+- [ ] Wave
+- [ ] Zoho Books
+- [ ] Xero
+- [ ] Sage Accounting
+- [ ] Expensify
+- [ ] Ramp
+- [ ] Mercury
+- [ ] Relay
+- [ ] Found
+- [ ] Lili
+- [ ] Novo
+- [ ] Bluevine
+- [ ] PandaDoc
+- [ ] SignNow
+- [ ] Dropbox Sign
+- [ ] SignWell
+- [ ] Docusign
+- [ ] Calendly
+- [ ] Acuity Scheduling
+- [ ] SavvyCal
+- [ ] Cal.com
+- [ ] TidyCal
+- [ ] Typeform
+- [ ] Jotform
+- [ ] Tally
+- [ ] Fillout
+- [ ] Formstack
+- [ ] SurveyMonkey
+- [ ] Zoho Forms
+- [ ] BigCommerce
+- [ ] WooCommerce
+- [ ] Ecwid
+- [ ] Printful
+- [ ] Printify
+- [ ] ShipStation
+- [ ] Shippo
+- [ ] Gorgias
+- [ ] Zendesk
+- [ ] Freshdesk
+- [ ] Help Scout
+- [ ] Crisp
+- [ ] Tidio
+- [ ] Intercom
+- [ ] Rippling
+- [ ] Deel
+- [ ] Remote
+- [ ] Zenefits
+- [ ] TriNet
+- [ ] Greenhouse
+- [ ] Lever
+- [ ] Teamtailor
+- [ ] 1Password Business
+- [ ] Bitwarden
+- [ ] Dashlane
+- [ ] Cloudflare Zero Trust
+- [ ] Tailscale
+- [ ] Vanta
+- [ ] Drata
+- [ ] Secureframe
