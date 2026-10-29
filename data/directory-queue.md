@@ -832,3 +832,63 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Vanta
 - [ ] Drata
 - [ ] Secureframe
+
+## Refill 2026-10-29 (analytics, sales/email, practice & field-service, construction, IT/MSP)
+- [ ] Smartlook
+- [ ] Sisense
+- [ ] Census
+- [ ] Saleshandy
+- [ ] Cognism
+- [ ] Salesflare
+- [ ] Nimble
+- [ ] Agile CRM
+- [ ] HelpDesk
+- [ ] Userlist
+- [ ] Vero
+- [ ] Encharge
+- [ ] Mailtrap
+- [ ] Sender
+- [ ] Campaign Monitor
+- [ ] Sendy
+- [ ] Acumbamail
+- [ ] Avaza
+- [ ] Scoro
+- [ ] Karbon
+- [ ] Canopy
+- [ ] TaxDome
+- [ ] Ignition
+- [ ] MyCase
+- [ ] PracticePanther
+- [ ] Smokeball
+- [ ] Lawmatics
+- [ ] SimplePractice
+- [ ] TherapyNotes
+- [ ] FieldEdge
+- [ ] Service Fusion
+- [ ] Kickserv
+- [ ] Tradify
+- [ ] Joist
+- [ ] Knowify
+- [ ] Buildertrend
+- [ ] Procore
+- [ ] CoConstruct
+- [ ] Houzz Pro
+- [ ] Grade.us
+- [ ] Weave
+- [ ] Thryv
+- [ ] RepairShopr
+- [ ] Syncro
+- [ ] ConnectWise
+- [ ] Atera
+- [ ] NinjaOne
+- [ ] Datto
+- [ ] Level
+- [ ] Action1
+- [ ] Splashtop
+- [ ] AnyDesk
+- [ ] TeamViewer
+- [ ] Zoho Assist
+- [ ] Toggl Plan
+- [ ] Forecast
+- [ ] Tick
+- [ ] Workamajig
