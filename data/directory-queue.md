@@ -751,56 +751,56 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Aha!
 - [x] Dovetail
 - [x] Maze
-- [ ] UserTesting
-- [ ] Plausible
-- [ ] Pirsch
-- [ ] Domo
-- [ ] Whatagraph
-- [ ] Funnel.io
-- [ ] Stitch
+- [x] UserTesting
+- [x] Plausible — dup
+- [x] Pirsch
+- [x] Domo
+- [x] Whatagraph
+- [x] Funnel.io
+- [x] Stitch
 - [ ] Hevo Data
-- [ ] Rudderstack
-- [ ] mParticle
-- [ ] Braze
-- [ ] OneSignal
-- [ ] Pushwoosh
-- [ ] Sendbird
-- [ ] Stream
-- [ ] Ably
-- [ ] Pusher
-- [ ] Twilio SendGrid
-- [ ] Resend
+- [x] Rudderstack
+- [x] mParticle
+- [x] Braze
+- [x] OneSignal
+- [x] Pushwoosh
+- [x] Sendbird
+- [x] Stream
+- [x] Ably
+- [x] Pusher
+- [x] Twilio SendGrid — dup
+- [x] Resend
 
 ## Refill 2026-10-28 (accounting, e-signature, scheduling, forms, e-commerce, HR, customer support, security)
-- [ ] FreshBooks
-- [ ] Wave
-- [ ] Zoho Books
-- [ ] Xero
-- [ ] Sage Accounting
-- [ ] Expensify
-- [ ] Ramp
-- [ ] Mercury
-- [ ] Relay
-- [ ] Found
-- [ ] Lili
-- [ ] Novo
-- [ ] Bluevine
-- [ ] PandaDoc
-- [ ] SignNow
-- [ ] Dropbox Sign
-- [ ] SignWell
-- [ ] Docusign
-- [ ] Calendly
-- [ ] Acuity Scheduling
-- [ ] SavvyCal
-- [ ] Cal.com
-- [ ] TidyCal
-- [ ] Typeform
-- [ ] Jotform
-- [ ] Tally
-- [ ] Fillout
-- [ ] Formstack
-- [ ] SurveyMonkey
+- [x] FreshBooks — dup
+- [x] Wave — dup
+- [x] Zoho Books — dup
+- [x] Xero — dup
+- [x] Sage Accounting — not added, pricing page 403
+- [x] Expensify — dup
+- [x] Ramp — dup
+- [x] Mercury — dup
+- [x] Relay — dup
+- [x] Found — dup
+- [x] Lili — dup
+- [x] Novo — dup
+- [x] Bluevine — dup
+- [x] PandaDoc — dup
+- [x] SignNow — dup
+- [x] Dropbox Sign — dup
+- [x] SignWell — dup
+- [x] Docusign — dup
+- [x] Calendly — dup
+- [x] Acuity Scheduling — dup
+- [x] SavvyCal — dup
+- [x] Cal.com — dup
+- [x] TidyCal
+- [x] Typeform — dup
+- [x] Jotform — dup
+- [x] Tally — dup
+- [x] Fillout — dup
+- [x] Formstack
+- [x] SurveyMonkey — dup
 - [ ] Zoho Forms
 - [ ] BigCommerce
 - [ ] WooCommerce
