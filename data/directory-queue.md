@@ -758,7 +758,7 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Whatagraph
 - [x] Funnel.io
 - [x] Stitch
-- [ ] Hevo Data
+- [x] Hevo Data — dup
 - [x] Rudderstack
 - [x] mParticle
 - [x] Braze
@@ -801,58 +801,58 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Fillout — dup
 - [x] Formstack
 - [x] SurveyMonkey — dup
-- [ ] Zoho Forms
-- [ ] BigCommerce
-- [ ] WooCommerce
-- [ ] Ecwid
-- [ ] Printful
-- [ ] Printify
-- [ ] ShipStation
-- [ ] Shippo
-- [ ] Gorgias
-- [ ] Zendesk
-- [ ] Freshdesk
-- [ ] Help Scout
-- [ ] Crisp
-- [ ] Tidio
-- [ ] Intercom
-- [ ] Rippling
-- [ ] Deel
-- [ ] Remote
-- [ ] Zenefits
-- [ ] TriNet
-- [ ] Greenhouse
-- [ ] Lever
-- [ ] Teamtailor
-- [ ] 1Password Business
-- [ ] Bitwarden
-- [ ] Dashlane
-- [ ] Cloudflare Zero Trust
-- [ ] Tailscale
-- [ ] Vanta
-- [ ] Drata
-- [ ] Secureframe
+- [x] Zoho Forms — dup
+- [x] BigCommerce — dup
+- [x] WooCommerce — dup
+- [x] Ecwid — dup
+- [x] Printful — dup
+- [x] Printify — dup
+- [x] ShipStation — dup
+- [x] Shippo — dup
+- [x] Gorgias — dup
+- [x] Zendesk — dup
+- [x] Freshdesk — dup
+- [x] Help Scout — dup
+- [x] Crisp — dup
+- [x] Tidio — dup
+- [x] Intercom — dup
+- [x] Rippling — dup
+- [x] Deel — dup
+- [x] Remote — dup
+- [x] Zenefits — site unreachable (SSL error), skipped
+- [x] TriNet — dup
+- [x] Greenhouse — dup
+- [x] Lever — dup
+- [x] Teamtailor — dup
+- [x] 1Password Business
+- [x] Bitwarden — dup
+- [x] Dashlane — dup
+- [x] Cloudflare Zero Trust
+- [x] Tailscale — dup
+- [x] Vanta — dup
+- [x] Drata — dup
+- [x] Secureframe — dup
 
 ## Refill 2026-10-29 (analytics, sales/email, practice & field-service, construction, IT/MSP)
-- [ ] Smartlook
-- [ ] Sisense
-- [ ] Census
-- [ ] Saleshandy
-- [ ] Cognism
-- [ ] Salesflare
-- [ ] Nimble
-- [ ] Agile CRM
-- [ ] HelpDesk
-- [ ] Userlist
-- [ ] Vero
-- [ ] Encharge
-- [ ] Mailtrap
-- [ ] Sender
-- [ ] Campaign Monitor
-- [ ] Sendy
-- [ ] Acumbamail
-- [ ] Avaza
-- [ ] Scoro
+- [x] Smartlook
+- [x] Sisense
+- [x] Census — now part of Fivetran, skipped
+- [x] Saleshandy
+- [x] Cognism
+- [x] Salesflare
+- [x] Nimble
+- [x] Agile CRM
+- [x] HelpDesk
+- [x] Userlist
+- [x] Vero
+- [x] Encharge
+- [x] Mailtrap
+- [x] Sender
+- [x] Campaign Monitor
+- [x] Sendy
+- [x] Acumbamail
+- [x] Avaza
+- [x] Scoro
 - [ ] Karbon
 - [ ] Canopy
 - [ ] TaxDome
@@ -892,3 +892,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Forecast
 - [ ] Tick
 - [ ] Workamajig
+
+## Added 2026-10-30
+- [ ] Zola Suite
+- [ ] CASEpeer
+- [ ] Filevine
+- [ ] Cosmolex
+- [ ] Rocketmatter
+- [ ] Neto
+- [ ] Jobber Academy
+- [ ] Fieldwire
+- [ ] Simpro
+- [ ] Mailbird
+- [ ] Sendlane
+- [ ] Ortto
+- [ ] Autopilot
+- [ ] Revue
+- [ ] LearnDash
+- [ ] Baremetrics
+- [ ] ProfitWell
+- [ ] ChartMogul
+- [ ] Stax
+- [ ] Dwolla
+- [ ] Plaid
+- [ ] Oysterlink
+- [ ] Rho
+- [ ] Spendesk
+- [ ] Concur
+- [ ] Emburse
