@@ -853,26 +853,26 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Acumbamail
 - [x] Avaza
 - [x] Scoro
-- [ ] Karbon
-- [ ] Canopy
-- [ ] TaxDome
-- [ ] Ignition
-- [ ] MyCase
-- [ ] PracticePanther
-- [ ] Smokeball
-- [ ] Lawmatics
-- [ ] SimplePractice
-- [ ] TherapyNotes
-- [ ] FieldEdge
-- [ ] Service Fusion
-- [ ] Kickserv
-- [ ] Tradify
-- [ ] Joist
-- [ ] Knowify
-- [ ] Buildertrend
-- [ ] Procore
-- [ ] CoConstruct
-- [ ] Houzz Pro
+- [x] Karbon
+- [x] Canopy
+- [x] TaxDome
+- [x] Ignition
+- [x] MyCase
+- [x] PracticePanther
+- [x] Smokeball
+- [x] Lawmatics
+- [x] SimplePractice
+- [x] TherapyNotes
+- [x] FieldEdge
+- [x] Service Fusion
+- [x] Kickserv
+- [x] Tradify
+- [x] Joist
+- [x] Knowify
+- [x] Buildertrend
+- [x] Procore
+- [x] CoConstruct
+- [x] Houzz Pro
 - [ ] Grade.us
 - [ ] Weave
 - [ ] Thryv
