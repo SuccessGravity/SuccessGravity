@@ -873,28 +873,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Procore
 - [x] CoConstruct
 - [x] Houzz Pro
-- [ ] Grade.us
-- [ ] Weave
-- [ ] Thryv
-- [ ] RepairShopr
-- [ ] Syncro
-- [ ] ConnectWise
-- [ ] Atera
-- [ ] NinjaOne
-- [ ] Datto
-- [ ] Level
-- [ ] Action1
-- [ ] Splashtop
-- [ ] AnyDesk
-- [ ] TeamViewer
-- [ ] Zoho Assist
-- [ ] Toggl Plan
-- [ ] Forecast
-- [ ] Tick
-- [ ] Workamajig
+- [x] Grade.us
+- [x] Weave
+- [x] Thryv
+- [x] RepairShopr
+- [x] Syncro
+- [x] ConnectWise
+- [x] Atera
+- [x] NinjaOne
+- [x] Datto
+- [x] Level
+- [x] Action1
+- [x] Splashtop
+- [x] AnyDesk
+- [x] TeamViewer
+- [x] Zoho Assist
+- [x] Toggl Plan
+- [x] Forecast — pricing URL redirects to Accelo
+- [x] Tick
+- [x] Workamajig
 
 ## Added 2026-10-30
-- [ ] Zola Suite
+- [x] Zola Suite
 - [ ] CASEpeer
 - [ ] Filevine
 - [ ] Cosmolex
