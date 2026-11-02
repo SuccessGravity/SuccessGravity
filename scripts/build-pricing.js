@@ -229,4 +229,28 @@ want.forEach((u) => {
 });
 if (smAdded || sm !== read('sitemap.xml')) fs.writeFileSync(path.join(root, 'sitemap.xml'), sm);
 
+// ---- Static link from each review to its pricing page (seo/keyword-map.json: the pricing page
+// owns "<tool> pricing"; the review supports it). Written as plain HTML so crawlers see it
+// without running site.js. Lives between SG-PRICELINK markers after the sidebar CTA.
+let reviewLinks = 0;
+list.forEach((t) => {
+  if (!t.rv) return;
+  const fp = path.join(root, t.rv, 'index.html');
+  if (!fs.existsSync(fp)) return;
+  const html = fs.readFileSync(fp, 'utf8');
+  const block = '<!-- SG-PRICELINK --><a href="/pricing/' + t.id + '/" class="sg-pricing-link">Full ' + esc(t.n) + ' pricing &amp; alternatives &rarr;</a><!-- /SG-PRICELINK -->';
+  let next;
+  if (/<!-- SG-PRICELINK -->[\s\S]*?<!-- \/SG-PRICELINK -->/.test(html)) {
+    next = html.replace(/<!-- SG-PRICELINK -->[\s\S]*?<!-- \/SG-PRICELINK -->/, () => block);
+  } else {
+    const aside = html.indexOf('<aside');
+    const m = aside < 0 ? null : /<a [^>]*\bsg-cta\b[^>]*>[\s\S]*?<\/a>/.exec(html.slice(aside));
+    if (!m) return;
+    const at = aside + m.index + m[0].length;
+    next = html.slice(0, at) + '\n          ' + block + html.slice(at);
+  }
+  if (next !== html) { fs.writeFileSync(fp, next); reviewLinks++; }
+});
+if (reviewLinks) console.log('pricing: review → pricing links updated on ' + reviewLinks + ' review page(s)');
+
 console.log('pricing: ' + list.length + ' tool pages (' + list.filter(ver).length + ' indexable), ' + written + ' written, ' + removed + ' removed, sitemap +' + smAdded);

@@ -423,6 +423,7 @@ function sgLogoHTML(link, name, icon) {
         b.setAttribute('data-stack-id', t.id);
         cta.parentNode.insertBefore(b, cta.nextSibling);
         paintBtn(b);
+        if (document.querySelector('aside a.sg-pricing-link')) return; // static link from build-pricing.js
         var pl = document.createElement('a');
         pl.href = '/pricing/' + t.id + '/';
         pl.className = 'sg-pricing-link';
