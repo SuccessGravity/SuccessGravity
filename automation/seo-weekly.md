@@ -33,10 +33,14 @@ Take `ready` items from the top. For each one:
 
 Then run the build order from CLAUDE.md and `node scripts/seo-check.js --report seo-report.md`. It must say "No new violations": the auto-merge refuses to update main otherwise. Never add baseline entries to get through. Use its report-only section (long titles and descriptions, pages with few inbound links, pages with no JSON-LD, thin pages) as backlog input.
 
+## 3b. Review gate (required)
+
+Before pushing, follow `automation/review-gate.md`: an independent reviewer subagent checks the diff cold (prices against the vendor pages, honesty, affiliate links, keyword map, quality, breakage). Push only what it passes. Before the final push, `git fetch origin main && git merge origin/main` (the daily routines change main every day), then rerun the build and `seo-check.js`.
+
 ## 4. Record and ship
 
 1. `seo/backlog.md`: move finished items to `done` with the date. Add new items (≤ 5 a week) with id, hypothesis, target URL and success metric.
 2. `seo/ledger.md`: one row per shipped item with its baseline.
 3. `seo/weekly/<YYYY-MM-DD>.md`, one page: this week's numbers (clicks, impressions, avg position, CTR, leads with outbound / affiliate split, index coverage), changes vs 7 and 28 days, what shipped, next week's top 3, and "Needs David".
-4. Commit `SEO: <items> (<date>)` and push `claude/seo-<YYYYMMDD>`. It auto-merges, and the IndexNow job announces the changed URLs.
+4. Commit `SEO: <items> (<date>)` with the review-gate result in the body, and push `claude/seo-<YYYYMMDD>`. It auto-merges, and the IndexNow job announces the changed URLs.
 5. Report to the user in Korean, in 5 lines or fewer: key numbers and their direction, what changed, and decisions needed.
