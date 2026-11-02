@@ -22,7 +22,7 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
   Wait for data: shorten first on pages with impressions ≥ 100 and CTR below the site median (`lowCtr` in latest.md), 15 pages per week. Never rewrite all titles at once.
 - **T-02** Meta descriptions over 165 characters: 416 pages. Same rule as T-01: start where `lowCtr` shows the loss.
 - **C-01** Striking-distance queries (rank 8–20 in `latest.md`): for each owning page add the missing answer, such as a short FAQ, a price-sentence block or a comparison table row. Two pages per week.
-- **X-01** Index coverage: after the first `index-latest.md`, list `/pricing/` pages that are "Crawled – currently not indexed". Decide per page whether to strengthen it (unique price history, alternatives) or set `noindex` in `build-pricing.js`.
+- **X-01** Index coverage of `/pricing/` pages. The tooling is ready (`scripts/index-report.js` → `seo/index-decisions.json`, applied by `build-pricing.js`). The first decisions need 28 days of URL Inspection history, so earliest about 2026-12-01. Until then, act only on "needs internal links" rows.
 
 ## needs-david
 
@@ -30,6 +30,7 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## done
 
+- **X-03** (2026-11-02) Index-decision tooling for pricing pages (#4) and AI-visit tracking in seo-data (#5, seo-data PR #9). Review gate `automation/review-gate.md` (#3).
 - **K-01** (2026-11-02) Keyword map `seo/keyword-map.json` (533 clusters) and its check. Static review → pricing links on 33 reviews (`SG-PRICELINK`, kept by `build-pricing.js`).
 - **M-01** (2026-11-02) Search Console + GA4 connected to seo-data (Check Google access passed). First 7 days in GSC: 5,598 impressions, 1 click.
 - **X-02** (2026-11-02) Gate `scripts/seo-check.js` added. It found and fixed: broken JSON-LD on `/alternatives/clickup/` (unclosed answer) and `/best/best-email-marketing-tools/` (duplicated publisher line), `/best/` missing from the sitemap, and `/submit-tool-preview/` indexable (now noindex).

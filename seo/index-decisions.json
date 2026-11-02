@@ -1,0 +1,4 @@
+{
+ "_about": "Index decisions for generated /pricing/ pages, applied by scripts/build-pricing.js. A tool id under noindex gets <meta name=robots content=noindex,follow> and leaves the sitemap even when its price is verified. Add entries only from scripts/index-report.js suggestions (Google crawled the page and left it out of the index for 28+ days, 0 impressions), at most 20 a week, each with date and reason, and log them in seo/ledger.md. Remove an entry to make the page indexable again.",
+ "noindex": {}
+}
