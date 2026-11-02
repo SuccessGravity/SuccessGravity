@@ -212,6 +212,34 @@ function sgLogoHTML(link, name, icon) {
   }
   function track(name, params) { if (typeof gtag === 'function') gtag('event', name, params || {}); }
 
+  // ---- Conversions: GA4 generate_lead, counted per landing page by BestLoanUSA/seo-data ----
+  // lead_source: outbound_click (a click to a tool's own site; affiliate=1 for referral links),
+  // newsletter, tool_submission.
+  var AFF_RE = /[?&](fpr|ref|via|aff|aff_id|affiliate|referral|referralcode|irclickid|sscid|partner)=|\/(ref|go|aff)\//i;
+  var SHARE_RE = /intent\/(tweet|post)|sharer|sharearticle|share-offsite|\/share\?|buy\.stripe\.com|formspree\.io/i;
+  var HOME = location.hostname.replace(/^www\./, '');
+  function sgLead(src, extra) {
+    var p = { lead_source: src, page_path: location.pathname };
+    for (var k in (extra || {})) p[k] = extra[k];
+    track('generate_lead', p);
+  }
+  window.sgLead = sgLead;
+  function outbound(e) {
+    if (e.type === 'auxclick' && e.button !== 1) return;
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a || !/^https?:$/.test(a.protocol)) return;
+    var host = a.hostname.replace(/^www\./, '');
+    if (!host || host === HOME || host === 'successgravity.com' || SHARE_RE.test(a.href)) return;
+    sgLead('outbound_click', {
+      tool_host: host,
+      affiliate: AFF_RE.test(a.href) ? 1 : 0,
+      link_text: (a.textContent || '').trim().slice(0, 60),
+      transport_type: 'beacon'
+    });
+  }
+  document.addEventListener('click', outbound, true);
+  document.addEventListener('auxclick', outbound, true);
+
   var jsonCache = {};
   function getJSON(url) {
     if (!jsonCache[url]) {
@@ -478,6 +506,7 @@ function sgLogoHTML(link, name, icon) {
             ls('sg_nl_joined', today);
             form.innerHTML = '<p class="sg-nl-msg ok">&#9989; You&#39;re on the list. First email arrives Monday.</p>';
             track('newsletter_signup', { page: path, with_stack: fd.has('stack') ? 1 : 0 });
+            sgLead('newsletter');
           })
           .catch(function () {
             btn.disabled = false; btn.textContent = 'Get the Monday email';

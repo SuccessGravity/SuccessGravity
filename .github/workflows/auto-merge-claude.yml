@@ -11,6 +11,9 @@ permissions:
 jobs:
   merge-to-main:
     runs-on: ubuntu-latest
+    outputs:
+      before: ${{ steps.shas.outputs.before }}
+      after: ${{ steps.shas.outputs.after }}
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -20,6 +23,7 @@ jobs:
 
       - name: Merge pushed branch into main
         run: |
+          echo "BEFORE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
           git config user.name "SG Auto-Merge"
           git config user.email "actions@github.com"
           git fetch origin "${GITHUB_REF_NAME}"
@@ -40,3 +44,29 @@ jobs:
 
       - name: Push main
         run: git push origin main
+
+      - name: Record SHAs for IndexNow
+        id: shas
+        run: |
+          echo "before=$BEFORE_SHA" >> "$GITHUB_OUTPUT"
+          echo "after=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  # Tell Bing & co. which pages changed (scripts/indexnow.js waits for the Pages deploy).
+  # Runs here because pushes made with GITHUB_TOKEN don't trigger indexnow.yml.
+  indexnow:
+    needs: merge-to-main
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    continue-on-error: true
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Announce changed pages
+        run: node scripts/indexnow.js "${{ needs.merge-to-main.outputs.before }}" "${{ needs.merge-to-main.outputs.after }}"

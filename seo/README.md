@@ -1,0 +1,54 @@
+# seo/ — Success Gravity SEO loop (shared memory)
+
+Goal: people searching for a business tool's **price, review, alternatives or comparison** find successgravity.com first, in Google and in AI search, and click through to the vendor. The deciding numbers are **organic clicks** and **outbound clicks to vendors** (GA4 `generate_lead`). Impressions and rank are intermediate signals.
+
+Routines remember nothing between sessions. **All state lives in this folder.** Anything said only in chat or email is lost to the next run.
+
+The same loop runs on the owner's other sites. BestLoanUSA built it first (`bestloanusa-astro/seo/README.md`), then cpacedesk (`cpacedesk/seo/README.md`). marketingkorean runs a weekly growth routine (`marketingkorean/scripts/routine-addenda/growth.md`).
+
+## Files
+
+| File | What | Written by |
+|---|---|---|
+| `backlog.md` | Work queue: id, hypothesis, target URLs, success metric, status | Weekly routine adds and closes items |
+| `ledger.md` | Every shipped SEO change: date, commit, URLs, baseline numbers. Judged 4–6 weeks later | Weekly routine |
+| `weekly/<YYYY-MM-DD>.md` | One-page weekly report | Weekly routine |
+| (private) `BestLoanUSA/seo-data` → `metrics/successgravity/` | Daily Search Console + GA4 snapshot, plus URL Inspection status for every sitemap URL | GitHub Actions in seo-data, 13:23 UTC daily |
+
+## The loop
+
+```
+measure (seo-data, daily) → weekly routine (Wed): read numbers → judge last changes (ledger)
+  → pick 1–3 backlog items → change pages → build scripts → push claude/seo-<date> (auto-merges)
+  → IndexNow tells Bing the changed URLs → measure again
+```
+
+## Automation
+
+| What | Where | When |
+|---|---|---|
+| Measurement | `seo-data/.github/workflows/metrics.yml` → `metrics/successgravity/latest.md`, `index-latest.md`, `latest-extra.md` | Daily 13:23 UTC, once the two Actions variables are set |
+| Conversions | `assets/site.js` → GA4 `generate_lead` with `lead_source`: `outbound_click` (`affiliate=1` for referral links), `newsletter`, `tool_submission` | Every page |
+| IndexNow | `scripts/indexnow.js`, run by `auto-merge-claude.yml` (job `indexnow`) and `indexnow.yml` (direct pushes). Key file: the 32-hex `.txt` at the repo root | After every merge to main |
+| Weekly SEO routine | `automation/seo-weekly.md` | Wednesdays |
+
+## Connecting Google (one time, owner)
+
+The service account `seo-reader@bestloanusa-seo.iam.gserviceaccount.com` reads every site. Nothing changes in Google Cloud:
+
+1. Search Console → successgravity.com property → Settings → Users and permissions → add the service account, **Restricted**.
+2. GA4 (stream `G-P5HCD85W92`) → Admin → Property access management → add it as **Viewer**. Note the numeric **Property ID** (Admin → Property details).
+3. `BestLoanUSA/seo-data` → Settings → Secrets and variables → Actions → **Variables**:
+   - `SUCCESSGRAVITY_GSC_SITE` = the property exactly as Search Console names it (`sc-domain:successgravity.com` for a domain property, or `https://successgravity.com/`)
+   - `SUCCESSGRAVITY_GA4_PROPERTY_ID` = the numeric ID
+4. seo-data → Actions → **Check Google access** → Run workflow.
+
+## Rules every SEO change follows
+
+1. **CLAUDE.md wins.** Affiliate URLs, honesty (no first-person testing claims, no invented numbers or quotes), and price rules (`automation/price-watch.md`) are never loosened for SEO.
+2. **Numbers decide.** An item made without measurement data waits as `blocked (needs data)`. Exception: technical fixes (broken schema, missing canonical, sitemap errors).
+3. **Small batches.** At most 15 pages changed per week, and site-wide template changes are proposals for David, not pushes. Branches auto-merge, so this is the only review gate.
+4. **Never hand-edit generated pages.** `/pricing/<id>/`, the `SG-HUBLIST` blocks, `data/tools.json` and the Price Watch page come from `scripts/build-*.js`. Change the generator or its data, then run the build order in CLAUDE.md.
+5. **One query, one page.** Before adding a page, check that no existing review, compare, best, alternatives or pricing page already targets the query. If one does, improve it instead. At most 2 new pages per week.
+6. **Write for extraction.** Price facts go in one self-contained sentence with the date and source, e.g. "According to Zoom's pricing page (checked 2026-10-20), Pro costs $13.33/user/month billed annually." AI search often quotes a single sentence.
+7. **Log every change** in `ledger.md` with the baseline (clicks, impressions, position, CTR for the URL over the last 28 days, or "no data").
