@@ -18,6 +18,8 @@
 //   orphan        every indexable page is linked from at least one other page
 //   honesty       no first-person testing claims (CLAUDE.md), unless the sentence negates them
 //   affiliate     Higgsfield and Hostinger links carry the affiliate URL (CLAUDE.md)
+//   keyword-map   every owner in seo/keyword-map.json exists and is indexable, and no query
+//                 belongs to two clusters (one query, one page)
 //
 // The baseline holds known violations to fix later. A new one fails; a baseline
 // entry that no longer occurs is reported so it can be removed.
@@ -25,7 +27,9 @@
 // REPORT ONLY (the SEO loop works through these, they never fail):
 //   titles over 65 characters, descriptions outside 70–165 characters,
 //   indexable pages with fewer than 3 inbound links, indexable pages with no
-//   JSON-LD, thin pages (under 300 words of visible text).
+//   JSON-LD, thin pages (under 300 words of visible text), keyword-map support pages
+//   that don't link to their owner, category hubs whose title claims "Best …" while
+//   a /best/ guide owns that intent.
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -140,6 +144,29 @@ for (const p of pages) {
   for (const [re, msg] of AFFILIATE) if (re.test(p.html)) v('affiliate', p.url, msg);
 }
 
+// keyword map (seo/keyword-map.json, built by scripts/build-keyword-map.js)
+const kmPath = path.join(root, 'seo', 'keyword-map.json');
+const km = fs.existsSync(kmPath) ? JSON.parse(fs.readFileSync(kmPath, 'utf8')) : null;
+const kmClusters = km ? [...(km.manual || []), ...(km.auto || [])] : [];
+const supportNoLink = [];
+if (km) {
+  const queryOwner = new Map();
+  for (const c of kmClusters) {
+    const o = byUrl.get(c.owner);
+    if (!o) v('keyword-map', c.owner, 'owner of ' + c.id + ' has no page');
+    else if (o.noindex) v('keyword-map', c.owner, 'owner of ' + c.id + ' is noindex');
+    for (const q of c.queries || []) {
+      if (queryOwner.has(q) && queryOwner.get(q) !== c.id) v('keyword-map', c.owner, '"' + q + '" is in both ' + queryOwner.get(q) + ' and ' + c.id);
+      else queryOwner.set(q, c.id);
+    }
+    for (const s of c.support || []) {
+      const sp = byUrl.get(s);
+      if (sp && !sp.noindex && !sp.html.includes('href="' + c.owner + '"') && !sp.html.includes('href="' + SITE + c.owner + '"')) supportNoLink.push(s + ' → ' + c.owner);
+    }
+  }
+}
+const bestHubs = indexable.filter((p) => p.url.startsWith('/category/') && p.url !== '/category/' && /^Best\b/i.test(p.title || ''));
+
 // ---------- baseline ----------
 const basePath = path.join(root, 'seo', 'check-baseline.json');
 const base = fs.existsSync(basePath) ? JSON.parse(fs.readFileSync(basePath, 'utf8')) : {};
@@ -168,6 +195,9 @@ lines.push('- Descriptions outside 70–165 characters: ' + badDesc.length);
 lines.push('- Indexable pages with under 3 inbound links: ' + fewInbound.length + (fewInbound.length ? ' (e.g. ' + fewInbound.slice(0, 5).map((p) => p.url).join(', ') + ')' : ''));
 lines.push('- Indexable pages with no JSON-LD: ' + noLd.length + (noLd.length ? ' (' + noLd.slice(0, 12).map((p) => p.url).join(', ') + ')' : ''));
 lines.push('- Thin pages (under 300 words): ' + thin.length + (thin.length ? ' (e.g. ' + thin.slice(0, 5).map((x) => x.p.url + ' ' + x.words).join(', ') + ')' : ''));
+lines.push('- Keyword map: ' + kmClusters.length + ' clusters' + (km ? '' : ' (seo/keyword-map.json missing — run node scripts/build-keyword-map.js)'));
+lines.push('- Support pages not linking to their owner: ' + supportNoLink.length + (supportNoLink.length ? ' (e.g. ' + supportNoLink.slice(0, 5).join(', ') + ')' : ''));
+lines.push('- Category hubs titled "Best …" (the /best/ guides own that intent): ' + bestHubs.length + (bestHubs.length ? ' (' + bestHubs.slice(0, 8).map((p) => p.url).join(', ') + ')' : ''));
 const out = lines.join('\n') + '\n';
 if (REPORT) fs.writeFileSync(REPORT, out);
 console.log(out);

@@ -6,12 +6,15 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## ready
 
-- **L-01** Indexable pages with fewer than 3 internal links pointing at them (19, listed by `seo-check.js`, e.g. `/alternatives/clickup/`, `/alternatives/hubspot/`). Link them from the matching review, compare and category pages where a reader would want them.
+- **L-01** Indexable pages with fewer than 3 internal links pointing at them (19, listed by `seo-check.js`, e.g. `/alternatives/clickup/`, `/alternatives/hubspot/`), and 12 keyword-map support pages that don't link to their owner (mostly review ↔ alternatives). Add the links where a reader would want them.
   Success: count under 5 in the check report.
 
 - **S-01** Add JSON-LD to the 13 indexable pages that have none (`node scripts/seo-check.js` lists them): `/review/`, `/compare/`, `/category/`, `/new/`, `/how-we-review/`, `/finder/`, `/free-tools/`, `/alternatives/`, `/best/`, `/directory/`, `/guides/`, `/pricing/`, `/contact/`.
   Use `CollectionPage` + `BreadcrumbList` for hubs, `WebPage`/`AboutPage`/`ContactPage` for the rest. Generated pages (`/pricing/`, `/category/`) change in their build script.
   Success: no "missing structured data" pages in the next technical scan. Source: 2026-11-02 scan.
+
+- **C-02** 18 category hubs are titled "Best … in 2026 — Compared & Reviewed", the same intent the `/best/` guides own (CRM, email, SEO, AI writing, video, social, websites, loans). The keyword map gives "best <topic>" to the `/best/` guide and gives hubs "<topic> tools: prices & free plans", like the 5 newer hubs. First check `latest.json` for which page currently gets impressions for each "best …" query. Where the hub is the one ranking, record it as owner in `keyword-map.json` → `manual` instead of retitling. Otherwise retitle the hub in `data/category-hubs.json` / its page, 4 hubs per week, and link it to the guide.
+  Success: no query in `cannibalization` shared by a hub and a guide; hub CTR not lower 4 weeks later.
 
 ## blocked
 
@@ -27,5 +30,6 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## done
 
+- **K-01** (2026-11-02) Keyword map `seo/keyword-map.json` (533 clusters) and its check. Static review → pricing links on 33 reviews (`SG-PRICELINK`, kept by `build-pricing.js`).
 - **M-01** (2026-11-02) Search Console + GA4 connected to seo-data (Check Google access passed). First 7 days in GSC: 5,598 impressions, 1 click.
 - **X-02** (2026-11-02) Gate `scripts/seo-check.js` added. It found and fixed: broken JSON-LD on `/alternatives/clickup/` (unclosed answer) and `/best/best-email-marketing-tools/` (duplicated publisher line), `/best/` missing from the sitemap, and `/submit-tool-preview/` indexable (now noindex).

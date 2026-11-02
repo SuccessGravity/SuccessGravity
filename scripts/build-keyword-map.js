@@ -1,0 +1,110 @@
+#!/usr/bin/env node
+// Builds seo/keyword-map.json: one owner URL per search intent ("cluster"), same idea as
+// cpacedesk's seo/keyword-map.yaml. Run: node scripts/build-keyword-map.js
+//
+// Auto clusters come from the site's structure (one per page type and tool):
+//   "<tool> pricing"      → /pricing/<id>/      (only when that page is indexable)
+//   "<tool> review"       → /review/<slug>/
+//   "<tool> alternatives" → /alternatives/<slug>/
+//   "<a> vs <b>"          → /compare/<slug>/
+//   "best <topic>"        → /best/<slug>/
+//   "<hub> tools prices"  → /category/<hub>/
+//   "how to …"            → /guides/<slug>/
+// Manual clusters (seo/keyword-map.json → "manual") win over auto ones with the same id
+// and are where the SEO routine writes decisions taken from Search Console data
+// (e.g. which of two pages owns a query both rank for). Edit "manual" only.
+//
+// scripts/seo-check.js enforces the map: every owner exists and is indexable, and no
+// query belongs to two clusters. It also reports support pages that don't link to their owner.
+'use strict';
+const fs = require('fs');
+const path = require('path');
+
+const root = path.join(__dirname, '..');
+const out = path.join(root, 'seo', 'keyword-map.json');
+const read = (p) => fs.readFileSync(path.join(root, p), 'utf8');
+const exists = (url) => fs.existsSync(path.join(root, url, 'index.html'));
+const sitemap = new Set([...read('sitemap.xml').matchAll(/<loc>https:\/\/successgravity\.com([^<]+)<\/loc>/g)].map((m) => m[1]));
+const indexable = (url) => sitemap.has(url);
+const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+const titleOf = (url) => { const m = read(url.slice(1) + 'index.html').match(/<title>([^<]*)<\/title>/); return m ? decode(m[1]).replace(/\s*\|\s*Success Gravity\s*$/, '').trim() : ''; };
+const dirs = (d) => fs.existsSync(path.join(root, d)) ? fs.readdirSync(path.join(root, d)).filter((x) => fs.existsSync(path.join(root, d, x, 'index.html'))) : [];
+const norm = (q) => q.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9.+ ]+/g, ' ').replace(/\s+/g, ' ').trim();
+
+const prev = fs.existsSync(out) ? JSON.parse(fs.readFileSync(out, 'utf8')) : {};
+const manual = prev.manual || [];
+const tools = JSON.parse(read('data/tools.json')).tools;
+const auto = [];
+const add = (id, queries, owner, support) => {
+  if (!indexable(owner)) return;
+  auto.push({ id, queries: [...new Set(queries.map(norm))].filter(Boolean), owner, support: (support || []).filter((u) => u && u !== owner && exists(u)) });
+};
+
+// Review pages: tool name = title text before " Review"
+const reviewName = {};
+for (const slug of dirs('review')) {
+  const url = '/review/' + slug + '/';
+  const name = (titleOf(url).match(/^(.+?)\s+Review\b/i) || [])[1];
+  if (!name) continue;
+  reviewName[slug] = name;
+}
+const toolByReview = {};
+tools.forEach((t) => { if (t.rv) toolByReview[t.rv] = t; });
+
+// Pricing
+for (const t of tools) {
+  const url = '/pricing/' + t.id + '/';
+  add('pricing:' + t.id, [t.n + ' pricing', t.n + ' price', t.n + ' plans', 'how much is ' + t.n, t.n + ' cost'], url, [t.rv]);
+}
+// Reviews
+for (const [slug, name] of Object.entries(reviewName)) {
+  const url = '/review/' + slug + '/';
+  const t = toolByReview[url];
+  add('review:' + slug, [name + ' review', 'is ' + name + ' worth it', name + ' pros and cons'], url,
+    [t ? '/pricing/' + t.id + '/' : null, '/alternatives/' + slug + '/']);
+}
+// Alternatives
+for (const slug of dirs('alternatives')) {
+  const url = '/alternatives/' + slug + '/';
+  const name = (titleOf(url).match(/^Best\s+(.+?)\s+Alternatives\b/i) || [])[1] || slug;
+  add('alternatives:' + slug, [name + ' alternatives', 'best ' + name + ' alternatives', 'sites like ' + name, 'cheaper than ' + name], url,
+    ['/review/' + slug + '/']);
+}
+// Compare
+for (const slug of dirs('compare')) {
+  const url = '/compare/' + slug + '/';
+  const m = titleOf(url).match(/^(?:Google\s+)?(.+?)\s+vs\.?\s+(.+?)(?:\s*\(|\s*:|\s+\d{4}|$)/i);
+  if (!m) continue;
+  add('compare:' + slug, [m[1] + ' vs ' + m[2], m[2] + ' vs ' + m[1]], url, []);
+}
+// Best-of guides
+for (const slug of dirs('best')) {
+  const url = '/best/' + slug + '/';
+  const q = titleOf(url).replace(/^\d+\s+/, '').replace(/\s*(\(|:|—| (in|for) \d{4}| \d{4}).*$/i, '');
+  add('best:' + slug, [q, q.replace(/^best\s+/i, 'top ')], url, []);
+}
+// Category hubs: the directory intent (prices, free plans), not "best"
+const hubs = JSON.parse(read('data/category-hubs.json')).hubs;
+for (const [slug, h] of Object.entries(hubs)) {
+  add('category:' + slug, [h.name + ' tools prices', h.name + ' software prices', h.name + ' tools free plans'], '/category/' + slug + '/', []);
+}
+// How-to guides
+for (const slug of dirs('guides')) {
+  const url = '/guides/' + slug + '/';
+  add('guide:' + slug, [titleOf(url).replace(/\s*(\(|:|—).*$/, '')], url, []);
+}
+
+const manualIds = new Set(manual.map((c) => c.id));
+const map = {
+  _about: 'One owner URL per search intent. "auto" is regenerated by scripts/build-keyword-map.js from the site structure; edit only "manual" (entries there replace an auto cluster with the same id). New pages must not target a query already in this map — improve the owner instead (seo/README.md rule 5).',
+  rules: [
+    '"<tool> pricing / price / cost" → /pricing/<id>/ when indexable; the review links to it and leads with the review intent in its title.',
+    '"best <topic>" → the /best/ guide when one exists; the matching /category/ hub targets "<topic> tools: prices & free plans" and links to the guide.',
+    '"<tool> alternatives" → /alternatives/<slug>/; "<a> vs <b>" → /compare/<slug>/; "how to …" → /guides/<slug>/.',
+    'Two pages showing for one query in Search Console (latest.json cannibalization): decide the owner in "manual", add a link from the other page, and log it in seo/ledger.md.',
+  ],
+  manual,
+  auto: auto.filter((c) => !manualIds.has(c.id)),
+};
+fs.writeFileSync(out, JSON.stringify(map, null, 1) + '\n');
+console.log('keyword-map: ' + map.auto.length + ' auto + ' + manual.length + ' manual clusters');
