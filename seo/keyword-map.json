@@ -5195,6 +5195,138 @@
    "support": []
   },
   {
+   "id": "pricing:casepeer",
+   "queries": [
+    "casepeer pricing",
+    "casepeer price",
+    "casepeer plans",
+    "how much is casepeer",
+    "casepeer cost"
+   ],
+   "owner": "/pricing/casepeer/",
+   "support": []
+  },
+  {
+   "id": "pricing:filevine",
+   "queries": [
+    "filevine pricing",
+    "filevine price",
+    "filevine plans",
+    "how much is filevine",
+    "filevine cost"
+   ],
+   "owner": "/pricing/filevine/",
+   "support": []
+  },
+  {
+   "id": "pricing:cosmolex",
+   "queries": [
+    "cosmolex pricing",
+    "cosmolex price",
+    "cosmolex plans",
+    "how much is cosmolex",
+    "cosmolex cost"
+   ],
+   "owner": "/pricing/cosmolex/",
+   "support": []
+  },
+  {
+   "id": "pricing:fieldwire",
+   "queries": [
+    "fieldwire pricing",
+    "fieldwire price",
+    "fieldwire plans",
+    "how much is fieldwire",
+    "fieldwire cost"
+   ],
+   "owner": "/pricing/fieldwire/",
+   "support": []
+  },
+  {
+   "id": "pricing:mailbird",
+   "queries": [
+    "mailbird pricing",
+    "mailbird price",
+    "mailbird plans",
+    "how much is mailbird",
+    "mailbird cost"
+   ],
+   "owner": "/pricing/mailbird/",
+   "support": []
+  },
+  {
+   "id": "pricing:sendlane",
+   "queries": [
+    "sendlane pricing",
+    "sendlane price",
+    "sendlane plans",
+    "how much is sendlane",
+    "sendlane cost"
+   ],
+   "owner": "/pricing/sendlane/",
+   "support": []
+  },
+  {
+   "id": "pricing:learndash",
+   "queries": [
+    "learndash pricing",
+    "learndash price",
+    "learndash plans",
+    "how much is learndash",
+    "learndash cost"
+   ],
+   "owner": "/pricing/learndash/",
+   "support": []
+  },
+  {
+   "id": "pricing:dwolla",
+   "queries": [
+    "dwolla pricing",
+    "dwolla price",
+    "dwolla plans",
+    "how much is dwolla",
+    "dwolla cost"
+   ],
+   "owner": "/pricing/dwolla/",
+   "support": []
+  },
+  {
+   "id": "pricing:plaid",
+   "queries": [
+    "plaid pricing",
+    "plaid price",
+    "plaid plans",
+    "how much is plaid",
+    "plaid cost"
+   ],
+   "owner": "/pricing/plaid/",
+   "support": []
+  },
+  {
+   "id": "pricing:rho",
+   "queries": [
+    "rho pricing",
+    "rho price",
+    "rho plans",
+    "how much is rho",
+    "rho cost"
+   ],
+   "owner": "/pricing/rho/",
+   "support": []
+  },
+  {
+   "id": "pricing:spendesk",
+   "queries": [
+    "spendesk pricing",
+    "spendesk price",
+    "spendesk plans",
+    "how much is spendesk",
+    "spendesk cost"
+   ],
+   "owner": "/pricing/spendesk/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
