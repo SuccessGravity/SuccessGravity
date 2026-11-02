@@ -31,8 +31,7 @@ Take `ready` items from the top. For each one:
 - Titles: keep the primary query first, under about 60 characters including " | Success Gravity" (drop the suffix if needed). Descriptions: 120–160 characters, with the year and the concrete answer (price, verdict).
 - JSON-LD must validate as JSON. Mark only what is visibly on the page.
 
-Then run the build order from CLAUDE.md and the affiliate grep. Check that every JSON-LD block on the changed pages parses:
-`node -e "for (const f of process.argv.slice(1)) for (const m of require('fs').readFileSync(f,'utf8').matchAll(/<script type=\"application\/ld\+json\">([\s\S]*?)<\/script>/g)) JSON.parse(m[1])" <files>`
+Then run the build order from CLAUDE.md and `node scripts/seo-check.js --report seo-report.md`. It must say "No new violations": the auto-merge refuses to update main otherwise. Never add baseline entries to get through. Use its report-only section (long titles and descriptions, pages with few inbound links, pages with no JSON-LD, thin pages) as backlog input.
 
 ## 4. Record and ship
 
