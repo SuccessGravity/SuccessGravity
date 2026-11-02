@@ -6,13 +6,15 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## ready
 
-- **S-01** Add JSON-LD to the 12 sitemap pages that have none — `/review/`, `/compare/`, `/category/`, `/new/`, `/how-we-review/`, `/finder/`, `/free-tools/`, `/alternatives/`, `/directory/`, `/guides/`, `/pricing/`, `/contact/`.
+- **L-01** Indexable pages with fewer than 3 internal links pointing at them (19, listed by `seo-check.js`, e.g. `/alternatives/clickup/`, `/alternatives/hubspot/`). Link them from the matching review, compare and category pages where a reader would want them.
+  Success: count under 5 in the check report.
+
+- **S-01** Add JSON-LD to the 13 indexable pages that have none (`node scripts/seo-check.js` lists them): `/review/`, `/compare/`, `/category/`, `/new/`, `/how-we-review/`, `/finder/`, `/free-tools/`, `/alternatives/`, `/best/`, `/directory/`, `/guides/`, `/pricing/`, `/contact/`.
   Use `CollectionPage` + `BreadcrumbList` for hubs, `WebPage`/`AboutPage`/`ContactPage` for the rest. Generated pages (`/pricing/`, `/category/`) change in their build script.
   Success: no "missing structured data" pages in the next technical scan. Source: 2026-11-02 scan.
 
 ## blocked
 
-- **M-01** Connect Search Console + GA4 to seo-data (steps in `seo/README.md`). Blocks every data-driven item below. *Needs David: add the service account in GSC and GA4, set the two Actions variables.*
 - **T-01** Titles over 65 characters: 534 of 550 sitemap pages (most end in " | Success Gravity"). Google rewrites or truncates them.
   Wait for data: shorten first on pages with impressions ≥ 100 and CTR below the site median (`lowCtr` in latest.md), 15 pages per week. Never rewrite all titles at once.
 - **T-02** Meta descriptions over 165 characters: 416 pages. Same rule as T-01: start where `lowCtr` shows the loss.
@@ -25,4 +27,5 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## done
 
-(none yet)
+- **M-01** (2026-11-02) Search Console + GA4 connected to seo-data (Check Google access passed). First 7 days in GSC: 5,598 impressions, 1 click.
+- **X-02** (2026-11-02) Gate `scripts/seo-check.js` added. It found and fixed: broken JSON-LD on `/alternatives/clickup/` (unclosed answer) and `/best/best-email-marketing-tools/` (duplicated publisher line), `/best/` missing from the sitemap, and `/submit-tool-preview/` indexable (now noindex).

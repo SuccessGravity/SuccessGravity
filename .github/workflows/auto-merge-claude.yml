@@ -42,6 +42,15 @@ jobs:
             git diff --cached --quiet || git commit -m "Rebuild tools.json and Price Watch"
           fi
 
+      # Gate: main is not updated if the merged site breaks a blocking SEO rule
+      # (scripts/seo-check.js). The branch stays as it is; fix it and push again.
+      - name: SEO check
+        run: |
+          if [ -f scripts/seo-check.js ]; then
+            node scripts/seo-check.js --report "$RUNNER_TEMP/seo-report.md" > /dev/null || { cat "$RUNNER_TEMP/seo-report.md" >> "$GITHUB_STEP_SUMMARY"; cat "$RUNNER_TEMP/seo-report.md"; echo "::error::SEO check failed — main not updated. Run node scripts/seo-check.js locally."; exit 1; }
+            cat "$RUNNER_TEMP/seo-report.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Push main
         run: git push origin main
 

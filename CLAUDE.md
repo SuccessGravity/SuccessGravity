@@ -29,3 +29,5 @@ Any time you check or change a tool's price, follow `automation/price-watch.md`.
 
 ## SEO loop
 `seo/README.md` is the SEO memory: backlog, ledger, weekly reports. Measurement comes from the private repo `BestLoanUSA/seo-data` (`metrics/successgravity/`). The weekly SEO routine follows `automation/seo-weekly.md`. GA4 `generate_lead` events (outbound vendor clicks, newsletter, tool submission) are fired by `assets/site.js` — keep them when editing it. IndexNow runs after every merge (`scripts/indexnow.js`); don't delete the 32-hex `.txt` key file at the root.
+
+Before every push, run `node scripts/seo-check.js` after the build scripts. It must print "No new violations": the auto-merge runs it on the merged site and won't update main if it fails. It blocks broken JSON-LD, missing or duplicate titles, descriptions or canonicals, sitemap mismatches, orphan pages, first-person testing claims and non-affiliate Higgsfield/Hostinger links. Known exceptions live in `seo/check-baseline.json`; adding one is David's call.

@@ -1,0 +1,4 @@
+{
+  "_about": "Known violations of scripts/seo-check.js, to be fixed later. A new violation fails the check; an entry that no longer occurs is reported for removal. Adding an entry is a decision for David, not a way to get a branch through. Empty at setup (2026-11-02): the site passed every blocking rule after fixing two broken JSON-LD blocks, a sitemap gap and an indexable preview page.",
+  "known": []
+}

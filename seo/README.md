@@ -30,6 +30,7 @@ measure (seo-data, daily) → weekly routine (Wed): read numbers → judge last 
 | Measurement | `seo-data/.github/workflows/metrics.yml` → `metrics/successgravity/latest.md`, `index-latest.md`, `latest-extra.md` | Daily 13:23 UTC, once the two Actions variables are set |
 | Conversions | `assets/site.js` → GA4 `generate_lead` with `lead_source`: `outbound_click` (`affiliate=1` for referral links), `newsletter`, `tool_submission` | Every page |
 | IndexNow | `scripts/indexnow.js`, run by `auto-merge-claude.yml` (job `indexnow`) and `indexnow.yml` (direct pushes). Key file: the 32-hex `.txt` at the repo root | After every merge to main |
+| SEO check (gate) | `scripts/seo-check.js` — blocking rules plus a report-only list (rules at the top of the file); known exceptions in `check-baseline.json`. Runs in `auto-merge-claude.yml` before main is updated | Every merge, and locally before every push |
 | Weekly SEO routine | `automation/seo-weekly.md` | Wednesdays |
 
 ## Connecting Google (one time, owner)
