@@ -2747,18 +2747,6 @@
    "support": []
   },
   {
-   "id": "pricing:submagic",
-   "queries": [
-    "submagic pricing",
-    "submagic price",
-    "submagic plans",
-    "how much is submagic",
-    "submagic cost"
-   ],
-   "owner": "/pricing/submagic/",
-   "support": []
-  },
-  {
    "id": "pricing:munch",
    "queries": [
     "munch pricing",
@@ -2768,18 +2756,6 @@
     "munch cost"
    ],
    "owner": "/pricing/munch/",
-   "support": []
-  },
-  {
-   "id": "pricing:castmagic",
-   "queries": [
-    "castmagic pricing",
-    "castmagic price",
-    "castmagic plans",
-    "how much is castmagic",
-    "castmagic cost"
-   ],
-   "owner": "/pricing/castmagic/",
    "support": []
   },
   {
@@ -5487,6 +5463,18 @@
    ]
   },
   {
+   "id": "review:grin",
+   "queries": [
+    "grin review",
+    "is grin worth it",
+    "grin pros and cons"
+   ],
+   "owner": "/review/grin/",
+   "support": [
+    "/pricing/grin/"
+   ]
+  },
+  {
    "id": "review:heepsy",
    "queries": [
     "heepsy review",
@@ -5509,6 +5497,18 @@
    "support": [
     "/pricing/hubspot-ai/",
     "/alternatives/hubspot/"
+   ]
+  },
+  {
+   "id": "review:influencity",
+   "queries": [
+    "influencity review",
+    "is influencity worth it",
+    "influencity pros and cons"
+   ],
+   "owner": "/review/influencity/",
+   "support": [
+    "/pricing/influencity/"
    ]
   },
   {
@@ -5715,7 +5715,8 @@
    ],
    "owner": "/review/wix/",
    "support": [
-    "/pricing/wix/"
+    "/pricing/wix/",
+    "/alternatives/wix/"
    ]
   },
   {
@@ -5859,6 +5860,19 @@
    ]
   },
   {
+   "id": "alternatives:wix",
+   "queries": [
+    "wix alternatives",
+    "best wix alternatives",
+    "sites like wix",
+    "cheaper than wix"
+   ],
+   "owner": "/alternatives/wix/",
+   "support": [
+    "/review/wix/"
+   ]
+  },
+  {
    "id": "compare:activecampaign-vs-mailchimp",
    "queries": [
     "activecampaign vs mailchimp",
@@ -5892,6 +5906,15 @@
     "gemini vs claude"
    ],
    "owner": "/compare/claude-vs-gemini/",
+   "support": []
+  },
+  {
+   "id": "compare:copilot-vs-chatgpt",
+   "queries": [
+    "microsoft copilot vs chatgpt",
+    "chatgpt vs microsoft copilot"
+   ],
+   "owner": "/compare/copilot-vs-chatgpt/",
    "support": []
   },
   {
@@ -5991,6 +6014,15 @@
     "top free business tools"
    ],
    "owner": "/best/best-free-business-tools/",
+   "support": []
+  },
+  {
+   "id": "best:best-project-management-tools",
+   "queries": [
+    "best project management tools",
+    "top project management tools"
+   ],
+   "owner": "/best/best-project-management-tools/",
    "support": []
   },
   {
@@ -6264,6 +6296,14 @@
     "how to create short form videos with capcut"
    ],
    "owner": "/guides/capcut-short-form-video/",
+   "support": []
+  },
+  {
+   "id": "guide:clickup-project-management-setup",
+   "queries": [
+    "how to set up clickup for project management"
+   ],
+   "owner": "/guides/clickup-project-management-setup/",
    "support": []
   },
   {
