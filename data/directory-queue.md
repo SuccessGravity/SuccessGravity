@@ -895,28 +895,88 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 
 ## Added 2026-10-30
 - [x] Zola Suite
-- [ ] CASEpeer
-- [ ] Filevine
-- [ ] Cosmolex
-- [ ] Rocketmatter
-- [ ] Neto
-- [ ] Jobber Academy
-- [ ] Fieldwire
-- [ ] Simpro
-- [ ] Mailbird
-- [ ] Sendlane
-- [ ] Ortto
-- [ ] Autopilot
-- [ ] Revue
-- [ ] LearnDash
-- [ ] Baremetrics
-- [ ] ProfitWell
-- [ ] ChartMogul
-- [ ] Stax
-- [ ] Dwolla
-- [ ] Plaid
-- [ ] Oysterlink
-- [ ] Rho
-- [ ] Spendesk
-- [ ] Concur
-- [ ] Emburse
+- [x] CASEpeer
+- [x] Filevine
+- [x] Cosmolex
+- [x] Rocketmatter
+- [x] Neto — skipped, now Maropost
+- [x] Jobber Academy — skipped, not a product
+- [x] Fieldwire
+- [x] Simpro
+- [x] Mailbird
+- [x] Sendlane
+- [x] Ortto
+- [x] Autopilot — skipped, became Ortto
+- [x] Revue — skipped, discontinued
+- [x] LearnDash
+- [x] Baremetrics
+- [x] ProfitWell — skipped, now part of Paddle
+- [x] ChartMogul
+- [x] Stax
+- [x] Dwolla
+- [x] Plaid
+- [x] Oysterlink — skipped, unverifiable
+- [x] Rho
+- [x] Spendesk
+- [x] Concur
+- [x] Emburse
+
+## Refill 2026-11-02 (legal, field service, finance, HR, marketing)
+- [ ] Clio
+- [ ] MyCase
+- [ ] PracticePanther
+- [ ] Smokeball
+- [ ] Lawmatics
+- [ ] Leap Legal
+- [ ] Housecall Pro Pipeline
+- [ ] FieldEdge
+- [ ] Workiz
+- [ ] Service Fusion
+- [ ] Knowify
+- [ ] Buildertrend
+- [ ] Procore
+- [ ] CoConstruct
+- [ ] JobNimbus
+- [ ] AccuLynx
+- [ ] Podium
+- [ ] Birdeye
+- [ ] NiceJob
+- [ ] Weave
+- [ ] Klaviyo Flows
+- [ ] Omnisend
+- [ ] Drip
+- [ ] Moosend
+- [ ] Benchmark Email
+- [ ] Constant Contact Lead Gen
+- [ ] Expensify
+- [ ] Ramp
+- [ ] Pleo
+- [ ] Payhawk
+- [ ] Teampay
+- [ ] Airbase
+- [ ] Mercury
+- [ ] Relay
+- [ ] Novo
+- [ ] Found
+- [ ] Oxygen
+- [ ] NorthOne
+- [ ] Wise Business
+- [ ] Payoneer
+- [ ] Remote
+- [ ] Deel
+- [ ] Oyster HR
+- [ ] Papaya Global
+- [ ] Rippling
+- [ ] Zenefits
+- [ ] Namely
+- [ ] TriNet
+- [ ] Insperity
+- [ ] Paycor
+- [ ] Paylocity
+- [ ] Paycom
+- [ ] Isolved
+- [ ] Patriot Payroll
+- [ ] OnPay
+- [ ] SurePayroll
+- [ ] Wave Payroll
+- [ ] Check
