@@ -152,6 +152,7 @@
       }).then(function(r) {
         if (r.ok) {
           form.reset();
+          if (window.sgLead) window.sgLead('tool_submission');
           msg.style.display = 'block'; msg.style.color = '#059669';
           msg.textContent = '\u2705 Thanks! Your tool was submitted \u2014 we usually reply within a week.';
           btn.textContent = 'Submitted \u2713';
@@ -216,5 +217,5 @@
       </div>
     </div>
   </footer>
-  <script src="/assets/site.js?v=38"></script></body>
+  <script src="/assets/site.js?v=39"></script></body>
 </html>

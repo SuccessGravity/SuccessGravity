@@ -1,0 +1,33 @@
+name: IndexNow
+
+# Direct pushes to main (not the auto-merge, which runs IndexNow itself):
+# tells Bing & co. which pages changed. scripts/indexnow.js waits for the Pages deploy.
+on:
+  push:
+    branches: [main]
+    paths: ['**/index.html', 'index.html']
+  workflow_dispatch:
+    inputs:
+      before:
+        description: 'Announce pages changed since this commit SHA'
+        required: true
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Announce changed pages
+        run: node scripts/indexnow.js "${{ github.event.before || inputs.before }}" "${{ github.sha }}"

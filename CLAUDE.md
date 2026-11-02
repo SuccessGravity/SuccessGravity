@@ -26,3 +26,6 @@ Any time you check or change a tool's price, follow `automation/price-watch.md`.
 
 ## Pages that must stay in sync with a price change
 `programs` pricing in index.html, `finder/` and `directory/` TOOLS arrays (`p`, `pm`), and any review/best/alternatives/category/compare/guides page that mentions the price (including SVG chart labels and bar lengths).
+
+## SEO loop
+`seo/README.md` is the SEO memory: backlog, ledger, weekly reports. Measurement comes from the private repo `BestLoanUSA/seo-data` (`metrics/successgravity/`). The weekly SEO routine follows `automation/seo-weekly.md`. GA4 `generate_lead` events (outbound vendor clicks, newsletter, tool submission) are fired by `assets/site.js` — keep them when editing it. IndexNow runs after every merge (`scripts/indexnow.js`); don't delete the 32-hex `.txt` key file at the root.
