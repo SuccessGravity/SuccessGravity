@@ -18,8 +18,9 @@ You are the SEO agent for successgravity.com. The session remembers nothing reli
   - `strikingDistance` (rank 8–20) → C- items for the owning page.
   - `lowCtr` → T- items (title and description).
   - `cannibalization` (several of our pages for one query) → pick the owner and point the others to it with an internal link (L- item).
-  - Index status "Crawled/Discovered – currently not indexed" → X- items.
+  - Index status: run `node scripts/index-report.js <seo-data>/metrics/successgravity --out seo/index-report.md`. Its noindex candidates are /pricing/ pages Google crawled and left out for 28+ days with 0 impressions. Add them to `seo/index-decisions.json` → `noindex`, at most 20 a week, each with date and reason, and log them in the ledger. Turn "needs internal links" into L- items and "another canonical" into X- items. Act on any "restore?" row by removing that entry.
   - Leads (`generate_lead` by landing page) → which page types send clicks to vendors. Favour more of what converts.
+  - AI visits (`latest-extra.md` → "AI 검색·AI 비서에서 온 방문", `latest-ga4-extra.json` → `aiVisits`): sessions from ChatGPT, Perplexity, Gemini, Copilot and others, and the pages they land on. Pages AI assistants send people to are the ones to keep accurate and quotable (rule 6 in `seo/README.md`).
   - Unblock `blocked` items once their data exists. Write the numbers in the notes.
 - No data yet (M-01 open)? Skip the number judgements and do only technical `ready` items. Don't invent hypotheses.
 
@@ -41,6 +42,6 @@ Before pushing, follow `automation/review-gate.md`: an independent reviewer suba
 
 1. `seo/backlog.md`: move finished items to `done` with the date. Add new items (≤ 5 a week) with id, hypothesis, target URL and success metric.
 2. `seo/ledger.md`: one row per shipped item with its baseline.
-3. `seo/weekly/<YYYY-MM-DD>.md`, one page: this week's numbers (clicks, impressions, avg position, CTR, leads with outbound / affiliate split, index coverage), changes vs 7 and 28 days, what shipped, next week's top 3, and "Needs David".
+3. `seo/weekly/<YYYY-MM-DD>.md`, one page: this week's numbers (clicks, impressions, avg position, CTR, leads with outbound / affiliate split, AI-assistant visits, index coverage), changes vs 7 and 28 days, what shipped, next week's top 3, and "Needs David".
 4. Commit `SEO: <items> (<date>)` with the review-gate result in the body, and push `claude/seo-<YYYYMMDD>`. It auto-merges, and the IndexNow job announces the changed URLs.
 5. Report to the user in Korean, in 5 lines or fewer: key numbers and their direction, what changed, and decisions needed.

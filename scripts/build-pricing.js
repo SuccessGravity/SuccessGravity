@@ -24,6 +24,10 @@ const year = new Date().getUTCFullYear();
 const perSeat = (t) => /\/\s*(user|seat|agent|member)|per (user|seat|agent|member)/i.test(t.p || '');
 const money = (n) => '$' + (Math.round(n * 100) / 100 % 1 ? (Math.round(n * 100) / 100).toFixed(2) : Math.round(n)).toLocaleString('en-US');
 const ver = (t) => verified[t.id] || (t.vd ? { date: t.vd, source: t.vs } : null);
+// seo/index-decisions.json → noindex: pages Google crawled and kept out of its index for weeks
+// (scripts/index-report.js). They stay useful to visitors but leave the sitemap.
+const indexOff = (() => { try { return JSON.parse(read('seo/index-decisions.json')).noindex || {}; } catch (e) { return {}; } })();
+const indexable = (t) => !!ver(t) && !indexOff[t.id];
 const SKIP = new Set(['government-resources']);
 const list = tools.tools.filter((t) => !SKIP.has(t.c));
 
@@ -159,7 +163,7 @@ function toolPage(t) {
     '      <section class="mt-12" data-sg-newsletter="card"></section>\n' +
     '      <p class="pr-note mt-8">Prices are the cheapest paid plan we list, in USD. We check prices on each vendor&rsquo;s own pricing page and log changes on <a href="/price-watch/">Price Watch</a>. Some links are affiliate links (<a href="/affiliate-disclosure/">disclosure</a>); that never changes a listed price.</p>\n' +
     '  </main>\n\n';
-  return head(title, desc, url, !!v, ld) + body + foot;
+  return head(title, desc, url, indexable(t), ld) + body + foot;
 }
 
 function indexPage() {
@@ -213,7 +217,7 @@ fs.readdirSync(path.join(root, 'pricing')).forEach((d) => {
 // ---- sitemap: verified pricing pages + index ----
 let sm = read('sitemap.xml');
 const today = new Date().toISOString().slice(0, 10);
-const want = ['https://successgravity.com/pricing/'].concat(list.filter(ver).map((t) => 'https://successgravity.com/pricing/' + t.id + '/'));
+const want = ['https://successgravity.com/pricing/'].concat(list.filter(indexable).map((t) => 'https://successgravity.com/pricing/' + t.id + '/'));
 const wantSet = new Set(want);
 // drop pricing URLs that are no longer verified/existing
 sm = sm.replace(/  <url><loc>https:\/\/successgravity\.com\/pricing\/[^<]*<\/loc>[^\n]*\n/g, (m) => {
@@ -253,4 +257,4 @@ list.forEach((t) => {
 });
 if (reviewLinks) console.log('pricing: review → pricing links updated on ' + reviewLinks + ' review page(s)');
 
-console.log('pricing: ' + list.length + ' tool pages (' + list.filter(ver).length + ' indexable), ' + written + ' written, ' + removed + ' removed, sitemap +' + smAdded);
+console.log('pricing: ' + list.length + ' tool pages (' + list.filter(indexable).length + ' indexable), ' + written + ' written, ' + removed + ' removed, sitemap +' + smAdded);
