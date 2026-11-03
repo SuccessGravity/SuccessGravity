@@ -922,61 +922,91 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Emburse
 
 ## Refill 2026-11-02 (legal, field service, finance, HR, marketing)
-- [ ] Clio
-- [ ] MyCase
-- [ ] PracticePanther
-- [ ] Smokeball
-- [ ] Lawmatics
-- [ ] Leap Legal
-- [ ] Housecall Pro Pipeline
-- [ ] FieldEdge
-- [ ] Workiz
-- [ ] Service Fusion
-- [ ] Knowify
-- [ ] Buildertrend
-- [ ] Procore
-- [ ] CoConstruct
-- [ ] JobNimbus
-- [ ] AccuLynx
-- [ ] Podium
-- [ ] Birdeye
-- [ ] NiceJob
-- [ ] Weave
-- [ ] Klaviyo Flows
-- [ ] Omnisend
-- [ ] Drip
-- [ ] Moosend
-- [ ] Benchmark Email
-- [ ] Constant Contact Lead Gen
-- [ ] Expensify
-- [ ] Ramp
-- [ ] Pleo
-- [ ] Payhawk
-- [ ] Teampay
-- [ ] Airbase
-- [ ] Mercury
-- [ ] Relay
-- [ ] Novo
-- [ ] Found
-- [ ] Oxygen
-- [ ] NorthOne
-- [ ] Wise Business
-- [ ] Payoneer
-- [ ] Remote
-- [ ] Deel
-- [ ] Oyster HR
-- [ ] Papaya Global
-- [ ] Rippling
-- [ ] Zenefits
-- [ ] Namely
-- [ ] TriNet
-- [ ] Insperity
-- [ ] Paycor
-- [ ] Paylocity
-- [ ] Paycom
-- [ ] Isolved
-- [ ] Patriot Payroll
-- [ ] OnPay
-- [ ] SurePayroll
-- [ ] Wave Payroll
-- [ ] Check
+- [x] Clio — dup
+- [x] MyCase — dup
+- [x] PracticePanther — dup
+- [x] Smokeball — dup
+- [x] Lawmatics — dup
+- [x] Leap Legal — added as Leap Legal Software
+- [x] Housecall Pro Pipeline — dup (Housecall Pro)
+- [x] FieldEdge — dup
+- [x] Workiz — dup
+- [x] Service Fusion — dup
+- [x] Knowify — dup
+- [x] Buildertrend — dup
+- [x] Procore — dup
+- [x] CoConstruct — dup
+- [x] JobNimbus
+- [x] AccuLynx
+- [x] Podium — dup
+- [x] Birdeye — dup
+- [x] NiceJob — dup
+- [x] Weave — dup
+- [x] Klaviyo Flows — dup (Klaviyo feature)
+- [x] Omnisend — dup
+- [x] Drip — dup
+- [x] Moosend
+- [x] Benchmark Email
+- [x] Constant Contact Lead Gen — dup (Constant Contact feature)
+- [x] Expensify — dup
+- [x] Ramp — dup
+- [x] Pleo — dup
+- [x] Payhawk
+- [x] Teampay — skipped, redirects to Paystand
+- [x] Airbase — skipped, redirects to Paylocity
+- [x] Mercury — dup
+- [x] Relay — dup
+- [x] Novo — dup
+- [x] Found — dup
+- [x] Oxygen — skipped, pricing page 404, unverifiable
+- [x] NorthOne — skipped, redirects to Relay
+- [x] Wise Business — dup
+- [x] Payoneer
+- [x] Remote — dup
+- [x] Deel — dup
+- [x] Oyster HR — dup
+- [x] Papaya Global — dup
+- [x] Rippling — dup
+- [x] Zenefits — skipped, redirects to TriNet
+- [x] Namely — dup
+- [x] TriNet — dup
+- [x] Insperity — dup
+- [x] Paycor — dup
+- [x] Paylocity — dup
+- [x] Paycom
+- [x] Isolved — added
+- [x] Patriot Payroll — dup
+- [x] OnPay — dup
+- [x] SurePayroll
+- [x] Wave Payroll — dup
+- [x] Check — skipped, pricing page 404, unverifiable
+
+
+## Refill 2026-11-03 — Accounting & bookkeeping
+- [ ] FreeAgent
+- [ ] Xero Go
+- [ ] Botkeeper
+- [ ] Digits
+- [ ] Puzzle
+
+## Refill 2026-11-03 — Project & ops
+- [ ] Height
+
+## Refill 2026-11-03 — Sales & CRM
+- [ ] Copper
+- [ ] Bigin
+
+## Refill 2026-11-03 — Support & helpdesk
+- [ ] HappyFox
+- [ ] Groove
+- [ ] Tidio
+
+## Refill 2026-11-03 — Security & IT
+- [ ] Keeper
+- [ ] NordPass
+- [ ] Proton Pass
+
+## Refill 2026-11-03 — Scheduling & forms
+- [ ] Calendly
+- [ ] Typeform
+- [ ] Paperform
