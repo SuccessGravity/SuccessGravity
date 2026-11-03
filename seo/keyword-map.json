@@ -5303,6 +5303,54 @@
    "support": []
   },
   {
+   "id": "pricing:benchmark-email",
+   "queries": [
+    "benchmark email pricing",
+    "benchmark email price",
+    "benchmark email plans",
+    "how much is benchmark email",
+    "benchmark email cost"
+   ],
+   "owner": "/pricing/benchmark-email/",
+   "support": []
+  },
+  {
+   "id": "pricing:payhawk",
+   "queries": [
+    "payhawk pricing",
+    "payhawk price",
+    "payhawk plans",
+    "how much is payhawk",
+    "payhawk cost"
+   ],
+   "owner": "/pricing/payhawk/",
+   "support": []
+  },
+  {
+   "id": "pricing:payoneer",
+   "queries": [
+    "payoneer pricing",
+    "payoneer price",
+    "payoneer plans",
+    "how much is payoneer",
+    "payoneer cost"
+   ],
+   "owner": "/pricing/payoneer/",
+   "support": []
+  },
+  {
+   "id": "pricing:surepayroll",
+   "queries": [
+    "surepayroll pricing",
+    "surepayroll price",
+    "surepayroll plans",
+    "how much is surepayroll",
+    "surepayroll cost"
+   ],
+   "owner": "/pricing/surepayroll/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
