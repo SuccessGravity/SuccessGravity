@@ -5351,6 +5351,90 @@
    "support": []
   },
   {
+   "id": "pricing:freeagent",
+   "queries": [
+    "freeagent pricing",
+    "freeagent price",
+    "freeagent plans",
+    "how much is freeagent",
+    "freeagent cost"
+   ],
+   "owner": "/pricing/freeagent/",
+   "support": []
+  },
+  {
+   "id": "pricing:botkeeper",
+   "queries": [
+    "botkeeper pricing",
+    "botkeeper price",
+    "botkeeper plans",
+    "how much is botkeeper",
+    "botkeeper cost"
+   ],
+   "owner": "/pricing/botkeeper/",
+   "support": []
+  },
+  {
+   "id": "pricing:digits",
+   "queries": [
+    "digits pricing",
+    "digits price",
+    "digits plans",
+    "how much is digits",
+    "digits cost"
+   ],
+   "owner": "/pricing/digits/",
+   "support": []
+  },
+  {
+   "id": "pricing:puzzle",
+   "queries": [
+    "puzzle pricing",
+    "puzzle price",
+    "puzzle plans",
+    "how much is puzzle",
+    "puzzle cost"
+   ],
+   "owner": "/pricing/puzzle/",
+   "support": []
+  },
+  {
+   "id": "pricing:happyfox",
+   "queries": [
+    "happyfox pricing",
+    "happyfox price",
+    "happyfox plans",
+    "how much is happyfox",
+    "happyfox cost"
+   ],
+   "owner": "/pricing/happyfox/",
+   "support": []
+  },
+  {
+   "id": "pricing:proton-pass",
+   "queries": [
+    "proton pass pricing",
+    "proton pass price",
+    "proton pass plans",
+    "how much is proton pass",
+    "proton pass cost"
+   ],
+   "owner": "/pricing/proton-pass/",
+   "support": []
+  },
+  {
+   "id": "pricing:paperform",
+   "queries": [
+    "paperform pricing",
+    "paperform price",
+    "paperform plans",
+    "how much is paperform",
+    "paperform cost"
+   ],
+   "owner": "/pricing/paperform/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",

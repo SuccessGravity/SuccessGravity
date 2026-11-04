@@ -983,30 +983,59 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 
 
 ## Refill 2026-11-03 — Accounting & bookkeeping
-- [ ] FreeAgent
-- [ ] Xero Go
-- [ ] Botkeeper
-- [ ] Digits
-- [ ] Puzzle
+- [x] FreeAgent
+- [x] Xero Go — dup (Xero)
+- [x] Botkeeper
+- [x] Digits
+- [x] Puzzle
 
 ## Refill 2026-11-03 — Project & ops
-- [ ] Height
+- [x] Height — skipped, site returned 503, can't confirm it operates
 
 ## Refill 2026-11-03 — Sales & CRM
-- [ ] Copper
-- [ ] Bigin
+- [x] Copper — dup
+- [x] Bigin — dup
 
 ## Refill 2026-11-03 — Support & helpdesk
-- [ ] HappyFox
-- [ ] Groove
-- [ ] Tidio
+- [x] HappyFox
+- [x] Groove — skipped, groovehq.com now redirects to Helply
+- [x] Tidio — dup
 
 ## Refill 2026-11-03 — Security & IT
-- [ ] Keeper
-- [ ] NordPass
-- [ ] Proton Pass
+- [x] Keeper — dup
+- [x] NordPass
+- [x] Proton Pass
 
 ## Refill 2026-11-03 — Scheduling & forms
-- [ ] Calendly
-- [ ] Typeform
-- [ ] Paperform
+- [x] Calendly — dup
+- [x] Typeform — dup
+- [x] Paperform
+
+## Refill 2026-11-04 — mixed
+- [ ] Wave Accounting
+- [ ] ZipBooks
+- [ ] Leapsome
+- [ ] Trainual
+- [ ] Process Street
+- [ ] Guidde
+- [ ] Whatfix
+- [ ] Chameleon
+- [ ] Dixa
+- [ ] SocialPilot
+- [ ] RoboForm
+- [ ] Twingate
+- [ ] Sprinto
+- [ ] Podio
+- [ ] Method CRM
+- [ ] Zendesk Sell
+- [ ] Vtiger
+- [ ] Apollo
+- [ ] Instantly
+- [ ] Otter
+- [ ] Piktochart
+- [ ] Figjam
+- [ ] Gather
+- [ ] Strikingly
+- [ ] Weebly
+- [ ] Airwallex
+- [ ] Fundbox
