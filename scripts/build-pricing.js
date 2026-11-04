@@ -87,7 +87,7 @@ function toolPage(t) {
     : name + ' pricing: ' + priceLine + '. See the free plan, the cost for your team size, and cheaper alternatives. Price not yet re-checked by us.';
   // Experiment pricing-title-v2 (only verified, priced tools in seo/experiments.json)
   const v2 = titleV2.has(t.id) && v && t.pm > 0 && !t.usage && /\$/.test(t.p || '');
-  const paidPart = (t.p || '').replace(/^\s*free\s*\/\s*/i, '');
+  const paidPart = (t.p || '').replace(/^\s*free\b[^/]*\/\s*/i, '');
   if (v2) {
     const from = money(t.pm) + (seat ? '/user' : '') + '/mo';
     const core = name + ' Pricing ' + year + ': ' + (t.free ? 'Free Plan, Paid From ' + from : 'Plans From ' + from + ', No Free Plan');
@@ -105,7 +105,8 @@ function toolPage(t) {
       : v ? 'No permanent free plan was listed when we checked ' + vendor + ' on ' + fmt(v.date) + '. Some tools offer a free trial instead.'
         : "We haven't confirmed whether " + t.n + ' has a free plan. Check ' + vendor + '.'],
   ];
-  if (v2) faq.unshift(['What is the cheapest ' + t.n + ' plan?', (t.free ? 'The cheapest way to use ' + t.n + ' is its free plan, which has usage or feature limits. ' : t.n + ' has no permanent free plan. ') +
+  const freeNote = ((t.p || '').match(/^\s*free\s*\(([^)]*)\)/i) || [])[1];
+  if (v2) faq.unshift(['What is the cheapest ' + t.n + ' plan?', (t.free ? 'The cheapest way to use ' + t.n + ' is its free plan' + (freeNote ? ' (' + freeNote + ')' : '') + ', which has usage or feature limits. ' : t.n + ' has no permanent free plan. ') +
     'The lowest-priced paid plan listed on ' + vendor + ' is ' + paidPart + ', checked on ' + fmt(v.date) + '. Billing period and region can change the price, so confirm on the official pricing page.']);
   if (seat) faq.push(['Is ' + t.n + ' priced per user?', 'Yes. The listed price is per user (seat) per month, so a team of 5 pays roughly five times the listed price. Use the calculator on this page to estimate your total.']);
   const ld = [

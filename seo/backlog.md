@@ -38,7 +38,7 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## done
 
-- **X-04** (2026-11-04) "3-day free trial" made Cloudways count as having a free plan, so its page said "Yes, free plan". `build-tools-json.js` now ignores "free trial" (only Cloudways was affected). Six prices re-verified on the vendor pages (Miro, Bitwarden, Granola, Printful, 15Five, Photoroom).
+- **X-04** (2026-11-04) "3-day free trial" made Cloudways count as having a free plan, so its page said "Yes, free plan". `build-tools-json.js` now ignores "free trial" (only Cloudways was affected). Seven prices re-verified on the vendor pages (Miro, Bitwarden, Granola, Printful, 15Five, Photoroom, Cloudways). The review gate caught two listing errors, both fixed: Photoroom has a free plan for personal, non-commercial use (help center; the listing said none, logged in Price Watch), and Cloudways' Flexible trial is 5 days, not 3.
 - **M-02** (2026-11-02) First measurement (dry run): 28 days 10,329 impressions, 3 clicks, average position 43.4; 283 pages and 1,717 queries with impressions; pricing pages hold 66% of impressions. GA4: 152 sessions, mostly direct with 0% engagement on `/pricing/` pages (likely bots from China, Russia and Singapore); 8 organic sessions. No AI-assistant visits yet. `generate_lead` went live today.
 - **X-03** (2026-11-02) Index-decision tooling for pricing pages (#4) and AI-visit tracking in seo-data (#5, seo-data PR #9). Review gate `automation/review-gate.md` (#3).
 - **K-01** (2026-11-02) Keyword map `seo/keyword-map.json` (533 clusters) and its check. Static review → pricing links on 33 reviews (`SG-PRICELINK`, kept by `build-pricing.js`).

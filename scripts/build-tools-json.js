@@ -35,7 +35,7 @@ function slugify(s) {
 function parsePrice(p, freeFlag) {
   const s = String(p || '');
   // "3-day free trial" is not a free plan
-  const free = !!freeFlag || /\bfree\b/i.test(s.replace(/\bfree\s+trials?\b/gi, ''));
+  const free = !!freeFlag || /\bfree\b/i.test(s.replace(/\bfree[\s-]+trials?\b/gi, ''));
   if (/%|per transaction|pay[- ]as[- ]you[- ]go|usage[- ]based|ad spend/i.test(s)) return { pm: null, usage: true, free };
   if (/^\s*free\b[^$]*$/i.test(s)) return { pm: 0, usage: false, free: true };
   const re = /\$\s?([0-9]+(?:[.,][0-9]+)?)\s*(?:\/\s*|per\s+)?((?:user|seat|agent|member)\s*\/\s*)?(year|yr|annually|month|mo)?/gi;

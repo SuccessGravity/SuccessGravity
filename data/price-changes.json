@@ -3,6 +3,7 @@
   "tracking_since": "2026-10-03",
   "about": "Price updates verified against each vendor's own pricing page, help center, or announcement. kind=vendor-change means the vendor announced a change on that date; kind=listing-update means our listed price was out of date and we corrected it on that date (the vendor may have changed it earlier). dir is relative to the price we previously listed.",
   "entries": [
+    {"date": "2026-11-04", "tool": "photoroom", "name": "Photoroom", "kind": "listing-update", "dir": "down", "from": "Pro $7.50/month (billed yearly), no free plan", "to": "Free (personal, non-commercial use) / Pro $7.50/month (billed yearly)", "note": "Our listing missed Photoroom's free plan. Photoroom's help center lists a Free plan with lower AI-credit and export limits, for personal, non-commercial use only; business use needs a paid plan such as Pro.", "source": "https://help.photoroom.com/en/articles/6976012-what-are-photoroom-s-plans"},
     {"date": "2026-10-03", "tool": "jasper-ai", "name": "Jasper AI", "kind": "listing-update", "dir": "up", "from": "$39/month", "to": "$59/seat/month (billed yearly) · $69 monthly", "note": "Jasper's cheapest plan is now Pro. There is no free plan, only a 7-day trial.", "source": "https://www.jasper.ai/pricing"},
     {"date": "2026-10-03", "tool": "zoom", "name": "Zoom", "kind": "listing-update", "dir": "up", "from": "$13.33/user/month", "to": "$14.16/user/month (billed yearly) · $16.99 monthly", "note": "Workplace Pro now costs more than the price we listed. The free Basic plan (40-minute meetings) still exists.", "source": "https://zoom.us/pricing"},
     {"date": "2026-10-03", "tool": "quickbooks", "name": "QuickBooks Online", "kind": "listing-update", "dir": "up", "from": "$35/month", "to": "$38/month (Simple Start)", "note": "Simple Start lists at $38/month, and promos sometimes cut that for the first 3 months. The cheaper QuickBooks Lite and QuickBooks Free are separate products.", "source": "https://quickbooks.intuit.com/pricing/"},
@@ -22,12 +23,13 @@
     {"date": "2026-03-25", "tool": "capcut", "name": "CapCut", "kind": "vendor-change", "dir": "up", "from": "", "to": "New Standard plan + upgraded Pro", "note": "CapCut says its previous pricing is no longer offered to new subscribers. A CapCut article lists Pro at $19.99/month or $179.99/year, but prices vary by region and platform, so check the in-app price.", "source": "https://www.capcut.com/help/pricing-change"}
   ],
   "verified": {
+    "cloudways": {"date": "2026-11-04", "source": "https://www.cloudways.com/en/pricing.php"},
     "miro": {"date": "2026-11-04", "source": "https://miro.com/pricing/"},
     "bitwarden": {"date": "2026-11-04", "source": "https://bitwarden.com/pricing/business/"},
     "granola": {"date": "2026-11-04", "source": "https://www.granola.ai/pricing"},
     "printful": {"date": "2026-11-04", "source": "https://www.printful.com/pricing"},
     "15five": {"date": "2026-11-04", "source": "https://www.15five.com/pricing"},
-    "photoroom": {"date": "2026-11-04", "source": "https://www.photoroom.com/pricing"},
+    "photoroom": {"date": "2026-11-04", "source": "https://help.photoroom.com/en/articles/6976012-what-are-photoroom-s-plans"},
     "mailchimp": {"date": "2026-10-03", "source": "https://mailchimp.com/pricing/marketing/"},
     "notion": {"date": "2026-10-03", "source": "https://www.notion.com/pricing"},
     "slack": {"date": "2026-10-03", "source": "https://slack.com/pricing"},
