@@ -1,0 +1,19 @@
+{
+ "_about": "SEO experiments on a small set of pages, judged against the rest after the review date (seo/ledger.md). build-pricing.js applies pricing-title-v2 only to these ids. Roll an experiment out site-wide only after the verdict and David's OK (seo/README.md rule 3).",
+ "pricing-title-v2": {
+  "since": "2026-11-04",
+  "review": "2026-12-02",
+  "what": "Title states the real entry price and whether a free plan exists (no 'Free Plan' claim for tools without one), shorter than 60 characters; description leads with the cheapest option; FAQ adds 'What is the cheapest <tool> plan?'.",
+  "why": "Pricing pages hold ~65% of impressions at ~0.03% CTR; the old title said 'Free Plan' on every page.",
+  "metric": "28-day CTR and average position of these pages vs all other /pricing/ pages, before (2026-10-04..10-31) and after.",
+  "ids": [
+   "cloudways",
+   "miro",
+   "bitwarden",
+   "granola",
+   "printful",
+   "15five",
+   "photoroom"
+  ]
+ }
+}

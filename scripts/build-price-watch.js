@@ -45,7 +45,7 @@ entries.forEach((e) => {
   }
   const d = DIR[e.dir] || DIR.plan;
   const t = byId[e.tool];
-  const kind = e.kind === 'vendor-change' ? 'Announced by ' + esc(e.name) : 'Listing corrected after a pricing-page check';
+  const kind = e.kind === 'vendor-change' ? 'Announced by ' + esc(e.name) : 'Listing corrected after a check of the vendor&#39;s pages';
   log +=
     '          <article class="pw-entry ' + d[2] + '" data-dir="' + esc(e.dir) + '" data-tool="' + esc(e.tool) + '" data-date="' + esc(e.date) + '">\n' +
     '            <div class="pw-badge" aria-hidden="true">' + d[0] + '</div>\n' +
