@@ -87,7 +87,7 @@ function toolPage(t) {
     : name + ' pricing: ' + priceLine + '. See the free plan, the cost for your team size, and cheaper alternatives. Price not yet re-checked by us.';
   // Experiment pricing-title-v2 (only verified, priced tools in seo/experiments.json)
   const v2 = titleV2.has(t.id) && v && t.pm > 0 && !t.usage && /\$/.test(t.p || '');
-  const paidPart = (t.p || '').replace(/^\s*free\b[^/]*\/\s*/i, '');
+  const paidPart = (t.p || '').replace(/^\s*free\b(?:\s*\([^)]*\)|[^/$(])*\/\s*/i, '');
   if (v2) {
     const from = money(t.pm) + (seat ? '/user' : '') + '/mo';
     const core = name + ' Pricing ' + year + ': ' + (t.free ? 'Free Plan, Paid From ' + from : 'Plans From ' + from + ', No Free Plan');
@@ -98,7 +98,7 @@ function toolPage(t) {
 
   const faq = [
     ['How much does ' + t.n + ' cost?', v
-      ? t.n + "'s cheapest paid plan is listed at " + (t.p || '') + ' on ' + vendor + ', checked on ' + fmt(v.date) + '. Prices can vary by region, billing period and promotions, so confirm on the official pricing page before buying.'
+      ? t.n + "'s cheapest paid plan is listed at " + (v2 ? paidPart : (t.p || '')) + ' on ' + vendor + ', checked on ' + fmt(v.date) + '. Prices can vary by region, billing period and promotions, so confirm on the official pricing page before buying.'
       : 'Our listing shows ' + (t.p || 'no public price') + ' for ' + t.n + ", but we haven't re-checked it on the vendor's own pricing page yet. Confirm the current price on " + vendor + '.'],
     ['Does ' + t.n + ' have a free plan?', t.free
       ? 'Yes. ' + t.n + ' lists a free plan or free tier; free plans usually have usage or feature limits, so check whether its limits fit how you work.'
