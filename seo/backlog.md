@@ -6,10 +6,10 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## ready
 
-- **C-01** Striking-distance queries (rank 8–20 in `latest.md`): for each owning page add the missing answer, such as a short FAQ, a price-sentence block or a comparison table row. Two pages per week.
-  First data (2026-11-02, 28 days): "cloudways pricing" 10.2 (140 impr.), "miro cheap" / "miro lowest price" 10.2–10.6 (159), "omnisend pricing" 19.2 (58), "pleo pricing" 9.2, "bitwarden pricing" 9.6. All are `/pricing/` pages, so improvements go through `build-pricing.js` or the tool's data. Unblocked: start with Cloudways and Miro.
+- **C-01** Striking-distance queries (rank 8–20). **2026-11-04: experiment `pricing-title-v2` running** on 7 pricing pages (Cloudways, Miro, Bitwarden, Granola, Printful, 15Five, Photoroom): title states the real entry price and free-plan status, the description leads with the cheapest plan, and the FAQ adds "What is the cheapest … plan?". Verdict on 2026-12-02 vs the other pricing pages (ledger). Not included because the vendor page couldn't be read: Omnisend (price missing from the HTML), Envato Elements (403), Pleo (yearly or monthly unclear). Cloudways kept its Oct 4 check (403 today).
+  If the verdict is positive → **needs David**: roll the title template out to all indexable pricing pages.
 
-- **L-02** `/price-watch/` and `/stack/` are "Discovered – currently not indexed" (first URL Inspection, 2026-11-02): Google knows them but hasn't crawled them. They are the return-visit features. Link them from the indexed pages that get impressions (pricing pages: 6,769 of 10,329 impressions in 28 days), e.g. one contextual line on every `/pricing/<id>/` page via `build-pricing.js`.
+- **L-02** `/price-watch/` and `/stack/` are "Discovered – currently not indexed". 2026-11-04: `/price-watch/` is already linked from 918 pages (footer), so links aren't the gap. Google is slow to crawl the whole site: 148 of 300 inspected URLs are "Discovered – not indexed". `/stack/` is linked from only 29 pages. Adding it to the site-wide footer is a template change → needs David.
   Success: both indexed in a later `index-latest.md`.
 
 - **L-01** Indexable pages with fewer than 3 internal links pointing at them (19, listed by `seo-check.js`, e.g. `/alternatives/clickup/`, `/alternatives/hubspot/`), and 12 keyword-map support pages that don't link to their owner (mostly review ↔ alternatives). Add the links where a reader would want them.
@@ -33,10 +33,12 @@ Prefixes: M measurement · T titles/descriptions · S structured data · C conte
 
 ## needs-david
 
+- **D-02** Search Console → Sitemaps: resubmit `https://successgravity.com/sitemap.xml`. 23 sitemap URLs are "URL is unknown to Google" and 148 are discovered but not crawled (index check 2026-11-03). IndexNow covers Bing only.
 - **D-01** Bing Webmaster Tools: verify successgravity.com (import from Search Console takes 1 minute). IndexNow already pings Bing; Webmaster Tools shows whether pages are indexed, and Bing's index feeds ChatGPT search.
 
 ## done
 
+- **X-04** (2026-11-04) "3-day free trial" made Cloudways count as having a free plan, so its page said "Yes, free plan". `build-tools-json.js` now ignores "free trial" (only Cloudways was affected). Six prices re-verified on the vendor pages (Miro, Bitwarden, Granola, Printful, 15Five, Photoroom).
 - **M-02** (2026-11-02) First measurement (dry run): 28 days 10,329 impressions, 3 clicks, average position 43.4; 283 pages and 1,717 queries with impressions; pricing pages hold 66% of impressions. GA4: 152 sessions, mostly direct with 0% engagement on `/pricing/` pages (likely bots from China, Russia and Singapore); 8 organic sessions. No AI-assistant visits yet. `generate_lead` went live today.
 - **X-03** (2026-11-02) Index-decision tooling for pricing pages (#4) and AI-visit tracking in seo-data (#5, seo-data PR #9). Review gate `automation/review-gate.md` (#3).
 - **K-01** (2026-11-02) Keyword map `seo/keyword-map.json` (533 clusters) and its check. Static review → pricing links on 33 reviews (`SG-PRICELINK`, kept by `build-pricing.js`).

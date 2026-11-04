@@ -21,6 +21,9 @@ const fmt = (iso) => { const d = new Date(iso + 'T12:00:00Z'); return isNaN(d) ?
 const short = (iso) => { const d = new Date(iso + 'T12:00:00Z'); return isNaN(d) ? iso : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }); };
 const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
 const year = new Date().getUTCFullYear();
+// seo/experiments.json → pricing-title-v2: a clearer title / description / FAQ on a few pages,
+// judged against the other pricing pages before any site-wide rollout (seo/ledger.md).
+const titleV2 = (() => { try { return new Set((JSON.parse(read('seo/experiments.json'))['pricing-title-v2'] || {}).ids || []); } catch (e) { return new Set(); } })();
 const perSeat = (t) => /\/\s*(user|seat|agent|member)|per (user|seat|agent|member)/i.test(t.p || '');
 const money = (n) => '$' + (Math.round(n * 100) / 100 % 1 ? (Math.round(n * 100) / 100).toFixed(2) : Math.round(n)).toLocaleString('en-US');
 const ver = (t) => verified[t.id] || (t.vd ? { date: t.vd, source: t.vs } : null);
@@ -78,10 +81,20 @@ function toolPage(t) {
   const freeTxt = t.free ? 'Yes' : (v ? 'No' : 'Not confirmed');
   const priceLine = esc(t.p || 'See official site');
 
-  const title = name + ' Pricing ' + year + ': Plans, Free Plan &amp; Cheaper Alternatives | Success Gravity';
-  const desc = v
+  let title = name + ' Pricing ' + year + ': Plans, Free Plan &amp; Cheaper Alternatives | Success Gravity';
+  let desc = v
     ? name + ' starts at ' + priceLine + ' (checked on ' + esc(vendor) + ' on ' + esc(short(v.date)) + '). See the free plan, the cost for your team size, price changes and cheaper alternatives.'
     : name + ' pricing: ' + priceLine + '. See the free plan, the cost for your team size, and cheaper alternatives. Price not yet re-checked by us.';
+  // Experiment pricing-title-v2 (only verified, priced tools in seo/experiments.json)
+  const v2 = titleV2.has(t.id) && v && t.pm > 0 && !t.usage && /\$/.test(t.p || '');
+  const paidPart = (t.p || '').replace(/^\s*free\s*\/\s*/i, '');
+  if (v2) {
+    const from = money(t.pm) + (seat ? '/user' : '') + '/mo';
+    const core = name + ' Pricing ' + year + ': ' + (t.free ? 'Free Plan, Paid From ' + from : 'Plans From ' + from + ', No Free Plan');
+    title = core.length + 18 <= 62 ? core + ' | Success Gravity' : core;
+    desc = name + ' pricing (' + esc(vendor) + ', checked ' + esc(short(v.date)) + '): ' + (t.free ? 'free plan; cheapest paid plan ' : 'no free plan; cheapest plan ') + esc(paidPart) + '.';
+    for (const tail of [' Team cost and cheaper alternatives.', ' Cheaper alternatives inside.']) if ((desc + tail).length <= 160) { desc += tail; break; }
+  }
 
   const faq = [
     ['How much does ' + t.n + ' cost?', v
@@ -92,6 +105,8 @@ function toolPage(t) {
       : v ? 'No permanent free plan was listed when we checked ' + vendor + ' on ' + fmt(v.date) + '. Some tools offer a free trial instead.'
         : "We haven't confirmed whether " + t.n + ' has a free plan. Check ' + vendor + '.'],
   ];
+  if (v2) faq.unshift(['What is the cheapest ' + t.n + ' plan?', (t.free ? 'The cheapest way to use ' + t.n + ' is its free plan, which has usage or feature limits. ' : t.n + ' has no permanent free plan. ') +
+    'The lowest-priced paid plan listed on ' + vendor + ' is ' + paidPart + ', checked on ' + fmt(v.date) + '. Billing period and region can change the price, so confirm on the official pricing page.']);
   if (seat) faq.push(['Is ' + t.n + ' priced per user?', 'Yes. The listed price is per user (seat) per month, so a team of 5 pays roughly five times the listed price. Use the calculator on this page to estimate your total.']);
   const ld = [
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
