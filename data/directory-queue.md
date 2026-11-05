@@ -1012,26 +1012,26 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Paperform
 
 ## Refill 2026-11-04 — mixed
-- [ ] Wave Accounting
-- [ ] ZipBooks
-- [ ] Leapsome
-- [ ] Trainual
-- [ ] Process Street
-- [ ] Guidde
-- [ ] Whatfix
-- [ ] Chameleon
-- [ ] Dixa
-- [ ] SocialPilot
-- [ ] RoboForm
-- [ ] Twingate
-- [ ] Sprinto
-- [ ] Podio
-- [ ] Method CRM
-- [ ] Zendesk Sell
-- [ ] Vtiger
-- [ ] Apollo
-- [ ] Instantly
-- [ ] Otter
+- [x] Wave Accounting — dup
+- [x] ZipBooks
+- [x] Leapsome
+- [x] Trainual
+- [x] Process Street
+- [x] Guidde
+- [x] Whatfix
+- [x] Chameleon
+- [x] Dixa
+- [x] SocialPilot
+- [x] RoboForm
+- [x] Twingate
+- [x] Sprinto
+- [x] Podio
+- [x] Method CRM
+- [x] Zendesk Sell
+- [x] Vtiger
+- [x] Apollo — dup
+- [x] Instantly — dup
+- [x] Otter — dup
 - [ ] Piktochart
 - [ ] Figjam
 - [ ] Gather

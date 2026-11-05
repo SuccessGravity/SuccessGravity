@@ -5435,6 +5435,90 @@
    "support": []
   },
   {
+   "id": "pricing:trainual",
+   "queries": [
+    "trainual pricing",
+    "trainual price",
+    "trainual plans",
+    "how much is trainual",
+    "trainual cost"
+   ],
+   "owner": "/pricing/trainual/",
+   "support": []
+  },
+  {
+   "id": "pricing:process-street",
+   "queries": [
+    "process street pricing",
+    "process street price",
+    "process street plans",
+    "how much is process street",
+    "process street cost"
+   ],
+   "owner": "/pricing/process-street/",
+   "support": []
+  },
+  {
+   "id": "pricing:guidde",
+   "queries": [
+    "guidde pricing",
+    "guidde price",
+    "guidde plans",
+    "how much is guidde",
+    "guidde cost"
+   ],
+   "owner": "/pricing/guidde/",
+   "support": []
+  },
+  {
+   "id": "pricing:whatfix",
+   "queries": [
+    "whatfix pricing",
+    "whatfix price",
+    "whatfix plans",
+    "how much is whatfix",
+    "whatfix cost"
+   ],
+   "owner": "/pricing/whatfix/",
+   "support": []
+  },
+  {
+   "id": "pricing:twingate",
+   "queries": [
+    "twingate pricing",
+    "twingate price",
+    "twingate plans",
+    "how much is twingate",
+    "twingate cost"
+   ],
+   "owner": "/pricing/twingate/",
+   "support": []
+  },
+  {
+   "id": "pricing:method-crm",
+   "queries": [
+    "method crm pricing",
+    "method crm price",
+    "method crm plans",
+    "how much is method crm",
+    "method crm cost"
+   ],
+   "owner": "/pricing/method-crm/",
+   "support": []
+  },
+  {
+   "id": "pricing:vtiger",
+   "queries": [
+    "vtiger pricing",
+    "vtiger price",
+    "vtiger plans",
+    "how much is vtiger",
+    "vtiger cost"
+   ],
+   "owner": "/pricing/vtiger/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
