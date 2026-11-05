@@ -5593,6 +5593,18 @@
    ]
   },
   {
+   "id": "review:capcut",
+   "queries": [
+    "capcut review",
+    "is capcut worth it",
+    "capcut pros and cons"
+   ],
+   "owner": "/review/capcut/",
+   "support": [
+    "/pricing/capcut/"
+   ]
+  },
+  {
    "id": "review:chatgpt",
    "queries": [
     "chatgpt review",
@@ -6668,6 +6680,14 @@
     "how to automate your business with zapier"
    ],
    "owner": "/guides/zapier-automation-setup/",
+   "support": []
+  },
+  {
+   "id": "guide:zapier-automation-workflows",
+   "queries": [
+    "how to set up zapier automation workflows"
+   ],
+   "owner": "/guides/zapier-automation-workflows/",
    "support": []
   }
  ]
