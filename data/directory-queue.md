@@ -1032,10 +1032,50 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Apollo — dup
 - [x] Instantly — dup
 - [x] Otter — dup
-- [ ] Piktochart
-- [ ] Figjam
-- [ ] Gather
-- [ ] Strikingly
-- [ ] Weebly
-- [ ] Airwallex
-- [ ] Fundbox
+- [x] Piktochart
+- [x] Figjam — dup (Figma)
+- [x] Gather
+- [x] Strikingly
+- [x] Weebly
+- [x] Airwallex
+- [x] Fundbox
+
+## Added 2026-11-06 (queue ran short)
+- [x] Cognito Forms
+- [x] Clockwise
+- [x] TickTick
+- [x] Heroku
+- [x] Zonka Feedback
+- [x] TalentLMS
+- [x] iSpring
+- [x] UpLead
+- [x] Wiza
+- [x] Balsamiq
+- [x] Heyflow
+- [x] PhantomBuster
+- [x] Waalaxy
+- [x] Kintone
+
+## Refill 2026-11-06 — mixed
+- [ ] Docebo
+- [ ] Lessonly
+- [ ] Zenler
+- [ ] Roadmunk
+- [ ] Chorus
+- [ ] Clearbit
+- [ ] Kaspr
+- [ ] Expandi
+- [ ] Dux-Soup
+- [ ] Things
+- [ ] Drift
+- [ ] Tawk.to
+- [ ] NorthOne
+- [ ] Qonto
+- [ ] Revolut Business
+- [ ] Plastiq
+- [ ] Slite
+- [ ] Nuclino
+- [ ] Bloomfire
+- [ ] Helpjuice
+- [ ] HelpDocs
+- [ ] ProProfs
