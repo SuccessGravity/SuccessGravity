@@ -5531,6 +5531,114 @@
    "support": []
   },
   {
+   "id": "pricing:piktochart",
+   "queries": [
+    "piktochart pricing",
+    "piktochart price",
+    "piktochart plans",
+    "how much is piktochart",
+    "piktochart cost"
+   ],
+   "owner": "/pricing/piktochart/",
+   "support": []
+  },
+  {
+   "id": "pricing:gather",
+   "queries": [
+    "gather pricing",
+    "gather price",
+    "gather plans",
+    "how much is gather",
+    "gather cost"
+   ],
+   "owner": "/pricing/gather/",
+   "support": []
+  },
+  {
+   "id": "pricing:strikingly",
+   "queries": [
+    "strikingly pricing",
+    "strikingly price",
+    "strikingly plans",
+    "how much is strikingly",
+    "strikingly cost"
+   ],
+   "owner": "/pricing/strikingly/",
+   "support": []
+  },
+  {
+   "id": "pricing:weebly",
+   "queries": [
+    "weebly pricing",
+    "weebly price",
+    "weebly plans",
+    "how much is weebly",
+    "weebly cost"
+   ],
+   "owner": "/pricing/weebly/",
+   "support": []
+  },
+  {
+   "id": "pricing:airwallex",
+   "queries": [
+    "airwallex pricing",
+    "airwallex price",
+    "airwallex plans",
+    "how much is airwallex",
+    "airwallex cost"
+   ],
+   "owner": "/pricing/airwallex/",
+   "support": []
+  },
+  {
+   "id": "pricing:heroku",
+   "queries": [
+    "heroku pricing",
+    "heroku price",
+    "heroku plans",
+    "how much is heroku",
+    "heroku cost"
+   ],
+   "owner": "/pricing/heroku/",
+   "support": []
+  },
+  {
+   "id": "pricing:uplead",
+   "queries": [
+    "uplead pricing",
+    "uplead price",
+    "uplead plans",
+    "how much is uplead",
+    "uplead cost"
+   ],
+   "owner": "/pricing/uplead/",
+   "support": []
+  },
+  {
+   "id": "pricing:wiza",
+   "queries": [
+    "wiza pricing",
+    "wiza price",
+    "wiza plans",
+    "how much is wiza",
+    "wiza cost"
+   ],
+   "owner": "/pricing/wiza/",
+   "support": []
+  },
+  {
+   "id": "pricing:kintone",
+   "queries": [
+    "kintone pricing",
+    "kintone price",
+    "kintone plans",
+    "how much is kintone",
+    "kintone cost"
+   ],
+   "owner": "/pricing/kintone/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
