@@ -5759,6 +5759,54 @@
    "support": []
   },
   {
+   "id": "pricing:influ",
+   "queries": [
+    "influ pricing",
+    "influ price",
+    "influ plans",
+    "how much is influ",
+    "influ cost"
+   ],
+   "owner": "/pricing/influ/",
+   "support": []
+  },
+  {
+   "id": "pricing:burncaps",
+   "queries": [
+    "burncaps pricing",
+    "burncaps price",
+    "burncaps plans",
+    "how much is burncaps",
+    "burncaps cost"
+   ],
+   "owner": "/pricing/burncaps/",
+   "support": []
+  },
+  {
+   "id": "pricing:watermarkpilot",
+   "queries": [
+    "watermarkpilot pricing",
+    "watermarkpilot price",
+    "watermarkpilot plans",
+    "how much is watermarkpilot",
+    "watermarkpilot cost"
+   ],
+   "owner": "/pricing/watermarkpilot/",
+   "support": []
+  },
+  {
+   "id": "pricing:gifloom",
+   "queries": [
+    "gifloom pricing",
+    "gifloom price",
+    "gifloom plans",
+    "how much is gifloom",
+    "gifloom cost"
+   ],
+   "owner": "/pricing/gifloom/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
