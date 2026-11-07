@@ -5639,6 +5639,126 @@
    "support": []
   },
   {
+   "id": "pricing:zenler",
+   "queries": [
+    "zenler pricing",
+    "zenler price",
+    "zenler plans",
+    "how much is zenler",
+    "zenler cost"
+   ],
+   "owner": "/pricing/zenler/",
+   "support": []
+  },
+  {
+   "id": "pricing:roadmunk-tempo-roadmaps",
+   "queries": [
+    "roadmunk tempo roadmaps pricing",
+    "roadmunk tempo roadmaps price",
+    "roadmunk tempo roadmaps plans",
+    "how much is roadmunk tempo roadmaps",
+    "roadmunk tempo roadmaps cost"
+   ],
+   "owner": "/pricing/roadmunk-tempo-roadmaps/",
+   "support": []
+  },
+  {
+   "id": "pricing:kaspr",
+   "queries": [
+    "kaspr pricing",
+    "kaspr price",
+    "kaspr plans",
+    "how much is kaspr",
+    "kaspr cost"
+   ],
+   "owner": "/pricing/kaspr/",
+   "support": []
+  },
+  {
+   "id": "pricing:expandi",
+   "queries": [
+    "expandi pricing",
+    "expandi price",
+    "expandi plans",
+    "how much is expandi",
+    "expandi cost"
+   ],
+   "owner": "/pricing/expandi/",
+   "support": []
+  },
+  {
+   "id": "pricing:dux-soup",
+   "queries": [
+    "dux soup pricing",
+    "dux soup price",
+    "dux soup plans",
+    "how much is dux soup",
+    "dux soup cost"
+   ],
+   "owner": "/pricing/dux-soup/",
+   "support": []
+  },
+  {
+   "id": "pricing:tawk-to",
+   "queries": [
+    "tawk.to pricing",
+    "tawk.to price",
+    "tawk.to plans",
+    "how much is tawk.to",
+    "tawk.to cost"
+   ],
+   "owner": "/pricing/tawk-to/",
+   "support": []
+  },
+  {
+   "id": "pricing:qonto",
+   "queries": [
+    "qonto pricing",
+    "qonto price",
+    "qonto plans",
+    "how much is qonto",
+    "qonto cost"
+   ],
+   "owner": "/pricing/qonto/",
+   "support": []
+  },
+  {
+   "id": "pricing:plastiq",
+   "queries": [
+    "plastiq pricing",
+    "plastiq price",
+    "plastiq plans",
+    "how much is plastiq",
+    "plastiq cost"
+   ],
+   "owner": "/pricing/plastiq/",
+   "support": []
+  },
+  {
+   "id": "pricing:slite",
+   "queries": [
+    "slite pricing",
+    "slite price",
+    "slite plans",
+    "how much is slite",
+    "slite cost"
+   ],
+   "owner": "/pricing/slite/",
+   "support": []
+  },
+  {
+   "id": "pricing:helpdocs",
+   "queries": [
+    "helpdocs pricing",
+    "helpdocs price",
+    "helpdocs plans",
+    "how much is helpdocs",
+    "helpdocs cost"
+   ],
+   "owner": "/pricing/helpdocs/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",

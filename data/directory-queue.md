@@ -1057,25 +1057,87 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Kintone
 
 ## Refill 2026-11-06 — mixed
-- [ ] Docebo
-- [ ] Lessonly
-- [ ] Zenler
-- [ ] Roadmunk
-- [ ] Chorus
-- [ ] Clearbit
-- [ ] Kaspr
-- [ ] Expandi
-- [ ] Dux-Soup
-- [ ] Things
-- [ ] Drift
-- [ ] Tawk.to
-- [ ] NorthOne
-- [ ] Qonto
-- [ ] Revolut Business
-- [ ] Plastiq
-- [ ] Slite
-- [ ] Nuclino
-- [ ] Bloomfire
-- [ ] Helpjuice
-- [ ] HelpDocs
-- [ ] ProProfs
+- [x] Docebo
+- [x] Lessonly — skipped, pricing site unreachable (now Seismic Learning)
+- [x] Zenler
+- [x] Roadmunk — added as Tempo Roadmaps
+- [x] Chorus
+- [x] Clearbit — skipped, product folded into HubSpot
+- [x] Kaspr
+- [x] Expandi
+- [x] Dux-Soup
+- [x] Things
+- [x] Drift
+- [x] Tawk.to
+- [x] NorthOne — skipped, redirects to Relay (different company)
+- [x] Qonto
+- [x] Revolut Business
+- [x] Plastiq
+- [x] Slite
+- [x] Nuclino
+- [x] Bloomfire
+- [x] Helpjuice
+- [x] HelpDocs
+- [x] ProProfs
+
+## Refill 2026-11-07 — courses, outreach, sales enablement, product, support
+- [ ] Teachable
+- [ ] Thinkific
+- [ ] Kajabi
+- [ ] Podia
+- [ ] LearnWorlds
+- [ ] Mighty Networks
+- [ ] Circle
+- [ ] Skool
+- [ ] TalentLMS
+- [ ] iSpring
+- [ ] Articulate 360
+- [ ] Absorb LMS
+- [ ] LearnDash
+- [ ] Moodle
+- [ ] Canvas LMS
+- [ ] Apollo.io
+- [ ] Seamless.AI
+- [ ] Lusha
+- [ ] Cognism
+- [ ] UpLead
+- [ ] RocketReach
+- [ ] Hunter.io
+- [ ] Snov.io
+- [ ] Lemlist
+- [ ] Woodpecker
+- [ ] Reply.io
+- [ ] Outreach
+- [ ] Salesloft
+- [ ] Gong
+- [ ] Clari
+- [ ] Highspot
+- [ ] Seismic
+- [ ] Showpad
+- [ ] PandaDoc
+- [ ] Proposify
+- [ ] Qwilr
+- [ ] PocketSuite
+- [ ] Paymo
+- [ ] Teamwork
+- [ ] Hive
+- [ ] Height
+- [ ] Productboard
+- [ ] Aha!
+- [ ] Canny
+- [ ] UserVoice
+- [ ] Pendo
+- [ ] Hotjar
+- [ ] FullStory
+- [ ] Mixpanel
+- [ ] Amplitude
+- [ ] PostHog
+- [ ] Heap
+- [ ] Crisp
+- [ ] Olark
+- [ ] LiveChat
+- [ ] Chatwoot
+- [ ] Front
+- [ ] Re:amaze
+- [ ] Gorgias
+- [ ] Kustomer
