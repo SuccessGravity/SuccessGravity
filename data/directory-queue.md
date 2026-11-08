@@ -1081,63 +1081,112 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] ProProfs
 
 ## Refill 2026-11-07 — courses, outreach, sales enablement, product, support
-- [ ] Teachable
-- [ ] Thinkific
-- [ ] Kajabi
-- [ ] Podia
-- [ ] LearnWorlds
-- [ ] Mighty Networks
-- [ ] Circle
-- [ ] Skool
-- [ ] TalentLMS
-- [ ] iSpring
-- [ ] Articulate 360
-- [ ] Absorb LMS
-- [ ] LearnDash
-- [ ] Moodle
-- [ ] Canvas LMS
-- [ ] Apollo.io
-- [ ] Seamless.AI
-- [ ] Lusha
-- [ ] Cognism
-- [ ] UpLead
-- [ ] RocketReach
-- [ ] Hunter.io
-- [ ] Snov.io
-- [ ] Lemlist
-- [ ] Woodpecker
-- [ ] Reply.io
-- [ ] Outreach
-- [ ] Salesloft
-- [ ] Gong
-- [ ] Clari
-- [ ] Highspot
-- [ ] Seismic
-- [ ] Showpad
-- [ ] PandaDoc
-- [ ] Proposify
-- [ ] Qwilr
-- [ ] PocketSuite
-- [ ] Paymo
-- [ ] Teamwork
-- [ ] Hive
-- [ ] Height
-- [ ] Productboard
-- [ ] Aha!
-- [ ] Canny
-- [ ] UserVoice
-- [ ] Pendo
-- [ ] Hotjar
-- [ ] FullStory
-- [ ] Mixpanel
-- [ ] Amplitude
-- [ ] PostHog
-- [ ] Heap
-- [ ] Crisp
-- [ ] Olark
-- [ ] LiveChat
-- [ ] Chatwoot
-- [ ] Front
-- [ ] Re:amaze
-- [ ] Gorgias
-- [ ] Kustomer
+- [x] Teachable — dup
+- [x] Thinkific — dup
+- [x] Kajabi — dup
+- [x] Podia — dup
+- [x] LearnWorlds — dup
+- [x] Mighty Networks — dup
+- [x] Circle — dup
+- [x] Skool — dup
+- [x] TalentLMS — dup
+- [x] iSpring — dup
+- [x] Articulate 360
+- [x] Absorb LMS — skipped, site redirects to absorbai.com; unclear
+- [x] LearnDash — dup
+- [x] Moodle
+- [x] Canvas LMS
+- [x] Apollo.io — dup
+- [x] Seamless.AI — dup
+- [x] Lusha — dup
+- [x] Cognism — dup
+- [x] UpLead — dup
+- [x] RocketReach — dup
+- [x] Hunter.io — dup
+- [x] Snov.io — dup
+- [x] Lemlist — dup
+- [x] Woodpecker — dup
+- [x] Reply.io — dup
+- [x] Outreach — dup
+- [x] Salesloft — dup
+- [x] Gong — dup
+- [x] Clari — skipped, redirects to Salesloft
+- [x] Highspot
+- [x] Seismic
+- [x] Showpad
+- [x] PandaDoc — dup
+- [x] Proposify — dup
+- [x] Qwilr — dup
+- [x] PocketSuite
+- [x] Paymo — dup
+- [x] Teamwork — dup
+- [x] Hive — dup
+- [x] Height — skipped, site unreachable
+- [x] Productboard — dup
+- [x] Aha! — dup
+- [x] Canny — dup
+- [x] UserVoice
+- [x] Pendo — dup
+- [x] Hotjar — dup
+- [x] FullStory — dup
+- [x] Mixpanel — dup
+- [x] Amplitude — dup
+- [x] PostHog — dup
+- [x] Heap — dup
+- [x] Crisp — dup
+- [x] Olark — dup
+- [x] LiveChat — dup
+- [x] Chatwoot — dup
+- [x] Front — dup
+- [x] Re:amaze — dup
+- [x] Gorgias — dup
+- [x] Kustomer — dup
+
+
+## Transcription & audio
+- [ ] Trint
+- [ ] Happy Scribe
+- [ ] Auphonic
+- [ ] Cleanvoice
+- [ ] Resemble AI
+- [ ] Play.ht
+- [ ] LOVO
+
+## Video & creative
+- [ ] Lumen5
+- [ ] Animoto
+- [ ] Clipchamp
+- [ ] Filmora
+- [ ] Wave.video
+- [ ] FlexClip
+- [ ] Biteable
+- [ ] Powtoon
+- [ ] Vyond
+
+## Dev, monitoring & data
+- [ ] Grafana
+- [ ] New Relic
+- [ ] Auth0
+- [ ] Appsmith
+- [ ] Budibase
+- [ ] Directus
+
+## Sales & email
+- [ ] Instantly
+- [ ] Kit (ConvertKit)
+- [ ] Postcard
+- [ ] Warmup Inbox
+- [ ] Mailreach
+- [ ] Maildoso
+
+## Documents & PDF
+- [ ] Yousign
+- [ ] Docuseal
+- [ ] OpenSign
+- [ ] Documenso
+- [ ] PDFfiller
+- [ ] Smallpdf
+- [ ] iLovePDF
+- [ ] Sejda
+- [ ] Foxit
+- [ ] Nitro
