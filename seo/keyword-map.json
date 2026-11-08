@@ -5807,6 +5807,102 @@
    "support": []
   },
   {
+   "id": "pricing:signeasy",
+   "queries": [
+    "signeasy pricing",
+    "signeasy price",
+    "signeasy plans",
+    "how much is signeasy",
+    "signeasy cost"
+   ],
+   "owner": "/pricing/signeasy/",
+   "support": []
+  },
+  {
+   "id": "pricing:xodo-sign",
+   "queries": [
+    "xodo sign pricing",
+    "xodo sign price",
+    "xodo sign plans",
+    "how much is xodo sign",
+    "xodo sign cost"
+   ],
+   "owner": "/pricing/xodo-sign/",
+   "support": []
+  },
+  {
+   "id": "pricing:wellsaid-labs",
+   "queries": [
+    "wellsaid labs pricing",
+    "wellsaid labs price",
+    "wellsaid labs plans",
+    "how much is wellsaid labs",
+    "wellsaid labs cost"
+   ],
+   "owner": "/pricing/wellsaid-labs/",
+   "support": []
+  },
+  {
+   "id": "pricing:speechify",
+   "queries": [
+    "speechify pricing",
+    "speechify price",
+    "speechify plans",
+    "how much is speechify",
+    "speechify cost"
+   ],
+   "owner": "/pricing/speechify/",
+   "support": []
+  },
+  {
+   "id": "pricing:sonix",
+   "queries": [
+    "sonix pricing",
+    "sonix price",
+    "sonix plans",
+    "how much is sonix",
+    "sonix cost"
+   ],
+   "owner": "/pricing/sonix/",
+   "support": []
+  },
+  {
+   "id": "pricing:rev",
+   "queries": [
+    "rev pricing",
+    "rev price",
+    "rev plans",
+    "how much is rev",
+    "rev cost"
+   ],
+   "owner": "/pricing/rev/",
+   "support": []
+  },
+  {
+   "id": "pricing:opus-clip",
+   "queries": [
+    "opus clip pricing",
+    "opus clip price",
+    "opus clip plans",
+    "how much is opus clip",
+    "opus clip cost"
+   ],
+   "owner": "/pricing/opus-clip/",
+   "support": []
+  },
+  {
+   "id": "pricing:uservoice",
+   "queries": [
+    "uservoice pricing",
+    "uservoice price",
+    "uservoice plans",
+    "how much is uservoice",
+    "uservoice cost"
+   ],
+   "owner": "/pricing/uservoice/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
