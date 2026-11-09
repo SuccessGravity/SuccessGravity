@@ -5903,6 +5903,66 @@
    "support": []
   },
   {
+   "id": "pricing:biteable",
+   "queries": [
+    "biteable pricing",
+    "biteable price",
+    "biteable plans",
+    "how much is biteable",
+    "biteable cost"
+   ],
+   "owner": "/pricing/biteable/",
+   "support": []
+  },
+  {
+   "id": "pricing:powtoon",
+   "queries": [
+    "powtoon pricing",
+    "powtoon price",
+    "powtoon plans",
+    "how much is powtoon",
+    "powtoon cost"
+   ],
+   "owner": "/pricing/powtoon/",
+   "support": []
+  },
+  {
+   "id": "pricing:new-relic",
+   "queries": [
+    "new relic pricing",
+    "new relic price",
+    "new relic plans",
+    "how much is new relic",
+    "new relic cost"
+   ],
+   "owner": "/pricing/new-relic/",
+   "support": []
+  },
+  {
+   "id": "pricing:auth0",
+   "queries": [
+    "auth0 pricing",
+    "auth0 price",
+    "auth0 plans",
+    "how much is auth0",
+    "auth0 cost"
+   ],
+   "owner": "/pricing/auth0/",
+   "support": []
+  },
+  {
+   "id": "pricing:appsmith",
+   "queries": [
+    "appsmith pricing",
+    "appsmith price",
+    "appsmith plans",
+    "how much is appsmith",
+    "appsmith cost"
+   ],
+   "owner": "/pricing/appsmith/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
