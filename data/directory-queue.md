@@ -1144,31 +1144,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 
 
 ## Transcription & audio
-- [ ] Trint
-- [ ] Happy Scribe
-- [ ] Auphonic
-- [ ] Cleanvoice
-- [ ] Resemble AI
-- [ ] Play.ht
-- [ ] LOVO
+- [x] Trint
+- [x] Happy Scribe
+- [x] Auphonic
+- [x] Cleanvoice
+- [x] Resemble AI
+- [x] Play.ht — site unreachable (502) on 2026-11-09, not added
+- [x] LOVO
 
 ## Video & creative
-- [ ] Lumen5
-- [ ] Animoto
-- [ ] Clipchamp
-- [ ] Filmora
-- [ ] Wave.video
-- [ ] FlexClip
-- [ ] Biteable
-- [ ] Powtoon
-- [ ] Vyond
+- [x] Lumen5
+- [x] Animoto
+- [x] Clipchamp
+- [x] Filmora
+- [x] Wave.video
+- [x] FlexClip
+- [x] Biteable
+- [x] Powtoon
+- [x] Vyond
 
 ## Dev, monitoring & data
-- [ ] Grafana
-- [ ] New Relic
-- [ ] Auth0
-- [ ] Appsmith
-- [ ] Budibase
+- [x] Grafana
+- [x] New Relic
+- [x] Auth0
+- [x] Appsmith
+- [x] Budibase
 - [ ] Directus
 
 ## Sales & email
@@ -1190,3 +1190,39 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Sejda
 - [ ] Foxit
 - [ ] Nitro
+
+## File storage & backup
+- [ ] IDrive
+- [ ] Carbonite
+- [ ] Tresorit
+- [ ] MEGA
+
+## E-commerce & payments
+- [ ] Shopify Payments
+
+## Video hosting & webinars
+- [ ] Demio
+- [ ] WebinarJam
+- [ ] Livestorm
+- [ ] Zoom Webinars
+
+## Marketing & CRO
+- [ ] VWO
+- [ ] Optimizely
+- [ ] Sumo
+- [ ] Mutiny
+
+## Support & docs
+- [ ] Notion Sites
+
+## Finance & invoicing
+- [ ] Zoho Invoice
+- [ ] Invoice Ninja
+
+## Design & no-code
+- [ ] Canva Pro
+- [ ] Penpot
+- [ ] Spline
+
+## Project & knowledge
+- [ ] Roam Research
