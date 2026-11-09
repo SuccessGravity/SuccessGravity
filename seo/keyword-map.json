@@ -1211,18 +1211,6 @@
    "support": []
   },
   {
-   "id": "pricing:podia",
-   "queries": [
-    "podia pricing",
-    "podia price",
-    "podia plans",
-    "how much is podia",
-    "podia cost"
-   ],
-   "owner": "/pricing/podia/",
-   "support": []
-  },
-  {
    "id": "pricing:learnworlds",
    "queries": [
     "learnworlds pricing",
@@ -1292,18 +1280,6 @@
     "shippo cost"
    ],
    "owner": "/pricing/shippo/",
-   "support": []
-  },
-  {
-   "id": "pricing:omnisend",
-   "queries": [
-    "omnisend pricing",
-    "omnisend price",
-    "omnisend plans",
-    "how much is omnisend",
-    "omnisend cost"
-   ],
-   "owner": "/pricing/omnisend/",
    "support": []
   },
   {
@@ -1547,18 +1523,6 @@
    "support": []
   },
   {
-   "id": "pricing:bluehost",
-   "queries": [
-    "bluehost pricing",
-    "bluehost price",
-    "bluehost plans",
-    "how much is bluehost",
-    "bluehost cost"
-   ],
-   "owner": "/pricing/bluehost/",
-   "support": []
-  },
-  {
    "id": "pricing:dreamhost",
    "queries": [
     "dreamhost pricing",
@@ -1568,18 +1532,6 @@
     "dreamhost cost"
    ],
    "owner": "/pricing/dreamhost/",
-   "support": []
-  },
-  {
-   "id": "pricing:kinsta",
-   "queries": [
-    "kinsta pricing",
-    "kinsta price",
-    "kinsta plans",
-    "how much is kinsta",
-    "kinsta cost"
-   ],
-   "owner": "/pricing/kinsta/",
    "support": []
   },
   {
@@ -3512,18 +3464,6 @@
     "ashby cost"
    ],
    "owner": "/pricing/ashby/",
-   "support": []
-  },
-  {
-   "id": "pricing:planable",
-   "queries": [
-    "planable pricing",
-    "planable price",
-    "planable plans",
-    "how much is planable",
-    "planable cost"
-   ],
-   "owner": "/pricing/planable/",
    "support": []
   },
   {
@@ -5976,6 +5916,18 @@
    ]
   },
   {
+   "id": "review:affiliatewp",
+   "queries": [
+    "affiliatewp review",
+    "is affiliatewp worth it",
+    "affiliatewp pros and cons"
+   ],
+   "owner": "/review/affiliatewp/",
+   "support": [
+    "/pricing/affiliatewp/"
+   ]
+  },
+  {
    "id": "review:brandwell",
    "queries": [
     "brandwell review",
@@ -6293,6 +6245,18 @@
    ]
   },
   {
+   "id": "review:rewardful",
+   "queries": [
+    "rewardful review",
+    "is rewardful worth it",
+    "rewardful pros and cons"
+   ],
+   "owner": "/review/rewardful/",
+   "support": [
+    "/pricing/rewardful/"
+   ]
+  },
+  {
    "id": "review:semrush",
    "queries": [
     "semrush review",
@@ -6327,7 +6291,8 @@
    ],
    "owner": "/review/squarespace/",
    "support": [
-    "/pricing/squarespace/"
+    "/pricing/squarespace/",
+    "/alternatives/squarespace/"
    ]
   },
   {
@@ -6532,6 +6497,19 @@
    ]
   },
   {
+   "id": "alternatives:squarespace",
+   "queries": [
+    "squarespace alternatives",
+    "best squarespace alternatives",
+    "sites like squarespace",
+    "cheaper than squarespace"
+   ],
+   "owner": "/alternatives/squarespace/",
+   "support": [
+    "/review/squarespace/"
+   ]
+  },
+  {
    "id": "alternatives:wix",
    "queries": [
     "wix alternatives",
@@ -6617,12 +6595,30 @@
    "support": []
   },
   {
+   "id": "compare:shopify-vs-wix",
+   "queries": [
+    "shopify vs wix",
+    "wix vs shopify"
+   ],
+   "owner": "/compare/shopify-vs-wix/",
+   "support": []
+  },
+  {
    "id": "compare:wix-vs-squarespace",
    "queries": [
     "wix vs squarespace",
     "squarespace vs wix"
    ],
    "owner": "/compare/wix-vs-squarespace/",
+   "support": []
+  },
+  {
+   "id": "best:best-ai-chatbots",
+   "queries": [
+    "best ai chatbots for business",
+    "top ai chatbots for business"
+   ],
+   "owner": "/best/best-ai-chatbots/",
    "support": []
   },
   {
@@ -6952,6 +6948,14 @@
     "courses and communities tools free plans"
    ],
    "owner": "/category/courses-community/",
+   "support": []
+  },
+  {
+   "id": "guide:ahrefs-seo-audit",
+   "queries": [
+    "how to do an seo audit with ahrefs"
+   ],
+   "owner": "/guides/ahrefs-seo-audit/",
    "support": []
   },
   {
