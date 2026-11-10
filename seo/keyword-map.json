@@ -5903,6 +5903,78 @@
    "support": []
   },
   {
+   "id": "pricing:directus",
+   "queries": [
+    "directus pricing",
+    "directus price",
+    "directus plans",
+    "how much is directus",
+    "directus cost"
+   ],
+   "owner": "/pricing/directus/",
+   "support": []
+  },
+  {
+   "id": "pricing:warmup-inbox",
+   "queries": [
+    "warmup inbox pricing",
+    "warmup inbox price",
+    "warmup inbox plans",
+    "how much is warmup inbox",
+    "warmup inbox cost"
+   ],
+   "owner": "/pricing/warmup-inbox/",
+   "support": []
+  },
+  {
+   "id": "pricing:maildoso",
+   "queries": [
+    "maildoso pricing",
+    "maildoso price",
+    "maildoso plans",
+    "how much is maildoso",
+    "maildoso cost"
+   ],
+   "owner": "/pricing/maildoso/",
+   "support": []
+  },
+  {
+   "id": "pricing:docuseal",
+   "queries": [
+    "docuseal pricing",
+    "docuseal price",
+    "docuseal plans",
+    "how much is docuseal",
+    "docuseal cost"
+   ],
+   "owner": "/pricing/docuseal/",
+   "support": []
+  },
+  {
+   "id": "pricing:documenso",
+   "queries": [
+    "documenso pricing",
+    "documenso price",
+    "documenso plans",
+    "how much is documenso",
+    "documenso cost"
+   ],
+   "owner": "/pricing/documenso/",
+   "support": []
+  },
+  {
+   "id": "pricing:ilovepdf",
+   "queries": [
+    "ilovepdf pricing",
+    "ilovepdf price",
+    "ilovepdf plans",
+    "how much is ilovepdf",
+    "ilovepdf cost"
+   ],
+   "owner": "/pricing/ilovepdf/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
