@@ -1169,36 +1169,36 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Auth0
 - [x] Appsmith
 - [x] Budibase
-- [ ] Directus
+- [x] Directus
 
 ## Sales & email
-- [ ] Instantly
-- [ ] Kit (ConvertKit)
-- [ ] Postcard
-- [ ] Warmup Inbox
-- [ ] Mailreach
-- [ ] Maildoso
+- [x] Instantly
+- [x] Kit (ConvertKit)
+- [x] Postcard — skipped, official site not found
+- [x] Warmup Inbox
+- [x] Mailreach
+- [x] Maildoso
 
 ## Documents & PDF
-- [ ] Yousign
-- [ ] Docuseal
-- [ ] OpenSign
-- [ ] Documenso
-- [ ] PDFfiller
-- [ ] Smallpdf
-- [ ] iLovePDF
-- [ ] Sejda
-- [ ] Foxit
-- [ ] Nitro
+- [x] Yousign — skipped, domain redirects to a different company
+- [x] Docuseal
+- [x] OpenSign
+- [x] Documenso
+- [x] PDFfiller
+- [x] Smallpdf
+- [x] iLovePDF
+- [x] Sejda
+- [x] Foxit
+- [x] Nitro
 
 ## File storage & backup
-- [ ] IDrive
-- [ ] Carbonite
-- [ ] Tresorit
-- [ ] MEGA
+- [x] IDrive
+- [x] Carbonite
+- [x] Tresorit
+- [x] MEGA
 
 ## E-commerce & payments
-- [ ] Shopify Payments
+- [x] Shopify Payments
 
 ## Video hosting & webinars
 - [ ] Demio
@@ -1226,3 +1226,45 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 
 ## Project & knowledge
 - [ ] Roam Research
+
+## Refill 2026-11-10
+- [ ] Copper
+- [ ] Sage Accounting
+- [ ] Time Doctor
+- [ ] Coda
+- [ ] Plausible
+- [ ] OpenPhone
+- [ ] Talkdesk
+- [ ] Five9
+- [ ] Amazon SES
+- [ ] Iterable
+- [ ] Pallyy
+- [ ] VistaCreate
+- [ ] Pixlr
+- [ ] Photopea
+- [ ] Chargify
+- [ ] ProfitWell
+- [ ] Xendoo
+- [ ] Docyt
+- [ ] Dext
+- [ ] Oneflow
+- [ ] Better Proposals
+- [ ] Nusii
+- [ ] Workato
+- [ ] Tray.io
+- [ ] Integrately
+- [ ] Pabbly
+- [ ] Zoho Creator
+- [ ] Knack
+- [ ] Stacker
+- [ ] Height
+- [ ] YouTrack
+- [ ] Aha
+- [ ] Excalidraw
+- [ ] Draw.io
+- [ ] Gliffy
+- [ ] Docusaurus
+- [ ] ReadMe
+- [ ] Keeper
+- [ ] Linode
+- [ ] Hetzner
