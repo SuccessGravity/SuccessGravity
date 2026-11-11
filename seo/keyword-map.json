@@ -6,7 +6,21 @@
   "\"<tool> alternatives\" → /alternatives/<slug>/; \"<a> vs <b>\" → /compare/<slug>/; \"how to …\" → /guides/<slug>/.",
   "Two pages showing for one query in Search Console (latest.json cannibalization): decide the owner in \"manual\", add a link from the other page, and log it in seo/ledger.md."
  ],
- "manual": [],
+ "manual": [
+  {
+   "id": "cmp:seo-tools",
+   "queries": [
+    "seo tools comparison",
+    "compare seo software",
+    "seo software comparison"
+   ],
+   "owner": "/category/seo/",
+   "support": [
+    "/best/best-seo-tools/"
+   ],
+   "note": "2026-11-11 GSC: hub ranks better for comparison queries (23.5 vs 33; 47.7 vs 58). \"best seo tools\" stays with the guide."
+  }
+ ],
  "auto": [
   {
    "id": "pricing:jasper-ai",

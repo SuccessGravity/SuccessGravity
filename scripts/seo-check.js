@@ -18,6 +18,8 @@
 //   orphan        every indexable page is linked from at least one other page
 //   honesty       no first-person testing claims (CLAUDE.md), unless the sentence negates them
 //   affiliate     Higgsfield and Hostinger links carry the affiliate URL (CLAUDE.md)
+//   slash         internal links to a page use its canonical trailing-slash URL (no 301 hop):
+//                 href="/review/x" and the homepage programs' review: "/review/x" fail
 //   keyword-map   every owner in seo/keyword-map.json exists and is indexable, and no query
 //                 belongs to two clusters (one query, one page)
 //
@@ -142,6 +144,16 @@ for (const p of pages) {
     }
   }
   for (const [re, msg] of AFFILIATE) if (re.test(p.html)) v('affiliate', p.url, msg);
+}
+
+// Trailing slash: /x/y without the slash 301-redirects on GitHub Pages, and Google then
+// reports both URLs (2026-11-10: /review/tidio and /review/tidio/ for the same query).
+for (const p of pages) {
+  for (const m of p.html.matchAll(/(?:href=|review:\s*)["'](\/[a-z0-9-]+(?:\/[a-z0-9.-]+)*)["']/gi)) {
+    const u = m[1];
+    if (/\.[a-z0-9]+$/i.test(u)) continue; // files
+    if (byUrl.has(u + '/')) { v('slash', p.url, 'links to ' + u + ' (redirects) instead of ' + u + '/'); break; }
+  }
 }
 
 // keyword map (seo/keyword-map.json, built by scripts/build-keyword-map.js)
