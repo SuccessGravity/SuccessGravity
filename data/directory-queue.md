@@ -1201,50 +1201,50 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Shopify Payments
 
 ## Video hosting & webinars
-- [ ] Demio
-- [ ] WebinarJam
-- [ ] Livestorm
-- [ ] Zoom Webinars
+- [x] Demio
+- [x] WebinarJam
+- [x] Livestorm
+- [x] Zoom Webinars — dup (Zoom, zoom.us)
 
 ## Marketing & CRO
-- [ ] VWO
-- [ ] Optimizely
-- [ ] Sumo
-- [ ] Mutiny
+- [x] VWO — skipped: vwo.com now redirects to Wingify (merged with AB Tasty)
+- [x] Optimizely
+- [x] Sumo — skipped: sumo.com is now a different product (Refract)
+- [x] Mutiny
 
 ## Support & docs
-- [ ] Notion Sites
+- [x] Notion Sites — dup (Notion feature, notion.com)
 
 ## Finance & invoicing
-- [ ] Zoho Invoice
-- [ ] Invoice Ninja
+- [x] Zoho Invoice
+- [x] Invoice Ninja
 
 ## Design & no-code
-- [ ] Canva Pro
-- [ ] Penpot
-- [ ] Spline
+- [x] Canva Pro — dup (Canva)
+- [x] Penpot
+- [x] Spline
 
 ## Project & knowledge
-- [ ] Roam Research
+- [x] Roam Research
 
 ## Refill 2026-11-10
-- [ ] Copper
-- [ ] Sage Accounting
-- [ ] Time Doctor
-- [ ] Coda
-- [ ] Plausible
-- [ ] OpenPhone
-- [ ] Talkdesk
-- [ ] Five9
-- [ ] Amazon SES
-- [ ] Iterable
-- [ ] Pallyy
-- [ ] VistaCreate
-- [ ] Pixlr
-- [ ] Photopea
-- [ ] Chargify
-- [ ] ProfitWell
-- [ ] Xendoo
+- [x] Copper — dup (Copper CRM)
+- [x] Sage Accounting — dup (Sage, sage.com)
+- [x] Time Doctor
+- [x] Coda — dup (Coda)
+- [x] Plausible — dup (Plausible Analytics)
+- [x] OpenPhone — skipped: renamed to Quo (quo.com)
+- [x] Talkdesk
+- [x] Five9
+- [x] Amazon SES
+- [x] Iterable
+- [x] Pallyy
+- [x] VistaCreate
+- [x] Pixlr
+- [x] Photopea
+- [x] Chargify — skipped: now Maxio
+- [x] ProfitWell — skipped: redirects to Paddle
+- [x] Xendoo
 - [ ] Docyt
 - [ ] Dext
 - [ ] Oneflow
@@ -1253,18 +1253,81 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Workato
 - [ ] Tray.io
 - [ ] Integrately
-- [ ] Pabbly
+- [x] Pabbly — dup (Pabbly Connect)
 - [ ] Zoho Creator
 - [ ] Knack
 - [ ] Stacker
 - [ ] Height
 - [ ] YouTrack
-- [ ] Aha
+- [x] Aha — dup (Aha!)
 - [ ] Excalidraw
 - [ ] Draw.io
 - [ ] Gliffy
 - [ ] Docusaurus
 - [ ] ReadMe
-- [ ] Keeper
-- [ ] Linode
-- [ ] Hetzner
+- [x] Keeper — dup (Keeper Security)
+- [x] Linode — dup (Linode (Akamai))
+- [x] Hetzner — dup (Hetzner Cloud)
+
+## Refill 2026-11-11 (referral, affiliate, influencer, stock media, presentations, time tracking, CRO)
+- [ ] ReferralCandy
+- [ ] GrowSurf
+- [ ] Friendbuy
+- [ ] Extole
+- [ ] Refersion
+- [ ] Tapfiliate
+- [ ] PartnerStack
+- [ ] FirstPromoter
+- [ ] Impact.com
+- [ ] Everflow
+- [ ] Post Affiliate Pro
+- [ ] Partnero
+- [ ] Affise
+- [ ] Tolt
+- [ ] Reditus
+- [ ] Cello
+- [ ] Prefinery
+- [ ] KickoffLabs
+- [ ] Aspire
+- [ ] CreatorIQ
+- [ ] Modash
+- [ ] Talkwalker
+- [ ] Mention
+- [ ] Meltwater
+- [ ] BuzzSumo
+- [ ] SparkToro
+- [ ] Pond5
+- [ ] Adobe Stock
+- [ ] iStock
+- [ ] Depositphotos
+- [ ] Freepik
+- [ ] Vecteezy
+- [ ] 123RF
+- [ ] Dreamstime
+- [ ] Alamy
+- [ ] Getty Images
+- [ ] Flaticon
+- [ ] Icons8
+- [ ] Noun Project
+- [ ] Creative Market
+- [ ] Soundstripe
+- [ ] Musicbed
+- [ ] Uppbeat
+- [ ] Ditto Music
+- [ ] Slidebean
+- [ ] Genially
+- [ ] Mentimeter
+- [ ] Poll Everywhere
+- [ ] Kahoot
+- [ ] RescueTime
+- [ ] ClickTime
+- [ ] Replicon
+- [ ] Sling
+- [ ] Buddy Punch
+- [ ] Jibble
+- [ ] Wingify
+- [ ] AB Tasty
+- [ ] Convert
+- [ ] Anyword
+- [ ] Taiga
+- [ ] OpenProject

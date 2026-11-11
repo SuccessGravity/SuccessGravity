@@ -1067,6 +1067,18 @@
    "support": []
   },
   {
+   "id": "pricing:instapage",
+   "queries": [
+    "instapage pricing",
+    "instapage price",
+    "instapage plans",
+    "how much is instapage",
+    "instapage cost"
+   ],
+   "owner": "/pricing/instapage/",
+   "support": []
+  },
+  {
    "id": "pricing:carrd",
    "queries": [
     "carrd pricing",
@@ -5972,6 +5984,174 @@
     "ilovepdf cost"
    ],
    "owner": "/pricing/ilovepdf/",
+   "support": []
+  },
+  {
+   "id": "pricing:demio",
+   "queries": [
+    "demio pricing",
+    "demio price",
+    "demio plans",
+    "how much is demio",
+    "demio cost"
+   ],
+   "owner": "/pricing/demio/",
+   "support": []
+  },
+  {
+   "id": "pricing:webinarjam",
+   "queries": [
+    "webinarjam pricing",
+    "webinarjam price",
+    "webinarjam plans",
+    "how much is webinarjam",
+    "webinarjam cost"
+   ],
+   "owner": "/pricing/webinarjam/",
+   "support": []
+  },
+  {
+   "id": "pricing:livestorm",
+   "queries": [
+    "livestorm pricing",
+    "livestorm price",
+    "livestorm plans",
+    "how much is livestorm",
+    "livestorm cost"
+   ],
+   "owner": "/pricing/livestorm/",
+   "support": []
+  },
+  {
+   "id": "pricing:optimizely",
+   "queries": [
+    "optimizely pricing",
+    "optimizely price",
+    "optimizely plans",
+    "how much is optimizely",
+    "optimizely cost"
+   ],
+   "owner": "/pricing/optimizely/",
+   "support": []
+  },
+  {
+   "id": "pricing:mutiny",
+   "queries": [
+    "mutiny pricing",
+    "mutiny price",
+    "mutiny plans",
+    "how much is mutiny",
+    "mutiny cost"
+   ],
+   "owner": "/pricing/mutiny/",
+   "support": []
+  },
+  {
+   "id": "pricing:zoho-invoice",
+   "queries": [
+    "zoho invoice pricing",
+    "zoho invoice price",
+    "zoho invoice plans",
+    "how much is zoho invoice",
+    "zoho invoice cost"
+   ],
+   "owner": "/pricing/zoho-invoice/",
+   "support": []
+  },
+  {
+   "id": "pricing:invoice-ninja",
+   "queries": [
+    "invoice ninja pricing",
+    "invoice ninja price",
+    "invoice ninja plans",
+    "how much is invoice ninja",
+    "invoice ninja cost"
+   ],
+   "owner": "/pricing/invoice-ninja/",
+   "support": []
+  },
+  {
+   "id": "pricing:penpot",
+   "queries": [
+    "penpot pricing",
+    "penpot price",
+    "penpot plans",
+    "how much is penpot",
+    "penpot cost"
+   ],
+   "owner": "/pricing/penpot/",
+   "support": []
+  },
+  {
+   "id": "pricing:spline",
+   "queries": [
+    "spline pricing",
+    "spline price",
+    "spline plans",
+    "how much is spline",
+    "spline cost"
+   ],
+   "owner": "/pricing/spline/",
+   "support": []
+  },
+  {
+   "id": "pricing:talkdesk",
+   "queries": [
+    "talkdesk pricing",
+    "talkdesk price",
+    "talkdesk plans",
+    "how much is talkdesk",
+    "talkdesk cost"
+   ],
+   "owner": "/pricing/talkdesk/",
+   "support": []
+  },
+  {
+   "id": "pricing:amazon-ses",
+   "queries": [
+    "amazon ses pricing",
+    "amazon ses price",
+    "amazon ses plans",
+    "how much is amazon ses",
+    "amazon ses cost"
+   ],
+   "owner": "/pricing/amazon-ses/",
+   "support": []
+  },
+  {
+   "id": "pricing:pallyy",
+   "queries": [
+    "pallyy pricing",
+    "pallyy price",
+    "pallyy plans",
+    "how much is pallyy",
+    "pallyy cost"
+   ],
+   "owner": "/pricing/pallyy/",
+   "support": []
+  },
+  {
+   "id": "pricing:pixlr",
+   "queries": [
+    "pixlr pricing",
+    "pixlr price",
+    "pixlr plans",
+    "how much is pixlr",
+    "pixlr cost"
+   ],
+   "owner": "/pricing/pixlr/",
+   "support": []
+  },
+  {
+   "id": "pricing:xendoo",
+   "queries": [
+    "xendoo pricing",
+    "xendoo price",
+    "xendoo plans",
+    "how much is xendoo",
+    "xendoo cost"
+   ],
+   "owner": "/pricing/xendoo/",
    "support": []
   },
   {
