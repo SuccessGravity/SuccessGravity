@@ -433,6 +433,18 @@
    "support": []
   },
   {
+   "id": "pricing:microsoft-365-business",
+   "queries": [
+    "microsoft 365 business pricing",
+    "microsoft 365 business price",
+    "microsoft 365 business plans",
+    "how much is microsoft 365 business",
+    "microsoft 365 business cost"
+   ],
+   "owner": "/pricing/microsoft-365-business/",
+   "support": []
+  },
+  {
    "id": "pricing:dropbox",
    "queries": [
     "dropbox pricing",
@@ -478,6 +490,18 @@
     "bitwarden cost"
    ],
    "owner": "/pricing/bitwarden/",
+   "support": []
+  },
+  {
+   "id": "pricing:microsoft-teams",
+   "queries": [
+    "microsoft teams pricing",
+    "microsoft teams price",
+    "microsoft teams plans",
+    "how much is microsoft teams",
+    "microsoft teams cost"
+   ],
+   "owner": "/pricing/microsoft-teams/",
    "support": []
   },
   {
@@ -541,6 +565,18 @@
    "support": []
   },
   {
+   "id": "pricing:webex",
+   "queries": [
+    "webex pricing",
+    "webex price",
+    "webex plans",
+    "how much is webex",
+    "webex cost"
+   ],
+   "owner": "/pricing/webex/",
+   "support": []
+  },
+  {
    "id": "pricing:fireflies-ai",
    "queries": [
     "fireflies.ai pricing",
@@ -574,6 +610,18 @@
     "miro cost"
    ],
    "owner": "/pricing/miro/",
+   "support": []
+  },
+  {
+   "id": "pricing:lucidchart",
+   "queries": [
+    "lucidchart pricing",
+    "lucidchart price",
+    "lucidchart plans",
+    "how much is lucidchart",
+    "lucidchart cost"
+   ],
+   "owner": "/pricing/lucidchart/",
    "support": []
   },
   {
@@ -706,6 +754,18 @@
     "deel cost"
    ],
    "owner": "/pricing/deel/",
+   "support": []
+  },
+  {
+   "id": "pricing:justworks",
+   "queries": [
+    "justworks pricing",
+    "justworks price",
+    "justworks plans",
+    "how much is justworks",
+    "justworks cost"
+   ],
+   "owner": "/pricing/justworks/",
    "support": []
   },
   {
@@ -6166,6 +6226,222 @@
     "xendoo cost"
    ],
    "owner": "/pricing/xendoo/",
+   "support": []
+  },
+  {
+   "id": "pricing:docyt",
+   "queries": [
+    "docyt pricing",
+    "docyt price",
+    "docyt plans",
+    "how much is docyt",
+    "docyt cost"
+   ],
+   "owner": "/pricing/docyt/",
+   "support": []
+  },
+  {
+   "id": "pricing:dext",
+   "queries": [
+    "dext pricing",
+    "dext price",
+    "dext plans",
+    "how much is dext",
+    "dext cost"
+   ],
+   "owner": "/pricing/dext/",
+   "support": []
+  },
+  {
+   "id": "pricing:better-proposals",
+   "queries": [
+    "better proposals pricing",
+    "better proposals price",
+    "better proposals plans",
+    "how much is better proposals",
+    "better proposals cost"
+   ],
+   "owner": "/pricing/better-proposals/",
+   "support": []
+  },
+  {
+   "id": "pricing:nusii",
+   "queries": [
+    "nusii pricing",
+    "nusii price",
+    "nusii plans",
+    "how much is nusii",
+    "nusii cost"
+   ],
+   "owner": "/pricing/nusii/",
+   "support": []
+  },
+  {
+   "id": "pricing:workato",
+   "queries": [
+    "workato pricing",
+    "workato price",
+    "workato plans",
+    "how much is workato",
+    "workato cost"
+   ],
+   "owner": "/pricing/workato/",
+   "support": []
+  },
+  {
+   "id": "pricing:tray-ai",
+   "queries": [
+    "tray.ai pricing",
+    "tray.ai price",
+    "tray.ai plans",
+    "how much is tray.ai",
+    "tray.ai cost"
+   ],
+   "owner": "/pricing/tray-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:integrately",
+   "queries": [
+    "integrately pricing",
+    "integrately price",
+    "integrately plans",
+    "how much is integrately",
+    "integrately cost"
+   ],
+   "owner": "/pricing/integrately/",
+   "support": []
+  },
+  {
+   "id": "pricing:zoho-creator",
+   "queries": [
+    "zoho creator pricing",
+    "zoho creator price",
+    "zoho creator plans",
+    "how much is zoho creator",
+    "zoho creator cost"
+   ],
+   "owner": "/pricing/zoho-creator/",
+   "support": []
+  },
+  {
+   "id": "pricing:knack",
+   "queries": [
+    "knack pricing",
+    "knack price",
+    "knack plans",
+    "how much is knack",
+    "knack cost"
+   ],
+   "owner": "/pricing/knack/",
+   "support": []
+  },
+  {
+   "id": "pricing:stacker",
+   "queries": [
+    "stacker pricing",
+    "stacker price",
+    "stacker plans",
+    "how much is stacker",
+    "stacker cost"
+   ],
+   "owner": "/pricing/stacker/",
+   "support": []
+  },
+  {
+   "id": "pricing:youtrack",
+   "queries": [
+    "youtrack pricing",
+    "youtrack price",
+    "youtrack plans",
+    "how much is youtrack",
+    "youtrack cost"
+   ],
+   "owner": "/pricing/youtrack/",
+   "support": []
+  },
+  {
+   "id": "pricing:excalidraw",
+   "queries": [
+    "excalidraw pricing",
+    "excalidraw price",
+    "excalidraw plans",
+    "how much is excalidraw",
+    "excalidraw cost"
+   ],
+   "owner": "/pricing/excalidraw/",
+   "support": []
+  },
+  {
+   "id": "pricing:draw-io",
+   "queries": [
+    "draw.io pricing",
+    "draw.io price",
+    "draw.io plans",
+    "how much is draw.io",
+    "draw.io cost"
+   ],
+   "owner": "/pricing/draw-io/",
+   "support": []
+  },
+  {
+   "id": "pricing:gliffy",
+   "queries": [
+    "gliffy pricing",
+    "gliffy price",
+    "gliffy plans",
+    "how much is gliffy",
+    "gliffy cost"
+   ],
+   "owner": "/pricing/gliffy/",
+   "support": []
+  },
+  {
+   "id": "pricing:docusaurus",
+   "queries": [
+    "docusaurus pricing",
+    "docusaurus price",
+    "docusaurus plans",
+    "how much is docusaurus",
+    "docusaurus cost"
+   ],
+   "owner": "/pricing/docusaurus/",
+   "support": []
+  },
+  {
+   "id": "pricing:readme",
+   "queries": [
+    "readme pricing",
+    "readme price",
+    "readme plans",
+    "how much is readme",
+    "readme cost"
+   ],
+   "owner": "/pricing/readme/",
+   "support": []
+  },
+  {
+   "id": "pricing:referralcandy",
+   "queries": [
+    "referralcandy pricing",
+    "referralcandy price",
+    "referralcandy plans",
+    "how much is referralcandy",
+    "referralcandy cost"
+   ],
+   "owner": "/pricing/referralcandy/",
+   "support": []
+  },
+  {
+   "id": "pricing:growsurf",
+   "queries": [
+    "growsurf pricing",
+    "growsurf price",
+    "growsurf plans",
+    "how much is growsurf",
+    "growsurf cost"
+   ],
+   "owner": "/pricing/growsurf/",
    "support": []
   },
   {

@@ -1245,34 +1245,34 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Chargify — skipped: now Maxio
 - [x] ProfitWell — skipped: redirects to Paddle
 - [x] Xendoo
-- [ ] Docyt
-- [ ] Dext
-- [ ] Oneflow
-- [ ] Better Proposals
-- [ ] Nusii
-- [ ] Workato
-- [ ] Tray.io
-- [ ] Integrately
+- [x] Docyt
+- [x] Dext
+- [x] Oneflow
+- [x] Better Proposals
+- [x] Nusii
+- [x] Workato
+- [x] Tray.io
+- [x] Integrately
 - [x] Pabbly — dup (Pabbly Connect)
-- [ ] Zoho Creator
-- [ ] Knack
-- [ ] Stacker
-- [ ] Height
-- [ ] YouTrack
+- [x] Zoho Creator
+- [x] Knack
+- [x] Stacker
+- [x] Height — skipped: height.app returned 502 on 2026-11-12, site unavailable
+- [x] YouTrack
 - [x] Aha — dup (Aha!)
-- [ ] Excalidraw
-- [ ] Draw.io
-- [ ] Gliffy
-- [ ] Docusaurus
-- [ ] ReadMe
+- [x] Excalidraw
+- [x] Draw.io
+- [x] Gliffy
+- [x] Docusaurus
+- [x] ReadMe
 - [x] Keeper — dup (Keeper Security)
 - [x] Linode — dup (Linode (Akamai))
 - [x] Hetzner — dup (Hetzner Cloud)
 
 ## Refill 2026-11-11 (referral, affiliate, influencer, stock media, presentations, time tracking, CRO)
-- [ ] ReferralCandy
-- [ ] GrowSurf
-- [ ] Friendbuy
+- [x] ReferralCandy
+- [x] GrowSurf
+- [x] Friendbuy
 - [ ] Extole
 - [ ] Refersion
 - [ ] Tapfiliate
