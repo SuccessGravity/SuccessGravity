@@ -182,7 +182,9 @@
     "monday.com cost"
    ],
    "owner": "/pricing/monday-com/",
-   "support": []
+   "support": [
+    "/review/monday-com/"
+   ]
   },
   {
    "id": "pricing:runway",
@@ -6727,6 +6729,18 @@
    ]
   },
   {
+   "id": "review:monday-com",
+   "queries": [
+    "monday.com review",
+    "is monday.com worth it",
+    "monday.com pros and cons"
+   ],
+   "owner": "/review/monday-com/",
+   "support": [
+    "/pricing/monday-com/"
+   ]
+  },
+  {
    "id": "review:murf-ai",
    "queries": [
     "murf ai review",
@@ -7602,6 +7616,14 @@
     "see exactly how visitors use your site with microsoft clarity"
    ],
    "owner": "/guides/microsoft-clarity-heatmaps/",
+   "support": []
+  },
+  {
+   "id": "guide:monday-com-project-management-setup",
+   "queries": [
+    "how to set up monday.com for project management"
+   ],
+   "owner": "/guides/monday-com-project-management-setup/",
    "support": []
   },
   {
