@@ -1273,26 +1273,26 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] ReferralCandy
 - [x] GrowSurf
 - [x] Friendbuy
-- [ ] Extole
-- [ ] Refersion
-- [ ] Tapfiliate
-- [ ] PartnerStack
-- [ ] FirstPromoter
-- [ ] Impact.com
-- [ ] Everflow
-- [ ] Post Affiliate Pro
-- [ ] Partnero
-- [ ] Affise
-- [ ] Tolt
-- [ ] Reditus
-- [ ] Cello
-- [ ] Prefinery
-- [ ] KickoffLabs
-- [ ] Aspire
-- [ ] CreatorIQ
-- [ ] Modash
-- [ ] Talkwalker
-- [ ] Mention
+- [x] Extole
+- [x] Refersion
+- [x] Tapfiliate
+- [x] PartnerStack
+- [x] FirstPromoter
+- [x] Impact.com
+- [x] Everflow
+- [x] Post Affiliate Pro
+- [x] Partnero
+- [x] Affise
+- [x] Tolt
+- [x] Reditus
+- [x] Cello
+- [x] Prefinery
+- [x] KickoffLabs
+- [x] Aspire
+- [x] CreatorIQ
+- [x] Modash
+- [x] Talkwalker
+- [x] Mention
 - [ ] Meltwater
 - [ ] BuzzSumo
 - [ ] SparkToro
@@ -1331,3 +1331,65 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Anyword
 - [ ] Taiga
 - [ ] OpenProject
+
+## Refill 2026-11-13 (stock media, resume, landing pages, SEO, AI writing, data viz, video, time tracking, presentations, inventory, finance, forms, PPC)
+- [ ] Soundrop
+- [ ] PremiumBeat
+- [ ] Bensound
+- [ ] Marmoset
+- [ ] Vectorstock
+- [ ] Stocksy
+- [ ] Resume Genius
+- [ ] VisualCV
+- [ ] Huntr
+- [ ] Jobscan
+- [ ] Replo
+- [ ] Zipify Pages
+- [ ] Shogun
+- [ ] Perspective
+- [ ] Wishpond
+- [ ] ShortStack
+- [ ] Woorise
+- [ ] Gleam
+- [ ] Rafflecopter
+- [ ] KeySearch
+- [ ] LowFruits
+- [ ] Keywords Everywhere
+- [ ] Seobility
+- [ ] Sitechecker
+- [ ] JetOctopus
+- [ ] Linkody
+- [ ] Respona
+- [ ] BuzzStream
+- [ ] Junia AI
+- [ ] Outranking
+- [ ] ContentBot
+- [ ] Sudowrite
+- [ ] Hemingway Editor
+- [ ] Equals
+- [ ] Datawrapper
+- [ ] Infogram
+- [ ] Flourish
+- [ ] Polymer Search
+- [ ] WeVideo
+- [ ] Camtasia
+- [ ] ScreenPal
+- [ ] Screen Studio
+- [ ] Movavi
+- [ ] TMetric
+- [ ] My Hours
+- [ ] Timeular
+- [ ] Insightful
+- [ ] Slides.com
+- [ ] Plus AI
+- [ ] Storydoc
+- [ ] Ordoro
+- [ ] Craftybase
+- [ ] Unleashed
+- [ ] LivePlan
+- [ ] Cash Flow Frog
+- [ ] ProjectionHub
+- [ ] Formbricks
+- [ ] Youform
+- [ ] Opteo
+- [ ] Swydo

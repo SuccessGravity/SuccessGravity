@@ -1491,6 +1491,18 @@
    "support": []
   },
   {
+   "id": "pricing:epidemic-sound",
+   "queries": [
+    "epidemic sound pricing",
+    "epidemic sound price",
+    "epidemic sound plans",
+    "how much is epidemic sound",
+    "epidemic sound cost"
+   ],
+   "owner": "/pricing/epidemic-sound/",
+   "support": []
+  },
+  {
    "id": "pricing:artlist",
    "queries": [
     "artlist pricing",
@@ -1500,6 +1512,18 @@
     "artlist cost"
    ],
    "owner": "/pricing/artlist/",
+   "support": []
+  },
+  {
+   "id": "pricing:vimeo",
+   "queries": [
+    "vimeo pricing",
+    "vimeo price",
+    "vimeo plans",
+    "how much is vimeo",
+    "vimeo cost"
+   ],
+   "owner": "/pricing/vimeo/",
    "support": []
   },
   {
@@ -1560,6 +1584,18 @@
     "kapwing cost"
    ],
    "owner": "/pricing/kapwing/",
+   "support": []
+  },
+  {
+   "id": "pricing:veed",
+   "queries": [
+    "veed pricing",
+    "veed price",
+    "veed plans",
+    "how much is veed",
+    "veed cost"
+   ],
+   "owner": "/pricing/veed/",
    "support": []
   },
   {
@@ -6444,6 +6480,186 @@
     "growsurf cost"
    ],
    "owner": "/pricing/growsurf/",
+   "support": []
+  },
+  {
+   "id": "pricing:refersion",
+   "queries": [
+    "refersion pricing",
+    "refersion price",
+    "refersion plans",
+    "how much is refersion",
+    "refersion cost"
+   ],
+   "owner": "/pricing/refersion/",
+   "support": []
+  },
+  {
+   "id": "pricing:tapfiliate",
+   "queries": [
+    "tapfiliate pricing",
+    "tapfiliate price",
+    "tapfiliate plans",
+    "how much is tapfiliate",
+    "tapfiliate cost"
+   ],
+   "owner": "/pricing/tapfiliate/",
+   "support": []
+  },
+  {
+   "id": "pricing:partnerstack",
+   "queries": [
+    "partnerstack pricing",
+    "partnerstack price",
+    "partnerstack plans",
+    "how much is partnerstack",
+    "partnerstack cost"
+   ],
+   "owner": "/pricing/partnerstack/",
+   "support": []
+  },
+  {
+   "id": "pricing:firstpromoter",
+   "queries": [
+    "firstpromoter pricing",
+    "firstpromoter price",
+    "firstpromoter plans",
+    "how much is firstpromoter",
+    "firstpromoter cost"
+   ],
+   "owner": "/pricing/firstpromoter/",
+   "support": []
+  },
+  {
+   "id": "pricing:impact-com",
+   "queries": [
+    "impact.com pricing",
+    "impact.com price",
+    "impact.com plans",
+    "how much is impact.com",
+    "impact.com cost"
+   ],
+   "owner": "/pricing/impact-com/",
+   "support": []
+  },
+  {
+   "id": "pricing:everflow",
+   "queries": [
+    "everflow pricing",
+    "everflow price",
+    "everflow plans",
+    "how much is everflow",
+    "everflow cost"
+   ],
+   "owner": "/pricing/everflow/",
+   "support": []
+  },
+  {
+   "id": "pricing:post-affiliate-pro",
+   "queries": [
+    "post affiliate pro pricing",
+    "post affiliate pro price",
+    "post affiliate pro plans",
+    "how much is post affiliate pro",
+    "post affiliate pro cost"
+   ],
+   "owner": "/pricing/post-affiliate-pro/",
+   "support": []
+  },
+  {
+   "id": "pricing:affise",
+   "queries": [
+    "affise pricing",
+    "affise price",
+    "affise plans",
+    "how much is affise",
+    "affise cost"
+   ],
+   "owner": "/pricing/affise/",
+   "support": []
+  },
+  {
+   "id": "pricing:tolt",
+   "queries": [
+    "tolt pricing",
+    "tolt price",
+    "tolt plans",
+    "how much is tolt",
+    "tolt cost"
+   ],
+   "owner": "/pricing/tolt/",
+   "support": []
+  },
+  {
+   "id": "pricing:reditus",
+   "queries": [
+    "reditus pricing",
+    "reditus price",
+    "reditus plans",
+    "how much is reditus",
+    "reditus cost"
+   ],
+   "owner": "/pricing/reditus/",
+   "support": []
+  },
+  {
+   "id": "pricing:cello",
+   "queries": [
+    "cello pricing",
+    "cello price",
+    "cello plans",
+    "how much is cello",
+    "cello cost"
+   ],
+   "owner": "/pricing/cello/",
+   "support": []
+  },
+  {
+   "id": "pricing:prefinery",
+   "queries": [
+    "prefinery pricing",
+    "prefinery price",
+    "prefinery plans",
+    "how much is prefinery",
+    "prefinery cost"
+   ],
+   "owner": "/pricing/prefinery/",
+   "support": []
+  },
+  {
+   "id": "pricing:kickofflabs",
+   "queries": [
+    "kickofflabs pricing",
+    "kickofflabs price",
+    "kickofflabs plans",
+    "how much is kickofflabs",
+    "kickofflabs cost"
+   ],
+   "owner": "/pricing/kickofflabs/",
+   "support": []
+  },
+  {
+   "id": "pricing:modash",
+   "queries": [
+    "modash pricing",
+    "modash price",
+    "modash plans",
+    "how much is modash",
+    "modash cost"
+   ],
+   "owner": "/pricing/modash/",
+   "support": []
+  },
+  {
+   "id": "pricing:talkwalker",
+   "queries": [
+    "talkwalker pricing",
+    "talkwalker price",
+    "talkwalker plans",
+    "how much is talkwalker",
+    "talkwalker cost"
+   ],
+   "owner": "/pricing/talkwalker/",
    "support": []
   },
   {
