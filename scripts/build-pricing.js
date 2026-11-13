@@ -177,7 +177,7 @@ function toolPage(t) {
     '  </header>\n\n' +
     '  <main class="container mx-auto px-4 py-10 max-w-5xl">\n' + card + calc + hist + alts + table + faqHtml +
     '      <section class="mt-12" data-sg-newsletter="card"></section>\n' +
-    '      <p class="pr-note mt-8">Prices are the cheapest paid plan we list, in USD. We check prices on each vendor&rsquo;s own pricing page and log changes on <a href="/price-watch/">Price Watch</a>. Some links are affiliate links (<a href="/affiliate-disclosure/">disclosure</a>); that never changes a listed price.</p>\n' +
+    '      <p class="pr-note mt-8">Prices are the cheapest paid plan we list, in USD unless marked otherwise. We check prices on each vendor&rsquo;s own pricing page and log changes on <a href="/price-watch/">Price Watch</a>. Some links are affiliate links (<a href="/affiliate-disclosure/">disclosure</a>); that never changes a listed price.</p>\n' +
     '  </main>\n\n';
   return head(title, desc, url, indexable(t), ld) + body + foot;
 }
