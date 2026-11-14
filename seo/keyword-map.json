@@ -6855,6 +6855,18 @@
    "support": []
   },
   {
+   "id": "pricing:syncbooster",
+   "queries": [
+    "syncbooster pricing",
+    "syncbooster price",
+    "syncbooster plans",
+    "how much is syncbooster",
+    "syncbooster cost"
+   ],
+   "owner": "/pricing/syncbooster/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
