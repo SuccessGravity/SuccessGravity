@@ -1293,27 +1293,27 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Modash
 - [x] Talkwalker
 - [x] Mention
-- [ ] Meltwater
-- [ ] BuzzSumo
-- [ ] SparkToro
-- [ ] Pond5
-- [ ] Adobe Stock
-- [ ] iStock
-- [ ] Depositphotos
-- [ ] Freepik
-- [ ] Vecteezy
-- [ ] 123RF
-- [ ] Dreamstime
-- [ ] Alamy
-- [ ] Getty Images
-- [ ] Flaticon
-- [ ] Icons8
-- [ ] Noun Project
-- [ ] Creative Market
-- [ ] Soundstripe
-- [ ] Musicbed
-- [ ] Uppbeat
-- [ ] Ditto Music
+- [x] Meltwater
+- [x] BuzzSumo
+- [x] SparkToro
+- [x] Pond5
+- [x] Adobe Stock
+- [x] iStock
+- [x] Depositphotos
+- [x] Freepik — dup
+- [x] Vecteezy
+- [x] 123RF
+- [x] Dreamstime
+- [x] Alamy
+- [x] Getty Images
+- [x] Flaticon
+- [x] Icons8
+- [x] Noun Project
+- [x] Creative Market
+- [x] Soundstripe
+- [x] Musicbed
+- [x] Uppbeat
+- [x] Ditto Music
 - [ ] Slidebean
 - [ ] Genially
 - [ ] Mentimeter
