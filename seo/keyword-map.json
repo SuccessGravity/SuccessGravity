@@ -723,6 +723,18 @@
    "support": []
   },
   {
+   "id": "pricing:gusto",
+   "queries": [
+    "gusto pricing",
+    "gusto price",
+    "gusto plans",
+    "how much is gusto",
+    "gusto cost"
+   ],
+   "owner": "/pricing/gusto/",
+   "support": []
+  },
+  {
    "id": "pricing:rippling",
    "queries": [
     "rippling pricing",
@@ -1611,6 +1623,18 @@
    "support": []
   },
   {
+   "id": "pricing:pitch",
+   "queries": [
+    "pitch pricing",
+    "pitch price",
+    "pitch plans",
+    "how much is pitch",
+    "pitch cost"
+   ],
+   "owner": "/pricing/pitch/",
+   "support": []
+  },
+  {
    "id": "pricing:beautiful-ai",
    "queries": [
     "beautiful.ai pricing",
@@ -1620,6 +1644,18 @@
     "beautiful.ai cost"
    ],
    "owner": "/pricing/beautiful-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:prezi",
+   "queries": [
+    "prezi pricing",
+    "prezi price",
+    "prezi plans",
+    "how much is prezi",
+    "prezi cost"
+   ],
+   "owner": "/pricing/prezi/",
    "support": []
   },
   {
@@ -6660,6 +6696,162 @@
     "talkwalker cost"
    ],
    "owner": "/pricing/talkwalker/",
+   "support": []
+  },
+  {
+   "id": "pricing:meltwater",
+   "queries": [
+    "meltwater pricing",
+    "meltwater price",
+    "meltwater plans",
+    "how much is meltwater",
+    "meltwater cost"
+   ],
+   "owner": "/pricing/meltwater/",
+   "support": []
+  },
+  {
+   "id": "pricing:buzzsumo",
+   "queries": [
+    "buzzsumo pricing",
+    "buzzsumo price",
+    "buzzsumo plans",
+    "how much is buzzsumo",
+    "buzzsumo cost"
+   ],
+   "owner": "/pricing/buzzsumo/",
+   "support": []
+  },
+  {
+   "id": "pricing:sparktoro",
+   "queries": [
+    "sparktoro pricing",
+    "sparktoro price",
+    "sparktoro plans",
+    "how much is sparktoro",
+    "sparktoro cost"
+   ],
+   "owner": "/pricing/sparktoro/",
+   "support": []
+  },
+  {
+   "id": "pricing:adobe-stock",
+   "queries": [
+    "adobe stock pricing",
+    "adobe stock price",
+    "adobe stock plans",
+    "how much is adobe stock",
+    "adobe stock cost"
+   ],
+   "owner": "/pricing/adobe-stock/",
+   "support": []
+  },
+  {
+   "id": "pricing:istock",
+   "queries": [
+    "istock pricing",
+    "istock price",
+    "istock plans",
+    "how much is istock",
+    "istock cost"
+   ],
+   "owner": "/pricing/istock/",
+   "support": []
+  },
+  {
+   "id": "pricing:depositphotos",
+   "queries": [
+    "depositphotos pricing",
+    "depositphotos price",
+    "depositphotos plans",
+    "how much is depositphotos",
+    "depositphotos cost"
+   ],
+   "owner": "/pricing/depositphotos/",
+   "support": []
+  },
+  {
+   "id": "pricing:vecteezy",
+   "queries": [
+    "vecteezy pricing",
+    "vecteezy price",
+    "vecteezy plans",
+    "how much is vecteezy",
+    "vecteezy cost"
+   ],
+   "owner": "/pricing/vecteezy/",
+   "support": []
+  },
+  {
+   "id": "pricing:123rf",
+   "queries": [
+    "123rf pricing",
+    "123rf price",
+    "123rf plans",
+    "how much is 123rf",
+    "123rf cost"
+   ],
+   "owner": "/pricing/123rf/",
+   "support": []
+  },
+  {
+   "id": "pricing:alamy",
+   "queries": [
+    "alamy pricing",
+    "alamy price",
+    "alamy plans",
+    "how much is alamy",
+    "alamy cost"
+   ],
+   "owner": "/pricing/alamy/",
+   "support": []
+  },
+  {
+   "id": "pricing:flaticon",
+   "queries": [
+    "flaticon pricing",
+    "flaticon price",
+    "flaticon plans",
+    "how much is flaticon",
+    "flaticon cost"
+   ],
+   "owner": "/pricing/flaticon/",
+   "support": []
+  },
+  {
+   "id": "pricing:icons8",
+   "queries": [
+    "icons8 pricing",
+    "icons8 price",
+    "icons8 plans",
+    "how much is icons8",
+    "icons8 cost"
+   ],
+   "owner": "/pricing/icons8/",
+   "support": []
+  },
+  {
+   "id": "pricing:noun-project",
+   "queries": [
+    "noun project pricing",
+    "noun project price",
+    "noun project plans",
+    "how much is noun project",
+    "noun project cost"
+   ],
+   "owner": "/pricing/noun-project/",
+   "support": []
+  },
+  {
+   "id": "pricing:ditto-music",
+   "queries": [
+    "ditto music pricing",
+    "ditto music price",
+    "ditto music plans",
+    "how much is ditto music",
+    "ditto music cost"
+   ],
+   "owner": "/pricing/ditto-music/",
    "support": []
   },
   {
