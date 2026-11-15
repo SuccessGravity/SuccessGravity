@@ -1659,6 +1659,30 @@
    "support": []
   },
   {
+   "id": "pricing:krea",
+   "queries": [
+    "krea pricing",
+    "krea price",
+    "krea plans",
+    "how much is krea",
+    "krea cost"
+   ],
+   "owner": "/pricing/krea/",
+   "support": []
+  },
+  {
+   "id": "pricing:prowritingaid",
+   "queries": [
+    "prowritingaid pricing",
+    "prowritingaid price",
+    "prowritingaid plans",
+    "how much is prowritingaid",
+    "prowritingaid cost"
+   ],
+   "owner": "/pricing/prowritingaid/",
+   "support": []
+  },
+  {
    "id": "pricing:frase",
    "queries": [
     "frase pricing",
@@ -6864,6 +6888,174 @@
     "syncbooster cost"
    ],
    "owner": "/pricing/syncbooster/",
+   "support": []
+  },
+  {
+   "id": "pricing:slidebean",
+   "queries": [
+    "slidebean pricing",
+    "slidebean price",
+    "slidebean plans",
+    "how much is slidebean",
+    "slidebean cost"
+   ],
+   "owner": "/pricing/slidebean/",
+   "support": []
+  },
+  {
+   "id": "pricing:mentimeter",
+   "queries": [
+    "mentimeter pricing",
+    "mentimeter price",
+    "mentimeter plans",
+    "how much is mentimeter",
+    "mentimeter cost"
+   ],
+   "owner": "/pricing/mentimeter/",
+   "support": []
+  },
+  {
+   "id": "pricing:poll-everywhere",
+   "queries": [
+    "poll everywhere pricing",
+    "poll everywhere price",
+    "poll everywhere plans",
+    "how much is poll everywhere",
+    "poll everywhere cost"
+   ],
+   "owner": "/pricing/poll-everywhere/",
+   "support": []
+  },
+  {
+   "id": "pricing:kahoot-360",
+   "queries": [
+    "kahoot 360 pricing",
+    "kahoot 360 price",
+    "kahoot 360 plans",
+    "how much is kahoot 360",
+    "kahoot 360 cost"
+   ],
+   "owner": "/pricing/kahoot-360/",
+   "support": []
+  },
+  {
+   "id": "pricing:rescuetime",
+   "queries": [
+    "rescuetime pricing",
+    "rescuetime price",
+    "rescuetime plans",
+    "how much is rescuetime",
+    "rescuetime cost"
+   ],
+   "owner": "/pricing/rescuetime/",
+   "support": []
+  },
+  {
+   "id": "pricing:clicktime",
+   "queries": [
+    "clicktime pricing",
+    "clicktime price",
+    "clicktime plans",
+    "how much is clicktime",
+    "clicktime cost"
+   ],
+   "owner": "/pricing/clicktime/",
+   "support": []
+  },
+  {
+   "id": "pricing:sling",
+   "queries": [
+    "sling pricing",
+    "sling price",
+    "sling plans",
+    "how much is sling",
+    "sling cost"
+   ],
+   "owner": "/pricing/sling/",
+   "support": []
+  },
+  {
+   "id": "pricing:buddy-punch",
+   "queries": [
+    "buddy punch pricing",
+    "buddy punch price",
+    "buddy punch plans",
+    "how much is buddy punch",
+    "buddy punch cost"
+   ],
+   "owner": "/pricing/buddy-punch/",
+   "support": []
+  },
+  {
+   "id": "pricing:convert",
+   "queries": [
+    "convert pricing",
+    "convert price",
+    "convert plans",
+    "how much is convert",
+    "convert cost"
+   ],
+   "owner": "/pricing/convert/",
+   "support": []
+  },
+  {
+   "id": "pricing:anyword",
+   "queries": [
+    "anyword pricing",
+    "anyword price",
+    "anyword plans",
+    "how much is anyword",
+    "anyword cost"
+   ],
+   "owner": "/pricing/anyword/",
+   "support": []
+  },
+  {
+   "id": "pricing:taiga",
+   "queries": [
+    "taiga pricing",
+    "taiga price",
+    "taiga plans",
+    "how much is taiga",
+    "taiga cost"
+   ],
+   "owner": "/pricing/taiga/",
+   "support": []
+  },
+  {
+   "id": "pricing:openproject",
+   "queries": [
+    "openproject pricing",
+    "openproject price",
+    "openproject plans",
+    "how much is openproject",
+    "openproject cost"
+   ],
+   "owner": "/pricing/openproject/",
+   "support": []
+  },
+  {
+   "id": "pricing:soundrop",
+   "queries": [
+    "soundrop pricing",
+    "soundrop price",
+    "soundrop plans",
+    "how much is soundrop",
+    "soundrop cost"
+   ],
+   "owner": "/pricing/soundrop/",
+   "support": []
+  },
+  {
+   "id": "pricing:bensound",
+   "queries": [
+    "bensound pricing",
+    "bensound price",
+    "bensound plans",
+    "how much is bensound",
+    "bensound cost"
+   ],
+   "owner": "/pricing/bensound/",
    "support": []
   },
   {
