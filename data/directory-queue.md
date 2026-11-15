@@ -1314,29 +1314,29 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Musicbed
 - [x] Uppbeat
 - [x] Ditto Music
-- [ ] Slidebean
-- [ ] Genially
-- [ ] Mentimeter
-- [ ] Poll Everywhere
-- [ ] Kahoot
-- [ ] RescueTime
-- [ ] ClickTime
-- [ ] Replicon
-- [ ] Sling
-- [ ] Buddy Punch
-- [ ] Jibble
-- [ ] Wingify
-- [ ] AB Tasty
-- [ ] Convert
-- [ ] Anyword
-- [ ] Taiga
-- [ ] OpenProject
+- [x] Slidebean
+- [x] Genially
+- [x] Mentimeter
+- [x] Poll Everywhere
+- [x] Kahoot — added as Kahoot! 360 (business plans)
+- [x] RescueTime
+- [x] ClickTime
+- [x] Replicon — added as Deltek Replicon (replicon.com redirects to deltek.com)
+- [x] Sling
+- [x] Buddy Punch
+- [x] Jibble
+- [x] Wingify — added as Wingify (VWO)
+- [x] AB Tasty — skipped: merged with VWO as Wingify (per wingify.com); listed under Wingify (VWO)
+- [x] Convert
+- [x] Anyword
+- [x] Taiga
+- [x] OpenProject
 
 ## Refill 2026-11-13 (stock media, resume, landing pages, SEO, AI writing, data viz, video, time tracking, presentations, inventory, finance, forms, PPC)
-- [ ] Soundrop
-- [ ] PremiumBeat
-- [ ] Bensound
-- [ ] Marmoset
+- [x] Soundrop
+- [x] PremiumBeat
+- [x] Bensound
+- [x] Marmoset
 - [ ] Vectorstock
 - [ ] Stocksy
 - [ ] Resume Genius
