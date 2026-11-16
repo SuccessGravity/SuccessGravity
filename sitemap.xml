@@ -132,7 +132,6 @@
   <url><loc>https://successgravity.com/pricing/aircall/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/smartsheet/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/xero/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://successgravity.com/pricing/freshbooks/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/zoho-books/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/onpay/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/deel/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -154,7 +153,6 @@
   <url><loc>https://successgravity.com/pricing/close/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/freshsales/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/copper-crm/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://successgravity.com/pricing/hunter-io/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/snov-io/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/lemlist/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/smartlead/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -334,11 +332,9 @@
   <url><loc>https://successgravity.com/pricing/duda/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/10web/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/divi/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://successgravity.com/pricing/rank-math/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/wpforms/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/gravity-forms/</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/monsterinsights/</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://successgravity.com/pricing/wp-rocket/</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/jetpack/</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/sucuri/</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/vanta/</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -736,4 +732,10 @@
   <url><loc>https://successgravity.com/pricing/seobility/</loc><lastmod>2026-11-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/sitechecker/</loc><lastmod>2026-11-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://successgravity.com/pricing/linnk-ai/</loc><lastmod>2026-11-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://successgravity.com/review/referral-factory/</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://successgravity.com/compare/jasper-vs-writesonic/</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://successgravity.com/alternatives/surfer-seo/</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://successgravity.com/review/viral-loops/</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://successgravity.com/best/best-accounting-software-small-business/</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://successgravity.com/guides/build-referral-program/</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

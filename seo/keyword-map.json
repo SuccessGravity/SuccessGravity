@@ -699,18 +699,6 @@
    "support": []
   },
   {
-   "id": "pricing:freshbooks",
-   "queries": [
-    "freshbooks pricing",
-    "freshbooks price",
-    "freshbooks plans",
-    "how much is freshbooks",
-    "freshbooks cost"
-   ],
-   "owner": "/pricing/freshbooks/",
-   "support": []
-  },
-  {
    "id": "pricing:zoho-books",
    "queries": [
     "zoho books pricing",
@@ -996,18 +984,6 @@
     "copper crm cost"
    ],
    "owner": "/pricing/copper-crm/",
-   "support": []
-  },
-  {
-   "id": "pricing:hunter-io",
-   "queries": [
-    "hunter.io pricing",
-    "hunter.io price",
-    "hunter.io plans",
-    "how much is hunter.io",
-    "hunter.io cost"
-   ],
-   "owner": "/pricing/hunter-io/",
    "support": []
   },
   {
@@ -3063,18 +3039,6 @@
    "support": []
   },
   {
-   "id": "pricing:rank-math",
-   "queries": [
-    "rank math pricing",
-    "rank math price",
-    "rank math plans",
-    "how much is rank math",
-    "rank math cost"
-   ],
-   "owner": "/pricing/rank-math/",
-   "support": []
-  },
-  {
    "id": "pricing:wpforms",
    "queries": [
     "wpforms pricing",
@@ -3108,18 +3072,6 @@
     "monsterinsights cost"
    ],
    "owner": "/pricing/monsterinsights/",
-   "support": []
-  },
-  {
-   "id": "pricing:wp-rocket",
-   "queries": [
-    "wp rocket pricing",
-    "wp rocket price",
-    "wp rocket plans",
-    "how much is wp rocket",
-    "wp rocket cost"
-   ],
-   "owner": "/pricing/wp-rocket/",
    "support": []
   },
   {
@@ -7593,6 +7545,18 @@
    ]
   },
   {
+   "id": "review:referral-factory",
+   "queries": [
+    "referral factory review",
+    "is referral factory worth it",
+    "referral factory pros and cons"
+   ],
+   "owner": "/review/referral-factory/",
+   "support": [
+    "/pricing/referral-factory/"
+   ]
+  },
+  {
    "id": "review:rewardful",
    "queries": [
     "rewardful review",
@@ -7652,7 +7616,8 @@
    ],
    "owner": "/review/surfer-seo/",
    "support": [
-    "/pricing/surfer-seo/"
+    "/pricing/surfer-seo/",
+    "/alternatives/surfer-seo/"
    ]
   },
   {
@@ -7689,6 +7654,18 @@
    "owner": "/review/upfluence/",
    "support": [
     "/pricing/upfluence/"
+   ]
+  },
+  {
+   "id": "review:viral-loops",
+   "queries": [
+    "viral loops review",
+    "is viral loops worth it",
+    "viral loops pros and cons"
+   ],
+   "owner": "/review/viral-loops/",
+   "support": [
+    "/pricing/viral-loops/"
    ]
   },
   {
@@ -7858,6 +7835,19 @@
    ]
   },
   {
+   "id": "alternatives:surfer-seo",
+   "queries": [
+    "surfer seo alternatives",
+    "best surfer seo alternatives",
+    "sites like surfer seo",
+    "cheaper than surfer seo"
+   ],
+   "owner": "/alternatives/surfer-seo/",
+   "support": [
+    "/review/surfer-seo/"
+   ]
+  },
+  {
    "id": "alternatives:wix",
    "queries": [
     "wix alternatives",
@@ -7934,6 +7924,15 @@
    "support": []
   },
   {
+   "id": "compare:jasper-vs-writesonic",
+   "queries": [
+    "jasper vs writesonic",
+    "writesonic vs jasper"
+   ],
+   "owner": "/compare/jasper-vs-writesonic/",
+   "support": []
+  },
+  {
    "id": "compare:perplexity-vs-chatgpt",
    "queries": [
     "perplexity vs chatgpt",
@@ -7958,6 +7957,15 @@
     "squarespace vs wix"
    ],
    "owner": "/compare/wix-vs-squarespace/",
+   "support": []
+  },
+  {
+   "id": "best:best-accounting-software-small-business",
+   "queries": [
+    "best accounting software for small businesses",
+    "top accounting software for small businesses"
+   ],
+   "owner": "/best/best-accounting-software-small-business/",
    "support": []
   },
   {
@@ -8312,6 +8320,14 @@
     "how to use buffer for social media scheduling"
    ],
    "owner": "/guides/buffer-social-media-scheduling/",
+   "support": []
+  },
+  {
+   "id": "guide:build-referral-program",
+   "queries": [
+    "how to build a referral program for your business"
+   ],
+   "owner": "/guides/build-referral-program/",
    "support": []
   },
   {
