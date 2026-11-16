@@ -1337,27 +1337,27 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] PremiumBeat
 - [x] Bensound
 - [x] Marmoset
-- [ ] Vectorstock
-- [ ] Stocksy
-- [ ] Resume Genius
-- [ ] VisualCV
-- [ ] Huntr
-- [ ] Jobscan
-- [ ] Replo
-- [ ] Zipify Pages
-- [ ] Shogun
-- [ ] Perspective
-- [ ] Wishpond
-- [ ] ShortStack
-- [ ] Woorise
-- [ ] Gleam
-- [ ] Rafflecopter
-- [ ] KeySearch
-- [ ] LowFruits
-- [ ] Keywords Everywhere
-- [ ] Seobility
-- [ ] Sitechecker
-- [ ] JetOctopus
+- [x] Vectorstock
+- [x] Stocksy
+- [x] Resume Genius
+- [x] VisualCV
+- [x] Huntr
+- [x] Jobscan
+- [x] Replo
+- [x] Zipify Pages
+- [x] Shogun
+- [x] Perspective
+- [x] Wishpond
+- [x] ShortStack
+- [x] Woorise
+- [x] Gleam
+- [x] Rafflecopter — not added: service shut down Oct 1, 2025 (per rafflecopter.com)
+- [x] KeySearch
+- [x] LowFruits
+- [x] Keywords Everywhere
+- [x] Seobility
+- [x] Sitechecker
+- [x] JetOctopus
 - [ ] Linkody
 - [ ] Respona
 - [ ] BuzzStream
@@ -1393,3 +1393,73 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Youform
 - [ ] Opteo
 - [ ] Swydo
+
+## Refill 2026-11-16 — HR, payroll & people
+- [ ] ADP Workforce Now
+- [ ] Calamari
+- [ ] Pinpoint
+- [ ] Manatal
+- [ ] Loxo
+- [ ] Zoho Recruit
+- [ ] Officevibe
+- [ ] Bonusly
+- [ ] Kudos
+- [ ] Assembly
+- [ ] Donut
+
+## Refill 2026-11-16 — Finance & billing
+- [ ] Invoiced
+- [ ] Navan
+- [ ] Indy
+
+## Refill 2026-11-16 — Knowledge base, meetings & podcasts
+- [ ] Whale
+- [ ] Archbee
+- [ ] KnowledgeOwl
+- [ ] Bubbles
+- [ ] Claap
+- [ ] Sembly
+- [ ] Supernormal
+- [ ] Notta
+- [ ] Podbean
+- [ ] Libsyn
+- [ ] RSS.com
+- [ ] Spreaker
+- [ ] Simplecast
+- [ ] Castos
+- [ ] RedCircle
+- [ ] Acast
+
+## Refill 2026-11-16 — Client portals & project management
+- [ ] Fusebase
+- [ ] Clinked
+- [ ] SuiteDash
+- [ ] Accelo
+- [ ] Function Point
+- [ ] Kantata
+- [ ] Zenkit
+- [ ] MeisterTask
+- [ ] Taskade
+- [ ] Upbase
+- [ ] Breeze
+- [ ] Freedcamp
+- [ ] Quire
+- [ ] Runn
+- [ ] Hub Planner
+- [ ] Teamdeck
+- [ ] GanttPRO
+- [ ] TeamGantt
+
+## Refill 2026-11-16 — Databases, no-code & interactive content
+- [ ] Baserow
+- [ ] NocoDB
+- [ ] Stackby
+- [ ] SeaTable
+- [ ] Grist
+- [ ] Tadabase
+- [ ] Caspio
+- [ ] Quickbase
+- [ ] ToolJet
+- [ ] involve.me
+- [ ] Outgrow
+- [ ] ScoreApp
