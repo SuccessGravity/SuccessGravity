@@ -1695,6 +1695,18 @@
    "support": []
   },
   {
+   "id": "pricing:neuronwriter",
+   "queries": [
+    "neuronwriter pricing",
+    "neuronwriter price",
+    "neuronwriter plans",
+    "how much is neuronwriter",
+    "neuronwriter cost"
+   ],
+   "owner": "/pricing/neuronwriter/",
+   "support": []
+  },
+  {
    "id": "pricing:jenni-ai",
    "queries": [
     "jenni ai pricing",
@@ -1704,6 +1716,18 @@
     "jenni ai cost"
    ],
    "owner": "/pricing/jenni-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:siteground",
+   "queries": [
+    "siteground pricing",
+    "siteground price",
+    "siteground plans",
+    "how much is siteground",
+    "siteground cost"
+   ],
+   "owner": "/pricing/siteground/",
    "support": []
   },
   {
@@ -7056,6 +7080,150 @@
     "bensound cost"
    ],
    "owner": "/pricing/bensound/",
+   "support": []
+  },
+  {
+   "id": "pricing:resume-genius",
+   "queries": [
+    "resume genius pricing",
+    "resume genius price",
+    "resume genius plans",
+    "how much is resume genius",
+    "resume genius cost"
+   ],
+   "owner": "/pricing/resume-genius/",
+   "support": []
+  },
+  {
+   "id": "pricing:visualcv",
+   "queries": [
+    "visualcv pricing",
+    "visualcv price",
+    "visualcv plans",
+    "how much is visualcv",
+    "visualcv cost"
+   ],
+   "owner": "/pricing/visualcv/",
+   "support": []
+  },
+  {
+   "id": "pricing:huntr",
+   "queries": [
+    "huntr pricing",
+    "huntr price",
+    "huntr plans",
+    "how much is huntr",
+    "huntr cost"
+   ],
+   "owner": "/pricing/huntr/",
+   "support": []
+  },
+  {
+   "id": "pricing:replo",
+   "queries": [
+    "replo pricing",
+    "replo price",
+    "replo plans",
+    "how much is replo",
+    "replo cost"
+   ],
+   "owner": "/pricing/replo/",
+   "support": []
+  },
+  {
+   "id": "pricing:zipify-pages",
+   "queries": [
+    "zipify pages pricing",
+    "zipify pages price",
+    "zipify pages plans",
+    "how much is zipify pages",
+    "zipify pages cost"
+   ],
+   "owner": "/pricing/zipify-pages/",
+   "support": []
+  },
+  {
+   "id": "pricing:shogun",
+   "queries": [
+    "shogun pricing",
+    "shogun price",
+    "shogun plans",
+    "how much is shogun",
+    "shogun cost"
+   ],
+   "owner": "/pricing/shogun/",
+   "support": []
+  },
+  {
+   "id": "pricing:shortstack",
+   "queries": [
+    "shortstack pricing",
+    "shortstack price",
+    "shortstack plans",
+    "how much is shortstack",
+    "shortstack cost"
+   ],
+   "owner": "/pricing/shortstack/",
+   "support": []
+  },
+  {
+   "id": "pricing:woorise",
+   "queries": [
+    "woorise pricing",
+    "woorise price",
+    "woorise plans",
+    "how much is woorise",
+    "woorise cost"
+   ],
+   "owner": "/pricing/woorise/",
+   "support": []
+  },
+  {
+   "id": "pricing:keysearch",
+   "queries": [
+    "keysearch pricing",
+    "keysearch price",
+    "keysearch plans",
+    "how much is keysearch",
+    "keysearch cost"
+   ],
+   "owner": "/pricing/keysearch/",
+   "support": []
+  },
+  {
+   "id": "pricing:keywords-everywhere",
+   "queries": [
+    "keywords everywhere pricing",
+    "keywords everywhere price",
+    "keywords everywhere plans",
+    "how much is keywords everywhere",
+    "keywords everywhere cost"
+   ],
+   "owner": "/pricing/keywords-everywhere/",
+   "support": []
+  },
+  {
+   "id": "pricing:seobility",
+   "queries": [
+    "seobility pricing",
+    "seobility price",
+    "seobility plans",
+    "how much is seobility",
+    "seobility cost"
+   ],
+   "owner": "/pricing/seobility/",
+   "support": []
+  },
+  {
+   "id": "pricing:sitechecker",
+   "queries": [
+    "sitechecker pricing",
+    "sitechecker price",
+    "sitechecker plans",
+    "how much is sitechecker",
+    "sitechecker cost"
+   ],
+   "owner": "/pricing/sitechecker/",
    "support": []
   },
   {
