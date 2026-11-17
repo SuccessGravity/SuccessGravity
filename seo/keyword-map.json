@@ -1815,6 +1815,18 @@
    "support": []
   },
   {
+   "id": "pricing:coda-superhuman-docs",
+   "queries": [
+    "coda superhuman docs pricing",
+    "coda superhuman docs price",
+    "coda superhuman docs plans",
+    "how much is coda superhuman docs",
+    "coda superhuman docs cost"
+   ],
+   "owner": "/pricing/coda-superhuman-docs/",
+   "support": []
+  },
+  {
    "id": "pricing:jotform",
    "queries": [
     "jotform pricing",
@@ -1896,6 +1908,30 @@
     "hubstaff cost"
    ],
    "owner": "/pricing/hubstaff/",
+   "support": []
+  },
+  {
+   "id": "pricing:zoho-mail",
+   "queries": [
+    "zoho mail pricing",
+    "zoho mail price",
+    "zoho mail plans",
+    "how much is zoho mail",
+    "zoho mail cost"
+   ],
+   "owner": "/pricing/zoho-mail/",
+   "support": []
+  },
+  {
+   "id": "pricing:proton-mail-for-business",
+   "queries": [
+    "proton mail for business pricing",
+    "proton mail for business price",
+    "proton mail for business plans",
+    "how much is proton mail for business",
+    "proton mail for business cost"
+   ],
+   "owner": "/pricing/proton-mail-for-business/",
    "support": []
   },
   {
@@ -1983,6 +2019,18 @@
    "support": []
   },
   {
+   "id": "pricing:17hats",
+   "queries": [
+    "17hats pricing",
+    "17hats price",
+    "17hats plans",
+    "how much is 17hats",
+    "17hats cost"
+   ],
+   "owner": "/pricing/17hats/",
+   "support": []
+  },
+  {
    "id": "pricing:jobber",
    "queries": [
     "jobber pricing",
@@ -2016,6 +2064,18 @@
     "servicetitan cost"
    ],
    "owner": "/pricing/servicetitan/",
+   "support": []
+  },
+  {
+   "id": "pricing:vagaro",
+   "queries": [
+    "vagaro pricing",
+    "vagaro price",
+    "vagaro plans",
+    "how much is vagaro",
+    "vagaro cost"
+   ],
+   "owner": "/pricing/vagaro/",
    "support": []
   },
   {
@@ -2223,6 +2283,18 @@
    "support": []
   },
   {
+   "id": "pricing:keeper-security",
+   "queries": [
+    "keeper security pricing",
+    "keeper security price",
+    "keeper security plans",
+    "how much is keeper security",
+    "keeper security cost"
+   ],
+   "owner": "/pricing/keeper-security/",
+   "support": []
+  },
+  {
    "id": "pricing:backblaze",
    "queries": [
     "backblaze pricing",
@@ -2268,6 +2340,18 @@
     "keap cost"
    ],
    "owner": "/pricing/keap/",
+   "support": []
+  },
+  {
+   "id": "pricing:ontraport",
+   "queries": [
+    "ontraport pricing",
+    "ontraport price",
+    "ontraport plans",
+    "how much is ontraport",
+    "ontraport cost"
+   ],
+   "owner": "/pricing/ontraport/",
    "support": []
   },
   {
@@ -7188,6 +7272,222 @@
     "linnk ai cost"
    ],
    "owner": "/pricing/linnk-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:linkody",
+   "queries": [
+    "linkody pricing",
+    "linkody price",
+    "linkody plans",
+    "how much is linkody",
+    "linkody cost"
+   ],
+   "owner": "/pricing/linkody/",
+   "support": []
+  },
+  {
+   "id": "pricing:respona",
+   "queries": [
+    "respona pricing",
+    "respona price",
+    "respona plans",
+    "how much is respona",
+    "respona cost"
+   ],
+   "owner": "/pricing/respona/",
+   "support": []
+  },
+  {
+   "id": "pricing:buzzstream",
+   "queries": [
+    "buzzstream pricing",
+    "buzzstream price",
+    "buzzstream plans",
+    "how much is buzzstream",
+    "buzzstream cost"
+   ],
+   "owner": "/pricing/buzzstream/",
+   "support": []
+  },
+  {
+   "id": "pricing:junia-ai",
+   "queries": [
+    "junia ai pricing",
+    "junia ai price",
+    "junia ai plans",
+    "how much is junia ai",
+    "junia ai cost"
+   ],
+   "owner": "/pricing/junia-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:contentbot",
+   "queries": [
+    "contentbot pricing",
+    "contentbot price",
+    "contentbot plans",
+    "how much is contentbot",
+    "contentbot cost"
+   ],
+   "owner": "/pricing/contentbot/",
+   "support": []
+  },
+  {
+   "id": "pricing:sudowrite",
+   "queries": [
+    "sudowrite pricing",
+    "sudowrite price",
+    "sudowrite plans",
+    "how much is sudowrite",
+    "sudowrite cost"
+   ],
+   "owner": "/pricing/sudowrite/",
+   "support": []
+  },
+  {
+   "id": "pricing:hemingway-editor",
+   "queries": [
+    "hemingway editor pricing",
+    "hemingway editor price",
+    "hemingway editor plans",
+    "how much is hemingway editor",
+    "hemingway editor cost"
+   ],
+   "owner": "/pricing/hemingway-editor/",
+   "support": []
+  },
+  {
+   "id": "pricing:equals",
+   "queries": [
+    "equals pricing",
+    "equals price",
+    "equals plans",
+    "how much is equals",
+    "equals cost"
+   ],
+   "owner": "/pricing/equals/",
+   "support": []
+  },
+  {
+   "id": "pricing:datawrapper",
+   "queries": [
+    "datawrapper pricing",
+    "datawrapper price",
+    "datawrapper plans",
+    "how much is datawrapper",
+    "datawrapper cost"
+   ],
+   "owner": "/pricing/datawrapper/",
+   "support": []
+  },
+  {
+   "id": "pricing:infogram",
+   "queries": [
+    "infogram pricing",
+    "infogram price",
+    "infogram plans",
+    "how much is infogram",
+    "infogram cost"
+   ],
+   "owner": "/pricing/infogram/",
+   "support": []
+  },
+  {
+   "id": "pricing:flourish",
+   "queries": [
+    "flourish pricing",
+    "flourish price",
+    "flourish plans",
+    "how much is flourish",
+    "flourish cost"
+   ],
+   "owner": "/pricing/flourish/",
+   "support": []
+  },
+  {
+   "id": "pricing:polymer",
+   "queries": [
+    "polymer pricing",
+    "polymer price",
+    "polymer plans",
+    "how much is polymer",
+    "polymer cost"
+   ],
+   "owner": "/pricing/polymer/",
+   "support": []
+  },
+  {
+   "id": "pricing:camtasia",
+   "queries": [
+    "camtasia pricing",
+    "camtasia price",
+    "camtasia plans",
+    "how much is camtasia",
+    "camtasia cost"
+   ],
+   "owner": "/pricing/camtasia/",
+   "support": []
+  },
+  {
+   "id": "pricing:screenpal",
+   "queries": [
+    "screenpal pricing",
+    "screenpal price",
+    "screenpal plans",
+    "how much is screenpal",
+    "screenpal cost"
+   ],
+   "owner": "/pricing/screenpal/",
+   "support": []
+  },
+  {
+   "id": "pricing:screen-studio",
+   "queries": [
+    "screen studio pricing",
+    "screen studio price",
+    "screen studio plans",
+    "how much is screen studio",
+    "screen studio cost"
+   ],
+   "owner": "/pricing/screen-studio/",
+   "support": []
+  },
+  {
+   "id": "pricing:tmetric",
+   "queries": [
+    "tmetric pricing",
+    "tmetric price",
+    "tmetric plans",
+    "how much is tmetric",
+    "tmetric cost"
+   ],
+   "owner": "/pricing/tmetric/",
+   "support": []
+  },
+  {
+   "id": "pricing:my-hours",
+   "queries": [
+    "my hours pricing",
+    "my hours price",
+    "my hours plans",
+    "how much is my hours",
+    "my hours cost"
+   ],
+   "owner": "/pricing/my-hours/",
+   "support": []
+  },
+  {
+   "id": "pricing:insightful",
+   "queries": [
+    "insightful pricing",
+    "insightful price",
+    "insightful plans",
+    "how much is insightful",
+    "insightful cost"
+   ],
+   "owner": "/pricing/insightful/",
    "support": []
   },
   {

@@ -1358,28 +1358,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Seobility
 - [x] Sitechecker
 - [x] JetOctopus
-- [ ] Linkody
-- [ ] Respona
-- [ ] BuzzStream
-- [ ] Junia AI
-- [ ] Outranking
-- [ ] ContentBot
-- [ ] Sudowrite
-- [ ] Hemingway Editor
-- [ ] Equals
-- [ ] Datawrapper
-- [ ] Infogram
-- [ ] Flourish
-- [ ] Polymer Search
-- [ ] WeVideo
-- [ ] Camtasia
-- [ ] ScreenPal
-- [ ] Screen Studio
-- [ ] Movavi
-- [ ] TMetric
-- [ ] My Hours
-- [ ] Timeular
-- [ ] Insightful
+- [x] Linkody
+- [x] Respona
+- [x] BuzzStream
+- [x] Junia AI
+- [ ] Outranking — 2026-11-17: outranking.io returned Cloudflare error 521 (server down); retry next run
+- [x] ContentBot
+- [x] Sudowrite
+- [x] Hemingway Editor
+- [x] Equals
+- [x] Datawrapper
+- [x] Infogram
+- [x] Flourish
+- [x] Polymer Search
+- [x] WeVideo
+- [x] Camtasia
+- [x] ScreenPal
+- [x] Screen Studio
+- [x] Movavi
+- [x] TMetric
+- [x] My Hours
+- [x] Timeular — not added: timeular.com now redirects to TimeTac (timetac.com, via early.app), a different company
+- [x] Insightful
 - [ ] Slides.com
 - [ ] Plus AI
 - [ ] Storydoc
