@@ -1911,6 +1911,18 @@
    "support": []
   },
   {
+   "id": "pricing:zoho-one",
+   "queries": [
+    "zoho one pricing",
+    "zoho one price",
+    "zoho one plans",
+    "how much is zoho one",
+    "zoho one cost"
+   ],
+   "owner": "/pricing/zoho-one/",
+   "support": []
+  },
+  {
    "id": "pricing:zoho-mail",
    "queries": [
     "zoho mail pricing",
@@ -7488,6 +7500,234 @@
     "insightful cost"
    ],
    "owner": "/pricing/insightful/",
+   "support": []
+  },
+  {
+   "id": "pricing:slides-com",
+   "queries": [
+    "slides.com pricing",
+    "slides.com price",
+    "slides.com plans",
+    "how much is slides.com",
+    "slides.com cost"
+   ],
+   "owner": "/pricing/slides-com/",
+   "support": []
+  },
+  {
+   "id": "pricing:plus-ai",
+   "queries": [
+    "plus ai pricing",
+    "plus ai price",
+    "plus ai plans",
+    "how much is plus ai",
+    "plus ai cost"
+   ],
+   "owner": "/pricing/plus-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:storydoc",
+   "queries": [
+    "storydoc pricing",
+    "storydoc price",
+    "storydoc plans",
+    "how much is storydoc",
+    "storydoc cost"
+   ],
+   "owner": "/pricing/storydoc/",
+   "support": []
+  },
+  {
+   "id": "pricing:ordoro",
+   "queries": [
+    "ordoro pricing",
+    "ordoro price",
+    "ordoro plans",
+    "how much is ordoro",
+    "ordoro cost"
+   ],
+   "owner": "/pricing/ordoro/",
+   "support": []
+  },
+  {
+   "id": "pricing:unleashed",
+   "queries": [
+    "unleashed pricing",
+    "unleashed price",
+    "unleashed plans",
+    "how much is unleashed",
+    "unleashed cost"
+   ],
+   "owner": "/pricing/unleashed/",
+   "support": []
+  },
+  {
+   "id": "pricing:liveplan",
+   "queries": [
+    "liveplan pricing",
+    "liveplan price",
+    "liveplan plans",
+    "how much is liveplan",
+    "liveplan cost"
+   ],
+   "owner": "/pricing/liveplan/",
+   "support": []
+  },
+  {
+   "id": "pricing:cash-flow-frog",
+   "queries": [
+    "cash flow frog pricing",
+    "cash flow frog price",
+    "cash flow frog plans",
+    "how much is cash flow frog",
+    "cash flow frog cost"
+   ],
+   "owner": "/pricing/cash-flow-frog/",
+   "support": []
+  },
+  {
+   "id": "pricing:projectionhub",
+   "queries": [
+    "projectionhub pricing",
+    "projectionhub price",
+    "projectionhub plans",
+    "how much is projectionhub",
+    "projectionhub cost"
+   ],
+   "owner": "/pricing/projectionhub/",
+   "support": []
+  },
+  {
+   "id": "pricing:formbricks",
+   "queries": [
+    "formbricks pricing",
+    "formbricks price",
+    "formbricks plans",
+    "how much is formbricks",
+    "formbricks cost"
+   ],
+   "owner": "/pricing/formbricks/",
+   "support": []
+  },
+  {
+   "id": "pricing:youform",
+   "queries": [
+    "youform pricing",
+    "youform price",
+    "youform plans",
+    "how much is youform",
+    "youform cost"
+   ],
+   "owner": "/pricing/youform/",
+   "support": []
+  },
+  {
+   "id": "pricing:opteo",
+   "queries": [
+    "opteo pricing",
+    "opteo price",
+    "opteo plans",
+    "how much is opteo",
+    "opteo cost"
+   ],
+   "owner": "/pricing/opteo/",
+   "support": []
+  },
+  {
+   "id": "pricing:swydo",
+   "queries": [
+    "swydo pricing",
+    "swydo price",
+    "swydo plans",
+    "how much is swydo",
+    "swydo cost"
+   ],
+   "owner": "/pricing/swydo/",
+   "support": []
+  },
+  {
+   "id": "pricing:adp-workforce-now",
+   "queries": [
+    "adp workforce now pricing",
+    "adp workforce now price",
+    "adp workforce now plans",
+    "how much is adp workforce now",
+    "adp workforce now cost"
+   ],
+   "owner": "/pricing/adp-workforce-now/",
+   "support": []
+  },
+  {
+   "id": "pricing:calamari",
+   "queries": [
+    "calamari pricing",
+    "calamari price",
+    "calamari plans",
+    "how much is calamari",
+    "calamari cost"
+   ],
+   "owner": "/pricing/calamari/",
+   "support": []
+  },
+  {
+   "id": "pricing:pinpoint",
+   "queries": [
+    "pinpoint pricing",
+    "pinpoint price",
+    "pinpoint plans",
+    "how much is pinpoint",
+    "pinpoint cost"
+   ],
+   "owner": "/pricing/pinpoint/",
+   "support": []
+  },
+  {
+   "id": "pricing:manatal",
+   "queries": [
+    "manatal pricing",
+    "manatal price",
+    "manatal plans",
+    "how much is manatal",
+    "manatal cost"
+   ],
+   "owner": "/pricing/manatal/",
+   "support": []
+  },
+  {
+   "id": "pricing:loxo",
+   "queries": [
+    "loxo pricing",
+    "loxo price",
+    "loxo plans",
+    "how much is loxo",
+    "loxo cost"
+   ],
+   "owner": "/pricing/loxo/",
+   "support": []
+  },
+  {
+   "id": "pricing:zoho-recruit",
+   "queries": [
+    "zoho recruit pricing",
+    "zoho recruit price",
+    "zoho recruit plans",
+    "how much is zoho recruit",
+    "zoho recruit cost"
+   ],
+   "owner": "/pricing/zoho-recruit/",
+   "support": []
+  },
+  {
+   "id": "pricing:bonusly",
+   "queries": [
+    "bonusly pricing",
+    "bonusly price",
+    "bonusly plans",
+    "how much is bonusly",
+    "bonusly cost"
+   ],
+   "owner": "/pricing/bonusly/",
    "support": []
   },
   {
