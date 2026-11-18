@@ -1362,7 +1362,7 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Respona
 - [x] BuzzStream
 - [x] Junia AI
-- [ ] Outranking — 2026-11-17: outranking.io returned Cloudflare error 521 (server down); retry next run
+- [ ] Outranking — 2026-11-17 and 2026-11-18: outranking.io returned Cloudflare error 521 (server down); retry next run
 - [x] ContentBot
 - [x] Sudowrite
 - [x] Hemingway Editor
@@ -1380,30 +1380,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] My Hours
 - [x] Timeular — not added: timeular.com now redirects to TimeTac (timetac.com, via early.app), a different company
 - [x] Insightful
-- [ ] Slides.com
-- [ ] Plus AI
-- [ ] Storydoc
-- [ ] Ordoro
-- [ ] Craftybase
-- [ ] Unleashed
-- [ ] LivePlan
-- [ ] Cash Flow Frog
-- [ ] ProjectionHub
-- [ ] Formbricks
-- [ ] Youform
-- [ ] Opteo
-- [ ] Swydo
+- [x] Slides.com
+- [x] Plus AI
+- [x] Storydoc
+- [x] Ordoro
+- [x] Craftybase — not added: craftybase.com now redirects to stocksmith.io (renamed), recheck as Stocksmith
+- [x] Unleashed
+- [x] LivePlan
+- [x] Cash Flow Frog
+- [x] ProjectionHub
+- [x] Formbricks
+- [x] Youform
+- [x] Opteo
+- [x] Swydo
 
 ## Refill 2026-11-16 — HR, payroll & people
-- [ ] ADP Workforce Now
-- [ ] Calamari
-- [ ] Pinpoint
-- [ ] Manatal
-- [ ] Loxo
-- [ ] Zoho Recruit
-- [ ] Officevibe
-- [ ] Bonusly
-- [ ] Kudos
+- [x] ADP Workforce Now
+- [x] Calamari
+- [x] Pinpoint
+- [x] Manatal
+- [x] Loxo
+- [x] Zoho Recruit
+- [x] Officevibe — not added: now part of the Workleap platform (workleap.com/pricing), no standalone Officevibe pricing
+- [x] Bonusly
+- [x] Kudos
 - [ ] Assembly
 - [ ] Donut
 
