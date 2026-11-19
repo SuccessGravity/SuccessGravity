@@ -1463,3 +1463,72 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] involve.me
 - [ ] Outgrow
 - [ ] ScoreApp
+
+## Refill 2026-11-19 — music, listings, referral, AI coding, PPC
+- [ ] Symphonic
+- [ ] UnitedMasters
+- [ ] Splice
+- [ ] Boomy
+- [ ] Mubert
+- [ ] AIVA
+- [ ] Loudly
+- [ ] Synup
+- [ ] Uberall
+- [ ] ReferralHero
+- [ ] Referral Rock
+- [ ] Talkable
+- [ ] Rezi
+- [ ] Tabnine
+- [ ] Qodo
+- [ ] JetBrains AI
+- [ ] Amazon Q Developer
+- [ ] Adzooma
+- [ ] Lunio
+- [ ] TrueClicks
+- [ ] HypeAuditor
+
+## Refill 2026-11-19 — data, image, courses, storage, finance, forms
+- [ ] SOS Inventory
+- [ ] Inventory Planner
+- [ ] Prediko
+- [ ] Flieber
+- [ ] Rows
+- [ ] Akkio
+- [ ] Obviously AI
+- [ ] Fotor
+- [ ] Picsart
+- [ ] Let's Enhance
+- [ ] Luminar Neo
+- [ ] Playground
+- [ ] Teachery
+- [ ] Heartbeat
+- [ ] Disco
+- [ ] Uscreen
+- [ ] Ruzuku
+- [ ] EzyCourse
+- [ ] Graphy
+- [ ] Icedrive
+- [ ] Koofr
+- [ ] Filen
+- [ ] Internxt
+- [ ] Wasabi
+- [ ] DaVinci Resolve
+- [ ] Runway (financial planning, runway.com)
+- [ ] Pulse (cash flow)
+- [ ] Brixx
+- [ ] PlanGuru
+- [ ] Lander
+- [ ] 123FormBuilder
+- [ ] Formsite
+- [ ] Hubdoc
+
+## Refill 2026-11-19 — AI writing, social & business formation
+- [ ] Writer
+- [ ] Hypotenuse AI
+- [ ] Simplified
+- [ ] Ocoya
+- [ ] Lately
+- [ ] Keyword Insights
+- [ ] ZenBusiness
+- [ ] Bizee
+- [ ] Tailor Brands
