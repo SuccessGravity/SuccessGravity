@@ -1362,7 +1362,7 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Respona
 - [x] BuzzStream
 - [x] Junia AI
-- [ ] Outranking — 2026-11-17 and 2026-11-18: outranking.io returned Cloudflare error 521 (server down); retry next run
+- [x] Outranking — not added: outranking.io still returned Cloudflare error 521 on 2026-11-17, -18 and -19 (site down)
 - [x] ContentBot
 - [x] Sudowrite
 - [x] Hemingway Editor
@@ -1404,30 +1404,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Officevibe — not added: now part of the Workleap platform (workleap.com/pricing), no standalone Officevibe pricing
 - [x] Bonusly
 - [x] Kudos
-- [ ] Assembly
-- [ ] Donut
+- [x] Assembly
+- [x] Donut
 
 ## Refill 2026-11-16 — Finance & billing
-- [ ] Invoiced
-- [ ] Navan
-- [ ] Indy
+- [x] Invoiced
+- [x] Navan
+- [x] Indy
 
 ## Refill 2026-11-16 — Knowledge base, meetings & podcasts
-- [ ] Whale
-- [ ] Archbee
-- [ ] KnowledgeOwl
-- [ ] Bubbles
-- [ ] Claap
-- [ ] Sembly
-- [ ] Supernormal
-- [ ] Notta
-- [ ] Podbean
-- [ ] Libsyn
-- [ ] RSS.com
-- [ ] Spreaker
-- [ ] Simplecast
-- [ ] Castos
-- [ ] RedCircle
+- [x] Whale
+- [x] Archbee
+- [x] KnowledgeOwl
+- [x] Bubbles
+- [x] Claap
+- [x] Sembly
+- [x] Supernormal
+- [x] Notta
+- [x] Podbean
+- [x] Libsyn
+- [x] RSS.com
+- [x] Spreaker
+- [x] Simplecast
+- [x] Castos
+- [x] RedCircle
 - [ ] Acast
 
 ## Refill 2026-11-16 — Client portals & project management
@@ -1463,3 +1463,72 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] involve.me
 - [ ] Outgrow
 - [ ] ScoreApp
+
+## Refill 2026-11-19 — music, listings, referral, AI coding, PPC
+- [ ] Symphonic
+- [ ] UnitedMasters
+- [ ] Splice
+- [ ] Boomy
+- [ ] Mubert
+- [ ] AIVA
+- [ ] Loudly
+- [ ] Synup
+- [ ] Uberall
+- [ ] ReferralHero
+- [ ] Referral Rock
+- [ ] Talkable
+- [ ] Rezi
+- [ ] Tabnine
+- [ ] Qodo
+- [ ] JetBrains AI
+- [ ] Amazon Q Developer
+- [ ] Adzooma
+- [ ] Lunio
+- [ ] TrueClicks
+- [ ] HypeAuditor
+
+## Refill 2026-11-19 — data, image, courses, storage, finance, forms
+- [ ] SOS Inventory
+- [ ] Inventory Planner
+- [ ] Prediko
+- [ ] Flieber
+- [ ] Rows
+- [ ] Akkio
+- [ ] Obviously AI
+- [ ] Fotor
+- [ ] Picsart
+- [ ] Let's Enhance
+- [ ] Luminar Neo
+- [ ] Playground
+- [ ] Teachery
+- [ ] Heartbeat
+- [ ] Disco
+- [ ] Uscreen
+- [ ] Ruzuku
+- [ ] EzyCourse
+- [ ] Graphy
+- [ ] Icedrive
+- [ ] Koofr
+- [ ] Filen
+- [ ] Internxt
+- [ ] Wasabi
+- [ ] DaVinci Resolve
+- [ ] Runway (financial planning, runway.com)
+- [ ] Pulse (cash flow)
+- [ ] Brixx
+- [ ] PlanGuru
+- [ ] Lander
+- [ ] 123FormBuilder
+- [ ] Formsite
+- [ ] Hubdoc
+
+## Refill 2026-11-19 — AI writing, social & business formation
+- [ ] Writer
+- [ ] Hypotenuse AI
+- [ ] Simplified
+- [ ] Ocoya
+- [ ] Lately
+- [ ] Keyword Insights
+- [ ] ZenBusiness
+- [ ] Bizee
+- [ ] Tailor Brands
