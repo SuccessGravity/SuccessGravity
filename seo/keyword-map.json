@@ -435,6 +435,18 @@
    "support": []
   },
   {
+   "id": "pricing:google-workspace",
+   "queries": [
+    "google workspace pricing",
+    "google workspace price",
+    "google workspace plans",
+    "how much is google workspace",
+    "google workspace cost"
+   ],
+   "owner": "/pricing/google-workspace/",
+   "support": []
+  },
+  {
    "id": "pricing:microsoft-365-business",
    "queries": [
     "microsoft 365 business pricing",
@@ -492,6 +504,18 @@
     "bitwarden cost"
    ],
    "owner": "/pricing/bitwarden/",
+   "support": []
+  },
+  {
+   "id": "pricing:lastpass",
+   "queries": [
+    "lastpass pricing",
+    "lastpass price",
+    "lastpass plans",
+    "how much is lastpass",
+    "lastpass cost"
+   ],
+   "owner": "/pricing/lastpass/",
    "support": []
   },
   {
@@ -636,6 +660,18 @@
     "whimsical cost"
    ],
    "owner": "/pricing/whimsical/",
+   "support": []
+  },
+  {
+   "id": "pricing:evernote",
+   "queries": [
+    "evernote pricing",
+    "evernote price",
+    "evernote plans",
+    "how much is evernote",
+    "evernote cost"
+   ],
+   "owner": "/pricing/evernote/",
    "support": []
   },
   {
@@ -1260,6 +1296,30 @@
     "paddle cost"
    ],
    "owner": "/pricing/paddle/",
+   "support": []
+  },
+  {
+   "id": "pricing:stan-store",
+   "queries": [
+    "stan store pricing",
+    "stan store price",
+    "stan store plans",
+    "how much is stan store",
+    "stan store cost"
+   ],
+   "owner": "/pricing/stan-store/",
+   "support": []
+  },
+  {
+   "id": "pricing:patreon",
+   "queries": [
+    "patreon pricing",
+    "patreon price",
+    "patreon plans",
+    "how much is patreon",
+    "patreon cost"
+   ],
+   "owner": "/pricing/patreon/",
    "support": []
   },
   {
@@ -1980,6 +2040,18 @@
     "nextiva cost"
    ],
    "owner": "/pricing/nextiva/",
+   "support": []
+  },
+  {
+   "id": "pricing:vonage-business",
+   "queries": [
+    "vonage business pricing",
+    "vonage business price",
+    "vonage business plans",
+    "how much is vonage business",
+    "vonage business cost"
+   ],
+   "owner": "/pricing/vonage-business/",
    "support": []
   },
   {
@@ -7728,6 +7800,234 @@
     "bonusly cost"
    ],
    "owner": "/pricing/bonusly/",
+   "support": []
+  },
+  {
+   "id": "pricing:assembly",
+   "queries": [
+    "assembly pricing",
+    "assembly price",
+    "assembly plans",
+    "how much is assembly",
+    "assembly cost"
+   ],
+   "owner": "/pricing/assembly/",
+   "support": []
+  },
+  {
+   "id": "pricing:donut",
+   "queries": [
+    "donut pricing",
+    "donut price",
+    "donut plans",
+    "how much is donut",
+    "donut cost"
+   ],
+   "owner": "/pricing/donut/",
+   "support": []
+  },
+  {
+   "id": "pricing:navan",
+   "queries": [
+    "navan pricing",
+    "navan price",
+    "navan plans",
+    "how much is navan",
+    "navan cost"
+   ],
+   "owner": "/pricing/navan/",
+   "support": []
+  },
+  {
+   "id": "pricing:indy",
+   "queries": [
+    "indy pricing",
+    "indy price",
+    "indy plans",
+    "how much is indy",
+    "indy cost"
+   ],
+   "owner": "/pricing/indy/",
+   "support": []
+  },
+  {
+   "id": "pricing:whale",
+   "queries": [
+    "whale pricing",
+    "whale price",
+    "whale plans",
+    "how much is whale",
+    "whale cost"
+   ],
+   "owner": "/pricing/whale/",
+   "support": []
+  },
+  {
+   "id": "pricing:archbee",
+   "queries": [
+    "archbee pricing",
+    "archbee price",
+    "archbee plans",
+    "how much is archbee",
+    "archbee cost"
+   ],
+   "owner": "/pricing/archbee/",
+   "support": []
+  },
+  {
+   "id": "pricing:knowledgeowl",
+   "queries": [
+    "knowledgeowl pricing",
+    "knowledgeowl price",
+    "knowledgeowl plans",
+    "how much is knowledgeowl",
+    "knowledgeowl cost"
+   ],
+   "owner": "/pricing/knowledgeowl/",
+   "support": []
+  },
+  {
+   "id": "pricing:bubbles",
+   "queries": [
+    "bubbles pricing",
+    "bubbles price",
+    "bubbles plans",
+    "how much is bubbles",
+    "bubbles cost"
+   ],
+   "owner": "/pricing/bubbles/",
+   "support": []
+  },
+  {
+   "id": "pricing:redcircle",
+   "queries": [
+    "redcircle pricing",
+    "redcircle price",
+    "redcircle plans",
+    "how much is redcircle",
+    "redcircle cost"
+   ],
+   "owner": "/pricing/redcircle/",
+   "support": []
+  },
+  {
+   "id": "pricing:claap",
+   "queries": [
+    "claap pricing",
+    "claap price",
+    "claap plans",
+    "how much is claap",
+    "claap cost"
+   ],
+   "owner": "/pricing/claap/",
+   "support": []
+  },
+  {
+   "id": "pricing:sembly",
+   "queries": [
+    "sembly pricing",
+    "sembly price",
+    "sembly plans",
+    "how much is sembly",
+    "sembly cost"
+   ],
+   "owner": "/pricing/sembly/",
+   "support": []
+  },
+  {
+   "id": "pricing:supernormal",
+   "queries": [
+    "supernormal pricing",
+    "supernormal price",
+    "supernormal plans",
+    "how much is supernormal",
+    "supernormal cost"
+   ],
+   "owner": "/pricing/supernormal/",
+   "support": []
+  },
+  {
+   "id": "pricing:notta",
+   "queries": [
+    "notta pricing",
+    "notta price",
+    "notta plans",
+    "how much is notta",
+    "notta cost"
+   ],
+   "owner": "/pricing/notta/",
+   "support": []
+  },
+  {
+   "id": "pricing:podbean",
+   "queries": [
+    "podbean pricing",
+    "podbean price",
+    "podbean plans",
+    "how much is podbean",
+    "podbean cost"
+   ],
+   "owner": "/pricing/podbean/",
+   "support": []
+  },
+  {
+   "id": "pricing:libsyn",
+   "queries": [
+    "libsyn pricing",
+    "libsyn price",
+    "libsyn plans",
+    "how much is libsyn",
+    "libsyn cost"
+   ],
+   "owner": "/pricing/libsyn/",
+   "support": []
+  },
+  {
+   "id": "pricing:rss-com",
+   "queries": [
+    "rss.com pricing",
+    "rss.com price",
+    "rss.com plans",
+    "how much is rss.com",
+    "rss.com cost"
+   ],
+   "owner": "/pricing/rss-com/",
+   "support": []
+  },
+  {
+   "id": "pricing:spreaker",
+   "queries": [
+    "spreaker pricing",
+    "spreaker price",
+    "spreaker plans",
+    "how much is spreaker",
+    "spreaker cost"
+   ],
+   "owner": "/pricing/spreaker/",
+   "support": []
+  },
+  {
+   "id": "pricing:simplecast",
+   "queries": [
+    "simplecast pricing",
+    "simplecast price",
+    "simplecast plans",
+    "how much is simplecast",
+    "simplecast cost"
+   ],
+   "owner": "/pricing/simplecast/",
+   "support": []
+  },
+  {
+   "id": "pricing:castos",
+   "queries": [
+    "castos pricing",
+    "castos price",
+    "castos plans",
+    "how much is castos",
+    "castos cost"
+   ],
+   "owner": "/pricing/castos/",
    "support": []
   },
   {
