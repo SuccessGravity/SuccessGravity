@@ -1362,7 +1362,7 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Respona
 - [x] BuzzStream
 - [x] Junia AI
-- [ ] Outranking — 2026-11-17 and 2026-11-18: outranking.io returned Cloudflare error 521 (server down); retry next run
+- [x] Outranking — not added: outranking.io still returned Cloudflare error 521 on 2026-11-17, -18 and -19 (site down)
 - [x] ContentBot
 - [x] Sudowrite
 - [x] Hemingway Editor
@@ -1404,30 +1404,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Officevibe — not added: now part of the Workleap platform (workleap.com/pricing), no standalone Officevibe pricing
 - [x] Bonusly
 - [x] Kudos
-- [ ] Assembly
-- [ ] Donut
+- [x] Assembly
+- [x] Donut
 
 ## Refill 2026-11-16 — Finance & billing
-- [ ] Invoiced
-- [ ] Navan
-- [ ] Indy
+- [x] Invoiced
+- [x] Navan
+- [x] Indy
 
 ## Refill 2026-11-16 — Knowledge base, meetings & podcasts
-- [ ] Whale
-- [ ] Archbee
-- [ ] KnowledgeOwl
-- [ ] Bubbles
-- [ ] Claap
-- [ ] Sembly
-- [ ] Supernormal
-- [ ] Notta
-- [ ] Podbean
-- [ ] Libsyn
-- [ ] RSS.com
-- [ ] Spreaker
-- [ ] Simplecast
-- [ ] Castos
-- [ ] RedCircle
+- [x] Whale
+- [x] Archbee
+- [x] KnowledgeOwl
+- [x] Bubbles
+- [x] Claap
+- [x] Sembly
+- [x] Supernormal
+- [x] Notta
+- [x] Podbean
+- [x] Libsyn
+- [x] RSS.com
+- [x] Spreaker
+- [x] Simplecast
+- [x] Castos
+- [x] RedCircle
 - [ ] Acast
 
 ## Refill 2026-11-16 — Client portals & project management
