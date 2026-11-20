@@ -1428,31 +1428,31 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Simplecast
 - [x] Castos
 - [x] RedCircle
-- [ ] Acast
+- [x] Acast
 
 ## Refill 2026-11-16 — Client portals & project management
-- [ ] Fusebase
-- [ ] Clinked
-- [ ] SuiteDash
-- [ ] Accelo
-- [ ] Function Point
-- [ ] Kantata
-- [ ] Zenkit
-- [ ] MeisterTask
-- [ ] Taskade
-- [ ] Upbase
-- [ ] Breeze
-- [ ] Freedcamp
-- [ ] Quire
-- [ ] Runn
-- [ ] Hub Planner
-- [ ] Teamdeck
-- [ ] GanttPRO
-- [ ] TeamGantt
+- [x] Fusebase
+- [x] Clinked
+- [x] SuiteDash
+- [x] Accelo
+- [x] Function Point
+- [x] Kantata
+- [x] Zenkit
+- [x] MeisterTask
+- [x] Taskade — added; pricing page showed an error 2026-11-20
+- [x] Upbase
+- [x] Breeze
+- [x] Freedcamp
+- [x] Quire
+- [x] Runn
+- [x] Hub Planner — not added: hubplanner.com now redirects to Milient (Resource Flow), 2026-11-20
+- [x] Teamdeck
+- [x] GanttPRO
+- [x] TeamGantt
 
 ## Refill 2026-11-16 — Databases, no-code & interactive content
-- [ ] Baserow
-- [ ] NocoDB
+- [x] Baserow
+- [x] NocoDB
 - [ ] Stackby
 - [ ] SeaTable
 - [ ] Grist

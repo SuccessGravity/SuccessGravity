@@ -1755,6 +1755,18 @@
    "support": []
   },
   {
+   "id": "pricing:namecheap",
+   "queries": [
+    "namecheap pricing",
+    "namecheap price",
+    "namecheap plans",
+    "how much is namecheap",
+    "namecheap cost"
+   ],
+   "owner": "/pricing/namecheap/",
+   "support": []
+  },
+  {
    "id": "pricing:siteground",
    "queries": [
     "siteground pricing",
@@ -2199,6 +2211,18 @@
    "support": []
   },
   {
+   "id": "pricing:toast-pos",
+   "queries": [
+    "toast pos pricing",
+    "toast pos price",
+    "toast pos plans",
+    "how much is toast pos",
+    "toast pos cost"
+   ],
+   "owner": "/pricing/toast-pos/",
+   "support": []
+  },
+  {
    "id": "pricing:lightspeed-retail",
    "queries": [
     "lightspeed retail pricing",
@@ -2271,6 +2295,18 @@
    "support": []
   },
   {
+   "id": "pricing:7shifts",
+   "queries": [
+    "7shifts pricing",
+    "7shifts price",
+    "7shifts plans",
+    "how much is 7shifts",
+    "7shifts cost"
+   ],
+   "owner": "/pricing/7shifts/",
+   "support": []
+  },
+  {
    "id": "pricing:bamboohr",
    "queries": [
     "bamboohr pricing",
@@ -2316,6 +2352,18 @@
     "rocket lawyer cost"
    ],
    "owner": "/pricing/rocket-lawyer/",
+   "support": []
+  },
+  {
+   "id": "pricing:northwest-registered-agent",
+   "queries": [
+    "northwest registered agent pricing",
+    "northwest registered agent price",
+    "northwest registered agent plans",
+    "how much is northwest registered agent",
+    "northwest registered agent cost"
+   ],
+   "owner": "/pricing/northwest-registered-agent/",
    "support": []
   },
   {
@@ -8028,6 +8076,234 @@
     "castos cost"
    ],
    "owner": "/pricing/castos/",
+   "support": []
+  },
+  {
+   "id": "pricing:acast",
+   "queries": [
+    "acast pricing",
+    "acast price",
+    "acast plans",
+    "how much is acast",
+    "acast cost"
+   ],
+   "owner": "/pricing/acast/",
+   "support": []
+  },
+  {
+   "id": "pricing:fusebase",
+   "queries": [
+    "fusebase pricing",
+    "fusebase price",
+    "fusebase plans",
+    "how much is fusebase",
+    "fusebase cost"
+   ],
+   "owner": "/pricing/fusebase/",
+   "support": []
+  },
+  {
+   "id": "pricing:clinked",
+   "queries": [
+    "clinked pricing",
+    "clinked price",
+    "clinked plans",
+    "how much is clinked",
+    "clinked cost"
+   ],
+   "owner": "/pricing/clinked/",
+   "support": []
+  },
+  {
+   "id": "pricing:suitedash",
+   "queries": [
+    "suitedash pricing",
+    "suitedash price",
+    "suitedash plans",
+    "how much is suitedash",
+    "suitedash cost"
+   ],
+   "owner": "/pricing/suitedash/",
+   "support": []
+  },
+  {
+   "id": "pricing:accelo",
+   "queries": [
+    "accelo pricing",
+    "accelo price",
+    "accelo plans",
+    "how much is accelo",
+    "accelo cost"
+   ],
+   "owner": "/pricing/accelo/",
+   "support": []
+  },
+  {
+   "id": "pricing:function-point",
+   "queries": [
+    "function point pricing",
+    "function point price",
+    "function point plans",
+    "how much is function point",
+    "function point cost"
+   ],
+   "owner": "/pricing/function-point/",
+   "support": []
+  },
+  {
+   "id": "pricing:kantata",
+   "queries": [
+    "kantata pricing",
+    "kantata price",
+    "kantata plans",
+    "how much is kantata",
+    "kantata cost"
+   ],
+   "owner": "/pricing/kantata/",
+   "support": []
+  },
+  {
+   "id": "pricing:zenkit",
+   "queries": [
+    "zenkit pricing",
+    "zenkit price",
+    "zenkit plans",
+    "how much is zenkit",
+    "zenkit cost"
+   ],
+   "owner": "/pricing/zenkit/",
+   "support": []
+  },
+  {
+   "id": "pricing:meistertask",
+   "queries": [
+    "meistertask pricing",
+    "meistertask price",
+    "meistertask plans",
+    "how much is meistertask",
+    "meistertask cost"
+   ],
+   "owner": "/pricing/meistertask/",
+   "support": []
+  },
+  {
+   "id": "pricing:upbase",
+   "queries": [
+    "upbase pricing",
+    "upbase price",
+    "upbase plans",
+    "how much is upbase",
+    "upbase cost"
+   ],
+   "owner": "/pricing/upbase/",
+   "support": []
+  },
+  {
+   "id": "pricing:breeze",
+   "queries": [
+    "breeze pricing",
+    "breeze price",
+    "breeze plans",
+    "how much is breeze",
+    "breeze cost"
+   ],
+   "owner": "/pricing/breeze/",
+   "support": []
+  },
+  {
+   "id": "pricing:freedcamp",
+   "queries": [
+    "freedcamp pricing",
+    "freedcamp price",
+    "freedcamp plans",
+    "how much is freedcamp",
+    "freedcamp cost"
+   ],
+   "owner": "/pricing/freedcamp/",
+   "support": []
+  },
+  {
+   "id": "pricing:quire",
+   "queries": [
+    "quire pricing",
+    "quire price",
+    "quire plans",
+    "how much is quire",
+    "quire cost"
+   ],
+   "owner": "/pricing/quire/",
+   "support": []
+  },
+  {
+   "id": "pricing:runn",
+   "queries": [
+    "runn pricing",
+    "runn price",
+    "runn plans",
+    "how much is runn",
+    "runn cost"
+   ],
+   "owner": "/pricing/runn/",
+   "support": []
+  },
+  {
+   "id": "pricing:teamdeck",
+   "queries": [
+    "teamdeck pricing",
+    "teamdeck price",
+    "teamdeck plans",
+    "how much is teamdeck",
+    "teamdeck cost"
+   ],
+   "owner": "/pricing/teamdeck/",
+   "support": []
+  },
+  {
+   "id": "pricing:ganttpro",
+   "queries": [
+    "ganttpro pricing",
+    "ganttpro price",
+    "ganttpro plans",
+    "how much is ganttpro",
+    "ganttpro cost"
+   ],
+   "owner": "/pricing/ganttpro/",
+   "support": []
+  },
+  {
+   "id": "pricing:teamgantt",
+   "queries": [
+    "teamgantt pricing",
+    "teamgantt price",
+    "teamgantt plans",
+    "how much is teamgantt",
+    "teamgantt cost"
+   ],
+   "owner": "/pricing/teamgantt/",
+   "support": []
+  },
+  {
+   "id": "pricing:baserow",
+   "queries": [
+    "baserow pricing",
+    "baserow price",
+    "baserow plans",
+    "how much is baserow",
+    "baserow cost"
+   ],
+   "owner": "/pricing/baserow/",
+   "support": []
+  },
+  {
+   "id": "pricing:nocodb",
+   "queries": [
+    "nocodb pricing",
+    "nocodb price",
+    "nocodb plans",
+    "how much is nocodb",
+    "nocodb cost"
+   ],
+   "owner": "/pricing/nocodb/",
    "support": []
   },
   {
