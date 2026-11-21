@@ -2391,6 +2391,18 @@
    "support": []
   },
   {
+   "id": "pricing:avalara",
+   "queries": [
+    "avalara pricing",
+    "avalara price",
+    "avalara plans",
+    "how much is avalara",
+    "avalara cost"
+   ],
+   "owner": "/pricing/avalara/",
+   "support": []
+  },
+  {
    "id": "pricing:taxjar",
    "queries": [
     "taxjar pricing",
@@ -2451,6 +2463,18 @@
    "support": []
   },
   {
+   "id": "pricing:sync-com",
+   "queries": [
+    "sync.com pricing",
+    "sync.com price",
+    "sync.com plans",
+    "how much is sync.com",
+    "sync.com cost"
+   ],
+   "owner": "/pricing/sync-com/",
+   "support": []
+  },
+  {
    "id": "pricing:egnyte",
    "queries": [
     "egnyte pricing",
@@ -2484,6 +2508,18 @@
     "ontraport cost"
    ],
    "owner": "/pricing/ontraport/",
+   "support": []
+  },
+  {
+   "id": "pricing:drip",
+   "queries": [
+    "drip pricing",
+    "drip price",
+    "drip plans",
+    "how much is drip",
+    "drip cost"
+   ],
+   "owner": "/pricing/drip/",
    "support": []
   },
   {
@@ -2532,6 +2568,18 @@
     "chatfuel cost"
    ],
    "owner": "/pricing/chatfuel/",
+   "support": []
+  },
+  {
+   "id": "pricing:sendible",
+   "queries": [
+    "sendible pricing",
+    "sendible price",
+    "sendible plans",
+    "how much is sendible",
+    "sendible cost"
+   ],
+   "owner": "/pricing/sendible/",
    "support": []
   },
   {
@@ -8316,6 +8364,210 @@
     "audioscriptor cost"
    ],
    "owner": "/pricing/audioscriptor/",
+   "support": []
+  },
+  {
+   "id": "pricing:stackby",
+   "queries": [
+    "stackby pricing",
+    "stackby price",
+    "stackby plans",
+    "how much is stackby",
+    "stackby cost"
+   ],
+   "owner": "/pricing/stackby/",
+   "support": []
+  },
+  {
+   "id": "pricing:seatable",
+   "queries": [
+    "seatable pricing",
+    "seatable price",
+    "seatable plans",
+    "how much is seatable",
+    "seatable cost"
+   ],
+   "owner": "/pricing/seatable/",
+   "support": []
+  },
+  {
+   "id": "pricing:grist",
+   "queries": [
+    "grist pricing",
+    "grist price",
+    "grist plans",
+    "how much is grist",
+    "grist cost"
+   ],
+   "owner": "/pricing/grist/",
+   "support": []
+  },
+  {
+   "id": "pricing:tadabase",
+   "queries": [
+    "tadabase pricing",
+    "tadabase price",
+    "tadabase plans",
+    "how much is tadabase",
+    "tadabase cost"
+   ],
+   "owner": "/pricing/tadabase/",
+   "support": []
+  },
+  {
+   "id": "pricing:caspio",
+   "queries": [
+    "caspio pricing",
+    "caspio price",
+    "caspio plans",
+    "how much is caspio",
+    "caspio cost"
+   ],
+   "owner": "/pricing/caspio/",
+   "support": []
+  },
+  {
+   "id": "pricing:tooljet",
+   "queries": [
+    "tooljet pricing",
+    "tooljet price",
+    "tooljet plans",
+    "how much is tooljet",
+    "tooljet cost"
+   ],
+   "owner": "/pricing/tooljet/",
+   "support": []
+  },
+  {
+   "id": "pricing:involve-me",
+   "queries": [
+    "involve.me pricing",
+    "involve.me price",
+    "involve.me plans",
+    "how much is involve.me",
+    "involve.me cost"
+   ],
+   "owner": "/pricing/involve-me/",
+   "support": []
+  },
+  {
+   "id": "pricing:scoreapp",
+   "queries": [
+    "scoreapp pricing",
+    "scoreapp price",
+    "scoreapp plans",
+    "how much is scoreapp",
+    "scoreapp cost"
+   ],
+   "owner": "/pricing/scoreapp/",
+   "support": []
+  },
+  {
+   "id": "pricing:symphonic",
+   "queries": [
+    "symphonic pricing",
+    "symphonic price",
+    "symphonic plans",
+    "how much is symphonic",
+    "symphonic cost"
+   ],
+   "owner": "/pricing/symphonic/",
+   "support": []
+  },
+  {
+   "id": "pricing:splice",
+   "queries": [
+    "splice pricing",
+    "splice price",
+    "splice plans",
+    "how much is splice",
+    "splice cost"
+   ],
+   "owner": "/pricing/splice/",
+   "support": []
+  },
+  {
+   "id": "pricing:boomy",
+   "queries": [
+    "boomy pricing",
+    "boomy price",
+    "boomy plans",
+    "how much is boomy",
+    "boomy cost"
+   ],
+   "owner": "/pricing/boomy/",
+   "support": []
+  },
+  {
+   "id": "pricing:mubert",
+   "queries": [
+    "mubert pricing",
+    "mubert price",
+    "mubert plans",
+    "how much is mubert",
+    "mubert cost"
+   ],
+   "owner": "/pricing/mubert/",
+   "support": []
+  },
+  {
+   "id": "pricing:aiva",
+   "queries": [
+    "aiva pricing",
+    "aiva price",
+    "aiva plans",
+    "how much is aiva",
+    "aiva cost"
+   ],
+   "owner": "/pricing/aiva/",
+   "support": []
+  },
+  {
+   "id": "pricing:loudly",
+   "queries": [
+    "loudly pricing",
+    "loudly price",
+    "loudly plans",
+    "how much is loudly",
+    "loudly cost"
+   ],
+   "owner": "/pricing/loudly/",
+   "support": []
+  },
+  {
+   "id": "pricing:synup",
+   "queries": [
+    "synup pricing",
+    "synup price",
+    "synup plans",
+    "how much is synup",
+    "synup cost"
+   ],
+   "owner": "/pricing/synup/",
+   "support": []
+  },
+  {
+   "id": "pricing:uberall",
+   "queries": [
+    "uberall pricing",
+    "uberall price",
+    "uberall plans",
+    "how much is uberall",
+    "uberall cost"
+   ],
+   "owner": "/pricing/uberall/",
+   "support": []
+  },
+  {
+   "id": "pricing:referralhero",
+   "queries": [
+    "referralhero pricing",
+    "referralhero price",
+    "referralhero plans",
+    "how much is referralhero",
+    "referralhero cost"
+   ],
+   "owner": "/pricing/referralhero/",
    "support": []
   },
   {
