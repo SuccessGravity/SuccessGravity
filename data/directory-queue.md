@@ -1453,28 +1453,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 ## Refill 2026-11-16 — Databases, no-code & interactive content
 - [x] Baserow
 - [x] NocoDB
-- [ ] Stackby
-- [ ] SeaTable
-- [ ] Grist
-- [ ] Tadabase
-- [ ] Caspio
-- [ ] Quickbase
-- [ ] ToolJet
-- [ ] involve.me
-- [ ] Outgrow
-- [ ] ScoreApp
+- [x] Stackby
+- [x] SeaTable
+- [x] Grist
+- [x] Tadabase
+- [x] Caspio
+- [x] Quickbase — added; pricing page returned 404 2026-11-21
+- [x] ToolJet
+- [x] involve.me
+- [x] Outgrow — added; billing period not stated on pricing page 2026-11-21
+- [x] ScoreApp
 
 ## Refill 2026-11-19 — music, listings, referral, AI coding, PPC
-- [ ] Symphonic
-- [ ] UnitedMasters
-- [ ] Splice
-- [ ] Boomy
-- [ ] Mubert
-- [ ] AIVA
-- [ ] Loudly
-- [ ] Synup
-- [ ] Uberall
-- [ ] ReferralHero
+- [x] Symphonic
+- [x] UnitedMasters — added; plans page shows no prices 2026-11-21
+- [x] Splice
+- [x] Boomy
+- [x] Mubert
+- [x] AIVA
+- [x] Loudly
+- [x] Synup
+- [x] Uberall
+- [x] ReferralHero
 - [ ] Referral Rock
 - [ ] Talkable
 - [ ] Rezi
