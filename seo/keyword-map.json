@@ -2583,6 +2583,18 @@
    "support": []
   },
   {
+   "id": "pricing:metricool",
+   "queries": [
+    "metricool pricing",
+    "metricool price",
+    "metricool plans",
+    "how much is metricool",
+    "metricool cost"
+   ],
+   "owner": "/pricing/metricool/",
+   "support": []
+  },
+  {
    "id": "pricing:iconosquare",
    "queries": [
     "iconosquare pricing",
@@ -2616,6 +2628,30 @@
     "tailwind cost"
    ],
    "owner": "/pricing/tailwind/",
+   "support": []
+  },
+  {
+   "id": "pricing:kittl",
+   "queries": [
+    "kittl pricing",
+    "kittl price",
+    "kittl plans",
+    "how much is kittl",
+    "kittl cost"
+   ],
+   "owner": "/pricing/kittl/",
+   "support": []
+  },
+  {
+   "id": "pricing:brandfetch",
+   "queries": [
+    "brandfetch pricing",
+    "brandfetch price",
+    "brandfetch plans",
+    "how much is brandfetch",
+    "brandfetch cost"
+   ],
+   "owner": "/pricing/brandfetch/",
    "support": []
   },
   {
@@ -8568,6 +8604,222 @@
     "referralhero cost"
    ],
    "owner": "/pricing/referralhero/",
+   "support": []
+  },
+  {
+   "id": "pricing:referral-rock",
+   "queries": [
+    "referral rock pricing",
+    "referral rock price",
+    "referral rock plans",
+    "how much is referral rock",
+    "referral rock cost"
+   ],
+   "owner": "/pricing/referral-rock/",
+   "support": []
+  },
+  {
+   "id": "pricing:talkable",
+   "queries": [
+    "talkable pricing",
+    "talkable price",
+    "talkable plans",
+    "how much is talkable",
+    "talkable cost"
+   ],
+   "owner": "/pricing/talkable/",
+   "support": []
+  },
+  {
+   "id": "pricing:rezi",
+   "queries": [
+    "rezi pricing",
+    "rezi price",
+    "rezi plans",
+    "how much is rezi",
+    "rezi cost"
+   ],
+   "owner": "/pricing/rezi/",
+   "support": []
+  },
+  {
+   "id": "pricing:qodo",
+   "queries": [
+    "qodo pricing",
+    "qodo price",
+    "qodo plans",
+    "how much is qodo",
+    "qodo cost"
+   ],
+   "owner": "/pricing/qodo/",
+   "support": []
+  },
+  {
+   "id": "pricing:jetbrains-ai",
+   "queries": [
+    "jetbrains ai pricing",
+    "jetbrains ai price",
+    "jetbrains ai plans",
+    "how much is jetbrains ai",
+    "jetbrains ai cost"
+   ],
+   "owner": "/pricing/jetbrains-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:amazon-q-developer",
+   "queries": [
+    "amazon q developer pricing",
+    "amazon q developer price",
+    "amazon q developer plans",
+    "how much is amazon q developer",
+    "amazon q developer cost"
+   ],
+   "owner": "/pricing/amazon-q-developer/",
+   "support": []
+  },
+  {
+   "id": "pricing:adzooma",
+   "queries": [
+    "adzooma pricing",
+    "adzooma price",
+    "adzooma plans",
+    "how much is adzooma",
+    "adzooma cost"
+   ],
+   "owner": "/pricing/adzooma/",
+   "support": []
+  },
+  {
+   "id": "pricing:lunio",
+   "queries": [
+    "lunio pricing",
+    "lunio price",
+    "lunio plans",
+    "how much is lunio",
+    "lunio cost"
+   ],
+   "owner": "/pricing/lunio/",
+   "support": []
+  },
+  {
+   "id": "pricing:trueclicks",
+   "queries": [
+    "trueclicks pricing",
+    "trueclicks price",
+    "trueclicks plans",
+    "how much is trueclicks",
+    "trueclicks cost"
+   ],
+   "owner": "/pricing/trueclicks/",
+   "support": []
+  },
+  {
+   "id": "pricing:hypeauditor",
+   "queries": [
+    "hypeauditor pricing",
+    "hypeauditor price",
+    "hypeauditor plans",
+    "how much is hypeauditor",
+    "hypeauditor cost"
+   ],
+   "owner": "/pricing/hypeauditor/",
+   "support": []
+  },
+  {
+   "id": "pricing:sos-inventory",
+   "queries": [
+    "sos inventory pricing",
+    "sos inventory price",
+    "sos inventory plans",
+    "how much is sos inventory",
+    "sos inventory cost"
+   ],
+   "owner": "/pricing/sos-inventory/",
+   "support": []
+  },
+  {
+   "id": "pricing:inventory-planner",
+   "queries": [
+    "inventory planner pricing",
+    "inventory planner price",
+    "inventory planner plans",
+    "how much is inventory planner",
+    "inventory planner cost"
+   ],
+   "owner": "/pricing/inventory-planner/",
+   "support": []
+  },
+  {
+   "id": "pricing:prediko",
+   "queries": [
+    "prediko pricing",
+    "prediko price",
+    "prediko plans",
+    "how much is prediko",
+    "prediko cost"
+   ],
+   "owner": "/pricing/prediko/",
+   "support": []
+  },
+  {
+   "id": "pricing:flieber",
+   "queries": [
+    "flieber pricing",
+    "flieber price",
+    "flieber plans",
+    "how much is flieber",
+    "flieber cost"
+   ],
+   "owner": "/pricing/flieber/",
+   "support": []
+  },
+  {
+   "id": "pricing:rows",
+   "queries": [
+    "rows pricing",
+    "rows price",
+    "rows plans",
+    "how much is rows",
+    "rows cost"
+   ],
+   "owner": "/pricing/rows/",
+   "support": []
+  },
+  {
+   "id": "pricing:akkio",
+   "queries": [
+    "akkio pricing",
+    "akkio price",
+    "akkio plans",
+    "how much is akkio",
+    "akkio cost"
+   ],
+   "owner": "/pricing/akkio/",
+   "support": []
+  },
+  {
+   "id": "pricing:picsart",
+   "queries": [
+    "picsart pricing",
+    "picsart price",
+    "picsart plans",
+    "how much is picsart",
+    "picsart cost"
+   ],
+   "owner": "/pricing/picsart/",
+   "support": []
+  },
+  {
+   "id": "pricing:let-s-enhance",
+   "queries": [
+    "let s enhance pricing",
+    "let s enhance price",
+    "let s enhance plans",
+    "how much is let s enhance",
+    "let s enhance cost"
+   ],
+   "owner": "/pricing/let-s-enhance/",
    "support": []
   },
   {

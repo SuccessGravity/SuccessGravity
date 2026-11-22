@@ -1475,30 +1475,30 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Synup
 - [x] Uberall
 - [x] ReferralHero
-- [ ] Referral Rock
-- [ ] Talkable
-- [ ] Rezi
-- [ ] Tabnine
-- [ ] Qodo
-- [ ] JetBrains AI
-- [ ] Amazon Q Developer
-- [ ] Adzooma
-- [ ] Lunio
-- [ ] TrueClicks
-- [ ] HypeAuditor
+- [x] Referral Rock
+- [x] Talkable
+- [x] Rezi
+- [x] Tabnine — not added: tabnine.com redirects to Tricentis (2026-11-22)
+- [x] Qodo
+- [x] JetBrains AI
+- [x] Amazon Q Developer
+- [x] Adzooma
+- [x] Lunio
+- [x] TrueClicks
+- [x] HypeAuditor
 
 ## Refill 2026-11-19 — data, image, courses, storage, finance, forms
-- [ ] SOS Inventory
-- [ ] Inventory Planner
-- [ ] Prediko
-- [ ] Flieber
-- [ ] Rows
-- [ ] Akkio
-- [ ] Obviously AI
-- [ ] Fotor
-- [ ] Picsart
-- [ ] Let's Enhance
-- [ ] Luminar Neo
+- [x] SOS Inventory
+- [x] Inventory Planner
+- [x] Prediko
+- [x] Flieber
+- [x] Rows
+- [x] Akkio
+- [x] Obviously AI — not added: site says Obviously AI is now Zams, archived (2026-11-22)
+- [x] Fotor
+- [x] Picsart
+- [x] Let's Enhance
+- [x] Luminar Neo
 - [ ] Playground
 - [ ] Teachery
 - [ ] Heartbeat
@@ -1532,3 +1532,68 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] ZenBusiness
 - [ ] Bizee
 - [ ] Tailor Brands
+
+## Refill 2026-11-22 — business funding, compliance, AI coding, PPC & influencer
+- [ ] Credibly
+- [ ] National Funding
+- [ ] Fora Financial
+- [ ] Headway Capital
+- [ ] Clearco
+- [ ] Harbor Compliance
+- [ ] Vertex
+- [ ] LawDepot
+- [ ] Clerky
+- [ ] Firstbase
+- [ ] doola
+- [ ] Mosey
+- [ ] GatherUp
+- [ ] Windsurf
+- [ ] Augment Code
+- [ ] Resume Worded
+- [ ] ClickCease
+- [ ] Klear
+- [ ] Creator.co
+- [ ] Adobe Premiere Pro
+- [ ] Proton Drive
+
+## Refill 2026-11-22 — finance ops & accounting practice
+- [ ] Plooto
+- [ ] Quaderno
+- [ ] Anrok
+- [ ] Numeral
+- [ ] AutoEntry
+- [ ] Financial Cents
+- [ ] Uncat
+- [ ] Jetpack Workflow
+- [ ] Booke AI
+
+## Refill 2026-11-22 — no-code, SMS, phone & AI receptionists
+- [ ] SmartSuite
+- [ ] Noloco
+- [ ] Relay.app
+- [ ] SimpleTexting
+- [ ] EZ Texting
+- [ ] Textedly
+- [ ] SlickText
+- [ ] Plivo
+- [ ] Sinch
+- [ ] Bird
+- [ ] Telnyx
+- [ ] JustCall
+- [ ] CloudTalk
+- [ ] Talkroute
+- [ ] Line2
+- [ ] Sideline
+- [ ] Ruby Receptionists
+- [ ] Smith.ai
+- [ ] AnswerConnect
+- [ ] Moneypenny
+- [ ] Upfirst
+- [ ] Rosie
+- [ ] Goodcall
+- [ ] Synthflow
+- [ ] Bland AI
+- [ ] Retell AI
+- [ ] Vapi
+- [ ] PolyAI
+- [ ] Numa
