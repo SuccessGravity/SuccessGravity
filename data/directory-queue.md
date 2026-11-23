@@ -1499,28 +1499,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Picsart
 - [x] Let's Enhance
 - [x] Luminar Neo
-- [ ] Playground
-- [ ] Teachery
-- [ ] Heartbeat
-- [ ] Disco
-- [ ] Uscreen
-- [ ] Ruzuku
-- [ ] EzyCourse
-- [ ] Graphy
-- [ ] Icedrive
-- [ ] Koofr
-- [ ] Filen
-- [ ] Internxt
-- [ ] Wasabi
-- [ ] DaVinci Resolve
-- [ ] Runway (financial planning, runway.com)
-- [ ] Pulse (cash flow)
-- [ ] Brixx
-- [ ] PlanGuru
-- [ ] Lander
-- [ ] 123FormBuilder
-- [ ] Formsite
-- [ ] Hubdoc
+- [x] Playground
+- [x] Teachery
+- [x] Heartbeat
+- [x] Disco
+- [x] Uscreen
+- [x] Ruzuku
+- [x] EzyCourse
+- [x] Graphy
+- [x] Icedrive
+- [x] Koofr
+- [x] Filen
+- [x] Internxt
+- [x] Wasabi
+- [x] DaVinci Resolve
+- [x] Runway (financial planning, runway.com) — not added: runway.com/pricing now serves Runway AI video (already listed as Runway) (2026-11-23)
+- [x] Pulse (cash flow)
+- [x] Brixx
+- [x] PlanGuru
+- [x] Lander — not added: landerapp.com not loading ("upstream request failed"), recheck later (2026-11-23)
+- [x] 123FormBuilder
+- [x] Formsite
+- [x] Hubdoc
 
 ## Refill 2026-11-19 — AI writing, social & business formation
 - [ ] Writer
