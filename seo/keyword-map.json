@@ -2655,6 +2655,18 @@
    "support": []
   },
   {
+   "id": "pricing:spyfu",
+   "queries": [
+    "spyfu pricing",
+    "spyfu price",
+    "spyfu plans",
+    "how much is spyfu",
+    "spyfu cost"
+   ],
+   "owner": "/pricing/spyfu/",
+   "support": []
+  },
+  {
    "id": "pricing:answerthepublic",
    "queries": [
     "answerthepublic pricing",
@@ -8820,6 +8832,210 @@
     "let s enhance cost"
    ],
    "owner": "/pricing/let-s-enhance/",
+   "support": []
+  },
+  {
+   "id": "pricing:playground",
+   "queries": [
+    "playground pricing",
+    "playground price",
+    "playground plans",
+    "how much is playground",
+    "playground cost"
+   ],
+   "owner": "/pricing/playground/",
+   "support": []
+  },
+  {
+   "id": "pricing:teachery",
+   "queries": [
+    "teachery pricing",
+    "teachery price",
+    "teachery plans",
+    "how much is teachery",
+    "teachery cost"
+   ],
+   "owner": "/pricing/teachery/",
+   "support": []
+  },
+  {
+   "id": "pricing:heartbeat",
+   "queries": [
+    "heartbeat pricing",
+    "heartbeat price",
+    "heartbeat plans",
+    "how much is heartbeat",
+    "heartbeat cost"
+   ],
+   "owner": "/pricing/heartbeat/",
+   "support": []
+  },
+  {
+   "id": "pricing:disco",
+   "queries": [
+    "disco pricing",
+    "disco price",
+    "disco plans",
+    "how much is disco",
+    "disco cost"
+   ],
+   "owner": "/pricing/disco/",
+   "support": []
+  },
+  {
+   "id": "pricing:uscreen",
+   "queries": [
+    "uscreen pricing",
+    "uscreen price",
+    "uscreen plans",
+    "how much is uscreen",
+    "uscreen cost"
+   ],
+   "owner": "/pricing/uscreen/",
+   "support": []
+  },
+  {
+   "id": "pricing:ruzuku",
+   "queries": [
+    "ruzuku pricing",
+    "ruzuku price",
+    "ruzuku plans",
+    "how much is ruzuku",
+    "ruzuku cost"
+   ],
+   "owner": "/pricing/ruzuku/",
+   "support": []
+  },
+  {
+   "id": "pricing:ezycourse",
+   "queries": [
+    "ezycourse pricing",
+    "ezycourse price",
+    "ezycourse plans",
+    "how much is ezycourse",
+    "ezycourse cost"
+   ],
+   "owner": "/pricing/ezycourse/",
+   "support": []
+  },
+  {
+   "id": "pricing:graphy",
+   "queries": [
+    "graphy pricing",
+    "graphy price",
+    "graphy plans",
+    "how much is graphy",
+    "graphy cost"
+   ],
+   "owner": "/pricing/graphy/",
+   "support": []
+  },
+  {
+   "id": "pricing:koofr",
+   "queries": [
+    "koofr pricing",
+    "koofr price",
+    "koofr plans",
+    "how much is koofr",
+    "koofr cost"
+   ],
+   "owner": "/pricing/koofr/",
+   "support": []
+  },
+  {
+   "id": "pricing:filen",
+   "queries": [
+    "filen pricing",
+    "filen price",
+    "filen plans",
+    "how much is filen",
+    "filen cost"
+   ],
+   "owner": "/pricing/filen/",
+   "support": []
+  },
+  {
+   "id": "pricing:wasabi",
+   "queries": [
+    "wasabi pricing",
+    "wasabi price",
+    "wasabi plans",
+    "how much is wasabi",
+    "wasabi cost"
+   ],
+   "owner": "/pricing/wasabi/",
+   "support": []
+  },
+  {
+   "id": "pricing:davinci-resolve",
+   "queries": [
+    "davinci resolve pricing",
+    "davinci resolve price",
+    "davinci resolve plans",
+    "how much is davinci resolve",
+    "davinci resolve cost"
+   ],
+   "owner": "/pricing/davinci-resolve/",
+   "support": []
+  },
+  {
+   "id": "pricing:pulse",
+   "queries": [
+    "pulse pricing",
+    "pulse price",
+    "pulse plans",
+    "how much is pulse",
+    "pulse cost"
+   ],
+   "owner": "/pricing/pulse/",
+   "support": []
+  },
+  {
+   "id": "pricing:brixx",
+   "queries": [
+    "brixx pricing",
+    "brixx price",
+    "brixx plans",
+    "how much is brixx",
+    "brixx cost"
+   ],
+   "owner": "/pricing/brixx/",
+   "support": []
+  },
+  {
+   "id": "pricing:planguru",
+   "queries": [
+    "planguru pricing",
+    "planguru price",
+    "planguru plans",
+    "how much is planguru",
+    "planguru cost"
+   ],
+   "owner": "/pricing/planguru/",
+   "support": []
+  },
+  {
+   "id": "pricing:formsite",
+   "queries": [
+    "formsite pricing",
+    "formsite price",
+    "formsite plans",
+    "how much is formsite",
+    "formsite cost"
+   ],
+   "owner": "/pricing/formsite/",
+   "support": []
+  },
+  {
+   "id": "pricing:hubdoc",
+   "queries": [
+    "hubdoc pricing",
+    "hubdoc price",
+    "hubdoc plans",
+    "how much is hubdoc",
+    "hubdoc cost"
+   ],
+   "owner": "/pricing/hubdoc/",
    "support": []
   },
   {
