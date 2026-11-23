@@ -1035,18 +1035,6 @@
    "support": []
   },
   {
-   "id": "pricing:lemlist",
-   "queries": [
-    "lemlist pricing",
-    "lemlist price",
-    "lemlist plans",
-    "how much is lemlist",
-    "lemlist cost"
-   ],
-   "owner": "/pricing/lemlist/",
-   "support": []
-  },
-  {
    "id": "pricing:smartlead",
    "queries": [
     "smartlead pricing",
@@ -1368,18 +1356,6 @@
     "circle cost"
    ],
    "owner": "/pricing/circle/",
-   "support": []
-  },
-  {
-   "id": "pricing:skool",
-   "queries": [
-    "skool pricing",
-    "skool price",
-    "skool plans",
-    "how much is skool",
-    "skool cost"
-   ],
-   "owner": "/pricing/skool/",
    "support": []
   },
   {
@@ -1728,18 +1704,6 @@
     "frase cost"
    ],
    "owner": "/pricing/frase/",
-   "support": []
-  },
-  {
-   "id": "pricing:neuronwriter",
-   "queries": [
-    "neuronwriter pricing",
-    "neuronwriter price",
-    "neuronwriter plans",
-    "how much is neuronwriter",
-    "neuronwriter cost"
-   ],
-   "owner": "/pricing/neuronwriter/",
    "support": []
   },
   {
@@ -9186,6 +9150,18 @@
    ]
   },
   {
+   "id": "review:distrokid",
+   "queries": [
+    "distrokid review",
+    "is distrokid worth it",
+    "distrokid pros and cons"
+   ],
+   "owner": "/review/distrokid/",
+   "support": [
+    "/pricing/distrokid/"
+   ]
+  },
+  {
    "id": "review:elevenlabs",
    "queries": [
     "elevenlabs review",
@@ -9195,6 +9171,18 @@
    "owner": "/review/elevenlabs/",
    "support": [
     "/pricing/elevenlabs/"
+   ]
+  },
+  {
+   "id": "review:fathom",
+   "queries": [
+    "fathom review",
+    "is fathom worth it",
+    "fathom pros and cons"
+   ],
+   "owner": "/review/fathom/",
+   "support": [
+    "/pricing/fathom/"
    ]
   },
   {
@@ -9562,7 +9550,8 @@
    ],
    "owner": "/review/zapier/",
    "support": [
-    "/pricing/zapier/"
+    "/pricing/zapier/",
+    "/alternatives/zapier/"
    ]
   },
   {
@@ -9709,6 +9698,19 @@
    ]
   },
   {
+   "id": "alternatives:zapier",
+   "queries": [
+    "zapier alternatives",
+    "best zapier alternatives",
+    "sites like zapier",
+    "cheaper than zapier"
+   ],
+   "owner": "/alternatives/zapier/",
+   "support": [
+    "/review/zapier/"
+   ]
+  },
+  {
    "id": "compare:activecampaign-vs-mailchimp",
    "queries": [
     "activecampaign vs mailchimp",
@@ -9790,6 +9792,15 @@
    "support": []
   },
   {
+   "id": "compare:semrush-vs-surfer-seo",
+   "queries": [
+    "semrush vs surfer seo",
+    "surfer seo vs semrush"
+   ],
+   "owner": "/compare/semrush-vs-surfer-seo/",
+   "support": []
+  },
+  {
    "id": "compare:shopify-vs-wix",
    "queries": [
     "shopify vs wix",
@@ -9823,6 +9834,15 @@
     "top ai chatbots for business"
    ],
    "owner": "/best/best-ai-chatbots/",
+   "support": []
+  },
+  {
+   "id": "best:best-ai-image-generators",
+   "queries": [
+    "best ai image generators",
+    "top ai image generators"
+   ],
+   "owner": "/best/best-ai-image-generators/",
    "support": []
   },
   {
@@ -10333,7 +10353,7 @@
   {
    "id": "guide:zapier-automation-setup",
    "queries": [
-    "how to automate your business with zapier"
+    "how to set up zapier automations"
    ],
    "owner": "/guides/zapier-automation-setup/",
    "support": []
