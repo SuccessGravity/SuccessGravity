@@ -9171,6 +9171,18 @@
    "support": []
   },
   {
+   "id": "pricing:artex",
+   "queries": [
+    "artex pricing",
+    "artex price",
+    "artex plans",
+    "how much is artex",
+    "artex cost"
+   ],
+   "owner": "/pricing/artex/",
+   "support": []
+  },
+  {
    "id": "review:activecampaign",
    "queries": [
     "activecampaign review",
