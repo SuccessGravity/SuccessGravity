@@ -1523,33 +1523,33 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Hubdoc
 
 ## Refill 2026-11-19 — AI writing, social & business formation
-- [ ] Writer
-- [ ] Hypotenuse AI
-- [ ] Simplified
-- [ ] Ocoya
-- [ ] Lately
-- [ ] Keyword Insights
-- [ ] ZenBusiness
-- [ ] Bizee
-- [ ] Tailor Brands
+- [x] Writer — dup (core tool in index.html)
+- [x] Hypotenuse AI
+- [x] Simplified
+- [x] Ocoya
+- [x] Lately — not added: lately.ai returns 403 to automated reads, recheck later (2026-11-24)
+- [x] Keyword Insights
+- [x] ZenBusiness
+- [x] Bizee
+- [x] Tailor Brands
 
 ## Refill 2026-11-22 — business funding, compliance, AI coding, PPC & influencer
-- [ ] Credibly
-- [ ] National Funding
-- [ ] Fora Financial
-- [ ] Headway Capital
-- [ ] Clearco
-- [ ] Harbor Compliance
-- [ ] Vertex
-- [ ] LawDepot
-- [ ] Clerky
-- [ ] Firstbase
-- [ ] doola
-- [ ] Mosey
-- [ ] GatherUp
-- [ ] Windsurf
-- [ ] Augment Code
-- [ ] Resume Worded
+- [x] Credibly
+- [x] National Funding
+- [x] Fora Financial
+- [x] Headway Capital
+- [x] Clearco — not added: clear.co blocked by a bot check, recheck later (2026-11-24)
+- [x] Harbor Compliance
+- [x] Vertex
+- [x] LawDepot — not added: lawdepot.com content not readable (script-rendered), recheck later (2026-11-24)
+- [x] Clerky
+- [x] Firstbase
+- [x] doola
+- [x] Mosey
+- [x] GatherUp
+- [x] Windsurf — dup (listed as Devin Desktop (formerly Windsurf))
+- [x] Augment Code
+- [x] Resume Worded
 - [ ] ClickCease
 - [ ] Klear
 - [ ] Creator.co
