@@ -38,6 +38,8 @@ function parsePrice(p, freeFlag) {
   const free = !!freeFlag || /\bfree\b/i.test(s.replace(/\bfree[\s-]+trials?\b/gi, ''));
   if (/%|per transaction|pay[- ]as[- ]you[- ]go|usage[- ]based|ad spend/i.test(s)) return { pm: null, usage: true, free };
   if (/^\s*free\b[^$]*$/i.test(s)) return { pm: 0, usage: false, free: true };
+  // One-time fees (formation, lifetime licences) are not monthly prices
+  if (/one[- ]time|lifetime|per return/i.test(s)) return { pm: null, usage: false, free };
   const re = /\$\s?([0-9]+(?:[.,][0-9]+)?)\s*(?:\/\s*|per\s+)?((?:user|seat|agent|member)\s*\/\s*)?(year|yr|annually|month|mo)?/gi;
   let best = null, mt;
   while ((mt = re.exec(s))) {

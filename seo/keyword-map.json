@@ -2355,18 +2355,6 @@
    "support": []
   },
   {
-   "id": "pricing:turbotax-business",
-   "queries": [
-    "turbotax business pricing",
-    "turbotax business price",
-    "turbotax business plans",
-    "how much is turbotax business",
-    "turbotax business cost"
-   ],
-   "owner": "/pricing/turbotax-business/",
-   "support": []
-  },
-  {
    "id": "pricing:avalara",
    "queries": [
     "avalara pricing",
