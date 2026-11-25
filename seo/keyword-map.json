@@ -2355,6 +2355,18 @@
    "support": []
   },
   {
+   "id": "pricing:turbotax-business",
+   "queries": [
+    "turbotax business pricing",
+    "turbotax business price",
+    "turbotax business plans",
+    "how much is turbotax business",
+    "turbotax business cost"
+   ],
+   "owner": "/pricing/turbotax-business/",
+   "support": []
+  },
+  {
    "id": "pricing:avalara",
    "queries": [
     "avalara pricing",
@@ -9180,6 +9192,198 @@
     "artex cost"
    ],
    "owner": "/pricing/artex/",
+   "support": []
+  },
+  {
+   "id": "pricing:clickcease",
+   "queries": [
+    "clickcease pricing",
+    "clickcease price",
+    "clickcease plans",
+    "how much is clickcease",
+    "clickcease cost"
+   ],
+   "owner": "/pricing/clickcease/",
+   "support": []
+  },
+  {
+   "id": "pricing:creator-co",
+   "queries": [
+    "creator.co pricing",
+    "creator.co price",
+    "creator.co plans",
+    "how much is creator.co",
+    "creator.co cost"
+   ],
+   "owner": "/pricing/creator-co/",
+   "support": []
+  },
+  {
+   "id": "pricing:adobe-premiere-pro",
+   "queries": [
+    "adobe premiere pro pricing",
+    "adobe premiere pro price",
+    "adobe premiere pro plans",
+    "how much is adobe premiere pro",
+    "adobe premiere pro cost"
+   ],
+   "owner": "/pricing/adobe-premiere-pro/",
+   "support": []
+  },
+  {
+   "id": "pricing:proton-drive",
+   "queries": [
+    "proton drive pricing",
+    "proton drive price",
+    "proton drive plans",
+    "how much is proton drive",
+    "proton drive cost"
+   ],
+   "owner": "/pricing/proton-drive/",
+   "support": []
+  },
+  {
+   "id": "pricing:numeral",
+   "queries": [
+    "numeral pricing",
+    "numeral price",
+    "numeral plans",
+    "how much is numeral",
+    "numeral cost"
+   ],
+   "owner": "/pricing/numeral/",
+   "support": []
+  },
+  {
+   "id": "pricing:autoentry",
+   "queries": [
+    "autoentry pricing",
+    "autoentry price",
+    "autoentry plans",
+    "how much is autoentry",
+    "autoentry cost"
+   ],
+   "owner": "/pricing/autoentry/",
+   "support": []
+  },
+  {
+   "id": "pricing:financial-cents",
+   "queries": [
+    "financial cents pricing",
+    "financial cents price",
+    "financial cents plans",
+    "how much is financial cents",
+    "financial cents cost"
+   ],
+   "owner": "/pricing/financial-cents/",
+   "support": []
+  },
+  {
+   "id": "pricing:uncat",
+   "queries": [
+    "uncat pricing",
+    "uncat price",
+    "uncat plans",
+    "how much is uncat",
+    "uncat cost"
+   ],
+   "owner": "/pricing/uncat/",
+   "support": []
+  },
+  {
+   "id": "pricing:jetpack-workflow",
+   "queries": [
+    "jetpack workflow pricing",
+    "jetpack workflow price",
+    "jetpack workflow plans",
+    "how much is jetpack workflow",
+    "jetpack workflow cost"
+   ],
+   "owner": "/pricing/jetpack-workflow/",
+   "support": []
+  },
+  {
+   "id": "pricing:booke-ai",
+   "queries": [
+    "booke ai pricing",
+    "booke ai price",
+    "booke ai plans",
+    "how much is booke ai",
+    "booke ai cost"
+   ],
+   "owner": "/pricing/booke-ai/",
+   "support": []
+  },
+  {
+   "id": "pricing:smartsuite",
+   "queries": [
+    "smartsuite pricing",
+    "smartsuite price",
+    "smartsuite plans",
+    "how much is smartsuite",
+    "smartsuite cost"
+   ],
+   "owner": "/pricing/smartsuite/",
+   "support": []
+  },
+  {
+   "id": "pricing:noloco",
+   "queries": [
+    "noloco pricing",
+    "noloco price",
+    "noloco plans",
+    "how much is noloco",
+    "noloco cost"
+   ],
+   "owner": "/pricing/noloco/",
+   "support": []
+  },
+  {
+   "id": "pricing:ez-texting",
+   "queries": [
+    "ez texting pricing",
+    "ez texting price",
+    "ez texting plans",
+    "how much is ez texting",
+    "ez texting cost"
+   ],
+   "owner": "/pricing/ez-texting/",
+   "support": []
+  },
+  {
+   "id": "pricing:textedly",
+   "queries": [
+    "textedly pricing",
+    "textedly price",
+    "textedly plans",
+    "how much is textedly",
+    "textedly cost"
+   ],
+   "owner": "/pricing/textedly/",
+   "support": []
+  },
+  {
+   "id": "pricing:slicktext",
+   "queries": [
+    "slicktext pricing",
+    "slicktext price",
+    "slicktext plans",
+    "how much is slicktext",
+    "slicktext cost"
+   ],
+   "owner": "/pricing/slicktext/",
+   "support": []
+  },
+  {
+   "id": "pricing:plivo",
+   "queries": [
+    "plivo pricing",
+    "plivo price",
+    "plivo plans",
+    "how much is plivo",
+    "plivo cost"
+   ],
+   "owner": "/pricing/plivo/",
    "support": []
   },
   {
