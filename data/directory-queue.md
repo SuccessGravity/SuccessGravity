@@ -1550,32 +1550,32 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Windsurf — dup (listed as Devin Desktop (formerly Windsurf))
 - [x] Augment Code
 - [x] Resume Worded
-- [ ] ClickCease
-- [ ] Klear
-- [ ] Creator.co
-- [ ] Adobe Premiere Pro
-- [ ] Proton Drive
+- [x] ClickCease
+- [x] Klear — not added: klear.com redirects to Meltwater (2026-11-25)
+- [x] Creator.co
+- [x] Adobe Premiere Pro
+- [x] Proton Drive
 
 ## Refill 2026-11-22 — finance ops & accounting practice
-- [ ] Plooto
-- [ ] Quaderno
-- [ ] Anrok
-- [ ] Numeral
-- [ ] AutoEntry
-- [ ] Financial Cents
-- [ ] Uncat
-- [ ] Jetpack Workflow
-- [ ] Booke AI
+- [x] Plooto — added; price shown without currency (likely CAD), recheck (2026-11-25)
+- [x] Quaderno — added; price shown without currency symbol, recheck (2026-11-25)
+- [x] Anrok — added; pricing page 403, recheck (2026-11-25)
+- [x] Numeral
+- [x] AutoEntry
+- [x] Financial Cents
+- [x] Uncat
+- [x] Jetpack Workflow
+- [x] Booke AI
 
 ## Refill 2026-11-22 — no-code, SMS, phone & AI receptionists
-- [ ] SmartSuite
-- [ ] Noloco
-- [ ] Relay.app
-- [ ] SimpleTexting
-- [ ] EZ Texting
-- [ ] Textedly
-- [ ] SlickText
-- [ ] Plivo
+- [x] SmartSuite
+- [x] Noloco
+- [x] Relay.app — not added: site says the product shut down in September 2026 (2026-11-25)
+- [x] SimpleTexting — added; pricing page billing text ambiguous, recheck (2026-11-25)
+- [x] EZ Texting
+- [x] Textedly
+- [x] SlickText
+- [x] Plivo
 - [ ] Sinch
 - [ ] Bird
 - [ ] Telnyx
@@ -1597,3 +1597,69 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] Vapi
 - [ ] PolyAI
 - [ ] Numa
+
+## Refill 2026-11-25 — PPC, influencer, affiliate, e-signature & contracts
+- [ ] Fraud Blocker
+- [ ] PPC Protect
+- [ ] Bïrch
+- [ ] Skai
+- [ ] Marin Software
+- [ ] AdCreative.ai
+- [ ] Insense
+- [ ] Trend.io
+- [ ] #paid
+- [ ] Captiv8
+- [ ] Social Cat
+- [ ] Afluencer
+- [ ] Collabstr
+- [ ] CAKE
+- [ ] LeadDyno
+- [ ] Affiliatly
+- [ ] UpPromote
+- [ ] GoAffPro
+- [ ] Trackdesk
+- [ ] Scaleo
+- [ ] Awin
+- [ ] OneSpan
+- [ ] Juro
+- [ ] Ironclad
+- [ ] ContractWorks
+- [ ] Concord
+- [ ] SpotDraft
+- [ ] Docsketch
+
+## Refill 2026-11-25 — e-commerce ops, inventory, banking, BI & listings
+- [ ] ShipBob
+- [ ] AfterShip
+- [ ] Loop Returns
+- [ ] Bold Commerce
+- [ ] Brightpearl
+- [ ] Extensiv
+- [ ] Finale Inventory
+- [ ] MRPeasy
+- [ ] Axos Business Banking
+- [ ] Live Oak Bank
+- [ ] Biz2Credit
+- [ ] Qlik Sense
+- [ ] ThoughtSpot
+- [ ] Localo
+- [ ] EmbedSocial
+- [ ] SaaSquatch
+- [ ] Cohere
+
+## Refill 2026-11-25 — music, video, resume & AI writing
+- [ ] Soundful
+- [ ] Too Lost
+- [ ] ONErpm
+- [ ] Ableton Live
+- [ ] Bitwig Studio
+- [ ] Cubase
+- [ ] Logic Pro
+- [ ] Final Cut Pro
+- [ ] PowerDirector
+- [ ] FlowCV
+- [ ] Careerflow
+- [ ] Jobright
+- [ ] MyPerfectResume
+- [ ] HyperWrite
+- [ ] GPTZero
