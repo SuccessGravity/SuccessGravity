@@ -1,4 +1,198 @@
 {
- "_about": "Index decisions for generated /pricing/ pages, applied by scripts/build-pricing.js. A tool id under noindex gets <meta name=robots content=noindex,follow> and leaves the sitemap even when its price is verified. Add entries only from scripts/index-report.js suggestions (Google crawled the page and left it out of the index for 28+ days, 0 impressions), at most 20 a week, each with date and reason, and log them in seo/ledger.md. Remove an entry to make the page indexable again.",
+ "_about": "Index decisions for generated /pricing/ pages, applied by scripts/build-pricing.js. Since 2026-11-26 (M-03): a pricing page is indexable only when its price is verified AND the tool is a core tool (index.html programs), has a review, or is listed under keep. keep = directory tools with proven search demand (50+ impressions in the 28 days before the 2026-11-09 drop) or added later by the weekly SEO routine from Search Console data, each with date and reason. noindex = pages Google crawled and left out for 28+ days (scripts/index-report.js), applied even to core tools. Remove an entry to undo it.",
+ "keep": {
+  "bitwarden": {
+   "date": "2026-11-26",
+   "reason": "pricing-title-v2 experiment page (33 impressions in the 28 days to 2026-11-08)"
+  },
+  "dialpad": {
+   "date": "2026-11-26",
+   "reason": "61 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "miro": {
+   "date": "2026-11-26",
+   "reason": "79 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "basecamp": {
+   "date": "2026-11-26",
+   "reason": "74 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "xero": {
+   "date": "2026-11-26",
+   "reason": "88 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "zoho-books": {
+   "date": "2026-11-26",
+   "reason": "220 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "docusign": {
+   "date": "2026-11-26",
+   "reason": "125 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "pandadoc": {
+   "date": "2026-11-26",
+   "reason": "187 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "adobe-acrobat": {
+   "date": "2026-11-26",
+   "reason": "61 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "printful": {
+   "date": "2026-11-26",
+   "reason": "70 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "privy": {
+   "date": "2026-11-26",
+   "reason": "54 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "adobe-creative-cloud": {
+   "date": "2026-11-26",
+   "reason": "76 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "adobe-express": {
+   "date": "2026-11-26",
+   "reason": "53 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "envato-elements": {
+   "date": "2026-11-26",
+   "reason": "519 impressions, 1 clicks in the 28 days to 2026-11-08"
+  },
+  "storyblocks": {
+   "date": "2026-11-26",
+   "reason": "82 impressions, 1 clicks in the 28 days to 2026-11-08"
+  },
+  "riverside": {
+   "date": "2026-11-26",
+   "reason": "130 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "cloudways": {
+   "date": "2026-11-26",
+   "reason": "189 impressions, 1 clicks in the 28 days to 2026-11-08"
+  },
+  "supabase": {
+   "date": "2026-11-26",
+   "reason": "57 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "keap": {
+   "date": "2026-11-26",
+   "reason": "116 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "volusion": {
+   "date": "2026-11-26",
+   "reason": "65 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "payhip": {
+   "date": "2026-11-26",
+   "reason": "225 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "samcart": {
+   "date": "2026-11-26",
+   "reason": "58 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "granola": {
+   "date": "2026-11-26",
+   "reason": "50 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "obsidian": {
+   "date": "2026-11-26",
+   "reason": "51 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "ifttt": {
+   "date": "2026-11-26",
+   "reason": "79 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "lindy": {
+   "date": "2026-11-26",
+   "reason": "61 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "luma-dream-machine": {
+   "date": "2026-11-26",
+   "reason": "331 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "photoroom": {
+   "date": "2026-11-26",
+   "reason": "100 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "duda": {
+   "date": "2026-11-26",
+   "reason": "120 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "gravity-forms": {
+   "date": "2026-11-26",
+   "reason": "118 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "sucuri": {
+   "date": "2026-11-26",
+   "reason": "50 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "tailscale": {
+   "date": "2026-11-26",
+   "reason": "264 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "statuspage": {
+   "date": "2026-11-26",
+   "reason": "73 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "chargebee": {
+   "date": "2026-11-26",
+   "reason": "60 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "greenhouse": {
+   "date": "2026-11-26",
+   "reason": "105 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "sumup": {
+   "date": "2026-11-26",
+   "reason": "53 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "twilio": {
+   "date": "2026-11-26",
+   "reason": "337 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "mattermost": {
+   "date": "2026-11-26",
+   "reason": "50 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "teamwork": {
+   "date": "2026-11-26",
+   "reason": "132 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "livechat": {
+   "date": "2026-11-26",
+   "reason": "63 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "15five": {
+   "date": "2026-11-26",
+   "reason": "pricing-title-v2 experiment page (9 impressions in the 28 days to 2026-11-08)"
+  },
+  "fastspring": {
+   "date": "2026-11-26",
+   "reason": "118 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "stripe-billing": {
+   "date": "2026-11-26",
+   "reason": "55 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "pleo": {
+   "date": "2026-11-26",
+   "reason": "56 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "amuse": {
+   "date": "2026-11-26",
+   "reason": "188 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "resume-io": {
+   "date": "2026-11-26",
+   "reason": "56 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "agencyanalytics": {
+   "date": "2026-11-26",
+   "reason": "169 impressions, 0 clicks in the 28 days to 2026-11-08"
+  },
+  "plaid": {
+   "date": "2026-11-26",
+   "reason": "54 impressions, 0 clicks in the 28 days to 2026-11-08"
+  }
+ },
  "noindex": {}
 }

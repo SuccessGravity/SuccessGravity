@@ -38,6 +38,9 @@ Goal: grow the directory fast **without** inventing anything. Each run adds 20 n
 6. **Commit:** commit `data/`, `price-watch/index.html`, `category/`, `pricing/`, `review/`, `seo/keyword-map.json`, `index.html`, `new/index.html` and `sitemap.xml` with the message `Directory: +N tools (M verified) YYYY-MM-DD`. Push to a `claude/sg-directory-YYYYMMDD` branch; the auto-merge workflow puts it on main.
 7. **Report in Korean**, in 3 lines: tools added (and how many verified), what the total is now, and which requested tools were handled.
 
+## Search indexing
+New directory tools appear on `/directory/`, the category hubs and their own `/pricing/<id>/` page, but that pricing page is `noindex` and stays out of the sitemap (since 2026-11-26, after the site-wide search drop in `seo/backlog.md` M-03). Only the weekly SEO routine moves a tool into `seo/index-decisions.json` → `keep`. Don't edit that file here.
+
 ## Never
 - Never guess a price from memory or a third-party site.
 - Never give bulk listings a rating, pros/cons, or "best" labels. Those belong to reviewed core tools only.
