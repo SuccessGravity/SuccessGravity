@@ -1576,26 +1576,26 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Textedly
 - [x] SlickText
 - [x] Plivo
-- [ ] Sinch
-- [ ] Bird
-- [ ] Telnyx
-- [ ] JustCall
-- [ ] CloudTalk
-- [ ] Talkroute
-- [ ] Line2
-- [ ] Sideline
-- [ ] Ruby Receptionists
-- [ ] Smith.ai
-- [ ] AnswerConnect
-- [ ] Moneypenny
-- [ ] Upfirst
-- [ ] Rosie
-- [ ] Goodcall
-- [ ] Synthflow
-- [ ] Bland AI
-- [ ] Retell AI
-- [ ] Vapi
-- [ ] PolyAI
+- [x] Sinch
+- [x] Bird
+- [x] Telnyx
+- [x] JustCall
+- [x] CloudTalk
+- [x] Talkroute
+- [x] Line2
+- [x] Sideline — added; pricing page lists no plans, recheck (2026-11-26)
+- [x] Ruby Receptionists
+- [x] Smith.ai
+- [x] AnswerConnect — added; prices only behind a quote form, recheck (2026-11-26)
+- [x] Moneypenny
+- [x] Upfirst
+- [x] Rosie
+- [x] Goodcall
+- [x] Synthflow
+- [x] Bland AI
+- [x] Retell AI
+- [x] Vapi
+- [x] PolyAI
 - [ ] Numa
 
 ## Refill 2026-11-25 — PPC, influencer, affiliate, e-signature & contracts
