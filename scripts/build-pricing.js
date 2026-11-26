@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Per-tool pricing pages: /pricing/<id>/ for every tool in data/tools.json, plus /pricing/.
 // Run after build-tools-json.js. Pages whose price has not been checked on the vendor's own
-// page are generated with noindex (useful to visitors, kept out of search until verified).
+// page are generated with noindex (useful to visitors, kept out of search until verified),
+// and so are bulk directory tools without a review or a keep entry (seo/index-decisions.json).
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -29,8 +30,12 @@ const money = (n) => '$' + (Math.round(n * 100) / 100 % 1 ? (Math.round(n * 100)
 const ver = (t) => verified[t.id] || (t.vd ? { date: t.vd, source: t.vs } : null);
 // seo/index-decisions.json → noindex: pages Google crawled and kept out of its index for weeks
 // (scripts/index-report.js). They stay useful to visitors but leave the sitemap.
-const indexOff = (() => { try { return JSON.parse(read('seo/index-decisions.json')).noindex || {}; } catch (e) { return {}; } })();
-const indexable = (t) => !!ver(t) && !indexOff[t.id];
+const indexDecisions = (() => { try { return JSON.parse(read('seo/index-decisions.json')); } catch (e) { return {}; } })();
+const indexOff = indexDecisions.noindex || {};
+// Since 2026-11-26 (seo/backlog.md M-03): bulk directory tools (ext) get an indexable page only
+// with a review or an entry under keep (proven search demand). New directory tools start noindex.
+const indexKeep = indexDecisions.keep || {};
+const indexable = (t) => !!ver(t) && !indexOff[t.id] && (!t.ext || !!t.rv || !!indexKeep[t.id]);
 const SKIP = new Set(['government-resources']);
 const list = tools.tools.filter((t) => !SKIP.has(t.c));
 

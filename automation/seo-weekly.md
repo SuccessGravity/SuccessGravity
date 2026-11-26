@@ -22,6 +22,7 @@ You are the SEO agent for successgravity.com. The session remembers nothing reli
   - Leads (`generate_lead` by landing page) → which page types send clicks to vendors. Favour more of what converts.
   - AI visits (`latest-extra.md` → "AI 검색·AI 비서에서 온 방문", `latest-ga4-extra.json` → `aiVisits`): sessions from ChatGPT, Perplexity, Gemini, Copilot and others, and the pages they land on. Pages AI assistants send people to are the ones to keep accurate and quotable (rule 6 in `seo/README.md`).
   - Unblock `blocked` items once their data exists. Write the numbers in the notes.
+  - Index keep list (`seo/index-decisions.json` → `keep`): bulk directory tools get an indexable /pricing/ page only from this list (or with a review). Add a tool only with Search Console evidence (50+ impressions in 28 days on queries naming the tool), at most 10 a week, each with date and reason, and log it in the ledger. While M-03 is open, add none.
 - No data yet (M-01 open)? Skip the number judgements and do only technical `ready` items. Don't invent hypotheses.
 
 ## 3. Do (1–3 items, at most 15 pages)

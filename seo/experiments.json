@@ -1,6 +1,7 @@
 {
  "_about": "SEO experiments on a small set of pages, judged against the rest after the review date (seo/ledger.md). build-pricing.js applies pricing-title-v2 only to these ids. Roll an experiment out site-wide only after the verdict and David's OK (seo/README.md rule 3).",
  "pricing-title-v2": {
+  "note": "2026-11-26: confounded by the site-wide drop from 2026-11-09 (seo/backlog.md M-03); the 2026-12-02 verdict cannot be read. Re-judge 4 weeks after recovery.",
   "since": "2026-11-04",
   "review": "2026-12-02",
   "what": "Title states the real entry price and whether a free plan exists (no 'Free Plan' claim for tools without one), shorter than 60 characters; description leads with the cheapest option; FAQ adds 'What is the cheapest <tool> plan?'.",
