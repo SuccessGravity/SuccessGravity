@@ -1140,17 +1140,17 @@
       const SHOW = 60, MIN = 4;
       function draw(list, withFree, total) {
         let html = '';
-        if (withFree) html += '<a class="px-2 py-1 rounded tag" style="text-decoration:none;background:#d1fae5;color:#065f46" href="/directory/?free=1">&#128154; 100% Free tools</a>';
+        if (withFree) html += '<a rel="nofollow" class="px-2 py-1 rounded tag" style="text-decoration:none;background:#d1fae5;color:#065f46" href="/directory/?free=1">&#128154; 100% Free tools</a>';
         list.forEach(([k, n, label], i) => {
           const hue = Math.round((i * 137.508) % 360);
-          html += '<a class="px-2 py-1 rounded tag' + (i >= SHOW ? ' sg-tag-extra hidden' : '') + '" style="text-decoration:none;background:hsl(' + hue + ',80%,91%);color:hsl(' + hue + ',60%,28%)" href="/directory/?tag=' + encodeURIComponent(label) + '">' + label + ' <small class="opacity-60">' + n + '</small></a>';
+          html += '<a rel="nofollow" class="px-2 py-1 rounded tag' + (i >= SHOW ? ' sg-tag-extra' : '') + '" style="text-decoration:none;background:hsl(' + hue + ',80%,91%);color:hsl(' + hue + ',60%,28%)' + (i >= SHOW ? ';display:none' : '') + '" href="/directory/?tag=' + encodeURIComponent(label) + '">' + label + ' <small class="opacity-60">' + n + '</small></a>';
         });
         if (list.length > SHOW) html += '<button type="button" id="sg-tag-more" class="px-3 py-1 rounded-full text-sm font-semibold border border-indigo-300 text-indigo-700 hover:bg-indigo-50">+ ' + (list.length - SHOW) + ' more tags</button>';
         cont.innerHTML = html;
         const sub = document.getElementById('sg-tag-sub');
         if (sub && total) sub.textContent = 'Across all ' + total.toLocaleString('en-US') + ' tools. Click a tag to see every tool with it.';
         const more = document.getElementById('sg-tag-more');
-        if (more) more.addEventListener('click', () => { cont.querySelectorAll('.sg-tag-extra').forEach(el => el.classList.remove('hidden')); more.remove(); });
+        if (more) more.addEventListener('click', () => { cont.querySelectorAll('.sg-tag-extra').forEach(el => { el.style.display = ''; }); more.remove(); });
       }
       function build(tools) {
         const counts = {}, variants = {};

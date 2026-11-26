@@ -293,8 +293,9 @@
       const tagEl = document.getElementById('sgd-tag');
       if (state.tag) {
         tagEl.style.display = '';
-        tagEl.innerHTML = '<span class="sgd-cat sgd-cat-on" style="display:inline-flex;gap:.4rem;align-items:center;width:auto">Tag: ' + esc(tagLabel || state.tag) + ' <button type="button" id="sgd-tag-x" aria-label="Remove tag filter">&#10005;</button></span>';
-        document.getElementById('sgd-tag-x').onclick = () => { state.tag = ''; render(); };
+        if (!tagLabel) { const hit = TOOLS.find(t => (t.tg || []).some(g => tagKey(g) === state.tag)); tagLabel = hit ? hit.tg.find(g => tagKey(g) === state.tag) : state.tag; }
+        tagEl.innerHTML = '<span style="display:inline-flex;gap:.5rem;align-items:center;background:#4f46e5;color:#fff;font-size:.875rem;font-weight:600;padding:.25rem .75rem;border-radius:9999px">Tag: ' + esc(tagLabel) + ' <button type="button" id="sgd-tag-x" aria-label="Remove tag filter">&#10005;</button></span>';
+        document.getElementById('sgd-tag-x').onclick = () => { state.tag = ''; tagLabel = ''; render(); };
       } else { tagEl.style.display = 'none'; tagEl.innerHTML = ''; }
       document.getElementById('sgd-count').textContent = 'Showing ' + list.length + ' of ' + matched.toLocaleString('en-US') + (matched === TOOLS.length ? ' tools' : ' matching tools');
       const more = document.getElementById('sgd-more');
@@ -368,7 +369,7 @@
       if (b) { state.cat = b.dataset.cat; render(); }
     });
     document.getElementById('sgd-clear').addEventListener('click', () => {
-      state.q = ''; state.cat = 'all'; state.free = false; state.reviewed = false; state.sort = 'rating'; state.tag = '';
+      state.q = ''; state.cat = 'all'; state.free = false; state.reviewed = false; state.sort = 'rating'; state.tag = ''; tagLabel = '';
       document.getElementById('sgd-search').value = '';
       document.getElementById('sgd-sort').value = 'rating';
       document.getElementById('sgd-free').checked = false;
@@ -383,7 +384,7 @@
       if (state.free) p.set('free', '1');
       if (state.reviewed) p.set('rev', '1');
       if (state.sort !== 'rating') p.set('sort', state.sort);
-      if (state.tag) p.set('tag', state.tag);
+      if (state.tag) p.set('tag', tagLabel || state.tag);
       const qs = p.toString();
       history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
     }
@@ -407,9 +408,10 @@
       d.tools.forEach(t => { idByName[t.n] = t.id; });
       TOOLS.forEach(t => { if (!t.id && idByName[t.n]) t.id = idByName[t.n]; });
       const have = new Set(TOOLS.map(t => t.n.toLowerCase()));
-      d.tools.filter(t => t.ext && !have.has(t.n.toLowerCase())).forEach(t => TOOLS.push({
-        n: t.n, c: t.c, l: t.l, b: t.b, r: null, p: t.p, t: t.free ? 'Free plan' : '', pop: 0,
-        id: t.id, f: t.pm === 0 && !t.usage, rv: null, tg: t.tg || [], ft: [], pr: [], cn: [], e: null, s: '', ic: '',
+      // every tool in tools.json that the built-in list above lacks (bulk listings and newer core tools)
+      d.tools.filter(t => !have.has(t.n.toLowerCase())).forEach(t => TOOLS.push({
+        n: t.n, c: t.c, l: t.l, b: t.b, r: t.ext ? null : (t.r || null), p: t.p, t: t.free ? 'Free plan' : '', pop: t.ext ? 0 : (t.pop || 0),
+        id: t.id, f: t.pm === 0 && !t.usage, rv: t.ext ? null : (t.rv || null), tg: t.tg || [], ft: [], pr: [], cn: [], e: null, s: '', ic: '',
         i: t.i || null, x: 1, vd: t.vd || null, vs: t.vs || null, ad: t.ad || null
       }));
       buildCats();
