@@ -1413,6 +1413,18 @@
    ]
   },
   {
+   "id": "review:salesforce",
+   "queries": [
+    "salesforce crm review",
+    "is salesforce crm worth it",
+    "salesforce crm pros and cons"
+   ],
+   "owner": "/review/salesforce/",
+   "support": [
+    "/pricing/salesforce/"
+   ]
+  },
+  {
    "id": "review:semrush",
    "queries": [
     "semrush review",
@@ -2335,6 +2347,14 @@
    "support": []
   },
   {
+   "id": "guide:set-up-slack-workspace",
+   "queries": [
+    "how to set up a slack workspace for business"
+   ],
+   "owner": "/guides/set-up-slack-workspace/",
+   "support": []
+  },
+  {
    "id": "guide:shopify-store-setup",
    "queries": [
     "how to set up a shopify store in 2026"
@@ -2356,6 +2376,14 @@
     "how to start an email list for free"
    ],
    "owner": "/guides/start-email-list-free/",
+   "support": []
+  },
+  {
+   "id": "guide:stripe-payment-setup",
+   "queries": [
+    "how to set up stripe for your business"
+   ],
+   "owner": "/guides/stripe-payment-setup/",
    "support": []
   },
   {
