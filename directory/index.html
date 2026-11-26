@@ -238,7 +238,7 @@
           '<div class="lm-stat"><span>&#128193;</span><div><b>Category</b><p>' + esc(CATS[t.c] || t.c) + '</p></div></div>' +
           (t.id ? '<div class="lm-stat"><span>&#128176;</span><div><b>Pricing page</b><p><a href="/pricing/' + t.id + '/" class="text-indigo-600 font-semibold">' + esc(t.n) + ' pricing &rarr;</a></p></div></div>' : '') +
           '</div>' +
-          '<p class="text-xs text-gray-500 mt-3">New listing: we haven&rsquo;t rated or reviewed this tool yet. Details come from the vendor&rsquo;s own site.</p></div>';
+          (t.r == null ? '<p class="text-xs text-gray-500 mt-3">New listing: we haven&rsquo;t rated or reviewed this tool yet. Details come from the vendor&rsquo;s own site.</p>' : '') + '</div>';
       }
       return '<div class="learn-more-section hidden" data-qf="' + esc(t.n) + '">' +
         '<div class="lm-grid">' +
