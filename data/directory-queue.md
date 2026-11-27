@@ -1596,33 +1596,33 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] Retell AI
 - [x] Vapi
 - [x] PolyAI
-- [ ] Numa
+- [x] Numa — added; demo only, no public pricing (2026-11-27)
 
 ## Refill 2026-11-25 — PPC, influencer, affiliate, e-signature & contracts
-- [ ] Fraud Blocker
-- [ ] PPC Protect
-- [ ] Bïrch
-- [ ] Skai
-- [ ] Marin Software
-- [ ] AdCreative.ai
-- [ ] Insense
-- [ ] Trend.io
-- [ ] #paid
-- [ ] Captiv8
-- [ ] Social Cat
-- [ ] Afluencer
-- [ ] Collabstr
-- [ ] CAKE
-- [ ] LeadDyno
-- [ ] Affiliatly
-- [ ] UpPromote
-- [ ] GoAffPro
-- [ ] Trackdesk
-- [ ] Scaleo
-- [ ] Awin
-- [ ] OneSpan
-- [ ] Juro
-- [ ] Ironclad
+- [x] Fraud Blocker
+- [x] PPC Protect — not added: renamed to Lunio (ppcprotect.com redirects to lunio.ai) (2026-11-27)
+- [x] Bïrch — dup (listed as "Birch (formerly Revealbot)")
+- [x] Skai
+- [x] Marin Software
+- [x] AdCreative.ai — added; only a temporary Black Friday price shown, recheck (2026-11-27)
+- [x] Insense
+- [x] Trend.io — not added: wound down, site redirects to soona.co (2026-11-27)
+- [x] #paid — added; no public pricing (2026-11-27)
+- [x] Captiv8 — not added: integrated into Influential (2026-11-27)
+- [x] Social Cat — not added: socialcat.com is a parked domain (2026-11-27)
+- [x] Afluencer
+- [x] Collabstr
+- [x] CAKE — added; site behind bot check, no pricing readable (2026-11-27)
+- [x] LeadDyno
+- [x] Affiliatly
+- [x] UpPromote
+- [x] GoAffPro
+- [x] Trackdesk
+- [x] Scaleo
+- [x] Awin
+- [x] OneSpan
+- [x] Juro
+- [x] Ironclad
 - [ ] ContractWorks
 - [ ] Concord
 - [ ] SpotDraft
@@ -1663,3 +1663,69 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [ ] MyPerfectResume
 - [ ] HyperWrite
 - [ ] GPTZero
+
+## Refill 2026-11-27 — music, listings, funding, referral & AI writing (small categories)
+- [ ] RouteNote
+- [ ] SoundOn
+- [ ] FL Studio
+- [ ] Reason
+- [ ] Native Instruments Komplete
+- [ ] Output
+- [ ] Brownbook
+- [ ] Hotfrog
+- [ ] Manta
+- [ ] Chamber of Commerce
+- [ ] Rio SEO
+- [ ] Partoo
+- [ ] Taycor Financial
+- [ ] Clarify Capital
+- [ ] Mention Me
+- [ ] Typeface
+
+## Refill 2026-11-27 — PPC, attribution, affiliate & influencer
+- [ ] ClickGUARD
+- [ ] Smartly.io
+- [ ] iSpionage
+- [ ] Voluum
+- [ ] RedTrack
+- [ ] Hyros
+- [ ] Triple Whale
+- [ ] Northbeam
+- [ ] Rockerbox
+- [ ] Cometly
+- [ ] Wicked Reports
+- [ ] Partnerize
+- [ ] Rakuten Advertising
+- [ ] CJ Affiliate
+- [ ] ClickBank
+- [ ] Commission Factory
+- [ ] Kiflo
+- [ ] Crossbeam
+- [ ] Foreplay
+- [ ] Atria
+- [ ] Superads
+- [ ] Pencil
+- [ ] Creatopy
+- [ ] Bannerbear
+- [ ] Placid
+- [ ] Templated
+
+## Refill 2026-11-27 — e-commerce analytics, contracts, AP & customer success
+- [ ] Polar Analytics
+- [ ] Lifetimely
+- [ ] BeProfit
+- [ ] Peel Insights
+- [ ] Daasity
+- [ ] Glew
+- [ ] Agiloft
+- [ ] LinkSquares
+- [ ] Veem
+- [ ] Routable
+- [ ] Stampli
+- [ ] Ordway
+- [ ] Gainsight
+- [ ] ChurnZero
+- [ ] Totango
+- [ ] Vitally
+- [ ] Planhat
+- [ ] Custify
