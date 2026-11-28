@@ -1623,30 +1623,28 @@ Skip a line if the tool already exists (same name or website) — just tick it a
 - [x] OneSpan
 - [x] Juro
 - [x] Ironclad
-- [ ] ContractWorks
-- [ ] Concord
-- [ ] SpotDraft
-- [ ] Docsketch
-
+- [x] ContractWorks — added; pricing page 404, recheck (2026-11-28)
+- [x] Concord — added (2026-11-28)
+- [x] SpotDraft — added (2026-11-28)
+- [x] Docsketch — dup — docsketch.com now redirects to SignWell, already listed (2026-11-28)
 ## Refill 2026-11-25 — e-commerce ops, inventory, banking, BI & listings
-- [ ] ShipBob
-- [ ] AfterShip
-- [ ] Loop Returns
-- [ ] Bold Commerce
-- [ ] Brightpearl
-- [ ] Extensiv
-- [ ] Finale Inventory
-- [ ] MRPeasy
-- [ ] Axos Business Banking
-- [ ] Live Oak Bank
-- [ ] Biz2Credit
-- [ ] Qlik Sense
-- [ ] ThoughtSpot
-- [ ] Localo
-- [ ] EmbedSocial
-- [ ] SaaSquatch
-- [ ] Cohere
-
+- [x] ShipBob — added (2026-11-28)
+- [x] AfterShip — added; pricing page 403, recheck (2026-11-28)
+- [x] Loop Returns — added (2026-11-28)
+- [x] Bold Commerce — added; no pricing page (404), recheck (2026-11-28)
+- [x] Brightpearl — added (2026-11-28)
+- [x] Extensiv — added; pricing page 404, recheck (2026-11-28)
+- [x] Finale Inventory — added (2026-11-28)
+- [x] MRPeasy — added (2026-11-28)
+- [x] Axos Business Banking — added; business banking pages 404, recheck (2026-11-28)
+- [x] Live Oak Bank — added (2026-11-28)
+- [x] Biz2Credit — added; loan rates not published (2026-11-28)
+- [x] Qlik Sense — added (2026-11-28)
+- [x] ThoughtSpot — added (2026-11-28)
+- [x] Localo — added; only a Black Friday promo price shown (regular price script-rendered), recheck (2026-11-28)
+- [x] EmbedSocial — added (2026-11-28)
+- [x] SaaSquatch — added; no public pricing page, recheck (2026-11-28)
+- [x] Cohere — added (2026-11-28)
 ## Refill 2026-11-25 — music, video, resume & AI writing
 - [ ] Soundful
 - [ ] Too Lost
